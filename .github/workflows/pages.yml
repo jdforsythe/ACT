@@ -7,8 +7,12 @@ name: GitHub Pages (validator SPA)
 # `dist/<other-static-sites>/` without collision.
 
 on:
-  push:
-    branches: [master]
+  # Manual-only for v0.1 (internal hand-test candidate). Re-enable the
+  # on-push trigger below for v0.2 when the validator goes public on
+  # GitHub Pages alongside the spec site.
+  #
+  # push:
+  #   branches: [master]
   workflow_dispatch:
 
 permissions:
