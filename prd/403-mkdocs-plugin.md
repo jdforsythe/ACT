@@ -217,6 +217,7 @@ The plugin class MUST inherit from `mkdocs.plugins.BasePlugin` and declare a `co
 - `fail_on_extraction_error` (default `False`; per PRD-400-R26).
 - `build_report_path` (default `./.act-build-report.json` at project root, NOT inside `site_dir`; per PRD-403-R23).
 - `id_strategy` (default `"path"`; opt-in `"frontmatter"` for explicit `id:` keys per PRD-100-R14).
+- `parse_mode` (string, OPTIONAL; one of `"coarse"`, `"fine"`; default `"coarse"`) — canonical pass-through to PRD-201's `mode` config (PRD-201-R12). Added per amendment A12 (sibling sweep of A2 / A10 / A11 — keeps the parse-mode reach symmetric across hosts so community Python ports can expose the same knob as the TS-first-party generators). When set, the plugin MUST forward the value to the body-to-block mapping (PRD-403-R12). When omitted, the plugin preserves the PRD-201 default (`"coarse"`). The `parse_mode` setting is independent of `conformance_target`. Setting `parse_mode = "fine"` against `conformance_target = "core"` MUST fail at `on_config` per PRD-201-R23's level-mismatch rule (the body-to-block contract refuses fine-mode emission against a Core target); the plugin surfaces the underlying error verbatim. The legacy `block_strategy` key (introduced in PRD-403-R12's body-to-block mapping prose) is accepted as an alias of `parse_mode` for backward compatibility (mapping `block_strategy: "fine"` ↔ `parse_mode: "fine"` and `block_strategy: "coarse"` ↔ `parse_mode: "coarse"`); when both are supplied with conflicting values, the plugin MUST surface a configuration error. Conformance: **Core** (the field; **Standard** for the fine-grained behavior the field unlocks per PRD-201-R12). MINOR bump per PRD-108-R4(1).
 
 #### Lifecycle hooks (PRD-400-R24)
 
@@ -329,7 +330,8 @@ config_scheme = (
         ('pattern', config_options.Choice(['1', '2'], default='2')),
     )),
     ('id_strategy', config_options.Choice(['path', 'frontmatter'], default='path')),
-    ('block_strategy', config_options.Choice(['coarse', 'fine'], default='coarse')),
+    ('block_strategy', config_options.Choice(['coarse', 'fine'], default='coarse')),  # legacy alias of `parse_mode` per amendment A12
+    ('parse_mode', config_options.Choice(['coarse', 'fine'], default='coarse')),  # PRD-201-R12 pass-through; amendment A12 (MINOR per PRD-108-R4(1))
     ('fail_on_extraction_error', config_options.Type(bool, default=False)),
     ('search', config_options.SubConfig(
         ('advertise', config_options.Type(bool, default=False)),
@@ -626,3 +628,4 @@ def _validate_load_order(self, config):
 | 2026-05-01 | Jeremy Forsythe | Initial draft; status `In review` (spec only). |
 | 2026-05-01 | Jeremy Forsythe | Open questions resolved post-review. Decisions: (Q1) honor `site_url` for `metadata.canonical_url`; (Q2) consume MkDocs auto-nav when `nav:` absent; (Q3) no Material `meta.tags` aggregation page support in v0.1; (Q4) no per-section `_index.json` analogues — ACT's parent node carries section identity; (Q5) no template-driven content (e.g., `mkdocs-macros-plugin`) integration in v0.1 — read source markdown only. Confirms PRD-403-R23 build report defaults to project root (not `site_dir`) to avoid `mkdocs gh-deploy` upload — eliminates a credential-leak vector and matches PRD-400-R27's local-only intent. |
 | 2026-05-02 | Jeremy Forsythe | Status: In review → Accepted. BDFL sign-off (per 000-governance R11). |
+| 2026-05-02 | Spec Steward | **MINOR bump per PRD-108-R4(1)** (additive optional field). Inline edit per SOP-3 of amendment A12 (sibling sweep of A2 / A10 / A11; coordinated pre-ship sweep accepted by BDFL on 2026-05-02). Added `parse_mode` (`"coarse" \| "fine"`, default `"coarse"`) to PRD-403-R4's `config_scheme` as the canonical pass-through to PRD-201's `mode` config (PRD-201-R12), and added the matching `config_options.Choice` entry to the prosaic `config_scheme` block in §"Wire format / interface definition". The legacy `block_strategy` key (introduced in PRD-403-R12's body-to-block mapping prose) is preserved as an alias of `parse_mode`; conflicting values surface a configuration error. Default `"coarse"` preserves byte-identical behavior for every pre-amendment MkDocs deployment; `"fine"` is opt-in. The level-mismatch rule from PRD-201-R23 applies — `parse_mode = "fine"` against `conformance_target = "core"` fails at `on_config`. PRD-403 stays Accepted (spec-only per decision Q3; the field is for community Python ports + future first-party impls). |

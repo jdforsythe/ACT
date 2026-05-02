@@ -211,6 +211,7 @@ A plugin declaring Plus satisfies Standard and Core by additivity (PRD-107-R11).
 - `collections?: { synthesizeIndices?: boolean }` (per R11).
 - `searchArtifactPath?: string` (per R17 Plus band; path to a precomputed search index relative to `outputDir`).
 - `hooks?: { preBuild?, postBuild?, onError? }` (per PRD-400-R24).
+- `parseMode` (string, OPTIONAL; one of `"coarse"`, `"fine"`; default `"coarse"`) — pass-through to PRD-201's `mode` config (PRD-201-R12). When set, the plugin MUST forward the value to the auto-wired PRD-201 markdown adapter instance. When omitted, the plugin preserves the PRD-201 default (`"coarse"`). The `parseMode` setting is independent of the conformance target (`conformanceTarget`). Setting `parseMode: "fine"` against a `conformanceTarget: "core"` build MUST fail at `init` per PRD-201-R23's level-mismatch rule (the markdown adapter refuses fine-mode emission against a Core target); the plugin surfaces the underlying adapter error verbatim. Conformance: **Core** (the field; **Standard** for the fine-grained behavior the field unlocks per PRD-201-R12). Added per amendment A10 (MINOR bump per PRD-108-R4(1)).
 
 The plugin MUST translate this options block into a fully-formed `GeneratorConfig` before invoking `runPipeline`. The translated config MUST satisfy PRD-400-R31. The plugin MUST reject any `bindings` field per PRD-408-R10. Conformance: **Core**.
 
@@ -299,6 +300,14 @@ export interface EleventyActOptions {
   collections?: { synthesizeIndices?: boolean };        // per R11
   searchArtifactPath?: string;                          // per R17 Plus band
   hooks?: BuildHooks;                                   // per PRD-400-R24
+  /**
+   * Body-to-block parse mode forwarded to PRD-201's auto-wired markdown
+   * adapter (PRD-201-R12). "coarse" (default) emits one `markdown` block per
+   * file; "fine" splits into prose / code / data / callout blocks. Setting
+   * "fine" against `conformanceTarget: "core"` fails at init per PRD-201-R23.
+   * Added per amendment A10 (MINOR bump per PRD-108-R4(1)).
+   */
+  parseMode?: "coarse" | "fine";
   // bindings?: never  --- per R10, supplying `bindings` is a configuration error.
 }
 ```
@@ -762,3 +771,4 @@ These snippets sketch the canonical shape; the full plugin includes additional s
 | 2026-05-01 | Jeremy Forsythe | Open questions resolved post-review. Decisions: (Q1) `addCollection` hint surface added as optional, default off; (Q2) no `@11ty/eleventy-plugin-rss` metadata derivation in v0.1; (Q3) watch-mode integration via `eleventy.after` with re-entry guard; (Q4) build report excluded from Eleventy's CDN-bound output via ignore-list integration where supported, docs workaround otherwise; (Q5) host MAY override `outputDir` away from Eleventy's resolved `dir.output`. |
 | 2026-05-01 | Jeremy Forsythe | Initial draft. Locks the `@act/eleventy` plugin shape under Eleventy 2.0+ (Eleventy 1.x out of scope), the canonical `eleventy.after` hook placement for the PRD-400 pipeline, the auto-wiring of PRD-201's markdown adapter against Eleventy's input directory with `.eleventyignore` honored, the explicit out-of-scope stance on component instrumentation (PRD-300 / 301 / 302 / 303 not consumed; `bindings` field in options is a configuration error per R10), the permalink-aware filter that cross-references the markdown adapter's enumerate output against Eleventy's `results` array (so `permalink: false` files don't leak into ACT emission), the URL-space independence rule (ACT URLs derive from `urlTemplates`, not from Eleventy's `permalink`), the no-template-engine-introspection boundary (Nunjucks / Liquid / Handlebars / EJS / WebC / 11ty.js templates are opaque to ACT), the optional collection-hints feature for subtree emission, the plugin options shape as a strict subset of `GeneratorConfig`, the default `outputDir` of Eleventy's `dir.output`, the inherited atomic-write contract via `@act/generator-runtime`, the inherited build report sidecar with Eleventy ignore-list integration, the inherited pinning enforcement (PRD-400-R29 / R30), the watch-mode re-entry guard, and the conformance-band achievability (Core floor; Plus requires precomputed search artifact via `searchArtifactPath`). Test fixtures enumerated under `fixtures/408/`; no fixture files created. No new JSON Schemas under `schemas/408/`. Cites PRD-100 (Accepted), PRD-103 (Accepted), PRD-105 (Accepted), PRD-107 (Accepted), PRD-108 (Accepted), PRD-109 (Accepted), PRD-200 (In review), PRD-201 (In review), PRD-400 (In review). Status: Draft → In review. |
 | 2026-05-02 | Jeremy Forsythe | Status: In review → Accepted. BDFL sign-off (per 000-governance R11). |
+| 2026-05-02 | Spec Steward | **MINOR bump per PRD-108-R4(1)** (additive optional field). Inline edit per SOP-3 of amendment A10 (sibling sweep of A2; pre-staged for the Adapter/Generator Engineer at Track B PRD-408 entry, accepted by BDFL on 2026-05-02 — landing the spec edit now, ahead of the implementation pickup, since it's purely additive). Added `parseMode` (`"coarse" \| "fine"`, default `"coarse"`) to PRD-408-R12's plugin options shape and to the `EleventyActOptions` TypeScript interface as a pass-through to PRD-201's `mode` config (PRD-201-R12). Default `"coarse"` preserves byte-identical behavior for every pre-amendment deployment; `"fine"` is opt-in. The level-mismatch rule from PRD-201-R23 applies — `parseMode: "fine"` against `conformanceTarget: "core"` fails at adapter `init`. PRD-408 stays Accepted. |

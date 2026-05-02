@@ -50,36 +50,75 @@ Until Phase 6 starts, entries are queued — **no Accepted PRD is silently amend
 - **PRD-600 conservative interpretation in v0.1:** PRD-600 enforces R3 on every node envelope etag and every NDJSON line etag, and **does not** enforce R3 on the index / subtree top-level etag. This matches the locked schemas and keeps the G1 positive fixtures green. Any future tightening is a coordinated PRD-103 + schema + fixture amendment.
 - **Triage call:** Trivial-inline. Recommendation is option (a) — tighten and re-spin the two fixtures — once the spec freezes top-level etag derivation. Non-blocking for v0.1; PRD-600 ships with the conservative interpretation.
 
-### A10 — PRD-408: `parseMode` wiring for Eleventy generator (sibling sweep of A2)
-
-- **PRD:** PRD-408 (Eleventy plugin).
-- **Section / requirement:** PRD-408 configuration shape (mirror PRD-404-R16); interaction with PRD-201-R12.
-- **Surfaced by:** A2 closure (2026-05-02) — sibling-sweep recommendation accepted by BDFL.
-- **Observed problem:** Same as A2: PRD-201-R12's coarse / fine split is normative, but PRD-408 does not currently expose a `parseMode`-equivalent. Without this field, fine-grained-mode-via-Eleventy is unreachable, which is a permanent v0.1 feature gap.
-- **Proposed fix (semantic / additive):** Add `parseMode?: "coarse" | "fine"` (default `"coarse"`) to PRD-408's plugin shape as a pass-through to PRD-201's `mode` config. Mirror PRD-404-R16's amended text verbatim, including the level-mismatch rule (PRD-201-R23 applies). MINOR bump per PRD-108-R4(1).
-- **Triage call:** Pre-staged for the Adapter/Generator Engineer at Track B PRD-408 entry. Spec Steward to confirm SOP-4 once the engineer reaches the leaf.
-
-### A11 — PRD-402: `parseMode` wiring for Hugo generator (sibling sweep of A2, spec-only)
-
-- **PRD:** PRD-402 (Hugo module, spec-only per Q3).
-- **Section / requirement:** PRD-402 configuration shape; interaction with PRD-201-R12.
-- **Surfaced by:** A2 closure (2026-05-02) — sibling-sweep recommendation accepted by BDFL.
-- **Observed problem:** Same as A2 / A10. PRD-402 ships as spec text only in v0.1 (no first-party impl per Q3); the spec gap nonetheless leaves community ports without a normative knob to expose.
-- **Proposed fix (semantic / additive):** Add a `parseMode` (or equivalent) configuration field to PRD-402's plugin shape mirroring A2 / A10. MINOR bump per PRD-108-R4(1).
-- **Triage call:** Coordinated pre-ship sweep before v0.1 tag. No implementation gate.
-
-### A12 — PRD-403: `parseMode` wiring for MkDocs plugin (sibling sweep of A2, spec-only)
-
-- **PRD:** PRD-403 (MkDocs plugin, spec-only per Q3).
-- **Section / requirement:** PRD-403 configuration shape; interaction with PRD-201-R12.
-- **Surfaced by:** A2 closure (2026-05-02) — sibling-sweep recommendation accepted by BDFL.
-- **Observed problem:** Same as A2 / A10 / A11. Spec-only PRD; gap is normative and would block community ports from reaching Standard.
-- **Proposed fix (semantic / additive):** Add a `parseMode` (or equivalent) configuration field to PRD-403's plugin shape mirroring A2 / A10 / A11. MINOR bump per PRD-108-R4(1).
-- **Triage call:** Coordinated pre-ship sweep before v0.1 tag. No implementation gate.
+*(no Phase-7-blocking entries; A5 / A6 / A7 remain Open with documented conservative interpretations per their existing notes — non-blocking, deferred to G3 amendment triage. A13 / A14 evaluated 2026-05-02 and filed-and-closed under "Closed entries" below; runtime SDKs PRD-503 / PRD-504 have no parseMode equivalent.)*
 
 ---
 
 ## Closed entries
+
+### A10 — PRD-408: `parseMode` wiring for Eleventy generator (sibling sweep of A2)
+
+- **PRD:** PRD-408 (Eleventy plugin).
+- **Section / requirement:** PRD-408-R12 (plugin options shape) + the `EleventyActOptions` TypeScript interface in §"Wire format / interface definition"; interaction with PRD-201-R12 / PRD-201-R23.
+- **Surfaced by:** A2 closure (2026-05-02) — sibling-sweep recommendation accepted by BDFL.
+- **Verdict (2026-05-02, Spec Steward):** **Semantic-additive amendment per PRD-108-R4(1) (MINOR bump).** Inline edit per SOP-3 (rather than the full SOP-4 In-review round-trip): the amendment was pre-triaged in A2's closure and pre-accepted by the BDFL on 2026-05-02 with explicit "Track B day-1 pickup" framing, so the Spec Steward landed the spec edit directly in this pre-ship sweep ahead of the implementation pickup. PRD-408 stays Accepted.
+- **Rationale:** Identical to A2 — PRD-201-R12's coarse / fine split is normative; without `parseMode`, fine-grained-mode-via-Eleventy is unreachable, which would be a permanent v0.1 feature gap. The change is genuinely additive (new optional field, default `"coarse"` preserves every existing PRD-408 deployment's behavior byte-for-byte), so it cleanly fits PRD-108-R4(1). The cost is small (a single pass-through into PRD-201's existing config) and no new schema is required. The SOP-4 round-trip was satisfied at A2's closure for the cross-cutting recommendation; the BDFL's 2026-05-02 sign-off accepted A10 as Track-B-pickup-pre-staged, licensing inline-edit-per-SOP-3 on a pre-cleared additive change. PRD-108-R6 (MAJOR-wins-when-borderline) does not apply: no MUST is loosened, no field removed, no default behavior changed in the `parseMode`-omitted path.
+- **Action taken:** Edited `prd/408-eleventy-plugin.md`:
+  1. PRD-408-R12 amended to add `parseMode` (string, OPTIONAL; one of `"coarse"`, `"fine"`; default `"coarse"`) to the plugin options shape as a pass-through to PRD-201's `mode` config (PRD-201-R12), with the level-mismatch rule (PRD-201-R23) preserved verbatim — `parseMode: "fine"` against `conformanceTarget: "core"` fails at adapter `init`.
+  2. The TypeScript `EleventyActOptions` interface in §"Wire format / interface definition" gained a `parseMode?: "coarse" | "fine"` field with a JSDoc citation of PRD-201-R12 / PRD-201-R23 and the amendment ID.
+  3. Changelog row dated 2026-05-02 noting the MINOR bump per PRD-108-R4(1) and citing SOP-3.
+- **MINOR-bump rationale (cited):** PRD-108-R4(1) — "Adding a new optional field to an existing envelope or object." `parseMode` on `EleventyActOptions` is exactly that.
+- **BDFL escalation:** Resolved 2026-05-02. BDFL pre-accepted A10 in the A2 sibling-sweep sign-off (Phase 6.2 prework changelog); landing the spec edit now ahead of the Adapter/Generator Engineer's Track B PRD-408 pickup since the change is purely additive and pre-cleared.
+- **Closed:** 2026-05-02.
+
+### A11 — PRD-402: `parseMode` wiring for Hugo generator (sibling sweep of A2, spec-only)
+
+- **PRD:** PRD-402 (Hugo module, spec-only per Q3).
+- **Section / requirement:** PRD-402-R4 (`[params.act]` configuration shape); interaction with PRD-201-R12 / PRD-201-R23 and the existing `[params.act].mode` key documented in PRD-402-R12's body-to-block mapping prose.
+- **Surfaced by:** A2 closure (2026-05-02) — sibling-sweep recommendation accepted by BDFL; coordinated pre-ship sweep.
+- **Verdict (2026-05-02, Spec Steward):** **Semantic-additive amendment per PRD-108-R4(1) (MINOR bump).** Inline edit per SOP-3 — same posture as A10 (BDFL pre-accepted in A2 sibling-sweep sign-off; additive optional field; default-omitted path byte-identical). PRD-402 stays Accepted (spec-only).
+- **Rationale:** Identical to A2 / A10. PRD-402 already documents an opt-in fine-grained body-to-block mode via `[params.act].mode = "fine"` (PRD-402-R12), but the configuration field is not surfaced in the canonical `[params.act]` configuration shape (PRD-402-R4) and is named `mode` rather than the cross-host-canonical `parseMode`. The amendment surfaces a `parseMode` key in R4 mirroring A2 / A10, accepts the legacy `mode` key as an alias for backward compatibility, and pins the level-mismatch rule (PRD-201-R23 applies) explicitly. Symmetric-naming across hosts makes community ports interoperable with the TS first-party generators' configuration ergonomics.
+- **Action taken:** Edited `prd/402-hugo-module.md`:
+  1. PRD-402-R4 amended: added `parseMode = "coarse"` (one of `"coarse"`, `"fine"`; default `"coarse"`) to the `[params.act]` TOML configuration block, with a normative paragraph explaining the pass-through to PRD-201's `mode` config (PRD-201-R12), the level-mismatch rule (PRD-201-R23 — `parseMode = "fine"` against `conformanceTarget = "core"` fails at module init), the legacy-`mode`-key alias for backward compatibility (conflicting values surface a configuration error), and the MINOR bump per PRD-108-R4(1).
+  2. Changelog row dated 2026-05-02 noting the MINOR bump per PRD-108-R4(1) and citing SOP-3.
+- **MINOR-bump rationale (cited):** PRD-108-R4(1) — "Adding a new optional field to an existing envelope or object." `parseMode` on `[params.act]` is exactly that. The legacy-`mode` alias is a backward-compatibility consideration, not a behavior change.
+- **BDFL escalation:** Resolved 2026-05-02. BDFL pre-accepted A11 in the A2 sibling-sweep sign-off (coordinated pre-ship sweep before v0.1 tag).
+- **Closed:** 2026-05-02.
+
+### A12 — PRD-403: `parseMode` wiring for MkDocs plugin (sibling sweep of A2, spec-only)
+
+- **PRD:** PRD-403 (MkDocs plugin, spec-only per Q3).
+- **Section / requirement:** PRD-403-R4 (`config_scheme`) + the prosaic `config_scheme` block in §"Wire format / interface definition"; interaction with PRD-201-R12 / PRD-201-R23 and the existing `block_strategy` key documented in PRD-403-R12's body-to-block mapping prose.
+- **Surfaced by:** A2 closure (2026-05-02) — sibling-sweep recommendation accepted by BDFL; coordinated pre-ship sweep.
+- **Verdict (2026-05-02, Spec Steward):** **Semantic-additive amendment per PRD-108-R4(1) (MINOR bump).** Inline edit per SOP-3 — same posture as A10 / A11. PRD-403 stays Accepted (spec-only).
+- **Rationale:** Identical to A2 / A10 / A11. PRD-403 already documents an opt-in fine-grained body-to-block mode via `block_strategy: "fine"` (PRD-403-R12), but the field is named `block_strategy` rather than the cross-host-canonical `parse_mode` (the Python-idiomatic snake_case form of `parseMode`). The amendment surfaces a `parse_mode` key in R4 mirroring A2 / A10 / A11, accepts the legacy `block_strategy` key as an alias for backward compatibility, and pins the level-mismatch rule explicitly.
+- **Action taken:** Edited `prd/403-mkdocs-plugin.md`:
+  1. PRD-403-R4 amended: added `parse_mode` (string, OPTIONAL; one of `"coarse"`, `"fine"`; default `"coarse"`) to the `config_scheme` enumeration with a normative paragraph explaining the pass-through to PRD-201's `mode` config (PRD-201-R12), the level-mismatch rule (PRD-201-R23 — `parse_mode = "fine"` against `conformance_target = "core"` fails at `on_config`), the legacy-`block_strategy`-key alias for backward compatibility (conflicting values surface a configuration error), and the MINOR bump per PRD-108-R4(1).
+  2. The prosaic `config_scheme` block in §"Wire format / interface definition" gained a `('parse_mode', config_options.Choice(['coarse', 'fine'], default='coarse'))` entry alongside the existing `block_strategy` entry (now annotated as a legacy alias).
+  3. Changelog row dated 2026-05-02 noting the MINOR bump per PRD-108-R4(1) and citing SOP-3.
+- **MINOR-bump rationale (cited):** PRD-108-R4(1) — "Adding a new optional field to an existing envelope or object." `parse_mode` on the MkDocs plugin's `config_scheme` is exactly that. The legacy-`block_strategy` alias is a backward-compatibility consideration, not a behavior change.
+- **BDFL escalation:** Resolved 2026-05-02. BDFL pre-accepted A12 in the A2 sibling-sweep sign-off (coordinated pre-ship sweep before v0.1 tag).
+- **Closed:** 2026-05-02.
+
+### A13 — PRD-503 (FastAPI runtime SDK): no parseMode equivalent; sibling sweep N/A
+
+- **PRD:** PRD-503 (FastAPI runtime SDK, spec-only per Q3).
+- **Section / requirement:** N/A — runtime SDK contract scope.
+- **Surfaced by:** Phase 7 pre-ship sibling-sweep review (2026-05-02) — Spec Steward checking whether PRD-503 needed an analogous spec-only edit alongside A11 / A12.
+- **Verdict (2026-05-02, Spec Steward):** **No amendment needed; out of scope for the parseMode sibling-sweep.** Filed-and-closed in same triage session per SOP-2 (borderline → forward-looking verdict).
+- **Rationale:** The `parseMode` field added by A2 / A10 / A11 / A12 is a pass-through to PRD-201's `mode` config (PRD-201-R12), which governs the markdown adapter's body-to-block parse strategy. PRD-503 is a runtime SDK contract — its resolvers (`IdentityResolver`, `TenantResolver`, the `resolve_manifest` / `resolve_index` / `resolve_node` / `resolve_subtree` / `resolve_index_ndjson` / `resolve_search` controller methods) accept already-built PRD-100 envelope payloads and emit them via `pydantic` models (see PRD-503-R5 / R6 / R8 / R10 and the §"Wire format / interface definition" `pydantic` model declarations). PRD-503 does not consume any PRD-200-series adapter (PRD-503 §"Non-goals" #8 makes this explicit: "Static-profile producers. Static delivery is owned by PRD-105 + the 200-series adapters. PRD-503 is runtime-only."). How the host produced the `Node` payload it returns from `resolve_node` — including which markdown-adapter parse mode produced its `content` blocks — is invisible to the SDK contract. There is therefore no `parseMode`-equivalent knob to add: PRD-503 cannot expose a parse-mode pass-through because nothing in its surface area consumes the markdown adapter. A future runtime SDK that integrated a built-in markdown converter would be a different scope (likely a v0.2 PRD-50x revision); v0.1 PRD-503 punts source-to-envelope conversion entirely to the host application.
+- **BDFL escalation:** None required. Filed-and-closed per SOP-2 (the call is non-obvious only in the sense of "should we file an A13 for completeness or note its absence?"; the rationale is structurally clean — runtime SDKs are agnostic of source-adapter modes by design).
+- **Closed:** 2026-05-02.
+
+### A14 — PRD-504 (Rails runtime SDK): no parseMode equivalent; sibling sweep N/A
+
+- **PRD:** PRD-504 (Rails runtime SDK, spec-only per Q3).
+- **Section / requirement:** N/A — runtime SDK contract scope.
+- **Surfaced by:** Phase 7 pre-ship sibling-sweep review (2026-05-02) — Spec Steward checking whether PRD-504 needed an analogous spec-only edit alongside A11 / A12.
+- **Verdict (2026-05-02, Spec Steward):** **No amendment needed; out of scope for the parseMode sibling-sweep.** Filed-and-closed in same triage session per SOP-2.
+- **Rationale:** Same as A13 with the Ruby/Rails idiom substituted. PRD-504's controller surface (`ActsController` with `resolve_manifest` / `resolve_index` / `resolve_node` / `resolve_subtree` / `resolve_index_ndjson` / `resolve_search`, returning `Act::Outcome::*` value objects per PRD-504-R5 / R6) accepts already-built PRD-100 envelopes and emits them via `Data.define(...)` value objects. PRD-504 does not consume any PRD-200-series adapter; the host application is responsible for producing `Node` payloads however it likes (CMS query, file load, ActiveRecord scope, etc.) and the SDK simply transports them through Rails's dispatch primitives. No `parseMode`-equivalent knob exists on PRD-504's surface for the same structural reason as A13: runtime SDKs are agnostic of source-adapter modes by design.
+- **BDFL escalation:** None required. Filed-and-closed per SOP-2.
+- **Closed:** 2026-05-02.
 
 ### A1 — PRD-200: dedupe rule for `metadata.translations` array merge
 
@@ -181,3 +220,4 @@ Until Phase 6 starts, entries are queued — **no Accepted PRD is silently amend
 | 2026-05-02 | Jeremy Forsythe (BDFL) | Signed off A2: PRD-404 `In review → Accepted` (additive `parseMode` field, default `"coarse"` non-breaking; MINOR bump per PRD-108-R4(1)). Sibling-sweep recommendation accepted: filed A10 (PRD-408 Eleventy, Track B day-1 pickup), A11 (PRD-402 Hugo, spec-only, pre-ship sweep), A12 (PRD-403 MkDocs, spec-only, pre-ship sweep) as Open entries. Phase 6.2 Track B starts with PRD-300 → 301 → 302 → 303 then reaches PRD-404 (now Accepted with the new field) before PRD-408. Tracks A and C remain unblocked. Track D still gates on A4. |
 | 2026-05-02 | Spec Steward | Routed A4 (PRD-602 hybrid multi-mount construction shape) through SOP-4 In review with a MINOR bump per PRD-108-R4(1). Authored the additive amendment surface on `prd/602-act-mcp-bridge.md`: PRD-602-R24 amended with optional `mounts?: BridgeMount[]` (and a minimal `StaticSource = { kind: 'static', manifestUrl, rootDir? }` shape consumed by the same walker PRD-600-R11 / PRD-706-R13 use); PRD-602-R3 restated to apply level validation per-mount; PRD-602-R5 restated so a single bridge identity covers all mounts (per PRD-706-R12 / R14); PRD-602-R6 restated to interleave the mount prefix into the canonical URI when `mounts` is supplied; PRD-602-R10 restated so per-mount IdentityBridge applies (optional for static-source mounts); PRD-602-R11 restated so per-mount subtree advertisement is independent. Status flipped Accepted → In review pending BDFL sign-off; positive fixture row `fixtures/602/positive/hybrid-runtime-plus-static.json` and negative fixture row `fixtures/602/negative/mounts-overlap-prefix/` enumerated under PRD-602's `## Test fixtures` (files not authored — Track D will create JSON when implementing). A4 moved to Closed. Track D's PRD-602 + PRD-706 implementation unblocked once BDFL signs off and PRD-602 returns to Accepted. No new LQ entries surfaced; the additive interpretation was clean (no MUST broken, no field removed, no `mounts`-omitted default behavior changed) so no escalation under PRD-108-R6 was triggered. |
 | 2026-05-02 | Jeremy Forsythe (BDFL) | Signed off A4: PRD-602 `In review → Accepted` (additive `BridgeConfig.mounts` field with minimal `StaticSource` shape; per-mount restatements of R3/R5/R6/R10/R11 accepted verbatim; default-omitted path byte-identical to pre-amendment behavior; MINOR bump per PRD-108-R4(1)). Phase 6.2 Track D fully unblocked: PRD-601 (inspector CLI) → PRD-602 (now with multi-mount surface) → PRD-706 (hybrid example). All Phase 6.2 prework gates now closed: ADRs 001-004 ratified, LQ-1 closed, A1/A2/A3/A4 closed, A8/A9 already closed. A5/A6/A7 remain Open with documented conservative interpretations (non-blocking, deferred to G3 amendment triage). A10/A11/A12 are Open follow-ups for the parseMode sibling sweep (Track B / pre-ship). Phase 6.2 fan-out begins. |
+| 2026-05-02 | Spec Steward | Phase 7 pre-ship sibling-sweep close. Closed A10 (PRD-408 Eleventy `parseMode` added to PRD-408-R12 + `EleventyActOptions` interface — SOP-3 inline-edit on a BDFL-pre-cleared additive change; spec edit landed ahead of Track B implementation pickup), A11 (PRD-402 Hugo `parseMode` added to PRD-402-R4's `[params.act]` TOML config, with the existing `mode` key preserved as a backward-compat alias — SOP-3, spec-only PRD), and A12 (PRD-403 MkDocs `parse_mode` added to PRD-403-R4's `config_scheme` and the prosaic `config_scheme` block, with the existing `block_strategy` key preserved as a backward-compat alias — SOP-3, spec-only PRD). All three are MINOR bumps per PRD-108-R4(1) (additive optional field; default `"coarse"` preserves byte-identical behavior on the omitted path); each PRD's level-mismatch behavior matches PRD-201-R23 verbatim. Filed-and-closed A13 (PRD-503 FastAPI runtime SDK) and A14 (PRD-504 Rails runtime SDK) per SOP-2: runtime SDKs are agnostic of source-adapter modes by design (PRD-503 §"Non-goals" #8 makes this explicit — runtime SDKs do not consume any PRD-200-series adapter); resolvers transport already-built PRD-100 envelopes through Rails / FastAPI dispatch primitives, so there is no `parseMode`-equivalent knob to add. Sibling sweep complete. After this entry the amendments queue has no Phase-7-blocking Open entries; A5/A6/A7 stay Open with documented conservative interpretations as expected. |
