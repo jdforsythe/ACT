@@ -13,6 +13,7 @@
     { "path": "./packages/programmatic-adapter" },
     { "path": "./packages/generator-core" },
     { "path": "./packages/astro" },
+    { "path": "./packages/cli" },
     { "path": "./packages/component-contract" },
     { "path": "./packages/component-react" },
     { "path": "./packages/component-vue" },
