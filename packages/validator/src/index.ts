@@ -40,7 +40,13 @@ export {
 export { findChildrenCycle, hasSelfCycle } from './cycles.js';
 export { findMountOverlaps, type MountFinding } from './mounts.js';
 export { ETAG_LOOSE_RE, ETAG_S256_RE, deriveEtag, deriveEtagFromCanonicalBytes, jcs, stripEtag } from './etag.js';
-export { ajvErrorToRequirement, getCompiledSchemas, loadSchemas } from './schemas.js';
+export {
+  ajvErrorToRequirement,
+  compileSchemasFromRaw,
+  getCompiledSchemas,
+  loadSchemas,
+  setCompiledSchemas,
+} from './schemas.js';
 
 // CLI dispatch (importable for testing; the binary in `bin/` calls this).
 export { parseCliArgs, runCli, type CliSink } from './cli.js';

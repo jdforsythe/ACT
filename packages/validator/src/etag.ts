@@ -12,7 +12,12 @@
  * This module is also the home of the strict admit-list regex (PRD-103-R3)
  * and helpers for PRD-600-R6 / R7.
  */
-import { createHash } from 'node:crypto';
+// Use a namespace import so the browser bundler (Vite/Rollup) can resolve
+// `node:crypto` to a no-op stub without choking on a named-import
+// destructuring against the stub. The browser SPA never reaches the
+// `createHash` call site (etag re-derivation is a Node-only flow); when
+// run in Node the namespace lookup resolves correctly.
+import * as nodeCrypto from 'node:crypto';
 
 /** PRD-103-R3 strict admit-list. */
 export const ETAG_S256_RE = /^s256:[A-Za-z0-9_-]{22}$/;
@@ -171,6 +176,6 @@ export function deriveEtag(payload: unknown): string {
  * value (PRD-103-R7 worked example).
  */
 export function deriveEtagFromCanonicalBytes(bytes: string): string {
-  const digest = createHash('sha256').update(bytes, 'utf8').digest();
+  const digest = nodeCrypto.createHash('sha256').update(bytes, 'utf8').digest();
   return `s256:${base64url(digest).slice(0, 22)}`;
 }

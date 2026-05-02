@@ -9,10 +9,25 @@
  * Per PRD-600-R1 and PRD-100-R0, the files in `schemas/` are authoritative;
  * this loader does NOT carry inline copies. ADR-002 records the choice of
  * Ajv 8 (NIH ban — don't hand-roll JSON Schema).
+ *
+ * Browser compatibility note (PRD-600-R28 / Q8): the Node-only `node:fs` /
+ * `node:path` / `node:url` static imports stay at the top so the type
+ * checker resolves cleanly, but the side-effectful repo-root probe is
+ * wrapped in a `try/catch` at module init. This module can therefore be
+ * safely loaded inside a browser bundle (Vite / Rollup resolve `node:*`
+ * to no-op stubs); the SPA seeds the cache via {@link setCompiledSchemas}
+ * + {@link compileSchemasFromRaw} and never calls {@link loadSchemas}, so
+ * the no-op stubs are never invoked.
  */
-import { readFileSync, readdirSync, statSync } from 'node:fs';
+// Use namespace imports for the Node-only modules. The browser bundler
+// resolves `node:*` to a no-op stub; named-import destructuring against the
+// stub crashes the bundler's static analysis even when the references live
+// inside a try/catch'd function body. Namespace imports defer the property
+// reads to runtime, where the no-op stub returns `undefined` and our
+// `try/catch` (or `loadSchemas`'s SCHEMAS_DIR === '' guard) handles it.
+import * as fs from 'node:fs';
 import * as path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import * as url from 'node:url';
 // ajv 8 default-imports the constructor directly under our ESM resolution.
 // The cast is a TypeScript ergonomics aid — the runtime value is correct.
 import Ajv2020Module from 'ajv/dist/2020.js';
@@ -25,7 +40,6 @@ type AddFormats = (ajv: AjvType) => unknown;
 const Ajv2020 = Ajv2020Module as unknown as Ajv2020Ctor;
 const addFormats = addFormatsModule as unknown as AddFormats;
 
-const here = path.dirname(fileURLToPath(import.meta.url));
 /**
  * Anchor: walk upward from this file until we find a directory with a `schemas`
  * sibling. This makes the loader resilient to whether it runs from
@@ -37,7 +51,7 @@ export function findRepoRoot(start: string): string {
   for (let i = 0; i < 10; i += 1) {
     const cand = path.join(dir, 'schemas');
     try {
-      if (statSync(cand).isDirectory()) return dir;
+      if (fs.statSync(cand).isDirectory()) return dir;
     } catch {
       // keep climbing
     }
@@ -48,8 +62,24 @@ export function findRepoRoot(start: string): string {
   throw new Error(`could not locate repo root with a 'schemas/' directory starting from ${start}`);
 }
 
-export const REPO_ROOT = findRepoRoot(here);
-export const SCHEMAS_DIR = path.join(REPO_ROOT, 'schemas');
+/**
+ * Resolve the repo root at module-evaluation time. In Node hosts this gives
+ * the directory containing `schemas/`. In browser bundles `fileURLToPath`
+ * is unavailable (the bundler resolves `node:url` to a no-op stub); we
+ * swallow the resulting `TypeError` and leave the constants empty. Only
+ * {@link loadSchemas} reads them, and the SPA never calls `loadSchemas`.
+ */
+function probeRepoRoot(): string {
+  try {
+    const here = path.dirname(url.fileURLToPath(import.meta.url));
+    return findRepoRoot(here);
+  } catch {
+    return '';
+  }
+}
+
+export const REPO_ROOT = probeRepoRoot();
+export const SCHEMAS_DIR = REPO_ROOT === '' ? '' : path.join(REPO_ROOT, 'schemas');
 
 /**
  * The five PRD-100 wire-format schemas plus the cross-cutting PRD-103 etag
@@ -76,27 +106,36 @@ interface RawSchema {
 
 function readSchema(rel: string): RawSchema {
   const abs = path.join(SCHEMAS_DIR, rel);
-  return JSON.parse(readFileSync(abs, 'utf8')) as RawSchema;
+  return JSON.parse(fs.readFileSync(abs, 'utf8')) as RawSchema;
 }
 
 function readAllSchemas(): RawSchema[] {
   const out: RawSchema[] = [];
-  for (const series of readdirSync(SCHEMAS_DIR)) {
+  for (const series of fs.readdirSync(SCHEMAS_DIR)) {
     if (!/^\d{3}$/.test(series)) continue;
     const seriesDir = path.join(SCHEMAS_DIR, series);
-    for (const file of readdirSync(seriesDir).filter((f) => f.endsWith('.schema.json'))) {
-      out.push(JSON.parse(readFileSync(path.join(seriesDir, file), 'utf8')) as RawSchema);
+    for (const file of fs.readdirSync(seriesDir).filter((f) => f.endsWith('.schema.json'))) {
+      out.push(JSON.parse(fs.readFileSync(path.join(seriesDir, file), 'utf8')) as RawSchema);
     }
   }
   return out;
 }
 
+const SCHEMA_ID = (name: string): string =>
+  `https://act-spec.org/schemas/0.1/${name}.schema.json`;
+
 /**
  * Load every schema under `schemas/`, register them with a fresh Ajv instance
  * (so cross-schema `$ref` works via canonical `$id`), and compile validators
- * for the seven shapes the validator's public API exposes.
+ * for the seven shapes the validator's public API exposes. Node-only.
  */
 export function loadSchemas(): CompiledSchemas {
+  if (SCHEMAS_DIR === '') {
+    throw new Error(
+      'loadSchemas: SCHEMAS_DIR could not be resolved (likely a browser host). ' +
+        'Use compileSchemasFromRaw + setCompiledSchemas instead.',
+    );
+  }
   const ajv = new Ajv2020({ allErrors: true, strict: false, allowUnionTypes: true });
   addFormats(ajv);
 
@@ -109,12 +148,9 @@ export function loadSchemas(): CompiledSchemas {
 
   // Pull each schema's compiled validator via `getSchema(<$id>)` so we
   // do not re-register and trigger Ajv's "schema already exists" check.
-  // The `addSchema` loop above guarantees presence; the assertion is the
-  // contract.
   const pickCompiled = (id: string): ValidateFunction =>
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     ajv.getSchema(id)!;
-  const ID = (name: string): string => `https://act-spec.org/schemas/0.1/${name}.schema.json`;
 
   // The IndexEntry sub-schema lives only inside index.schema.json's `$defs`;
   // compile it directly so NDJSON line validation can skip the outer wrapper.
@@ -124,13 +160,13 @@ export function loadSchemas(): CompiledSchemas {
   const indexEntry = ajv.compile(indexSchema.$defs.IndexEntry);
 
   return {
-    manifest: pickCompiled(ID('manifest')),
-    index: pickCompiled(ID('index')),
+    manifest: pickCompiled(SCHEMA_ID('manifest')),
+    index: pickCompiled(SCHEMA_ID('index')),
     indexEntry,
-    node: pickCompiled(ID('node')),
-    subtree: pickCompiled(ID('subtree')),
-    error: pickCompiled(ID('error')),
-    etag: pickCompiled(ID('etag')),
+    node: pickCompiled(SCHEMA_ID('node')),
+    subtree: pickCompiled(SCHEMA_ID('subtree')),
+    error: pickCompiled(SCHEMA_ID('error')),
+    etag: pickCompiled(SCHEMA_ID('etag')),
   };
 }
 
@@ -142,6 +178,65 @@ let cached: CompiledSchemas | undefined;
 export function getCompiledSchemas(): CompiledSchemas {
   if (!cached) cached = loadSchemas();
   return cached;
+}
+
+/**
+ * Compile a pre-loaded set of raw JSON Schema documents into the validator's
+ * `CompiledSchemas` shape. Exposed for browser hosts (the hosted SPA per
+ * Q8 / PRD-600-R28) where `loadSchemas()` cannot run because it reads from
+ * `node:fs`. Bundlers (Vite, esbuild) can statically import the JSON files
+ * under `schemas/{NNN}/*.schema.json`, then hand the array to this function
+ * and seed the singleton via {@link setCompiledSchemas}. The Node CLI path
+ * is unaffected.
+ *
+ * @param raw — every schema document under `schemas/`. Order does not matter;
+ *   cross-`$ref` resolution happens by `$id` after all are registered.
+ */
+export function compileSchemasFromRaw(raw: readonly RawSchema[]): CompiledSchemas {
+  const ajv = new Ajv2020({ allErrors: true, strict: false, allowUnionTypes: true });
+  addFormats(ajv);
+
+  for (const schema of raw) {
+    if (typeof schema.$id === 'string') {
+      ajv.addSchema(schema);
+    }
+  }
+
+  const pickCompiled = (id: string): ValidateFunction =>
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    ajv.getSchema(id)!;
+
+  // The IndexEntry sub-schema lives only inside index.schema.json's `$defs`;
+  // compile it directly so NDJSON line validation can skip the outer wrapper.
+  const indexSchema = raw.find(
+    (s) => s.$id === SCHEMA_ID('index'),
+  ) as (RawSchema & { $defs?: { IndexEntry?: RawSchema } }) | undefined;
+  if (!indexSchema || !indexSchema.$defs || !indexSchema.$defs.IndexEntry) {
+    throw new Error(
+      `compileSchemasFromRaw: index schema (${SCHEMA_ID('index')}) with $defs.IndexEntry not present in raw bundle.`,
+    );
+  }
+  const indexEntry = ajv.compile(indexSchema.$defs.IndexEntry);
+
+  return {
+    manifest: pickCompiled(SCHEMA_ID('manifest')),
+    index: pickCompiled(SCHEMA_ID('index')),
+    indexEntry,
+    node: pickCompiled(SCHEMA_ID('node')),
+    subtree: pickCompiled(SCHEMA_ID('subtree')),
+    error: pickCompiled(SCHEMA_ID('error')),
+    etag: pickCompiled(SCHEMA_ID('etag')),
+  };
+}
+
+/**
+ * Seed the cached schema bundle from a pre-compiled set. Intended for browser
+ * hosts that build the bundle via {@link compileSchemasFromRaw} at startup;
+ * Node hosts should let {@link getCompiledSchemas} lazy-init via
+ * {@link loadSchemas}.
+ */
+export function setCompiledSchemas(compiled: CompiledSchemas): void {
+  cached = compiled;
 }
 
 /**

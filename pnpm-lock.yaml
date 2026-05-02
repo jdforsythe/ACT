@@ -45,6 +45,28 @@ importers:
         specifier: ^2.1.4
         version: 2.1.9(@types/node@22.19.17)(terser@5.46.2)
 
+  apps/validator-web:
+    dependencies:
+      '@act-spec/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      '@act-spec/validator':
+        specifier: workspace:*
+        version: link:../../packages/validator
+    devDependencies:
+      tsx:
+        specifier: ^4.19.2
+        version: 4.21.0
+      typescript:
+        specifier: ^5.6.3
+        version: 5.9.3
+      vite:
+        specifier: ^5.4.10
+        version: 5.4.21(@types/node@22.19.17)(terser@5.46.2)
+      vitest:
+        specifier: ^2.1.4
+        version: 2.1.9(@types/node@22.19.17)(terser@5.46.2)
+
   examples/700-tinybox:
     dependencies:
       '@act-spec/astro':

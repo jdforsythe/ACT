@@ -25,7 +25,7 @@ export default tseslint.config(
       parserOptions: {
         // Per-package lint tsconfigs that include source + test files so the
         // type-aware lint rules can resolve every file ESLint visits.
-        project: ['./packages/*/tsconfig.eslint.json'],
+        project: ['./packages/*/tsconfig.eslint.json', './apps/*/tsconfig.eslint.json'],
         tsconfigRootDir: import.meta.dirname,
       },
     },
@@ -53,6 +53,13 @@ export default tseslint.config(
       '@typescript-eslint/require-await': 'off',
       '@typescript-eslint/no-unnecessary-type-assertion': 'off',
       '@typescript-eslint/no-non-null-assertion': 'off',
+    },
+  },
+  {
+    // Browser SPA: DOM globals + browser globals for the validator-web app.
+    files: ['apps/*/src/**/*.ts', 'apps/*/vite.config.ts'],
+    languageOptions: {
+      globals: { ...globals.browser, ...globals.node },
     },
   },
   prettier,

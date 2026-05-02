@@ -12,7 +12,8 @@
   },
   "workspaces": [
     "packages/*",
-    "examples/*"
+    "examples/*",
+    "apps/*"
   ],
   "scripts": {
     "build": "pnpm -r --filter \"./packages/*\" run build",

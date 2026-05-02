@@ -1,0 +1,80 @@
+name: GitHub Pages (validator SPA)
+
+# Builds the hosted validator SPA (apps/validator-web) and deploys it to
+# GitHub Pages. Per Q8 / PRD-600-R28 the SPA serves at /validator/ on the
+# project's GitHub Pages site; the workflow places the build output under
+# `dist/validator/` so the eventual root site (spec docs) can co-exist as
+# `dist/<other-static-sites>/` without collision.
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '10.17.1'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Generate @act-spec/core types from schemas/
+        run: pnpm -F @act-spec/core codegen
+      - name: Build @act-spec/validator (peer dep)
+        run: pnpm -F @act-spec/validator build
+      - name: Build validator-web SPA
+        env:
+          # PRD-600-R28: served at /validator/ on the Pages site.
+          VALIDATOR_WEB_BASE: /validator/
+        run: pnpm -F @act-spec/validator-web build
+      - name: Assemble Pages artifact
+        run: |
+          mkdir -p _site/validator
+          cp -R apps/validator-web/dist/* _site/validator/
+          # Root landing page that points users at the validator (and any
+          # future static sites — spec docs etc. — alongside it).
+          cat > _site/index.html <<'EOF'
+          <!doctype html>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8" />
+              <title>ACT spec — static sites</title>
+              <meta http-equiv="refresh" content="0; url=./validator/" />
+              <link rel="canonical" href="./validator/" />
+            </head>
+            <body>
+              <p>Redirecting to the <a href="./validator/">ACT validator</a>…</p>
+            </body>
+          </html>
+          EOF
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -2,12 +2,17 @@
  * Tests for the schema bundle loader (PRD-600-R1).
  */
 import { describe, expect, it } from 'vitest';
+import { readFileSync, readdirSync } from 'node:fs';
+import * as path from 'node:path';
 import {
   _resetCompiledSchemasForTest,
   ajvErrorToRequirement,
+  compileSchemasFromRaw,
   findRepoRoot,
   getCompiledSchemas,
   loadSchemas,
+  setCompiledSchemas,
+  SCHEMAS_DIR,
 } from './schemas.js';
 
 describe('loadSchemas / getCompiledSchemas', () => {
@@ -31,6 +36,55 @@ describe('loadSchemas / getCompiledSchemas', () => {
 
   it('findRepoRoot throws when no schemas/ ancestor exists', () => {
     expect(() => findRepoRoot('/')).toThrow(/could not locate repo root/);
+  });
+});
+
+describe('compileSchemasFromRaw / setCompiledSchemas (browser-host injection path)', () => {
+  /** Read every schemas/{NNN}/*.schema.json from disk for the test fixture. */
+  function readAllRawSchemas(): { $id?: string; [k: string]: unknown }[] {
+    const out: { $id?: string; [k: string]: unknown }[] = [];
+    for (const series of readdirSync(SCHEMAS_DIR)) {
+      if (!/^\d{3}$/.test(series)) continue;
+      const seriesDir = path.join(SCHEMAS_DIR, series);
+      for (const file of readdirSync(seriesDir).filter((f) => f.endsWith('.schema.json'))) {
+        out.push(
+          JSON.parse(readFileSync(path.join(seriesDir, file), 'utf8')) as {
+            $id?: string;
+            [k: string]: unknown;
+          },
+        );
+      }
+    }
+    return out;
+  }
+
+  it('compileSchemasFromRaw produces the same shape as loadSchemas() (PRD-600-R1, browser path)', () => {
+    const raw = readAllRawSchemas();
+    const compiled = compileSchemasFromRaw(raw);
+    expect(typeof compiled.manifest).toBe('function');
+    expect(typeof compiled.index).toBe('function');
+    expect(typeof compiled.indexEntry).toBe('function');
+    expect(typeof compiled.node).toBe('function');
+    expect(typeof compiled.subtree).toBe('function');
+    expect(typeof compiled.error).toBe('function');
+    expect(typeof compiled.etag).toBe('function');
+  });
+
+  it('setCompiledSchemas seeds the singleton (browser SPA startup path)', () => {
+    _resetCompiledSchemasForTest();
+    const raw = readAllRawSchemas();
+    const compiled = compileSchemasFromRaw(raw);
+    setCompiledSchemas(compiled);
+    // getCompiledSchemas now returns the seeded bundle without touching fs.
+    expect(getCompiledSchemas()).toBe(compiled);
+    _resetCompiledSchemasForTest();
+  });
+
+  it('compileSchemasFromRaw throws when index schema is absent from the bundle', () => {
+    const raw = readAllRawSchemas().filter(
+      (s) => s.$id !== 'https://act-spec.org/schemas/0.1/index.schema.json',
+    );
+    expect(() => compileSchemasFromRaw(raw)).toThrow(/index schema/);
   });
 });
 

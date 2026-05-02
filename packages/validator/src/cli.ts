@@ -5,8 +5,16 @@
  * sink, returning the exit code. The package's `bin` shim invokes it with
  * `process.argv.slice(2)`.
  */
-import { readFileSync } from 'node:fs';
-import { parseArgs, type ParseArgsConfig } from 'node:util';
+// Namespace imports for the Node-only modules so the browser bundler
+// (Vite/Rollup) can resolve `node:*` to a no-op stub without choking on a
+// named-import destructuring against the stub. Browser hosts never reach
+// the cli.ts code path (the SPA wraps the per-envelope validators
+// directly), but `runCli` is still re-exported from `@act-spec/validator`
+// for advanced testing — and the bundler's tree-shaker visits this file
+// regardless.
+import * as fs from 'node:fs';
+import * as nodeUtil from 'node:util';
+import type { ParseArgsConfig } from 'node:util';
 import { ACT_VERSION, VALIDATOR_VERSION } from './version.js';
 import {
   validateError,
@@ -90,7 +98,7 @@ export interface Parsed {
 export function parseCliArgs(argv: readonly string[]): { ok: true; values: Parsed } | { ok: false; error: string } {
   let raw;
   try {
-    raw = parseArgs({ ...ARG_CONFIG, args: [...argv] });
+    raw = nodeUtil.parseArgs({ ...ARG_CONFIG, args: [...argv] });
   } catch (err) {
     return { ok: false, error: (err as Error).message };
   }
@@ -165,7 +173,7 @@ export async function runCli(
   if (v.file !== undefined) {
     let content: string;
     try {
-      content = readFileSync(v.file, 'utf8');
+      content = fs.readFileSync(v.file, 'utf8');
     } catch (err) {
       sink.stderr(`act-validate: cannot read ${v.file}: ${(err as Error).message}\n`);
       return 2;
