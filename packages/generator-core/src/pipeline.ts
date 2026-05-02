@@ -1,11 +1,11 @@
 /**
  * PRD-400 generator pipeline — framework code shared by every leaf generator.
  *
- * Per ADR-003, this code lives in `@act-spec/astro` (not `@act-spec/core`)
- * because Astro is the only first-party generator in v0.1. When PRD-405
- * (Next.js) lands as v0.2 work, the PRD-400 framework code should be
- * extracted to `@act-spec/generator-core` (Lead's call at that point —
- * three-consumers rule).
+ * Extracted from `@act-spec/astro` per ADR-006 (trigger: ADR-004 §"Seam 2"
+ * + Phase 6.2 Track B beginning with PRD-404 Docusaurus). Every first-party
+ * generator (PRD-401 Astro, PRD-404 Docusaurus, PRD-405 Next.js, PRD-406
+ * Remix, PRD-407 Nuxt, PRD-408 Eleventy, PRD-409 CLI) imports the pipeline,
+ * envelope builders, and capability/pinning helpers from this module.
  *
  * Every export cites a PRD-400 requirement and is exercised by at least one
  * test in `pipeline.test.ts`.
@@ -19,13 +19,13 @@ import type {
   AdapterCapabilities,
   AdapterContext,
   AdapterRunResult,
-} from '@act-spec/markdown-adapter';
+} from '@act-spec/adapter-framework';
 import {
   bubbleManifestCapabilities,
   checkAdapterPinning,
   mergeRuns,
   runAdapter,
-} from '@act-spec/markdown-adapter';
+} from '@act-spec/adapter-framework';
 import {
   deriveEtag,
   stripEtag,
@@ -279,7 +279,7 @@ export function enforceTargetLevel(
   }
 }
 
-/** PRD-400-R29/R30 — adapter pinning enforcement via @act-spec/markdown-adapter helper. */
+/** PRD-400-R29/R30 — adapter pinning enforcement via @act-spec/adapter-framework helper. */
 export function enforceAdapterPinning(config: GeneratorConfig): void {
   for (const a of config.adapters) {
     checkAdapterPinning(

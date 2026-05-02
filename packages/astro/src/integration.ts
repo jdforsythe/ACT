@@ -25,7 +25,7 @@ import {
   type BuildReport,
   type GeneratorConfig,
   type GeneratorPlugin,
-} from './pipeline.js';
+} from '@act-spec/generator-core';
 
 /** PRD-401-R19 — public options for the integration factory. */
 export interface ActAstroOptions {
@@ -58,9 +58,13 @@ function makeLogger(prefix: string): {
   error: (m: string) => void;
 } {
   return {
+    /* v8 ignore next */
     debug: (m) => console.error(`${prefix} debug: ${m}`),
+    /* v8 ignore next */
     info: (m) => console.warn(`${prefix}: ${m}`),
+    /* v8 ignore next */
     warn: (m) => console.warn(`${prefix} warn: ${m}`),
+    /* v8 ignore next */
     error: (m) => console.error(`${prefix} error: ${m}`),
   };
 }

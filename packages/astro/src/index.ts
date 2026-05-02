@@ -1,14 +1,21 @@
 /**
- * @act-spec/astro — PRD-400 generator pipeline + PRD-401 Astro integration.
+ * @act-spec/astro — PRD-401 Astro generator leaf.
  *
- * The pipeline (PRD-400) lives in `./pipeline.ts`; the Astro plugin
- * (PRD-401) wraps it in `./integration.ts`. Per ADR-003 we keep the
- * pipeline code in this package for now (one consumer); promote to
- * `@act-spec/generator-core` when a second TS leaf generator lands.
+ * Public API. The PRD-400 generator framework now lives in the dedicated
+ * `@act-spec/generator-core` package (per ADR-006, extracted from this
+ * package's pre-Track-B `./pipeline.ts`). For backward compatibility — and
+ * to satisfy ADR-006's stable-surface requirement — every framework symbol
+ * is re-exported here unchanged. New consumers (PRD-404 Docusaurus,
+ * PRD-405 Next.js, PRD-406 Remix, PRD-407 Nuxt, PRD-408 Eleventy, PRD-409
+ * CLI) should import directly from `@act-spec/generator-core`; the
+ * re-exports remain so existing imports of `@act-spec/astro` for framework
+ * symbols continue to work.
+ *
+ * The PRD-401 leaf lives in `./integration.ts`.
  */
 export const ASTRO_PACKAGE_NAME = '@act-spec/astro' as const;
 
-// PRD-400 framework exports.
+// PRD-400 framework — re-exported from @act-spec/generator-core (ADR-006).
 export type {
   BuildContext,
   BuildReport,
@@ -16,7 +23,7 @@ export type {
   GeneratorPlugin,
   PipelineOutcome,
   PipelineRun,
-} from './pipeline.js';
+} from '@act-spec/generator-core';
 export {
   PIPELINE_FRAMEWORK_VERSION,
   VERSIONED_TREES_SUPPORTED,
@@ -32,7 +39,7 @@ export {
   inferAchievedLevel,
   runPipeline,
   verifyCapabilityBacking,
-} from './pipeline.js';
+} from '@act-spec/generator-core';
 
 // PRD-401 leaf exports.
 export type { ActAstroOptions, ActIntegration, RouteActExport } from './integration.js';

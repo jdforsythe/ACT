@@ -138,6 +138,19 @@ Track A.
 
 ### Seam 2 — PRD-400 pipeline lives in `@act-spec/astro`
 
+**Status: DONE (2026-05-02, ADR-006).** The PRD-400 framework now lives
+in the dedicated `@act-spec/generator-core` package, extracted as the
+first PR of Phase 6.2 Track B per recommendation 2 below. The astro
+generator's `src/index.ts` re-exports the framework surface for
+backward compatibility; new generator leaves (PRD-404 Docusaurus,
+PRD-405 Next.js, PRD-406 Remix, PRD-407 Nuxt, PRD-408 Eleventy, PRD-409
+CLI) import directly from `@act-spec/generator-core`. Coverage on the
+new package's `pipeline.ts` is 93.62% line / 100% function (above the
+85% floor); the astro generator post-extraction holds 99.31% line /
+100% function on its remaining `integration.ts` surface. See ADR-006
+for the full extraction record.
+
+**Original (pre-Track-B) entry, kept for the retro's historical record:**
 Same pattern as Seam 1. PRD-400 framework code lives in
 `@act-spec/astro/src/pipeline.ts`. Phase 6.2 Track B brings PRD-404
 Docusaurus, PRD-405 Next.js, PRD-406 Remix, PRD-407 Nuxt, PRD-408

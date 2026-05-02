@@ -11,8 +11,6 @@
   "references": [
     { "path": "../core" },
     { "path": "../adapter-framework" },
-    { "path": "../generator-core" },
-    { "path": "../markdown-adapter" },
     { "path": "../validator" }
   ]
 }

@@ -115,7 +115,7 @@ Build-tool integrations that take adapter output + component contracts and emit 
 
 | ID | Title | Status | Impl status | Depends on | Blocks | Size | Phase |
 |---|---|---|---|---|---|---|---|
-| PRD-400 | Generator architecture (shared pipeline, plugin targets) | Accepted | Implemented (via @act-spec/astro; pipeline code per ADR-003) | 105, 200, 300 | 401–409 | L | P2 |
+| PRD-400 | Generator architecture (shared pipeline, plugin targets) | Accepted | Implemented (@act-spec/generator-core; per ADR-006) | 105, 200, 300 | 401–409 | L | P2 |
 | PRD-401 | Astro plugin | Accepted | Implemented (@act-spec/astro) | 400, 301 | 700 | M | P2 |
 | PRD-402 | Hugo module | Accepted (spec only) | Spec-only — out of scope for v0.1 TS impl | 400, 201 | 703 | M | P2 |
 | PRD-403 | MkDocs plugin | Accepted (spec only) | Spec-only — out of scope for v0.1 TS impl | 400, 201 | — | M | P2 |

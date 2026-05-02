@@ -126,9 +126,15 @@ importers:
 
   packages/astro:
     dependencies:
+      '@act-spec/adapter-framework':
+        specifier: workspace:*
+        version: link:../adapter-framework
       '@act-spec/core':
         specifier: workspace:*
         version: link:../core
+      '@act-spec/generator-core':
+        specifier: workspace:*
+        version: link:../generator-core
       '@act-spec/markdown-adapter':
         specifier: workspace:*
         version: link:../markdown-adapter
@@ -349,6 +355,34 @@ importers:
       json-schema-to-typescript:
         specifier: ^15.0.3
         version: 15.0.4
+      tsx:
+        specifier: ^4.19.2
+        version: 4.21.0
+      typescript:
+        specifier: ^5.6.3
+        version: 5.9.3
+      vitest:
+        specifier: ^2.1.4
+        version: 2.1.9(@types/node@22.19.17)
+
+  packages/generator-core:
+    dependencies:
+      '@act-spec/adapter-framework':
+        specifier: workspace:*
+        version: link:../adapter-framework
+      '@act-spec/core':
+        specifier: workspace:*
+        version: link:../core
+      '@act-spec/validator':
+        specifier: workspace:*
+        version: link:../validator
+    devDependencies:
+      '@act-spec/markdown-adapter':
+        specifier: workspace:*
+        version: link:../markdown-adapter
+      '@vitest/coverage-v8':
+        specifier: ^2.1.9
+        version: 2.1.9(vitest@2.1.9(@types/node@22.19.17))
       tsx:
         specifier: ^4.19.2
         version: 4.21.0
