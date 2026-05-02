@@ -16,6 +16,15 @@ Until Phase 6 starts, entries are queued — **no Accepted PRD is silently amend
 
 ## Open entries
 
+### A15 — PRD-301-R20: capability matrix vs v0.1 binding implementation surface
+
+- **PRD:** PRD-301 (React binding)
+- **Section / requirement:** PRD-301-R20 (capability matrix table) vs PRD-300-R28 (capabilities MUST be set truthfully) and PRD-301-R11 (streaming SSR `onAllReady` wiring), PRD-301-R24/R25 (static-AST scanner), PRD-301-R26 (headless-render sub-export).
+- **Surfaced by:** Adapter & Generator Engineer / Phase 6.2 Track B (2026-05-02) during PRD-301 implementation.
+- **Observed problem:** PRD-301-R20's table pins `streaming: true`, `suspense: true`, `static-ast: true` on the default `@act-spec/component-react` capability matrix. The v0.1 reference binding ships only the **synchronous** SSR-walk path via `react-dom/server.renderToString` (no streaming, no `onAllReady` wait per PRD-301-R11), no Babel/SWC static-AST plugin (PRD-301-R24/R25 are Plus-band and out of scope for the first PRD-301 leaf), and no headless-render sub-export (PRD-301-R26 is Plus-band). PRD-300-R28 says capability flags MUST be set truthfully; PRD-301-R20 itself reiterates the rule. Two PRD-301 requirements conflict: R20 pins specific values, R28-via-R20 requires truthfulness. The binding cannot satisfy both unless the implementation matches the matrix literally.
+- **Proposed fix (trivial clarification, two-sentence edit):** Amend PRD-301-R20's table prose to state "the values below are the published v0.1 *target*; bindings MUST set every flag truthfully per PRD-300-R28 and MAY publish lower values for any capability not yet implemented." Then leave the v0.1 reference binding shipping `streaming: false`, `suspense: false`, `static-ast: false`, `headless-render: false` until R11 + R24/R25 + R26 implementation milestones land. The follow-up implementation lands the streaming path (R11 → flips streaming + suspense to true), the Babel/SWC plugin (R24/R25 → flips static-ast to true), and the `@act-spec/component-react/headless` sub-export (R26 → flips headless-render to true on that import only). Each flip is MINOR per PRD-108-R4(5).
+- **Triage call:** Trivial-inline (prose qualification on R20). The R20 table is a reference target; truthfulness wins per R28. PRD-302 (Vue) and PRD-303 (Angular) carry the same shape and will benefit from the same qualification.
+
 ### A5 — PRD-100 vs PRD-102: shape of node.related conflicts
 
 - **PRD:** PRD-100 (Wire format), PRD-102 (Content blocks)
