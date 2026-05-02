@@ -16,6 +16,22 @@ Until Phase 6 starts, entries are queued — **no Accepted PRD is silently amend
 
 ## Open entries
 
+### A19 — PRD-409 / PRD-400: `manifest.generated_at` is wall-clock-derived inside `runPipeline`, breaking PRD-103-R4 build determinism
+
+- **PRD:** PRD-409 (Standalone CLI), PRD-400 (Generator pipeline). Wire-format implication: PRD-103 (ETag determinism) + PRD-706-R16 (build byte-equality).
+- **Section / requirement:** PRD-400-R10 (manifest assembly inside `buildManifest`); PRD-103-R4 (static derivation MUST be deterministic across builds with identical inputs); PRD-706-R16 (re-running `act build` with identical adapter inputs MUST produce byte-identical static files).
+- **Surfaced by:** Runtime & Tooling Engineer / Phase 6.3 (2026-05-02) during PRD-706 implementation (`examples/706-hybrid-static-runtime-mcp/`).
+- **Observed problem:** `packages/generator-core/src/pipeline.ts:408` calls `runPipeline(...)` with `generatedAt: new Date().toISOString()` as the only source of the manifest's `generated_at` field. Two consecutive `runBuild` invocations produce manifests whose `generated_at` differs by the inter-build wall-clock delta (millisecond-precision in `toISOString()`), which serializes into the on-disk `.well-known/act.json` and breaks the byte-equality contract PRD-103-R4 / PRD-706-R16 require. The manifest's `etag` is excluded by PRD-100 schema (per A7 conservative interpretation), so the determinism failure is on the manifest body itself rather than on derived ETags — but the failure is observable end-to-end when an operator hashes `dist/` for a CDN-cache-key or for a build-reproducibility audit.
+- **PRD-706 workaround (in-example):** the example's `scripts/build-marketing.ts` explicitly overwrites `manifest.generated_at` with the fixed string `"2026-05-02T00:00:00.000Z"` after `runBuild` returns, before re-writing the manifest. The conformance gate's two-build byte-equality check (PRD-706-R16) passes only because of this in-example overwrite. Filed here so the next Track B / Track D drive surfaces a framework-side fix.
+- **Proposed fix (additive, MINOR per PRD-108-R4(1)):**
+  1. `GeneratorConfig` (in `@act-spec/generator-core/src/pipeline.ts`) gains an optional `generatedAt?: string` field. When supplied, `runPipeline` MUST use that value verbatim in `buildManifest({ ..., generatedAt })`. When absent, the current `new Date().toISOString()` behavior is preserved (byte-identical default for every existing consumer).
+  2. `RunBuildOptions` (in `@act-spec/cli/src/run-build.ts`) gains an optional `generatedAt?: string` mirror that `runBuild` forwards into the resolved `GeneratorConfig`.
+  3. The CLI `act build` subcommand gains a `--generated-at <iso>` flag (NEW additive flag per PRD-409-R2) that sets `RunBuildOptions.generatedAt`.
+  4. PRD-400-R10's normative text gains a single sentence: "When `GeneratorConfig.generatedAt` is supplied, `runPipeline` MUST use that value as the manifest's `generated_at` field. When absent, the current-wall-clock fallback is preserved." Cite PRD-103-R4 and PRD-706-R16 as the determinism rationale.
+- **Alternative (rejected):** make `generated_at` deterministic by default via the highest mtime of the input file set. Rejected because (a) `runPipeline` does not have visibility into the adapter's input filesystem (PRD-200's `Adapter` interface is opaque about source files), and (b) it would silently change the value every existing consumer sees, which is a MAJOR change per PRD-108-R5(1).
+- **Conservative interpretation in v0.1:** PRD-706 example carries the in-script overwrite. PRD-704, PRD-707, PRD-700 are not affected because their conformance gates do not assert byte-equality across builds (PRD-706 is the only example with an explicit determinism check per PRD-706-R16).
+- **Triage call:** Awaiting Spec Steward / BDFL triage. Recommend SOP-4 In-review (additive optional field on `GeneratorConfig` + `RunBuildOptions` + a new CLI flag); no breaking change. PRD-706 unblocks today via the workaround.
+
 ### A18 — PRD-704: file-set paths, framework tokenizer gap, `related[]` shape vs A5 schema, and `summarySource` capability slip
 
 - **PRD:** PRD-704 (E-commerce catalog example).

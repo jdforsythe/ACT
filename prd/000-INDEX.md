@@ -162,7 +162,7 @@ End-to-end builds that exercise the spec and serve as adoption templates. Each e
 | PRD-703 | Blog (Hugo + markdown) | Accepted (spec only) | Spec-only — out of scope for v0.1 TS impl | 402, 201, 600 | — | S | P3 |
 | PRD-704 | E-commerce catalog (programmatic adapter) | Accepted | Implemented (examples/704-ecommerce-catalog) | 208, 600 | — | L | P3 |
 | PRD-705 | B2B SaaS workspace (runtime ACT, Next.js) | Accepted | Implemented (examples/705-saas-workspace-runtime) | 501, 208, 109, 600 | — | L | P3 |
-| PRD-706 | Hybrid static + runtime + MCP bridge | Accepted | Not started | 409, 501, 602, 600 | — | XL | P3 |
+| PRD-706 | Hybrid static + runtime + MCP bridge | Accepted | Implemented (examples/706-hybrid-static-runtime-mcp) | 409, 501, 602, 600 | — | XL | P3 |
 | PRD-707 | Blog (Eleventy + markdown) — TS-impl counterpart to PRD-703 | Accepted | Implemented (examples/707-eleventy-blog) | 408, 201, 600 | — | S | P3 |
 
 ## 800-series — Adoption & ecosystem
