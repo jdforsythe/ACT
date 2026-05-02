@@ -157,7 +157,7 @@ End-to-end builds that exercise the spec and serve as adoption templates. Each e
 | ID | Title | Status | Impl status | Depends on | Blocks | Size | Phase |
 |---|---|---|---|---|---|---|---|
 | PRD-700 | Minimal documentation site (Astro + markdown) | Accepted | Implemented (`examples/700-tinybox/`) | 401, 201, 600 | — | M | P3 |
-| PRD-701 | Large documentation site (Docusaurus + markdown) | Accepted | Not started | 404, 201, 600 | — | M | P3 |
+| PRD-701 | Large documentation site (Docusaurus + markdown) | Accepted | Implemented (examples/701-large-docs-docusaurus) | 404, 201, 600 | — | M | P3 |
 | PRD-702 | Corporate marketing site (Next.js + Contentful + i18n) | Accepted | Not started | 405, 202, 207, 301, 600 | — | L | P3 |
 | PRD-703 | Blog (Hugo + markdown) | Accepted (spec only) | Spec-only — out of scope for v0.1 TS impl | 402, 201, 600 | — | S | P3 |
 | PRD-704 | E-commerce catalog (programmatic adapter) | Accepted | Not started | 208, 600 | — | L | P3 |

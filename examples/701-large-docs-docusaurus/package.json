@@ -1,0 +1,29 @@
+{
+  "name": "@act-spec/example-701-large-docs-docusaurus",
+  "version": "0.0.0",
+  "private": true,
+  "description": "PRD-701 reference example: Tinybox SDK docs — a large Docusaurus 3.x documentation site (200-500 ACT nodes, 4-level sidebar hierarchy) that validates clean against PRD-600 with achieved.level === 'standard'.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "generate-corpus": "tsx scripts/generate-corpus.ts",
+    "build": "tsx scripts/build.ts",
+    "validate": "tsx scripts/validate.ts",
+    "conformance": "tsx scripts/generate-corpus.ts && tsx scripts/build.ts && tsx scripts/validate.ts",
+    "test": "node -e \"console.log('@act-spec/example-701-large-docs-docusaurus: example exercises end-to-end via conformance')\"",
+    "lint": "node -e \"console.log('@act-spec/example-701-large-docs-docusaurus: lint covered by typecheck + conformance')\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@act-spec/adapter-framework": "workspace:*",
+    "@act-spec/docusaurus": "workspace:*",
+    "@act-spec/generator-core": "workspace:*",
+    "@act-spec/markdown-adapter": "workspace:*"
+  },
+  "devDependencies": {
+    "@act-spec/validator": "workspace:*",
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}

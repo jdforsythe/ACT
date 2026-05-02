@@ -16,6 +16,16 @@ Until Phase 6 starts, entries are queued — **no Accepted PRD is silently amend
 
 ## Open entries
 
+### A11 — PRD-404-R6: sidebar-derived parent/children synthesis not auto-applied inside `runActBuild`
+
+- **PRD:** PRD-404 (Docusaurus plugin).
+- **Section / requirement:** PRD-404-R6 (sidebar-to-`parent`/`children` mapping with synthesized `section` parent nodes per category) vs the `postBuild` lifecycle in `packages/docusaurus/src/plugin.ts` (`actDocusaurusPlugin` → `runActBuild` → `runPipeline` + `emitFiles`).
+- **Surfaced by:** Adapter & Generator Engineer / Phase 6.3 (2026-05-02) during PRD-701 implementation.
+- **Observed problem:** `@act-spec/docusaurus` exports the building blocks for sidebar synthesis (`evaluateSidebarsModule`, `deriveParentChildren`, `applySidebarMappingToNodes`, `findOrphanDocs`, `ensureNoCategoryDocCollision`) and `loadContent` resolves `sidebars.js` into `LoadedContent.sidebars`. But `runActBuild` (the `postBuild` entry point) calls `runPipeline` directly without applying the sidebar mapping to the markdown adapter's emitted nodes. The result: a Docusaurus site whose `sidebars.js` declares categories ships an ACT manifest with zero synthesized parents and zero subtree files, silently failing PRD-404-R6 / PRD-107-R8 (Standard subtree contract). PRD-701-R5 / PRD-701-R6 require the synthesis end-to-end at scale.
+- **Proposed fix (semantic-additive — MINOR per PRD-108-R4(5) "feature flip on a previously-emitted-empty surface"):** Wire the existing `applySidebarMappingToNodes` call into the pipeline between `runPipeline`'s adapter merge and `emitFiles`. The cleanest surface is a small in-package "sidebar synthesizer" pseudo-adapter (mirrors PRD-208 programmatic-adapter shape) appended to `resolveConfig`'s auto-wired adapter list when `LoadedContent.sidebars` is non-empty: it emits one partial `{id, parent}` per parented doc and one full `section` node per category. The merge stage (PRD-200-R12 #3) joins them onto the markdown nodes; subtree emission then naturally fires for every category root per PRD-400-R13. Alternatively, add a post-merge hook to `runPipeline` and call `applySidebarMappingToNodes` from the plugin layer. PRD-404-R6's normative behavior is unchanged — only the wiring inside the plugin lifecycle.
+- **Conservative interpretation in v0.1:** PRD-701's `examples/701-large-docs-docusaurus/scripts/build.ts` composes the existing exports manually (sidebar synthesizer adapter inline in the example) and runs the pipeline + emission directly. The example is the integration test that proves the composition works end-to-end at scale. Once A11 lands, the example's custom adapter collapses into a plugin-side pass-through.
+- **Triage call:** Awaiting Spec Steward / BDFL triage. Non-blocking for PRD-701 (worked around inline); blocking for any other downstream PRD-404 consumer that expects sidebar synthesis without composing the primitives manually (e.g., PRD-702 if it adopts Docusaurus, which it does not — PRD-702 uses Next.js).
+
 ### A16 — PRD-707-R11: `urlTemplates` snake_case keys vs `EleventyActOptions` camelCase API
 
 - **PRD:** PRD-707 (Eleventy blog example), PRD-408 (Eleventy plugin).

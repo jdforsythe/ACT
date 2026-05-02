@@ -69,6 +69,9 @@ importers:
 
   examples/701-large-docs-docusaurus:
     dependencies:
+      '@act-spec/adapter-framework':
+        specifier: workspace:*
+        version: link:../../packages/adapter-framework
       '@act-spec/docusaurus':
         specifier: workspace:*
         version: link:../../packages/docusaurus
