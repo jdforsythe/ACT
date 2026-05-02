@@ -102,12 +102,12 @@ The adapter framework plus six reference adapters that exercise it. The framewor
 
 The component contract that lets ACT extract structured content from component-driven sites. PRD-300 defines the contract; the rest are framework bindings.
 
-| ID | Title | Status | Depends on | Blocks | Size | Phase |
-|---|---|---|---|---|---|---|
-| PRD-300 | Component contract (declaration patterns, page-level contracts, variant handling) | Accepted | 100, 102 | 301, 302, 303, 400 | XL | P2 |
-| PRD-301 | React binding | Accepted | 300 | 401, 404, 405, 406 | L | P2 |
-| PRD-302 | Vue binding | Accepted | 300 | 407 | L | P2 |
-| PRD-303 | Angular binding | Accepted | 300 | — | L | P2 |
+| ID | Title | Status | Impl status | Depends on | Blocks | Size | Phase |
+|---|---|---|---|---|---|---|---|
+| PRD-300 | Component contract (declaration patterns, page-level contracts, variant handling) | Accepted | Implemented (@act-spec/component-contract) | 100, 102 | 301, 302, 303, 400 | XL | P2 |
+| PRD-301 | React binding | Accepted | — | 300 | 401, 404, 405, 406 | L | P2 |
+| PRD-302 | Vue binding | Accepted | — | 300 | 407 | L | P2 |
+| PRD-303 | Angular binding | Accepted | — | 300 | — | L | P2 |
 
 ## 400-series — Generators
 
