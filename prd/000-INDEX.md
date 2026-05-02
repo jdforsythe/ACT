@@ -134,7 +134,7 @@ Per-framework bindings that turn an existing app into a runtime ACT server confo
 |---|---|---|---|---|---|---|---|
 | PRD-500 | Runtime SDK contract (resolver shape, capability negotiation) | Accepted | Implemented (@act-spec/runtime-core) | 106, 109 | 501–505 | L | P2 |
 | PRD-501 | Next.js runtime SDK | Accepted | Implemented (@act-spec/runtime-next) | 500 | 705, 706 | M | P2 |
-| PRD-502 | Express runtime SDK | Accepted | Not started | 500 | — | M | P2 |
+| PRD-502 | Express runtime SDK | Accepted | Implemented (@act-spec/runtime-express) | 500 | — | M | P2 |
 | PRD-503 | FastAPI runtime SDK | Accepted (spec only) | Not implemented (Q3 — TS only in v0.1) | 500 | — | M | P2 |
 | PRD-504 | Rails runtime SDK | Accepted (spec only) | Not implemented (Q3 — TS only in v0.1) | 500 | — | M | P2 |
 | PRD-505 | Generic WHATWG-fetch handler | Accepted | Not started | 500 | — | S | P2 |
