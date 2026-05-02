@@ -13,6 +13,8 @@
     { "path": "./packages/programmatic-adapter" },
     { "path": "./packages/astro" },
     { "path": "./packages/component-contract" },
-    { "path": "./packages/component-react" }
+    { "path": "./packages/component-react" },
+    { "path": "./packages/component-vue" },
+    { "path": "./packages/component-angular" }
   ]
 }
