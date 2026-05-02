@@ -67,6 +67,31 @@ importers:
         specifier: ^5.6.3
         version: 5.9.3
 
+  examples/701-large-docs-docusaurus:
+    dependencies:
+      '@act-spec/docusaurus':
+        specifier: workspace:*
+        version: link:../../packages/docusaurus
+      '@act-spec/generator-core':
+        specifier: workspace:*
+        version: link:../../packages/generator-core
+      '@act-spec/markdown-adapter':
+        specifier: workspace:*
+        version: link:../../packages/markdown-adapter
+    devDependencies:
+      '@act-spec/validator':
+        specifier: workspace:*
+        version: link:../../packages/validator
+      '@types/node':
+        specifier: ^22.7.5
+        version: 22.19.17
+      tsx:
+        specifier: ^4.19.2
+        version: 4.21.0
+      typescript:
+        specifier: ^5.6.3
+        version: 5.9.3
+
   examples/705-saas-workspace-runtime:
     dependencies:
       '@act-spec/adapter-framework':
@@ -81,6 +106,28 @@ importers:
       '@act-spec/runtime-next':
         specifier: workspace:*
         version: link:../../packages/runtime-next
+    devDependencies:
+      '@act-spec/validator':
+        specifier: workspace:*
+        version: link:../../packages/validator
+      tsx:
+        specifier: ^4.19.2
+        version: 4.21.0
+      typescript:
+        specifier: ^5.6.3
+        version: 5.9.3
+
+  examples/707-eleventy-blog:
+    dependencies:
+      '@11ty/eleventy':
+        specifier: ^2.0.0 || ^3.0.0
+        version: 3.1.5
+      '@act-spec/eleventy':
+        specifier: workspace:*
+        version: link:../../packages/eleventy
+      '@act-spec/markdown-adapter':
+        specifier: workspace:*
+        version: link:../../packages/markdown-adapter
     devDependencies:
       '@act-spec/validator':
         specifier: workspace:*

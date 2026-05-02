@@ -16,6 +16,15 @@ Until Phase 6 starts, entries are queued — **no Accepted PRD is silently amend
 
 ## Open entries
 
+### A16 — PRD-707-R11: `urlTemplates` snake_case keys vs `EleventyActOptions` camelCase API
+
+- **PRD:** PRD-707 (Eleventy blog example), PRD-408 (Eleventy plugin).
+- **Section / requirement:** PRD-707-R11's normative `eleventy.config.mjs` snippet declares `urlTemplates: { index_url, node_url_template, subtree_url_template }` (snake_case keys matching the on-wire manifest field names). PRD-408's `EleventyActOptions.urlTemplates` (`packages/eleventy/src/types.ts`) and the underlying `GeneratorConfig.urlTemplates` (`packages/generator-core/src/pipeline.ts`) require camelCase keys: `indexUrl`, `nodeUrlTemplate`, `subtreeUrlTemplate`. PRD-700-R7's analogous Astro snippet uses camelCase already (`indexUrl`, `nodeUrlTemplate`, `subtreeUrlTemplate`) so the JS-API convention is consistent across leaves.
+- **Surfaced by:** Adapter & Generator Engineer / Phase 6.3 (2026-05-02) during PRD-707 implementation.
+- **Observed problem:** A literal copy-paste of PRD-707-R11's snippet into `eleventy.config.mjs` produces a manifest missing the three Core/Standard URL fields (the snake_case keys silently no-op against the camelCase reader), failing PRD-100-R4 / PRD-107-R8 immediately. The PRD's intent is clearly the JS-API surface (the snippet is invoked via `eleventyConfig.addPlugin(actPlugin, options)`), not the manifest envelope, so the keys MUST be the camelCase JS form.
+- **Proposed fix (trivial clarification):** Amend PRD-707-R11's example snippet to use the camelCase keys consistent with `EleventyActOptions` and PRD-700-R7: `urlTemplates: { indexUrl: "/act/index.json", nodeUrlTemplate: "/act/n/{id}.json", subtreeUrlTemplate: "/act/sub/{id}.json" }`. The `act/n/` and `act/sub/` URL substrings are the *manifest-advertised* URLs and remain unchanged (the on-disk emission paths are `act/nodes/` and `act/subtrees/` per `emitFiles` regardless of the advertised URL templates; static-walk validation does not dereference URLs in `walkStatic`).
+- **Triage call:** Trivial-inline. PRD-707 stays Accepted; the implementation in `examples/707-eleventy-blog/eleventy.config.mjs` uses the camelCase form with an inline comment citing A16.
+
 ### A15 — PRD-301-R20: capability matrix vs v0.1 binding implementation surface
 
 - **PRD:** PRD-301 (React binding)

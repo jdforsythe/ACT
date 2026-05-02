@@ -1,0 +1,26 @@
+{
+  "name": "@act-spec/example-707-eleventy-blog",
+  "version": "0.0.0",
+  "private": true,
+  "description": "PRD-707 reference example: Tinybox Blog — a flat chronological Eleventy 2.x blog (TS-impl counterpart to PRD-703 Hugo) that wires @act-spec/eleventy + @act-spec/markdown-adapter and validates clean against PRD-600 with achieved.level === 'standard'.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "build": "eleventy",
+    "validate": "tsx scripts/validate.ts",
+    "conformance": "pnpm run build && pnpm run validate",
+    "test": "node -e \"console.log('@act-spec/example-707-eleventy-blog: example exercises end-to-end via conformance')\"",
+    "lint": "node -e \"console.log('@act-spec/example-707-eleventy-blog: lint covered by typecheck + conformance')\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.0 || ^3.0.0",
+    "@act-spec/eleventy": "workspace:*",
+    "@act-spec/markdown-adapter": "workspace:*"
+  },
+  "devDependencies": {
+    "@act-spec/validator": "workspace:*",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
