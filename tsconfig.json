@@ -7,6 +7,7 @@
   "references": [
     { "path": "./packages/core" },
     { "path": "./packages/validator" },
+    { "path": "./packages/inspector" },
     { "path": "./packages/adapter-framework" },
     { "path": "./packages/markdown-adapter" },
     { "path": "./packages/programmatic-adapter" },
