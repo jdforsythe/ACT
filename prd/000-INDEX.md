@@ -90,7 +90,7 @@ The adapter framework plus six reference adapters that exercise it. The framewor
 |---|---|---|---|---|---|---|---|
 | PRD-200 | Adapter framework (contract, lifecycle, multi-source merging) | Accepted | Implemented (via @act-spec/markdown-adapter; framework code per ADR-003) | 100, 102 | 201–208 | L | P2 |
 | PRD-201 | Markdown / MDX adapter | Accepted | Implemented (@act-spec/markdown-adapter) | 200 | 400, 700, 701, 703 | M | P2 |
-| PRD-202 | Contentful adapter | Accepted | Not started | 200 | 702 | L | P2 |
+| PRD-202 | Contentful adapter | Accepted | Implemented (@act-spec/contentful-adapter) | 200 | 702 | L | P2 |
 | PRD-203 | Sanity adapter | Accepted | Not started | 200 | — | L | P2 |
 | PRD-204 | Storyblok adapter | Accepted | Not started | 200 | — | L | P2 |
 | PRD-205 | Strapi adapter | Accepted | Not started | 200 | — | M | P2 |
