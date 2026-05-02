@@ -248,7 +248,9 @@ describe('PRD-500-R27: lifetime hooks are optional', () => {
     const inst = createActRuntime(configFor(coreManifest(), coreRuntime()));
     // PRD-500-R27 — init() and dispose() are OPTIONAL; the SDK MAY omit them.
     // The returned instance shape MUST allow both shapes (`undefined` or function).
+    // eslint-disable-next-line @typescript-eslint/unbound-method -- intentional: PRD-500-R27 asserts undefined / function shape, no invocation.
     expect(inst.init).toBeUndefined();
+    // eslint-disable-next-line @typescript-eslint/unbound-method -- intentional: PRD-500-R27 asserts undefined / function shape, no invocation.
     expect(inst.dispose).toBeUndefined();
     // dispatch() is the required method per PRD-500-R5.
     expect(typeof inst.dispatch).toBe('function');

@@ -509,7 +509,7 @@ function deriveActId(
   const includeLocalePrefix =
     locale !== null && cfg.locale?.pattern !== 'folder';
   const localePrefix = includeLocalePrefix
-    ? `${(locale as string).toLowerCase()}/`
+    ? `${locale.toLowerCase()}/`
     : '';
 
   // Explicit override first.
