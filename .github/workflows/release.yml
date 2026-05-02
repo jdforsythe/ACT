@@ -1,10 +1,15 @@
 name: Release
 
-# Changesets-driven publish. On push to master, opens a release PR with
-# version bumps for any pending changesets, or publishes once that PR merges.
+# Changesets-driven publish. Disabled until v0.2 (the first public release).
+#
+# v0.1 is an internal hand-test candidate — no npm publish, no public tag.
+# Jeremy hand-tests every package locally; v0.2 is the first public release.
+# When v0.2 is ready: switch this trigger back to `push: branches: [master]`,
+# author a v0.2 changeset under `.changeset/`, set the NPM_TOKEN secret on
+# the repo, and let the changesets-action open the Release PR.
 on:
-  push:
-    branches: [master]
+  workflow_dispatch:
+    # Manual-only for v0.1. Re-enable on-push trigger above for v0.2.
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 

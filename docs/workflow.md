@@ -1,8 +1,8 @@
 # ACT Implementation Workflow
 
 **Status:** Active
-**Owner:** TBD (see [prd/000-decisions-needed.md](../prd/000-decisions-needed.md), Q1)
-**Last updated:** 2026-04-30
+**Owner:** Jeremy Forsythe (BDFL — Q1 closed)
+**Last updated:** 2026-05-02 (Phase 6 + 7 closed; v0.1 in internal hand-test)
 
 This is the runbook for taking ACT from "planning artifacts landed" to "v0.1 shipped." It answers **"what's next?"** at any point, names the artifacts each phase produces, includes the prompts to drive each step, and pins the testing strategy. Read top-to-bottom once; afterwards, jump to the phase you're in.
 
@@ -12,19 +12,23 @@ The workflow uses [Forge](https://github.com/jdforsythe/forge) (`/forge:*` skill
 
 ## Where you are right now
 
-Snapshot of repo state on `master`:
+Snapshot of repo state on `master` (2026-05-02):
 
 - ✅ v0.1 working draft preserved at `docs/plan/v0.1-draft.md`
 - ✅ PRD taxonomy locked: 57 PRDs across 8 domains in `prd/000-INDEX.md`
 - ✅ Gap analysis with proposed resolutions in `prd/000-gaps-and-resolutions.md`
-- ✅ Strategic decisions surfaced in `prd/000-decisions-needed.md`
+- ✅ Strategic decisions Q1–Q12 closed (Q1 BDFL, Q3 TS-only, Q4 Apache-2.0/CC-BY-4.0, Q8 GitHub Pages SPA, etc.)
 - ✅ PRD template in `prd/000-template.md`
-- ❌ No PRDs written (status: Draft for all 57)
-- ❌ No schemas, fixtures, validators, reference code
-- ❌ Strategic decisions Q1–Q12 unanswered
-- ❌ No `docs/adr/` directory yet
+- ✅ All 57 PRDs Accepted (PRD-603 Deprecated for v0.1; spec-only PRDs 402, 403, 503, 504, 703 carry `(spec only)` headers)
+- ✅ `docs/adr/` populated: ADR-001 monorepo, ADR-002 ajv, ADR-003 adapter/generator placement, ADR-004 vertical-slice retro, ADR-005 adapter-framework extraction, ADR-006 generator-core extraction
+- ✅ All non-spec-only leaves Implemented: 30 packages, 7 examples, 1 hosted SPA (`apps/validator-web/`)
+- ✅ `pnpm -r typecheck`, `pnpm -r lint`, `pnpm -r test`, `pnpm -r conformance` all green
+- ✅ Phase 7 ship pre-flight green per `docs/v0.1-preflight.md`
+- ⏳ **v0.1 is in internal hand-test** — Jeremy walks every package + example by hand, files fixes, tags v0.2 as the first public release
 
-**What's next:** Phase 0 below — resolve strategic decisions. Skipping this defers ~8 questions that will get relitigated inside individual PRDs.
+**What's next:** internal hand-test pass on every package and example. Use `docs/v0.1-handtest-plan.md` (authored alongside this update) to track per-package smoke tests, install-from-tarball flow, edge-case checks. As fixes land, queue them for the v0.2 release.
+
+**Why no public v0.1:** the spec is reputation-load-bearing for the BDFL; shipping a broken-in-the-corners v0.1 publicly is worse than holding for v0.2. v0.1 is the soak window.
 
 ---
 
@@ -443,29 +447,52 @@ Apply PRD-108's MAJOR/MINOR rules strictly. The implementing agent's convenience
 
 ## Phase 7 — Ship
 
-**Goal.** Tag v0.1, publish packages, announce.
+**Goal (revised 2026-05-02).** Land v0.1 as an **internal hand-test candidate**. The BDFL hand-tests every package and example, files fixes against any rough edges, and only then tags v0.2 as the first public release. v0.1 is the soak window.
 
-**Pre-flight checklist:**
+**Why not ship v0.1 publicly.** The spec is reputation-load-bearing. Shipping a v0.1 with corner-case bugs in the adapters / generators / runtime SDKs would damage the standard's adoption posture more than holding the public release one cycle. v0.1's job is to catch issues that pre-Phase-7 testing missed; v0.2 is the first artifact published to npm and tagged in the public registry.
 
-- [ ] All PRDs at status `Accepted` or `Implemented`.
-- [ ] PRD-600 (validator) green against every PRD-700-series example.
-- [ ] CI green on `master`.
-- [ ] Hosted validator (if Q8 was Option 1 or 3) reachable and running the same code as the library.
-- [ ] `CHANGELOG.md` written.
-- [ ] License files in every package (per Q4 decision).
-- [ ] llms.txt updated if applicable.
-- [ ] One blog post / README announcement drafted.
+**Phase 7 pre-flight checklist (v0.1 internal close):**
 
-**Prompt — ship checklist:**
+- [x] All PRDs at status `Accepted` or `Implemented` (or `Deprecated` for PRD-603).
+- [x] PRD-600 (validator) green against every PRD-700-series example.
+- [x] CI green on `master` (`pnpm -r typecheck` / `lint` / `test` / `conformance`).
+- [x] Hosted validator SPA built (`apps/validator-web/`) and Pages workflow wired (`.github/workflows/pages.yml`); URL pinned at first public deploy in v0.2.
+- [x] `CHANGELOG.md` written (v0.1.0 entry).
+- [x] License files in every package (Apache-2.0 code per Q4; CC-BY-4.0 spec).
+- [x] Package READMEs present.
+- [x] Pre-flight report at `docs/v0.1-preflight.md`.
+- [x] Release workflow (`.github/workflows/release.yml`) gated to `workflow_dispatch` only — no auto-publish on master push until v0.2.
+- [x] No npm changeset authored — v0.1 packages stay at `0.0.0`; v0.2 will be the first version-bumped release.
+- [ ] **v0.1 hand-test pass complete** — see `docs/v0.1-handtest-plan.md`. This is the gate to v0.2.
+- [ ] *(v0.2 only)* `git tag v0.2.0`, push tag, `pnpm changeset publish` to npm.
+- [ ] *(v0.2 only)* Hosted validator URL pinned in `RELEASE_NOTES.md`.
+- [ ] *(v0.2 only)* llms.txt updated on the spec-site repo.
+- [ ] *(v0.2 only)* Blog post / public announcement drafted.
+
+**Prompt — v0.2 ship checklist (use when v0.1 hand-test closes):**
 
 ```
-Walk through the Phase 7 pre-flight checklist in docs/workflow.md. For each item:
+Walk through the Phase 7 pre-flight checklist in docs/workflow.md. The v0.1
+internal-candidate items at the top of the checklist should already be [x]
+from 2026-05-02; verify they still hold against current master, then drive
+the v0.2-only items at the bottom:
 
-1. Run the actual check (CI status, validator runs, package builds).
-2. Report green or red.
-3. If red, name what's missing and what would close it.
+1. Verify every v0.1 hand-test fix has landed and `docs/v0.1-handtest-plan.md`
+   is fully checked off.
+2. Re-run pnpm -r typecheck/lint/test/conformance — green.
+3. Author one changeset under .changeset/ marking every publishable
+   package as a minor bump (or major if the BDFL prefers).
+4. Bump @act-spec/core's exposed `act_version` constant to "0.2.0" if the
+   wire format changed; otherwise leave at "0.1.0" with a CHANGELOG note.
+5. Re-enable the on-push trigger in .github/workflows/release.yml.
+6. Confirm the NPM_TOKEN secret is configured on the repo (BDFL action).
+7. Pin the hosted-validator URL in RELEASE_NOTES.md once Pages deploys.
+8. Update llms.txt on the spec-site repo if applicable.
+9. Draft the public announcement.
 
-When all items green, draft the v0.1 release notes pulling from changelogs across all PRDs and packages. Don't tag anything — that's my call.
+When everything green, the BDFL tags v0.2.0 and pushes; the Release workflow
+opens the Release PR; merging it triggers the npm publish. Don't tag — that's
+the BDFL's call.
 ```
 
 ---

@@ -12,15 +12,25 @@ The repository ships two artifacts at versions that may diverge:
   fixtures in `fixtures/`). Versioned via `act_version` per PRD-108;
   current spec version is **0.1.0**.
 - **The TypeScript reference implementation** (packages in `packages/`,
-  examples in `examples/`). Versioned per-package via Changesets; the
-  v0.1 cohort ships at `0.1.0` for every published package (every
-  package is currently `0.0.0` in `package.json` pending the release
-  bump immediately before tagging).
+  examples in `examples/`). Versioned per-package via Changesets. v0.1
+  packages stay at `0.0.0` for the internal hand-test pass; v0.2 will
+  be the first version-bumped, npm-published cohort.
 
-## [0.1.0] — 2026-05-02
+## [0.1.0] — 2026-05-02 — Internal hand-test candidate
 
-The first public release of ACT. Wire format, reference implementations,
-examples, conformance suite, and ecosystem PRDs all land together.
+**This is not a public release.** v0.1 lands the full v0.1 spec and
+TypeScript reference implementation in the repository for the BDFL to
+hand-test end-to-end. Packages are NOT published to npm in v0.1; no
+public git tag; no announcement. v0.2 is the first public release.
+
+Why: the spec is reputation-load-bearing for the BDFL. v0.1 exists to
+catch issues that pre-Phase-7 testing missed (corner-case bugs in
+adapters, generators, runtime SDKs, examples). v0.2 ships once the
+hand-test plan in `docs/v0.1-handtest-plan.md` is fully checked off.
+
+The Added / Changed / Deprecated / Open follow-ups sections below
+describe what's IN the v0.1 internal candidate; the v0.2 public release
+will inherit this surface plus any fixes the hand-test pass surfaces.
 
 ### Added
 

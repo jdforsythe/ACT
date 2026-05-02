@@ -1,17 +1,30 @@
-# ACT v0.1: spec, validator, adapters, generators, runtime SDKs, examples
+# ACT v0.1 — internal hand-test candidate
 
-**Release date:** 2026-05-02
-**Status:** READY-TO-SHIP (pending BDFL git tag + npm publish)
-**Spec version:** `act_version: "0.1.0"`
+**Internal-candidate date:** 2026-05-02
+**Status:** **INTERNAL HAND-TEST — NOT A PUBLIC RELEASE.** v0.2 will be the first public release. v0.1 is the soak window: the BDFL hand-tests every package and example, files fixes, and only then tags v0.2 to npm.
+**Spec version:** `act_version: "0.1.0"` (subject to revision before v0.2)
 **License — code:** Apache-2.0 — **License — spec text:** CC BY 4.0
 
 ACT (Agent Content Tree) is an open standard for agent-friendly content
 delivery: a stable, cacheable, conformance-graded wire format that lets
 LLM-driven agents discover, walk, and reason over a website's structured
-content without screen-scraping HTML. v0.1 ships the full spec, a
+content without screen-scraping HTML. v0.1 lands the full spec, a
 TypeScript reference implementation across every layer (adapters,
 component contracts, generators, runtime SDKs, tooling), seven worked
-example builds, and a hosted client-side validator.
+example builds, and a hosted client-side validator — all gated behind
+an internal hand-test pass before public v0.2 ships.
+
+## Why no public v0.1
+
+The spec is reputation-load-bearing for the BDFL. Shipping a v0.1 with
+corner-case bugs in the adapters / generators / runtime SDKs would
+damage the standard's adoption posture more than holding the public
+release one cycle. v0.1 exists to catch issues that pre-Phase-7 testing
+missed; v0.2 is the first artifact published to npm and tagged in the
+public registry.
+
+The v0.1 hand-test plan is in `docs/v0.1-handtest-plan.md`. As fixes
+land, they queue for the v0.2 release.
 
 ## What ships
 
@@ -80,8 +93,7 @@ ports are invited.
 
 A client-side single-page application — `apps/validator-web/` — wraps
 `@act-spec/validator` for browser consumption and deploys to GitHub
-Pages alongside the spec site. **Hosted URL:** _TBD — pinned at the
-GitHub Pages deploy in the BDFL's tag step._
+Pages alongside the spec site. **Hosted URL:** _not deployed in v0.1 — Pages deploy is part of the v0.2 public release._ The workflow at `.github/workflows/pages.yml` is wired and tested; trigger it with `workflow_dispatch` to preview before v0.2.
 
 ## Key decisions (recap)
 
@@ -158,6 +170,30 @@ tagged.
 
 ## What's next
 
+**Immediate (v0.1 close gate to v0.2):**
+
+- Hand-test every package and example per `docs/v0.1-handtest-plan.md`.
+- File fixes against any rough edges; queue them for the v0.2 cohort.
+- Once the hand-test plan is fully checked off, follow the v0.2-only
+  items in `docs/workflow.md` §"Phase 7 — Ship".
+
+**v0.2 (first public release):**
+
+- Re-enable the on-push trigger in `.github/workflows/release.yml`.
+- Author one changeset declaring every publishable package as a `minor`
+  bump (or `major` if the BDFL prefers; the wire format is at `0.1.0`
+  per `act_version`).
+- BDFL configures the `NPM_TOKEN` repo secret and the `act-spec` npm
+  scope (no npm account exists yet — that's a v0.2 prerequisite).
+- BDFL pushes the changeset commit; Changesets-action opens a Release
+  PR; merging it triggers the npm publish.
+- BDFL runs the GitHub Pages deploy (`workflow_dispatch` → `pages.yml`)
+  to pin the hosted-validator URL.
+- Update `llms.txt` on the spec-site repo if applicable.
+- Draft the public announcement.
+
+**Beyond v0.2:**
+
 - v0.2 picks up the open amendments above plus the Tier-F items from
   `prd/000-gaps-and-resolutions.md` (signed manifests, dataset-as-
   first-class node type, streaming change-feed runtime endpoints,
@@ -172,7 +208,8 @@ tagged.
 
 - **Specification:** `prd/` (this repo). Index at `prd/000-INDEX.md`.
 - **Workflow:** `docs/workflow.md`.
+- **Hand-test plan:** `docs/v0.1-handtest-plan.md`.
 - **ADRs:** `docs/adr/`.
 - **Pre-flight report:** `docs/v0.1-preflight.md`.
-- **Hosted validator (TBD):** GitHub Pages deploy URL pinned at tag.
+- **Hosted validator:** _not deployed in v0.1 — Pages workflow ready, deploys at v0.2._
 - **Repository:** https://github.com/act-spec/act
