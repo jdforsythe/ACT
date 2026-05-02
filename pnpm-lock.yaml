@@ -67,6 +67,31 @@ importers:
         specifier: ^5.6.3
         version: 5.9.3
 
+  examples/705-saas-workspace-runtime:
+    dependencies:
+      '@act-spec/adapter-framework':
+        specifier: workspace:*
+        version: link:../../packages/adapter-framework
+      '@act-spec/programmatic-adapter':
+        specifier: workspace:*
+        version: link:../../packages/programmatic-adapter
+      '@act-spec/runtime-core':
+        specifier: workspace:*
+        version: link:../../packages/runtime-core
+      '@act-spec/runtime-next':
+        specifier: workspace:*
+        version: link:../../packages/runtime-next
+    devDependencies:
+      '@act-spec/validator':
+        specifier: workspace:*
+        version: link:../../packages/validator
+      tsx:
+        specifier: ^4.19.2
+        version: 4.21.0
+      typescript:
+        specifier: ^5.6.3
+        version: 5.9.3
+
   packages/_test-utils:
     dependencies:
       '@act-spec/core':
