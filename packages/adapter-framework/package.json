@@ -1,7 +1,7 @@
 {
-  "name": "@act-spec/markdown-adapter",
+  "name": "@act-spec/adapter-framework",
   "version": "0.0.0",
-  "description": "PRD-201 markdown adapter for the ACT (Agent Content Tree) v0.1 reference implementation.",
+  "description": "PRD-200 adapter framework for the ACT (Agent Content Tree) v0.1 reference implementation. Types, lifecycle, and multi-source merge — shared by every first-party adapter.",
   "license": "Apache-2.0",
   "type": "module",
   "main": "./dist/index.js",
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/act-spec/act.git",
-    "directory": "packages/markdown-adapter"
+    "directory": "packages/adapter-framework"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -28,17 +28,10 @@
     "test:coverage": "vitest run --coverage",
     "lint": "eslint src",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "conformance": "tsx conformance.ts"
+    "conformance": "node -e \"console.log('no conformance gate for @act-spec/adapter-framework (framework-only; PRD-200 is exercised by leaf adapter conformance gates)')\""
   },
   "dependencies": {
-    "@act-spec/adapter-framework": "workspace:*",
-    "@act-spec/core": "workspace:*",
-    "@act-spec/validator": "workspace:*",
-    "remark-frontmatter": "^5.0.0",
-    "remark-gfm": "^4.0.0",
-    "remark-parse": "^11.0.0",
-    "unified": "^11.0.5",
-    "yaml": "^2.6.0"
+    "@act-spec/core": "workspace:*"
   },
   "devDependencies": {
     "@vitest/coverage-v8": "^2.1.9",

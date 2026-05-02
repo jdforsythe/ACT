@@ -1,12 +1,20 @@
 /**
- * @act-spec/markdown-adapter — PRD-200 framework + PRD-201 markdown leaf.
+ * @act-spec/markdown-adapter — PRD-201 markdown leaf.
  *
- * Public API. The adapter framework lives in `./framework.ts` (per ADR-003);
- * the PRD-201 leaf in `./markdown.ts`. Both surfaces are re-exported here.
+ * Public API. The PRD-200 adapter framework now lives in the dedicated
+ * `@act-spec/adapter-framework` package (per ADR-005, extracted from this
+ * package's pre-G2 `./framework.ts`). For backward compatibility — and to
+ * satisfy ADR-005's stable-surface requirement — every framework symbol is
+ * re-exported here unchanged. New consumers should import directly from
+ * `@act-spec/adapter-framework`; the re-exports remain so existing
+ * imports of `@act-spec/markdown-adapter` for framework symbols continue
+ * to work.
+ *
+ * The PRD-201 leaf lives in `./markdown.ts`.
  */
 export const MARKDOWN_ADAPTER_PACKAGE_NAME = '@act-spec/markdown-adapter' as const;
 
-// PRD-200 framework — types + lifecycle + multi-source merge.
+// PRD-200 framework — re-exported from @act-spec/adapter-framework (ADR-005).
 export type {
   Adapter,
   AdapterCapabilities,
@@ -19,7 +27,7 @@ export type {
   MergeOptions,
   MergePolicy,
   PartialEmittedNode,
-} from './framework.js';
+} from '@act-spec/adapter-framework';
 export {
   FRAMEWORK_CONFORMANCE_VERSION,
   bubbleManifestCapabilities,
@@ -30,7 +38,7 @@ export {
   resolveId,
   runAdapter,
   stampSource,
-} from './framework.js';
+} from '@act-spec/adapter-framework';
 
 // PRD-201 markdown leaf.
 export type { MarkdownAdapterConfig, MarkdownItem, BlockEmission, ParsedFrontmatter } from './markdown.js';

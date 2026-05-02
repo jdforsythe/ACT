@@ -19,7 +19,7 @@ import {
   truncateSummary,
   validateId,
 } from './markdown.js';
-import { runAdapter, type AdapterContext } from './framework.js';
+import { runAdapter, type AdapterContext } from '@act-spec/adapter-framework';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const fixtureDir = path.resolve(here, '..', 'test-fixtures', 'sample-tree');

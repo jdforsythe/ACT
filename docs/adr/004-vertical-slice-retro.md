@@ -114,6 +114,18 @@ fixtures stay green. No retro-time work.
 
 ### Seam 1 — PRD-200 framework lives in `@act-spec/markdown-adapter`
 
+**Status: DONE (2026-05-02, ADR-005).** The PRD-200 framework now lives
+in the dedicated `@act-spec/adapter-framework` package, extracted as the
+first PR of Phase 6.2 Track A per recommendation 1 below. The
+markdown-adapter's `src/index.ts` re-exports the framework surface for
+backward compatibility; new adapters import directly from
+`@act-spec/adapter-framework`. Coverage on the new package's
+`framework.ts` is 89.9% line / 100% function (above the 85% floor); the
+markdown-adapter post-extraction holds 90.12% line / 100% function on its
+remaining `markdown.ts` surface. See ADR-005 for the full extraction
+record.
+
+**Original (pre-G2) entry, kept for the retro's historical record:**
 ADR-003 placed PRD-200 framework code in
 `@act-spec/markdown-adapter/src/framework.ts` because PRD-201 was the only
 in-flight consumer. Phase 6.2 will add PRD-208 (programmatic), PRD-202

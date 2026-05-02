@@ -31,7 +31,7 @@ import type {
   AdapterCapabilities,
   AdapterContext,
   EmittedNode,
-} from './framework.js';
+} from '@act-spec/adapter-framework';
 
 const ACT_VERSION = '0.1' as const;
 
