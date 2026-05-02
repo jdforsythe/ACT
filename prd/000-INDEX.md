@@ -123,7 +123,7 @@ Build-tool integrations that take adapter output + component contracts and emit 
 | PRD-405 | Next.js plugin (static export) | Accepted | Implemented (@act-spec/nextjs-static) | 400, 301 | 702 | L | P2 |
 | PRD-406 | Remix plugin (static export) | Accepted | Implemented (@act-spec/remix-static) | 400, 301 | — | L | P2 |
 | PRD-407 | Nuxt module | Accepted | Implemented (@act-spec/nuxt) | 400, 302 | — | L | P2 |
-| PRD-408 | Eleventy plugin | Accepted | Not started | 400, 201 | — | M | P2 |
+| PRD-408 | Eleventy plugin | Accepted | Implemented (@act-spec/eleventy) | 400, 201 | — | M | P2 |
 | PRD-409 | Standalone CLI (no framework) | Accepted | Not started | 400 | 706 | M | P2 |
 
 ## 500-series — Runtime SDK
