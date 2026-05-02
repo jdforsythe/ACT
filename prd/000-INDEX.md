@@ -96,7 +96,7 @@ The adapter framework plus six reference adapters that exercise it. The framewor
 | PRD-205 | Strapi adapter | Accepted | Not started | 200 | — | M | P2 |
 | PRD-206 | Builder.io adapter | Accepted | Not started | 200 | — | M | P2 |
 | PRD-207 | i18n adapter (next-intl, react-intl, i18next) | Accepted | Not started | 104, 200 | 702 | L | P2 |
-| PRD-208 | Programmatic adapter (escape hatch) | Accepted | Not started | 200 | 705 | S | P2 |
+| PRD-208 | Programmatic adapter (escape hatch) | Accepted | Implemented (@act-spec/programmatic-adapter) | 200 | 705 | S | P2 |
 
 ## 300-series — Component instrumentation
 
