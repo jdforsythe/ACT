@@ -120,7 +120,7 @@ Build-tool integrations that take adapter output + component contracts and emit 
 | PRD-402 | Hugo module | Accepted (spec only) | Spec-only — out of scope for v0.1 TS impl | 400, 201 | 703 | M | P2 |
 | PRD-403 | MkDocs plugin | Accepted (spec only) | Spec-only — out of scope for v0.1 TS impl | 400, 201 | — | M | P2 |
 | PRD-404 | Docusaurus plugin | Accepted | Not started | 400, 301 | 701 | M | P2 |
-| PRD-405 | Next.js plugin (static export) | Accepted | Not started | 400, 301 | 702 | L | P2 |
+| PRD-405 | Next.js plugin (static export) | Accepted | Implemented (@act-spec/nextjs-static) | 400, 301 | 702 | L | P2 |
 | PRD-406 | Remix plugin (static export) | Accepted | Not started | 400, 301 | — | L | P2 |
 | PRD-407 | Nuxt module | Accepted | Not started | 400, 302 | — | L | P2 |
 | PRD-408 | Eleventy plugin | Accepted | Not started | 400, 201 | — | M | P2 |
