@@ -28,7 +28,14 @@ This file captures questions that fell out of Phase 6.1 amendment triage but are
 
 **Recommendation (Spec Steward, advisory):** option 1. The uncovered branch is a single dedup guard whose contract is "don't double-emit a gap"; that's testable in two lines. Falling back to option 2 is fine if the Lead has a deeper reason to keep the helper as-is. Option 3 should be off the table — the strict reading of PRD-600-R18 is mandatory and the Lead's probe is correct.
 
-**Status:** Open. BDFL to assign — Lead executes (1) or coordinates (2); QA verifies the workflow.md / coverage gate matches whatever lands.
+**Resolution (2026-05-02, BDFL → Lead):** option 1 chosen.
+
+- New test added at `packages/validator/src/walk.test.ts` ("PRD-107-R19 dedupe predicate: exercises BOTH truthy and falsy states of `g.level === band`"). The test drives `pushDeclaredButNotAchievedGaps` with declared='plus' and a single pre-existing standard-band gap so `unmetBands = ['standard', 'plus']`; iteration 1 fires the predicate's truthy state (continue), iteration 2 fires the falsy state (push synth gap). One walkStatic call hits both branches.
+- Side note recorded inline: the older "PRD-107-R19 dedupe SKIP branch" test that immediately precedes it was producing additional core-band schema gaps (single-char id violations of PRD-100-R10) that sink `inferAchievedLevel` to `null` and short-circuit the synth function — so it never actually exercised the predicate. The new test does. The old test still passes its own assertions and stays as documentation of the dedupe SKIP design intent.
+- `packages/validator/vitest.config.ts` `branches` threshold restored to 100. `pnpm -F @act-spec/validator test:coverage` now reports 100% line / 100% branch / 100% function / 100% statement on every file in `src/`. 211 tests pass (210 → 211).
+- No PRD edit and no ADR-005 needed; the strict reading of PRD-600-R18 (`probeCapabilityBand`) ships unchanged.
+
+**Status:** Closed 2026-05-02.
 
 ---
 
@@ -37,3 +44,4 @@ This file captures questions that fell out of Phase 6.1 amendment triage but are
 | Date | Author | Change |
 |---|---|---|
 | 2026-05-01 | Spec Steward | Initial creation. Filed LQ-1 from A9 triage; Spec Steward declines to set coverage targets (per role boundary) and routes to BDFL. |
+| 2026-05-02 | Jeremy Forsythe (BDFL) → Lead | Closed LQ-1 via option 1 (covered the missing branch). New test exercises both truthy/falsy states of the dedupe predicate; vitest branch threshold restored to 100. |

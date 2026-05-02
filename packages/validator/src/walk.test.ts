@@ -662,6 +662,60 @@ describe('walkStatic envelope coverage', () => {
       r.gaps.filter((g) => g.requirement === 'PRD-107-R19' && g.level === 'standard').length,
     ).toBe(0);
   });
+
+  it('PRD-107-R19 dedupe predicate: exercises BOTH truthy and falsy states of `g.level === band`', () => {
+    // LQ-1: walk.ts:604's predicate `(g) => g.level === band` must be called
+    // in both truthy and falsy states for v8 to credit the inline branch.
+    //
+    // Strategy: declared='plus', advertised='core' → unmetBands=['standard',
+    // 'plus']; the synth loop iterates twice. With a SINGLE pre-existing
+    // standard-band gap (PRD-100-R35 from a subtree root mismatch):
+    //   iteration 1: band='standard' → predicate(stdGap) === 'standard' → TRUE
+    //   iteration 2: band='plus'     → predicate(stdGap) === 'plus'     → FALSE
+    // Both branches of the predicate are exercised in one walkStatic call.
+    //
+    // Side observation: the depth=9 fixture in the previous test produces
+    // additional core-band schema gaps (PRD-100-R10 single-char id, schema's
+    // depth maximum) which sink achievedLevel to null and short-circuit the
+    // synth function entirely. The root-mismatch fixture below avoids that
+    // by using two-character ids ('ab', 'cd') that satisfy PRD-100-R10.
+    const m = { ...MANIFEST_CORE_STATIC, conformance: { level: 'plus' } };
+    const subtreeBadRoot = {
+      act_version: '0.1',
+      etag: 's256:rootmismatch00000000aa',
+      root: 'ab',
+      depth: 1,
+      truncated: false,
+      tokens: { body: 0, summary: 0 },
+      nodes: [
+        {
+          act_version: '0.1',
+          id: 'cd',
+          type: 'doc',
+          title: 'C',
+          summary: 's',
+          content: [{ type: 'markdown', text: 'x' }],
+          tokens: { summary: 1, body: 1 },
+          etag: 's256:cdcdcdcdcdcdcdcdcdcdcd',
+        },
+      ],
+    };
+    const r = walkStatic({ url: 'x', manifest: m, subtrees: [subtreeBadRoot] });
+    expect(r.declared.level).toBe('plus');
+    expect(r.achieved.level).toBe('core');
+    // Pre-existing standard-band gap drove the truthy predicate result.
+    expect(
+      r.gaps.some((g) => g.requirement === 'PRD-100-R35' && g.level === 'standard'),
+    ).toBe(true);
+    // Standard-band synth was suppressed by the dedupe (truthy → continue).
+    expect(
+      r.gaps.filter((g) => g.requirement === 'PRD-107-R19' && g.level === 'standard').length,
+    ).toBe(0);
+    // Plus-band synth was emitted because no plus gap pre-existed (falsy → push).
+    expect(
+      r.gaps.filter((g) => g.requirement === 'PRD-107-R19' && g.level === 'plus').length,
+    ).toBe(1);
+  });
 });
 
 describe('declared / achieved combinations (PRD-600-R19)', () => {

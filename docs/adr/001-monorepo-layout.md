@@ -1,8 +1,8 @@
 # ADR-001 — Monorepo layout for ACT v0.1
 
-**Status:** Proposed
-**Date:** 2026-05-01
-**Author:** Lead TypeScript Engineer (agent) — for BDFL acceptance at G2 retro
+**Status:** Accepted
+**Date:** 2026-05-01 (proposed) / 2026-05-02 (accepted by BDFL at G2 close)
+**Author:** Lead TypeScript Engineer (agent) — accepted by Jeremy Forsythe (BDFL)
 
 ## Context
 

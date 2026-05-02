@@ -240,21 +240,22 @@ Phase 6.1 G2 verdict, dated 2026-05-01 by the QA / Conformance Verifier persona.
 | Reported `achieved.level` equals declared `standard`. | **APPROVED** | Reporter prints `declared: standard / static; achieved: standard / static`. Triggered by the new `probeCapabilityBand` helper in `@act-spec/validator/src/walk.ts` (see ADR-004 § "What was harder #2"). |
 | PRD-100/101/102/103/109 fixtures all pass. | **APPROVED** | `pnpm -F @act-spec/validator conformance` sweeps 68 fixtures across 100/101/102/103/109; 23 pass, 0 fail, 45 skipped (integration-only, accounted for in `INTEGRATION_ONLY` set). |
 | Mutation score on wire-format core ≥ 75% (stryker). | **APPROVED** | `pnpm -F @act-spec/validator test:mutation` reports 80.53% mutation score on `cycles.ts + etag.ts + mounts.ts + reporter.ts + schemas.ts` (570 mutants total, 457 killed, 2 timeout, 111 survived). Above the 75% G2 floor. |
-| Coverage: 100% line on PRD-600 validator + wire-format core; ≥85% line on PRD-201 + PRD-401. | **APPROVED** | `@act-spec/validator` coverage: 100% line / 99.83% branch / 100% function / 100% statement (one v8-instrumented sub-branch in walk.ts:604 is exercised in both states by the suite but not credited by v8; mutation testing covers the semantic surface). `@act-spec/markdown-adapter` coverage: 90.05% line. `@act-spec/astro` coverage: 95.76% line. Both ≥85%. |
+| Coverage: 100% line on PRD-600 validator + wire-format core; ≥85% line on PRD-201 + PRD-401. | **APPROVED** | `@act-spec/validator` coverage: 100% line / 100% branch / 100% function / 100% statement (LQ-1 closed 2026-05-02 by adding a test that exercises both truthy/falsy states of the walk.ts:604 dedupe predicate). `@act-spec/markdown-adapter` coverage: 90.05% line. `@act-spec/astro` coverage: 95.76% line. Both ≥85%. |
 | One ADR landed at `docs/adr/001-monorepo-layout.md` documenting the package layout decision. | **APPROVED** | ADR-001 present at `docs/adr/001-monorepo-layout.md` (Status: Proposed). Three additional ADRs surfaced: ADR-002 (ajv vs zod), ADR-003 (adapter / generator placement), ADR-004 (this slice retro). |
 
 **QA verdict: G2 CLOSED.** All seven criteria APPROVED. Phase 6.2 fan-out unblocks.
 
 ## G2 sign-off (BDFL)
 
-- [ ] Slice retro (ADR-004) reviewed and accepted.
-- [ ] Validator semantic change (PRD-600-R18 `probeCapabilityBand` + PRD-107-R19 synth) reviewed.
-- [ ] Amendment-queue entry A8 (PRD-700-R4 vs PRD-201-R23) reviewed and routed.
-- [ ] ADR-001/002/003/004 promoted from `Proposed` to `Accepted` (or kept as `Proposed` with explicit deferral).
-- [ ] G2 closure announced; Phase 6.2 fan-out begins.
+- [x] Slice retro (ADR-004) reviewed and accepted. (2026-05-02 — Jeremy Forsythe)
+- [x] Validator semantic change (PRD-600-R18 `probeCapabilityBand` + PRD-107-R19 synth) reviewed. (Confirmed via A9 closure — strict reading of spec, no amendment needed.)
+- [x] Amendment-queue entry A8 (PRD-700-R4 vs PRD-201-R23) reviewed and routed. (Closed 2026-05-01 via SOP-3 trivial inline edit on PRD-700-R4.)
+- [x] ADR-001/002/003/004 promoted from `Proposed` to `Accepted`. (2026-05-02)
+- [x] G2 closure announced; Phase 6.2 fan-out begins. (Pending LQ-1 + A1/A2/A3/A4 triage per Phase 6.2 prework checklist.)
 
 ## Changelog
 
 | Date | Author | Change |
 |---|---|---|
 | 2026-05-02 | Jeremy Forsythe (BDFL) via /forge:mission-planner | Initial blueprint. Five-agent hierarchical team, custom topology. Adapted from `saas-product-team` template by replacing PM/Architect with Spec Steward (PRDs already authored, no greenfield architecture work) and splitting Lead into Lead + two parallel implementers (Adapter/Generator vs Runtime/Tooling) given the leaf-PRD volume. Five quality gates (G1 schema lock; G2 slice; G3 amendment triage; G4 per-leaf verification; G5 nightly conformance matrix) and six anti-patterns specific to this project (silent PRD amendment, coverage theater, conformance gate skipping, vertical-slice abandonment, adapter leaf overreach, runtime/static auth confusion). Awaiting BDFL sign-off on the checklist before Phase 6 begins. |
+| 2026-05-02 | Jeremy Forsythe (BDFL) | G2 BDFL sign-off complete. ADR-001/002/003/004 promoted to `Accepted`. Slice retro accepted; A8 closed (SOP-3); A9 closed (strict reading). Phase 6.2 fan-out unblocks pending LQ-1 closure and A1/A2/A3/A4 triage per the prework checklist. |

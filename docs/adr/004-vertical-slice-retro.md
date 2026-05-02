@@ -1,8 +1,8 @@
 # ADR-004 — Vertical slice retro (Phase 6.1 G2 close)
 
-**Status:** Proposed
-**Date:** 2026-05-01
-**Author:** Lead TypeScript Engineer (agent) + QA / Conformance Verifier (agent), for BDFL review at G2 closure
+**Status:** Accepted
+**Date:** 2026-05-01 (proposed) / 2026-05-02 (accepted by BDFL at G2 close)
+**Author:** Lead TypeScript Engineer (agent) + QA / Conformance Verifier (agent) — accepted by Jeremy Forsythe (BDFL)
 
 ## Context
 

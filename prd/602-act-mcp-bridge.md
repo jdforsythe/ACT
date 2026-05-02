@@ -187,7 +187,12 @@ This is the normative section. Everything below uses RFC 2119 keywords as clarif
 - `start(transport)`: a convenience that wires both the HTTP handler and the MCP transport.
 - `dispose()`: shuts down both protocols cleanly.
 
-**PRD-602-R3.** **(Core)** `createBridge` MUST validate at construction time that the supplied `ActRuntime` (PRD-500-R3) satisfies the level the bridge advertises. Specifically: if the bridge is configured to advertise `subtree` (PRD-602-R11), the runtime MUST have `resolveSubtree` registered (PRD-500-R32). Mismatches MUST throw a structured error before any request is served.
+**PRD-602-R3.** **(Core)** `createBridge` MUST validate at construction time that every advertised capability is satisfied by the source it is bound to. The rule applies in two shapes:
+
+1. **Single-source construction (default).** When `BridgeConfig.mounts` is omitted, the bridge advertises the level of its single supplied `ActRuntime` (PRD-500-R3) and the existing rule applies verbatim: if the bridge is configured to advertise `subtree` (PRD-602-R11), the runtime MUST have `resolveSubtree` registered (PRD-500-R32). Mismatches MUST throw a structured error before any request is served.
+2. **Multi-mount construction (per PRD-602-R24's `mounts` field).** When `BridgeConfig.mounts` is supplied, the bridge MUST validate each mount's `source` against the level declared in that mount's manifest (`conformance.level` per PRD-107-R1). For each mount: a `source` whose runtime resolver set does not satisfy the mount manifest's declared level (per PRD-107-R6 / R8 / R10) MUST cause `createBridge` to throw a structured error before any request is served. Specifically, a mount whose manifest advertises `subtree` (Standard) MUST have `resolveSubtree` registered on its runtime source, and a `static` source's manifest MUST itself satisfy the level it declares (the static walker is read-only — level satisfaction is an admit-list check on the manifest's emitted shape per PRD-107-R6 / R8 / R10). The construction-time check fires once per mount; the bridge MUST NOT accept a partially-valid configuration.
+
+Per-mount validation is layered on top of the single-source rule; an operator using `mounts` does NOT bypass single-source level-validation semantics — every mount independently obeys the same rule applied to the whole bridge in single-source construction.
 
 #### ACT side of the bridge
 
@@ -205,23 +210,37 @@ const bridge = createBridge({ runtime: actRuntime, httpHandler, mcp: { name: 'ex
 
 **PRD-602-R5.** **(Core)** The MCP side of the bridge MUST be implemented as an MCP 1.0-conformant server. The bridge MUST advertise itself with the configured `name` and `version` per MCP's initialization handshake. The bridge MUST NOT embed a transport (stdio or HTTP+SSE); the operator wires the transport at start-up time via `bridge.start(transport)`.
 
+A single bridge identity (`name` + `version`) covers all mounts: regardless of whether the bridge is constructed from a single `ActRuntime` (the default) or from a multi-mount `BridgeConfig.mounts` array (per PRD-602-R24), the deployment exposes ONE MCP server with ONE initialization handshake. Per-mount manifests are exposed as separate MCP resources (PRD-602-R6 / R7) rather than as separate MCP servers. This is the simpler shape PRD-706-R12 / PRD-706-R14 take: one bridge process wraps one runtime + a static walker (or any combination of runtime / static sources), and clients enumerate per-mount manifests as resources under the unified `act://<host>/...` URI space. Operators MUST NOT run multiple `createBridge` instances to cover one logical deployment with multiple mounts; the multi-mount construction surface (PRD-602-R24) exists precisely to license the single-server shape PRD-706 needs.
+
 #### URI scheme and identity
 
-**PRD-602-R6.** **(Core)** The bridge MUST expose ACT nodes as MCP resources under the URI scheme `act://`. The canonical form is:
+**PRD-602-R6.** **(Core)** The bridge MUST expose ACT nodes as MCP resources under the URI scheme `act://`. Two canonical forms apply, selected by construction shape:
+
+1. **Single-mount deployments** (`BridgeConfig.mounts` omitted) use the original canonical form:
+
+   ```
+   act://<host>/<percent-encoded-id>
+   ```
+
+2. **Multi-mount deployments** (`BridgeConfig.mounts` supplied) interleave the mount prefix between `<host>` and the per-mount node id:
+
+   ```
+   act://<host>/<percent-encoded-prefix-segments>/<percent-encoded-id>
+   ```
+
+In both forms `<host>` is the operator-configured authority component (typically the deployment's primary hostname; e.g., `docs.example.com`) and the id (and prefix segments) are encoded with per-segment percent-encoding per PRD-100-R12 / PRD-106-R14 / PRD-500-R13. Per-segment encoding preserves `/` as the segment separator. The mount prefix is taken from `BridgeConfig.mounts[i].prefix` with leading `/` stripped and per-segment encoded; e.g., a mount with `prefix: "/marketing"` produces URIs of the form `act://<host>/marketing/<percent-encoded-id>`.
+
+Examples:
 
 ```
-act://<host>/<percent-encoded-id>
+act://docs.example.com/getting-started/install               # single-mount
+act://acme.com/marketing/landing                             # multi-mount, marketing prefix
+act://acme.com/app/dashboard                                 # multi-mount, app prefix
 ```
 
-where `<host>` is the operator-configured authority component (typically the deployment's primary hostname; e.g., `docs.example.com`) and `<percent-encoded-id>` is the ACT node id with per-segment percent-encoding per PRD-100-R12 / PRD-106-R14 / PRD-500-R13. Per-segment encoding preserves `/` as the segment separator.
+The MCP-side resource enumeration (PRD-602-R6 in conjunction with PRD-602-R7 and the `ListResources` request handler) MUST surface per-mount manifests in the multi-mount form — each mount appears as a `act://<host>/<prefix>/manifest` resource alongside that mount's node resources — so MCP clients can discover and read each mount's level (PRD-107-R1) independently. The unprefixed `act://<host>/manifest` resource (PRD-602-R7) carries the parent (routing) manifest in multi-mount deployments and the runtime-profile manifest in single-mount deployments.
 
-Example: ACT id `getting-started/install` deployed under host `docs.example.com` becomes:
-
-```
-act://docs.example.com/getting-started/install
-```
-
-The `act://` scheme is reserved by this PRD for ACT-MCP bridges. Alternative schemes are MAJOR per the Versioning table.
+The `act://` scheme is reserved by this PRD for ACT-MCP bridges. Alternative schemes are MAJOR per the Versioning table. Adding the optional prefix segment to the URI is additive: every single-mount URI shape that v0.1 produced before amendment A4 remains byte-identical under amendment A4.
 
 **PRD-602-R7.** **(Core)** The bridge MUST expose the ACT manifest as a single MCP resource at `act://<host>/manifest`. The resource's body MUST be the runtime-profile manifest (PRD-100-R4 + PRD-106-R25). The MIME type is `application/act-manifest+json; profile=runtime`. MCP clients lacking subscription support enumerate the tree by reading this resource; the manifest's `index_url` and `node_url_template` indicate where to follow.
 
@@ -254,9 +273,13 @@ The bridge MUST NOT advertise an MCP capability whose underlying ACT capability 
 
 The bridge MUST preserve PRD-500-R18 (404 vs 403 indistinguishability): when the identity bridge resolves to a principal that cannot see a resource, the MCP-side response is identical (modulo opaque request IDs) to the response for a non-existent resource.
 
+**Per-mount application.** When `BridgeConfig.mounts` is supplied (PRD-602-R24), the IdentityBridge applies per-mount: each mount's `source` consumes its own `IdentityResolver` (PRD-500-R6) per the existing rule, and the bridge MUST route each MCP request to the IdentityBridge associated with the mount whose prefix the resource URI matches (longest-prefix match per PRD-106-R20). If a mount's `source` has no `IdentityResolver` registered — typically a public, anonymous-readable static walker (`StaticSource`) — the IdentityBridge MAY be omitted for that mount: the bridge MUST dispatch reads on that mount as anonymous (no auth context lifted into ACT). For runtime sources whose resolver requires identity (per-tenant scoping per PRD-500-R7), the IdentityBridge MUST be supplied; failing to do so is a construction error per PRD-602-R3. The bridge MUST NOT share a single IdentityBridge across mounts in a way that would leak one mount's auth context into another mount's source.
+
 #### Subtree mapping
 
-**PRD-602-R11.** **(Standard)** When the runtime advertises `capabilities.subtree`, the bridge MUST expose each subtree-root id as a list-of-resources MCP resource at `act://<host>/<id>?subtree=1`. The body is a JSON array of MCP resource URIs corresponding to the subtree's nodes in depth-first preorder per PRD-100-R35. The bridge MUST honor the depth bound (default 3, max 8) per PRD-100-R33. Truncation per PRD-100-R34 is preserved: when the subtree is elided, the list resource includes a final entry `{ "truncated": true, "elided_root": "<id>" }`. MCP clients that want full subtree traversal MUST fetch each child resource individually (MCP's flat-resource model permits this).
+**PRD-602-R11.** **(Standard)** When the runtime advertises `capabilities.subtree`, the bridge MUST expose each subtree-root id as a list-of-resources MCP resource at `act://<host>/<id>?subtree=1` (single-mount) or `act://<host>/<prefix>/<id>?subtree=1` (multi-mount). The body is a JSON array of MCP resource URIs corresponding to the subtree's nodes in depth-first preorder per PRD-100-R35. The bridge MUST honor the depth bound (default 3, max 8) per PRD-100-R33. Truncation per PRD-100-R34 is preserved: when the subtree is elided, the list resource includes a final entry `{ "truncated": true, "elided_root": "<id>" }`. MCP clients that want full subtree traversal MUST fetch each child resource individually (MCP's flat-resource model permits this).
+
+**Per-mount independence.** When `BridgeConfig.mounts` is supplied (PRD-602-R24), per-mount subtree advertisement is independent: a mount whose manifest does NOT advertise `capabilities.subtree` MUST NOT expose any `?subtree=1` resources, regardless of whether sibling mounts in the same bridge advertise subtree. The bridge MUST scope subtree exposition to the mount whose prefix matches the resource URI; a subtree request that resolves to a mount without subtree support MUST surface MCP `RESOURCE_NOT_FOUND` (PRD-602-R14) to preserve byte-equivalence with a missing-resource response per PRD-500-R18. Construction-time validation per PRD-602-R3 catches the inverse (a mount manifest advertising subtree whose runtime source lacks `resolveSubtree`).
 
 **PRD-602-R12.** **(Standard)** When the bridge serves a multi-tenant runtime (PRD-500-R7), the bridge MUST cache the tenant resolution per MCP session. The cache key is the MCP session ID (per MCP's session model) AND the bridged ACT identity. The default TTL is **60 seconds**; configurable via `BridgeConfig.tenantCacheTtlMs`. Cache eviction MUST occur on session close.
 
@@ -367,21 +390,77 @@ This is OPTIONAL for v0.1 and a candidate for tightening in v0.2 once MCP-aware 
 
 ```ts
 interface BridgeConfig {
-  runtime: ActRuntime;                    // PRD-500-R3
+  runtime: ActRuntime;                    // PRD-500-R3 (single-source default)
   httpHandler: (req: Request) => Promise<Response>;  // PRD-505 / PRD-501 / etc.
   mcp: {
-    name: string;                         // server name in MCP init
+    name: string;                         // server name in MCP init (one identity per bridge — PRD-602-R5)
     version: string;                      // server version in MCP init
     host: string;                         // authority for act:// URIs
   };
-  identityBridge?: IdentityBridge;        // required iff runtime uses IdentityResolver
+  identityBridge?: IdentityBridge;        // required iff runtime uses IdentityResolver (single-source default)
   tenantCacheTtlMs?: number;              // default 60_000
   logger?: Logger;                        // PRD-500-R23
   features?: {
     subscriptions?: boolean;              // PRD-602-R17; default false
   };
+  mounts?: BridgeMount[];                 // OPTIONAL multi-mount construction; when supplied, each mount's source is validated per PRD-602-R3
+}
+
+interface BridgeMount {
+  /**
+   * Origin-relative path prefix that selects this mount via longest-prefix match
+   * (per PRD-106-R20 mounts coherence). MUST start with "/" and MUST NOT
+   * overlap with any other mount's prefix in the same `BridgeConfig.mounts`.
+   * Surfaces in act:// URIs as `act://<host>/<prefix-segments>/<id>` per
+   * PRD-602-R6.
+   */
+  prefix: string;
+  /**
+   * The source backing this mount. Either an ACT runtime resolver (per PRD-500-R3)
+   * or a static walker (`StaticSource`). The bridge validates the source against
+   * the mount manifest's declared level at construction time (PRD-602-R3).
+   */
+  source: ActRuntime | StaticSource;
+  /**
+   * Per-mount IdentityBridge. Required iff this mount's `source` is a runtime
+   * with an IdentityResolver registered (PRD-500-R6, PRD-500-R7). MAY be omitted
+   * for `StaticSource` mounts that are anonymous-readable per PRD-602-R10.
+   */
+  identityBridge?: IdentityBridge;
+}
+
+interface StaticSource {
+  kind: 'static';
+  /**
+   * URL of the mount's leaf manifest (typically `<prefix>/.well-known/act.json`)
+   * — the static walker reads this manifest plus its `index_url` and per-node
+   * URLs to enumerate the mount's resources. This is the same walker entry
+   * point PRD-600-R11 / PRD-706-R13 use; the bridge MUST consume the same
+   * walker to foreclose drift between MCP-surfaced and validator-walked trees
+   * (per PRD-706-R13's drift-prevention rationale, which drove A4's StaticSource
+   * shape).
+   */
+  manifestUrl: string;
+  /**
+   * Optional filesystem hint: when supplied, the static walker MAY read
+   * static files directly from `rootDir` instead of fetching `manifestUrl`
+   * over HTTP. Useful for local development; deployment topology (e.g.,
+   * the build's `dist/marketing/` output per PRD-706-R12) is the canonical
+   * use case.
+   */
+  rootDir?: string;
 }
 ```
+
+**`mounts` semantics.**
+
+- When `mounts` is **omitted** (the default), the existing single-`runtime` + `httpHandler` path applies verbatim and the bridge's behavior is unchanged from pre-amendment-A4 PRD-602. Existing PRD-602 deployments are unaffected.
+- When `mounts` is **supplied**, each mount carries its own `source` (an `ActRuntime` for runtime-served mounts or a `StaticSource` for static-walked mounts) and its own optional `IdentityBridge`. The top-level `BridgeConfig.runtime` and `BridgeConfig.identityBridge` MUST still be supplied (the bridge's HTTP side per PRD-602-R4 mounts a `httpHandler` for at least one runtime; in PRD-706 the runtime app mount's `ActRuntime` is also surfaced via `mounts[i].source`). The single `mcp.name` / `mcp.version` identity covers all mounts per PRD-602-R5.
+- `BridgeConfig.mounts[i].prefix` values MUST satisfy PRD-106-R20's mounts-coherence rule: no prefix MAY be a strict prefix of another mount's prefix in the same array. The bridge MUST reject overlapping prefixes at `createBridge` with a structured error.
+- The `StaticSource` shape is intentionally minimal for v0.1 — `manifestUrl` is the single-source-of-truth entry point per PRD-706-R13 (the same walker validators use), and `rootDir` is an optional local-dev hint. Future amendments MAY widen `StaticSource` (e.g., adding ETag overrides, per-mount auth shims) under PRD-108-R4(1) MINOR rules.
+- Per-mount level validation per PRD-602-R3 fires once per mount; partial-validity construction is forbidden (the bridge throws, the operator fixes, the bridge re-constructs).
+
+The pre-amendment-A4 contract is preserved: every existing field retains its v0.1 semantics, and `mounts` is purely additive (an optional field whose absence yields the historical single-source behavior). MINOR bump per PRD-108-R4(1).
 
 #### `act_version` pinning
 
@@ -413,6 +492,25 @@ export interface BridgeConfig {
   tenantCacheTtlMs?: number;
   logger?: Logger;
   features?: { subscriptions?: boolean };
+  /**
+   * OPTIONAL multi-mount construction surface (amendment A4 / PRD-602-R24).
+   * When omitted, the bridge wraps the single `runtime` + `httpHandler` per
+   * the original PRD-602-R3 / R4 contract. When supplied, each mount carries
+   * its own `source` and is validated independently per PRD-602-R3.
+   */
+  mounts?: BridgeMount[];
+}
+
+export interface BridgeMount {
+  prefix: string;                                   // PRD-106-R20 mounts coherence
+  source: ActRuntime | StaticSource;
+  identityBridge?: IdentityBridge;                  // PRD-602-R10 (per-mount)
+}
+
+export interface StaticSource {
+  kind: 'static';
+  manifestUrl: string;                              // same walker entry point as PRD-600-R11 / PRD-706-R13
+  rootDir?: string;                                 // optional local-dev hint
 }
 
 export interface Bridge {
@@ -508,6 +606,7 @@ Files are not created by this PRD; they are enumerated for downstream authoring.
 - `fixtures/602/positive/correlation-id/` — single correlation ID present in HTTP `X-Request-Id` and MCP frame extension.
 - `fixtures/602/positive/forward-compat-tolerates/` — incoming MCP frame with unknown OPTIONAL field is accepted.
 - `fixtures/602/positive/discovery-link-header/` — ACT response `Link` header points to MCP transport endpoint.
+- `fixtures/602/positive/hybrid-runtime-plus-static.json` — multi-mount `BridgeConfig` (per PRD-602-R24) with one runtime mount (`prefix: "/app"`) and one static mount (`prefix: "/marketing"`, `kind: "static"`); the resulting MCP `ListResources` enumeration includes per-mount manifests at `act://<host>/manifest`, `act://<host>/marketing/manifest`, and `act://<host>/app/manifest` plus the union of static-mount node URIs and runtime-mount node URIs under their respective prefixes (PRD-602-R3 per-mount validation, R5 single bridge identity, R6 multi-mount URI form, R10 per-mount IdentityBridge, R11 per-mount subtree independence, R24 `mounts` field).
 
 ### Negative
 
@@ -518,6 +617,7 @@ Files are not created by this PRD; they are enumerated for downstream authoring.
 - `fixtures/602/negative/identity-bridge-throws/` — identity bridge throws → MCP `INTERNAL_ERROR` with no identity details leaked.
 - `fixtures/602/negative/subtree-depth-out-of-range/` — request depth = 9; MCP `INVALID_REQUEST`.
 - `fixtures/602/negative/uri-scheme-collision/` — operator misconfigures `host` with reserved characters; bridge rejects at `createBridge`.
+- `fixtures/602/negative/mounts-overlap-prefix/` — multi-mount `BridgeConfig` with two mounts whose prefixes overlap (e.g., `prefix: "/docs"` and `prefix: "/docs/v2"`); `createBridge` MUST reject at construction time with a structured error per PRD-602-R24's prefix-coherence rule (PRD-106-R20 mounts coherence applies). No request is served.
 
 ---
 
@@ -712,3 +812,5 @@ function deriveMcpCapabilities(config: BridgeConfig) {
 | 2026-05-01 | Jeremy Forsythe | Open questions resolved post-review. Decisions: (1) no MCP completions mapping in v0.1 (Q1); (2) blocks served inline, not as separate MCP resources (Q2; see normative R8 change below); (3) `act://<host>/manifest` enumeration resource confirmed (Q3); (4) resource subscriptions opt-in for runtime change events (Q4); (5) one logger with correlation ID, no separate per-session telemetry sink (Q5); (6) no `marketing:*` block MIME minted in v0.1 (Q6). Ratified: forward-compat shim per Q6 with explicit MCP-MINOR escalation hook (R20); BDFL is the escalation owner; URI scheme `act://<host>/<id>` with per-segment percent-encoding (R6); 404/403 byte-equivalence preserved per PRD-109-R3 / PRD-500-R18 (R14); resources-only posture, MCP tools deferred to v0.2 (R16); operator-supplied `IdentityBridge` adapter (R10). |
 | 2026-05-01 | Jeremy Forsythe | **Normative change.** Revised PRD-602-R8: dropped the invented MIME `application/act-block+json; profile=marketing` and the per-block MIME-variants table. R8 now states that each ACT node maps to one MCP resource and blocks are served inline as part of the `application/act-node+json; profile=runtime` node payload. Rationale: PRD-102 (Accepted) defines no canonical block-level MIME, and PRD-602 is content-tree bridging — granular block-as-MCP-resource exposition is a v0.2 feature that would coordinate with a PRD-102 MIME pin if and when one is introduced. Updated the surface-table row for R8 accordingly. No fixture file changes required (no fixtures author block-level URIs). |
 | 2026-05-02 | Jeremy Forsythe | Status: In review → Accepted. BDFL sign-off (per 000-governance R11). |
+| 2026-05-02 | Spec Steward | Status: Accepted → In review for amendment A4: additive multi-mount construction surface (`BridgeConfig.mounts` with per-mount `{ prefix, source }` and a minimal `StaticSource` shape carrying `manifestUrl` + optional `rootDir`). Restated PRD-602-R3 to apply level validation per-mount; restated PRD-602-R5 so a single bridge identity covers all mounts (per PRD-706-R12 / R14); restated PRD-602-R6 to interleave the mount prefix into the canonical URI when `mounts` is supplied (single-mount form unchanged); restated PRD-602-R10 so per-mount IdentityBridge applies, with the IdentityBridge optional for static-source mounts; restated PRD-602-R11 so per-mount subtree advertisement is independent. Added a positive fixture row (`fixtures/602/positive/hybrid-runtime-plus-static.json`) and a negative fixture row (`fixtures/602/negative/mounts-overlap-prefix/`). Single-source construction (omitted `mounts`) is byte-identical to pre-amendment behavior, so the change is purely additive: a new optional field on `BridgeConfig`. MINOR bump per PRD-108-R4(1) (adding a new optional field to an existing object). Routed through SOP-4 per `docs/workflow.md` §"Reviews and amendments"; status flipped to `In review` pending BDFL sign-off (the status flip is the guard against silent reinterpretation per the anti-pattern watchlist). On approval the status flips back to Accepted with a new Changelog row. |
+| 2026-05-02 | Jeremy Forsythe (BDFL) | Status: In review → Accepted. BDFL sign-off on amendment A4 (additive `BridgeConfig.mounts` field with the minimal `StaticSource` shape; default-omitted path is byte-identical to pre-amendment behavior; MINOR bump per PRD-108-R4(1)). PRD-706 unblocks; Phase 6.2 Track D (PRD-601 → PRD-602 → PRD-706) can proceed to PRD-602 implementation immediately after PRD-601 closes. The Spec Steward's per-mount restatements of R3 / R5 / R6 / R10 / R11 are accepted verbatim. Implementation note for the Runtime/Tooling Engineer: PRD-706's "single bridge per deployment" intent (PRD-706-R12 / R14) is the canonical multi-mount shape; PRD-705 stays single-source per its own design. |
