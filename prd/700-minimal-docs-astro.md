@@ -163,7 +163,7 @@ A producer satisfying PRD-700 satisfies PRD-107-R6 (Core) and PRD-107-R8 (Standa
 
 Additional nodes within the 25-node envelope MAY be added (e.g., `errors`, `webhooks`, `rate-limits`) provided each carries the same frontmatter discipline as PRD-700-R5. The corpus MUST be a single locale (`en-US`); multi-locale corpora MUST NOT be used in this example. Conformance: **Core**.
 
-**PRD-700-R4.** Every node in the corpus MUST be authored as a `.md` file under `src/content/docs/` (no `.mdx`; the optional MDX seam is exercised by PRD-702). Markdown-body block emission runs in PRD-201's default coarse mode (one `markdown` block per node) per PRD-201-R12. The example MUST NOT enable PRD-201's fine-grained mode; coarse mode is sufficient for Standard. Conformance: **Core**.
+**PRD-700-R4.** Every node in the corpus MUST be authored as a `.md` file under `src/content/docs/` (no `.mdx`; the optional MDX seam is exercised by PRD-702). Markdown-body block emission runs in PRD-201's fine-grained mode (`mode: "fine"` per PRD-201-R12) so that the markdown adapter declares level Standard per PRD-201-R23 and PRD-400-R32's `enforceTargetLevel` admits the Standard target declared in §Conformance level. Coarse mode is the adapter default but declares level Core per PRD-201-R23, which would conflict with the Standard target in §Conformance level — the example MUST therefore set `mode: "fine"`. Note: this is a configuration choice on the example, not a normative wire-format requirement; the example's emitted blocks are still predominantly `markdown` and `prose` blocks since the corpus contains no fenced code, callouts, or `.mdx`. Conformance: **Core**.
 
 #### Frontmatter discipline
 
@@ -502,3 +502,4 @@ The `validate` script exits non-zero on any `gaps` entry per PRD-600-R27.
 |---|---|---|
 | 2026-05-02 | Jeremy Forsythe | Initial draft. Pins the minimal Astro + markdown documentation site reference example to a Standard conformance target with a 10–25 node corpus, exercises PRD-401 / PRD-201 / PRD-600 / PRD-100–105 / PRD-107, and binds the example to PRD-600's reporter as the gate. Status: Draft → In review. |
 | 2026-05-02 | Jeremy Forsythe | Status: In review → Accepted. BDFL sign-off (per 000-governance R11). |
+| 2026-05-01 | Spec Steward | Inline clarification per amendment A8: PRD-700-R4 now requires `mode: "fine"` on the markdown adapter so the adapter's PRD-201-R23 declared level (Standard) matches the example's declared conformance target (Standard) and PRD-400-R32's `enforceTargetLevel` admits the build. Non-normative: the wire format the example emits is unchanged; only the configuration knob the example pins is restated. PRD-201 and PRD-400 are not touched. |

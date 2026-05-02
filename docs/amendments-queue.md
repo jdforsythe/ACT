@@ -2,7 +2,7 @@
 
 **Status:** Active
 **Owner:** Jeremy Forsythe (BDFL)
-**Last updated:** 2026-05-02
+**Last updated:** 2026-05-01
 
 This file tracks proposed amendments to **Accepted** PRDs surfaced during downstream PRD authoring or implementation. Per [docs/workflow.md](workflow.md) §"Reviews and amendments", entries are triaged via `forge:reviewer` during Phase 6:
 
@@ -86,24 +86,36 @@ Until Phase 6 starts, entries are queued — **no Accepted PRD is silently amend
 - **Proposed fix (semantic / additive):** Add a `mounts` field (or equivalent composite-source contract) to PRD-602's bridge construction shape, supporting an array of `{ prefix, source }` where `source` is either an `ActRuntime` or a static walker. Restate PRD-602-R3's level-validation rule to apply per-mount: the bridge MUST validate that each mount's source satisfies the level declared in that mount's manifest. The MCP-side resource enumeration (PRD-602-R6 / R7) already supports per-mount surfaces. MINOR bump per PRD-108 (additive optional construction field; single-source construction remains the default).
 - **Triage call:** Implementation team will hit this on day one of PRD-602 + PRD-706 work. Recommend resolving before that work begins.
 
+---
+
+## Closed entries
+
 ### A8 — PRD-700-R4 vs PRD-201-R23: coarse-mode adapter cannot satisfy a Standard generator target
 
 - **PRD:** PRD-700 (Reference example) and PRD-201 (Markdown adapter); transitively PRD-400 (Generator pipeline).
 - **Section / requirement:** PRD-700-R4 (coarse mode is sufficient for Standard); PRD-201-R23 (declared level is `core` when `mode: "coarse"`); PRD-400-R32 (`enforceTargetLevel` refuses target > adapter declared level).
 - **Surfaced by:** PRD-700 implementation in `examples/700-tinybox/` (Phase 6.1, step 6 / G2 close).
-- **Observed problem:** PRD-700-R4 reads "the example MUST NOT enable PRD-201's fine-grained mode; coarse mode is sufficient for Standard." PRD-201-R23 reads "Core when (a) `mode: "coarse"`, (b) no `.mdx` files matched, (c) the corpus contains no `:::`-style admonitions or GFM alerts that would force `callout` emission." With coarse mode the adapter declares level `core`. PRD-400-R32's `enforceTargetLevel` then refuses a Standard target against a Core-declared adapter (`order["standard"] > order["core"]`). The example as written in PRD-700-R4 cannot reach `achieved.level === 'standard'` (PRD-700-R12) without contradicting one of (a) PRD-700-R4, (b) PRD-201-R23, (c) PRD-400-R32.
-- **Pragmatic resolution adopted in v0.1 slice:** `examples/700-tinybox/astro.config.mjs` configures the markdown adapter with `mode: 'fine'` and `targetLevel: 'standard'`, so the adapter declares Standard, the generator's `enforceTargetLevel` admits the Standard target, and the conformance gate passes. ADR-004 documents this decision.
-- **Proposed fix (semantic; needs spec-steward triage):** Three candidate edits:
-  - **(a) Edit PRD-700-R4** to admit `mode: 'fine'` (or restate that the example's mode is implementer's choice). Smallest blast radius.
-  - **(b) Edit PRD-201-R23** so coarse mode declares `Standard` when the source corpus is subtree-eligible (parent / children frontmatter present). Touches the adapter contract; affects Track A leaves.
-  - **(c) Edit PRD-400-R32** to accept a target one band above adapter declared level when the generator can supply the missing band (e.g., subtree files derived from the merged node graph). Touches the generator contract.
-- **Triage call:** Implementation team's recommended order is (a) → (c) → (b). Option (a) is a one-line PRD-700 edit; option (c) is a generator-contract change that needs ADR review; option (b) ripples into every adapter. Spec-steward triage to pick.
+- **Observed problem:** PRD-700-R4 read "the example MUST NOT enable PRD-201's fine-grained mode; coarse mode is sufficient for Standard." PRD-201-R23 reads "Core when (a) `mode: "coarse"`, (b) no `.mdx` files matched, (c) the corpus contains no `:::`-style admonitions or GFM alerts that would force `callout` emission." With coarse mode the adapter declares level `core`. PRD-400-R32's `enforceTargetLevel` then refuses a Standard target against a Core-declared adapter. The example as previously written in PRD-700-R4 could not reach `achieved.level === 'standard'` (PRD-700-R12) without contradicting one of (a) PRD-700-R4, (b) PRD-201-R23, (c) PRD-400-R32.
+- **Verdict (2026-05-01, Spec Steward):** **Trivial inline clarification per SOP-3** on PRD-700 only. Option (a) chosen.
+- **Rationale:** PRD-201-R23 and PRD-400-R32 are wire-format / pipeline contracts with many leaf consumers across Tracks A and B. The friction is local to the example's mode-vs-level alignment, not to the adapter or generator contracts. PRD-700 is a reference example whose `mode: "coarse"` directive was a defensible default ("the simplest mode is enough for the simplest example"), but the implication that coarse mode reaches Standard is wrong as PRD-201-R23 reads today. The smallest-blast-radius fix is to clarify PRD-700-R4 to require `mode: "fine"` (which the slice already implements), citing PRD-201-R23 and PRD-400-R32. Options (b) and (c) would each require a MINOR bump per PRD-108-R4 ("adding new optional behaviour" or "loosening a `enforceTargetLevel` MUST"); both are out of scope for v0.1.
+- **Action taken:** Edited PRD-700-R4 in `prd/700-minimal-docs-astro.md` to require `mode: "fine"` and explain the PRD-201-R23 → PRD-400-R32 → example-target chain. Added a Changelog row dated 2026-05-01 citing this amendment. The wire format the example emits is unchanged (the corpus contains no fenced code, callouts, or `.mdx`, so fine mode produces predominantly `markdown` / `prose` blocks). PRD-201 and PRD-400 are not touched. ADR-004 in the implementation repo records the configuration decision.
+- **BDFL escalation:** None required. This is SOP-3 trivial inline (clarification on a reference-example PRD; non-normative on the wire format).
+- **Closed:** 2026-05-01.
+
+### A9 — Validator level-inference: `probeCapabilityBand` is a strict reading of PRD-107-R6/R8/R10 + PRD-600-R18
+
+- **PRD:** PRD-600 (Validator), PRD-107 (Conformance levels). No amendment.
+- **Section / requirement:** PRD-600-R18 (achieved level by **probing**, not trusting `conformance.level`); PRD-107-R6 (Core inclusion list — `index_url` + `node_url_template`); PRD-107-R8 (Standard adds `subtree_url_template` / `capabilities.subtree`); PRD-107-R10 (Plus adds `index_ndjson_url` + `search_url_template` / `capabilities.search.template_advertised`).
+- **Surfaced by:** Lead+QA pairing at G2 sign-off — open question #3 against the slice. The Lead added `probeCapabilityBand` to `packages/validator/src/walk.ts` to make `inferAchievedLevel` return the correct level for clean Standard manifests instead of defaulting to `plus`.
+- **Verdict (2026-05-01, Spec Steward):** **No amendment needed.** The new `probeCapabilityBand` is a strict reading of the spec, not a divergence.
+- **Rationale (cited):**
+  - PRD-600-R18: "The `achieved` field MUST be populated by **probing**, not by trusting the manifest's `conformance.level`. PRD-600 MUST attempt every Core check; if every Core check passes, `achieved.level` is at least `"core"`. PRD-600 MUST then attempt every Standard check; if every Standard check passes, `achieved.level` is `"standard"`. PRD-600 MUST then attempt every Plus check; if every Plus check passes, `achieved.level` is `"plus"`." A default-to-plus implementation that runs no Plus probe and emits `achieved.level: "plus"` violates the third sentence (Plus checks must pass before Plus is reported).
+  - PRD-107-R8 enumerates the Standard-tier capability advertisement: `subtree_url_template` (or `capabilities.subtree = true`). PRD-107-R10 enumerates the Plus-tier capability advertisement: `index_ndjson_url` + `search_url_template` (or `capabilities.search.template_advertised`). A manifest that advertises only the Standard set cannot, under PRD-600-R18's probing rule, achieve Plus.
+  - `probeCapabilityBand` walks exactly that ladder: Core (`index_url` + `node_url_template`), Standard (+ `subtree_url_template`), Plus (+ `index_ndjson_url` + `search_url_template`). Each rung mirrors the inclusion list in PRD-107-R6 / R8 / R10 verbatim. The `inferAchievedLevel` cap (lower of gap-derived band, advertised band) is the correct probing semantics PRD-600-R18 requires.
+- **Audit trail:** the prior default-to-plus was a permissive bug, not a defensible reading. The slice's correction lands the validator on PRD-600-R18 as written. No PRD edit required.
+- **Closed:** 2026-05-01 (filed-and-closed in same triage session per SOP-2).
 
 ---
-
-## Closed entries
-
-*(none)*
 
 ---
 
@@ -112,3 +124,4 @@ Until Phase 6 starts, entries are queued — **no Accepted PRD is silently amend
 | Date | Author | Change |
 |---|---|---|
 | 2026-05-02 | Jeremy Forsythe | Initial creation. Filed A1–A4 from P3 Open questions triage at end of Phase 4. Four additional P2 ambiguities (PRD-201-R4 description-alias, PRD-201-R8/PRD-402-R8 section-index ID derivation, PRD-501-R9 manifest identity scope, PRD-106-R17/R18 runtime-served parent manifest) accepted as v0.2 candidates and remain documented in their source P3 PRDs' Open questions sections; not queued here. |
+| 2026-05-01 | Spec Steward | Triaged A8 (PRD-700-R4 vs PRD-201-R23 mode-vs-level friction): trivial inline clarification on PRD-700-R4 per SOP-3, option (a) chosen, no PRD-201 / PRD-400 edit. Closed. Filed-and-closed A9 (validator `probeCapabilityBand` is a strict reading of PRD-107-R6/R8/R10 + PRD-600-R18; no amendment needed). LQ-1 (validator branch-coverage relaxation) surfaced to BDFL in `docs/lead-questions.md` — out of Spec Steward scope per role boundary. |
