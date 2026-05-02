@@ -95,11 +95,116 @@ importers:
         specifier: ^5.6.3
         version: 5.9.3
 
+  examples/702-corporate-marketing-nextjs:
+    dependencies:
+      '@act-spec/adapter-framework':
+        specifier: workspace:*
+        version: link:../../packages/adapter-framework
+      '@act-spec/component-react':
+        specifier: workspace:*
+        version: link:../../packages/component-react
+      '@act-spec/contentful-adapter':
+        specifier: workspace:*
+        version: link:../../packages/contentful-adapter
+      '@act-spec/generator-core':
+        specifier: workspace:*
+        version: link:../../packages/generator-core
+      '@act-spec/i18n-adapter':
+        specifier: workspace:*
+        version: link:../../packages/i18n-adapter
+      '@act-spec/nextjs-static':
+        specifier: workspace:*
+        version: link:../../packages/nextjs-static
+      '@act-spec/validator':
+        specifier: workspace:*
+        version: link:../../packages/validator
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.3.1
+        version: 18.3.1(react@18.3.1)
+    devDependencies:
+      '@types/react':
+        specifier: ^18.3.12
+        version: 18.3.28
+      '@types/react-dom':
+        specifier: ^18.3.1
+        version: 18.3.7(@types/react@18.3.28)
+      tsx:
+        specifier: ^4.19.2
+        version: 4.21.0
+      typescript:
+        specifier: ^5.6.3
+        version: 5.9.3
+
+  examples/704-ecommerce-catalog:
+    dependencies:
+      '@act-spec/adapter-framework':
+        specifier: workspace:*
+        version: link:../../packages/adapter-framework
+      '@act-spec/generator-core':
+        specifier: workspace:*
+        version: link:../../packages/generator-core
+      '@act-spec/programmatic-adapter':
+        specifier: workspace:*
+        version: link:../../packages/programmatic-adapter
+    devDependencies:
+      '@act-spec/validator':
+        specifier: workspace:*
+        version: link:../../packages/validator
+      tsx:
+        specifier: ^4.19.2
+        version: 4.21.0
+      typescript:
+        specifier: ^5.6.3
+        version: 5.9.3
+
   examples/705-saas-workspace-runtime:
     dependencies:
       '@act-spec/adapter-framework':
         specifier: workspace:*
         version: link:../../packages/adapter-framework
+      '@act-spec/programmatic-adapter':
+        specifier: workspace:*
+        version: link:../../packages/programmatic-adapter
+      '@act-spec/runtime-core':
+        specifier: workspace:*
+        version: link:../../packages/runtime-core
+      '@act-spec/runtime-next':
+        specifier: workspace:*
+        version: link:../../packages/runtime-next
+    devDependencies:
+      '@act-spec/validator':
+        specifier: workspace:*
+        version: link:../../packages/validator
+      tsx:
+        specifier: ^4.19.2
+        version: 4.21.0
+      typescript:
+        specifier: ^5.6.3
+        version: 5.9.3
+
+  examples/706-hybrid-static-runtime-mcp:
+    dependencies:
+      '@act-spec/adapter-framework':
+        specifier: workspace:*
+        version: link:../../packages/adapter-framework
+      '@act-spec/cli':
+        specifier: workspace:*
+        version: link:../../packages/cli
+      '@act-spec/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      '@act-spec/generator-core':
+        specifier: workspace:*
+        version: link:../../packages/generator-core
+      '@act-spec/markdown-adapter':
+        specifier: workspace:*
+        version: link:../../packages/markdown-adapter
+      '@act-spec/mcp-bridge':
+        specifier: workspace:*
+        version: link:../../packages/mcp-bridge
       '@act-spec/programmatic-adapter':
         specifier: workspace:*
         version: link:../../packages/programmatic-adapter
