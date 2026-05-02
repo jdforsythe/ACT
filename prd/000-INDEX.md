@@ -147,7 +147,7 @@ Validators, inspectors, and bridges to other ecosystems.
 |---|---|---|---|---|---|---|---|
 | PRD-600 | Validator (TS library + client-side hosted page; level reporting; conformance test harness CLI mode) | Accepted | Implemented (`@act-spec/validator` v0.0.0; vertical-slice library + CLI; SPA pending PRD-700-series) | 100, 107 | 700–707 | L | P2 |
 | PRD-601 | Inspector CLI (fetch, walk, diff, token-budget what-ifs) | Accepted | Implemented (`@act-spec/inspector`) | 100 | — | M | P2 |
-| PRD-602 | ACT-MCP bridge (paired server exposing same tree as both) | Accepted | Not started | 100, 106 | 706 | L | P2 |
+| PRD-602 | ACT-MCP bridge (paired server exposing same tree as both) | Accepted | Implemented (`@act-spec/mcp-bridge`) | 100, 106 | 706 | L | P2 |
 | PRD-603 | Embeddings sidecar (deferred to v0.2) | Deprecated for v0.1 | — | — | — | — | — |
 
 ## 700-series — Reference example builds
