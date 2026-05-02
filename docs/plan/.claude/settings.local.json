@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/jforsythe/dev/ai/act/**)",
+      "Bash(rm -rf packages/*/dist packages/*/.tsbuildinfo packages/core/src/generated/*)",
+      "Bash(pnpm install *)",
+      "Bash(pnpm -F @act-spec/core codegen)",
+      "Bash(pnpm -r build)",
+      "Bash(pnpm -r typecheck)",
+      "Bash(pnpm -r lint)",
+      "Bash(pnpm -r test)",
+      "Bash(pnpm -r conformance)"
+    ]
+  }
+}

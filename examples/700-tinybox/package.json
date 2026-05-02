@@ -1,0 +1,27 @@
+{
+  "name": "@act-spec/example-700-tinybox",
+  "version": "0.0.0",
+  "private": true,
+  "description": "PRD-700 reference example: Tinybox — a minimal Astro + markdown documentation site that validates clean against PRD-600 with achieved.level === 'standard'.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "validate": "tsx scripts/validate.ts",
+    "conformance": "pnpm run build && pnpm run validate",
+    "test": "node -e \"console.log('@act-spec/example-700-tinybox: example exercises end-to-end via conformance')\"",
+    "lint": "node -e \"console.log('@act-spec/example-700-tinybox: lint covered by Astro at build time')\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "astro": "^4.16.19",
+    "@act-spec/astro": "workspace:*",
+    "@act-spec/markdown-adapter": "workspace:*"
+  },
+  "devDependencies": {
+    "@act-spec/validator": "workspace:*",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": [],
+  "references": [
+    { "path": "./packages/core" },
+    { "path": "./packages/validator" },
+    { "path": "./packages/markdown-adapter" },
+    { "path": "./packages/astro" }
+  ]
+}
