@@ -92,7 +92,7 @@ The adapter framework plus six reference adapters that exercise it. The framewor
 | PRD-201 | Markdown / MDX adapter | Accepted | Implemented (@act-spec/markdown-adapter) | 200 | 400, 700, 701, 703 | M | P2 |
 | PRD-202 | Contentful adapter | Accepted | Implemented (@act-spec/contentful-adapter) | 200 | 702 | L | P2 |
 | PRD-203 | Sanity adapter | Accepted | Implemented (@act-spec/sanity-adapter) | 200 | — | L | P2 |
-| PRD-204 | Storyblok adapter | Accepted | Not started | 200 | — | L | P2 |
+| PRD-204 | Storyblok adapter | Accepted | Implemented (@act-spec/storyblok-adapter) | 200 | — | L | P2 |
 | PRD-205 | Strapi adapter | Accepted | Not started | 200 | — | M | P2 |
 | PRD-206 | Builder.io adapter | Accepted | Not started | 200 | — | M | P2 |
 | PRD-207 | i18n adapter (next-intl, react-intl, i18next) | Accepted | Not started | 104, 200 | 702 | L | P2 |
