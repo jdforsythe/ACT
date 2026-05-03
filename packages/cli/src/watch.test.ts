@@ -4,7 +4,7 @@ import * as path from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 
 import type { GeneratorConfig } from '@act-spec/generator-core';
-import { defineProgrammaticAdapter } from '@act-spec/programmatic-adapter';
+import { defineProgrammaticAdapter } from '@act-spec/adapter-programmatic';
 
 import { collectWatchPaths, watchBuild } from './watch.js';
 

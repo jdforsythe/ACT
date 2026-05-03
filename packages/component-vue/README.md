@@ -1,8 +1,8 @@
 # @act-spec/component-vue
 
-PRD-302 Vue 3 binding for the ACT v0.1 component contract (PRD-300).
-Bridges Vue component trees to the framework-agnostic `NodeDraft` shape
-exported by `@act-spec/component-contract`.
+Vue 3 binding for the ACT component contract. Bridges Vue component trees
+to the framework-agnostic `NodeDraft` shape exported by
+`@act-spec/component-contract`.
 
 Implements the Vue declaration patterns:
 
@@ -73,7 +73,7 @@ defineActContract({
 </script>
 ```
 
-Generators (PRD-407 Nuxt, custom Vite-Vue) call `extractRoute`:
+Generators (Nuxt, custom Vite-Vue) call `extractRoute`:
 
 ```ts
 import { extractRoute, vueBinding } from '@act-spec/component-vue';
@@ -87,11 +87,10 @@ const drafts = await extractRoute({
 
 ## Conformance / what's tested
 
-Every PRD-302-R{n} requirement has a citing test in the package's
-test suite, including the Vue 3+ floor (`assertVue3Plus`), the
-contract-version pin, the variant replay loop, and the placeholder +
-redaction contract. The conformance gate runs `@act-spec/validator`
-against the extracted nodes.
+Every public API has a citing test in the package's test suite, including
+the Vue 3+ floor (`assertVue3Plus`), the contract-version pin, the
+variant replay loop, and the placeholder + redaction contract. The
+conformance gate runs `@act-spec/validator` against the extracted nodes.
 
 ```bash
 pnpm -F @act-spec/component-vue conformance
@@ -109,7 +108,5 @@ them at extraction time.
 
 ## Links
 
-- Leaf PRD: [`prd/302-vue-binding.md`](../../prd/302-vue-binding.md)
-- Framework PRD: [`prd/300-component-contract.md`](../../prd/300-component-contract.md)
-- Framework package: [`@act-spec/component-contract`](../component-contract)
+- Component contract: [`@act-spec/component-contract`](../component-contract)
 - Repository: <https://github.com/act-spec/act>

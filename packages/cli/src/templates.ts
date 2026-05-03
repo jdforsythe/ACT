@@ -16,7 +16,7 @@
 export type InitTemplate = 'markdown' | 'programmatic' | 'cms-contentful';
 
 const MARKDOWN_CONFIG = `import { defineConfig } from '@act-spec/cli';
-import { createMarkdownAdapter } from '@act-spec/markdown-adapter';
+import { createMarkdownAdapter } from '@act-spec/adapter-markdown';
 
 export default defineConfig({
   conformanceTarget: 'core',
@@ -46,7 +46,7 @@ dist
 `;
 
 const PROGRAMMATIC_CONFIG = `import { defineConfig } from '@act-spec/cli';
-import { defineProgrammaticAdapter } from '@act-spec/programmatic-adapter';
+import { defineProgrammaticAdapter } from '@act-spec/adapter-programmatic';
 
 const adapter = defineProgrammaticAdapter({
   name: 'demo',
@@ -83,7 +83,7 @@ dist
 
 const CONTENTFUL_CONFIG = `import { defineConfig } from '@act-spec/cli';
 // PRD-202 adapter — replace with the real Contentful adapter once installed:
-//   import { createContentfulAdapter } from '@act-spec/contentful-adapter';
+//   import { createContentfulAdapter } from '@act-spec/adapter-contentful';
 //
 // export default defineConfig({
 //   conformanceTarget: 'core',

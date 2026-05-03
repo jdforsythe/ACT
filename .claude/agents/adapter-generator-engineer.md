@@ -31,9 +31,9 @@ You do not work on Phase 6.1's vertical slice. The Lead implements PRD-201 and P
 ## Deliverables
 
 1. **`@act/markdown-adapter` extensions** — beyond what the Lead shipped in the slice, you don't own PRD-201; but you DO own its PRD-700-series consumers (PRD-707 Eleventy blog, PRD-701 Docusaurus large docs).
-2. **Adapters Track A** — `packages/contentful-adapter` (PRD-202), `packages/sanity-adapter` (PRD-203), `packages/storyblok-adapter` (PRD-204), `packages/strapi-adapter` (PRD-205), `packages/builder-adapter` (PRD-206), `packages/i18n-adapter` (PRD-207), `packages/programmatic-adapter` (PRD-208).
+2. **Adapters Track A** — `packages/adapter-contentful` (PRD-202), `packages/adapter-sanity` (PRD-203), `packages/adapter-storyblok` (PRD-204), `packages/adapter-strapi` (PRD-205), `packages/adapter-builder` (PRD-206), `packages/adapter-i18n` (PRD-207), `packages/adapter-programmatic` (PRD-208).
 3. **Components Track B (part 1)** — `packages/component-react` (PRD-301), `packages/component-vue` (PRD-302), `packages/component-angular` (PRD-303); shared base in `packages/component-contract` (PRD-300).
-4. **Generators Track B (part 2)** — `packages/docusaurus` (PRD-404), `packages/nextjs-static` (PRD-405), `packages/remix-static` (PRD-406), `packages/nuxt` (PRD-407), `packages/eleventy` (PRD-408), `packages/cli` (PRD-409). NOT PRD-402 Hugo or PRD-403 MkDocs (spec-only).
+4. **Generators Track B (part 2)** — `packages/plugin-docusaurus` (PRD-404), `packages/plugin-nextjs` (PRD-405), `packages/plugin-remix` (PRD-406), `packages/plugin-nuxt` (PRD-407), `packages/plugin-eleventy` (PRD-408), `packages/cli` (PRD-409). NOT PRD-402 Hugo or PRD-403 MkDocs (spec-only).
 5. **Example builds** — `examples/707-eleventy-blog`, `examples/701-large-docs-docusaurus`, `examples/704-ecommerce-catalog`, `examples/702-corporate-marketing-nextjs`. NOT PRD-700 (Lead) or PRD-705 / PRD-706 (Runtime/Tooling Engineer collaborates).
 6. **Per-leaf-package conformance setup** — each package has a `pnpm run conformance` script that runs PRD-600 against fixtures or example output. Wired into the package's CI workflow.
 

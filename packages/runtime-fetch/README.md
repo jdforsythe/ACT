@@ -1,8 +1,8 @@
 # @act-spec/runtime-fetch
 
-PRD-505 generic WHATWG-fetch handler for the [ACT (Agent Content Tree) v0.1](https://github.com/act-spec/act) reference implementation.
+Generic WHATWG-fetch handler for [ACT (Agent Content Tree)](https://github.com/act-spec/act).
 
-This package is the **leanest possible leaf** over [`@act-spec/runtime-core`](../runtime-core) (PRD-500). The whole adapter is one closure exposing one function:
+This package is the leanest possible leaf over [`@act-spec/runtime-core`](../runtime-core). The whole adapter is one closure exposing one function:
 
 ```ts
 (request: Request) => Promise<Response | null>
@@ -10,10 +10,17 @@ This package is the **leanest possible leaf** over [`@act-spec/runtime-core`](..
 
 Because the input is already a WHATWG `Request` and the output is a WHATWG `Response`, this handler runs unchanged on every fetch-native runtime: Cloudflare Workers, Deno Deploy, Bun's `Bun.serve`, Vercel Edge Functions, Hono, Service Workers, and Node.js 20+ (where `Request` / `Response` are global). No Node-only API dependencies; no framework SDK.
 
+## Status
+
+ACT v0.1 internal hand-test candidate. Public release lands at v0.2.
+
 ## Install
 
-```sh
-pnpm add @act-spec/runtime-fetch
+Unpublished in v0.1. Consume via the workspace:
+
+```jsonc
+// package.json
+{ "dependencies": { "@act-spec/runtime-fetch": "workspace:*" } }
 ```
 
 This package has zero peer dependencies. It depends only on `@act-spec/runtime-core` (which depends on `@act-spec/core` + `@act-spec/validator`); the dispatch pipeline, ETag computation, conditional GET, content negotiation, identity / tenant resolution, and discovery `Link` header all live in runtime-core.
@@ -58,7 +65,7 @@ export default {
 
 ## Routing
 
-Per PRD-505-R4 the manifest is the routing source of truth. The handler reads the manifest's URL templates at construction time and routes incoming requests against them:
+The manifest is the routing source of truth. The handler reads the manifest's URL templates at construction time and routes incoming requests against them:
 
 | Path | Endpoint | Level |
 |---|---|---|
@@ -69,14 +76,12 @@ Per PRD-505-R4 the manifest is the routing source of truth. The handler reads th
 | `index_ndjson_url` | NDJSON-streamed index | Plus |
 | `search_url_template` | search | Plus |
 
-The `manifestPath` is the only URL not declared inside the manifest itself. Override via `options.manifestPath` for deployments where `/.well-known/` is reserved by another protocol or rewritten by the host (PRD-505-R5 / OQ2).
+The `manifestPath` is the only URL not declared inside the manifest itself. Override via `options.manifestPath` for deployments where `/.well-known/` is reserved by another protocol or rewritten by the host.
 
 ### Passthrough vs strict mode
 
-Per PRD-505-R5:
-
 - **`passthrough`** (default) — non-matching requests resolve to `null`. The host chains its own router: `actHandler(req) ?? hostHandler(req)`. This is the common pattern in Workers / Deno / Hono / Bun.
-- **`strict`** — non-matching requests resolve to a 404 with the ACT error envelope (byte-identical to the in-band 404 per PRD-109-R3 / PRD-500-R18). Use when the deployment is ACT-only and the host wants no fall-through.
+- **`strict`** — non-matching requests resolve to a 404 with the ACT error envelope (byte-identical to the in-band 404). Use when the deployment is ACT-only and the host wants no fall-through.
 
 ```ts
 const handler = createActFetchHandler({
@@ -87,7 +92,7 @@ const handler = createActFetchHandler({
 
 ## Hybrid mounts (`basePath`)
 
-PRD-505-R3 / PRD-500-R26 — set `basePath` to mount the handler under a sub-path; advertised URLs in the served manifest are prefixed automatically:
+Set `basePath` to mount the handler under a sub-path; advertised URLs in the served manifest are prefixed automatically:
 
 ```ts
 const handler = createActFetchHandler({
@@ -103,7 +108,7 @@ const handler = createActFetchHandler({
 //   /app/act/n/{id}
 ```
 
-A parent manifest at the root `/.well-known/act.json` (typically served by a sibling static-export build) declares the mount per PRD-100-R7 / PRD-106-R17–R22.
+A parent manifest at the root `/.well-known/act.json` (typically served by a sibling static-export build) declares the mount.
 
 ## Hono integration
 
@@ -158,11 +163,11 @@ This package wires the **mandatory** two-principal probe from [`@act-spec/runtim
 3. The cross-tenant 404 is **byte-equivalent** to an absent-node 404 (status, body, every header — `Content-Type`, `Cache-Control`, `Link`).
 4. The discovery `Link` header is present and identical across both 404 paths (does not leak tenant identity in error cases).
 
-The probe is in `src/probe.test.ts` and runs as part of `pnpm test`. It is a **CI-mandatory test** per the runtime-tooling-engineer's anti-pattern watchlist ("Runtime/static auth confusion") and PRD-705 acceptance criterion (e). Do not skip; do not weaken.
+The probe is in `src/probe.test.ts` and runs as part of `pnpm test`. It is a **CI-mandatory test**; do not skip and do not weaken.
 
 ## NDJSON streaming portability
 
-Per PRD-505-R8 the handler streams NDJSON via the manual `new ReadableStream({ start(controller) { … } })` form. We deliberately do **not** use `ReadableStream.from(asyncIterable)` because it is not yet uniformly available across v0.1 target runtimes (Node.js < 22, some Bun versions). The manual form runs on every WHATWG-fetch host.
+The handler streams NDJSON via the manual `new ReadableStream({ start(controller) { … } })` form. We deliberately do **not** use `ReadableStream.from(asyncIterable)` because it is not yet uniformly available across v0.1 target runtimes (Node.js < 22, some Bun versions). The manual form runs on every WHATWG-fetch host.
 
 Reverse proxies in front of fetch-native deployments (nginx, Caddy) MUST be configured to disable buffering on `/act/index.ndjson` so clients see lines incrementally.
 

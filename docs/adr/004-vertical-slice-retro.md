@@ -29,9 +29,9 @@ unblock per the team-blueprint topology.
   statement, 99.83% branch coverage. Stryker mutation score 80.53% on the
   wire-format core (cycles, etag, mounts, reporter, schemas) — above the
   ≥75% G2 floor.
-- `@act-spec/markdown-adapter` (PRD-200 framework + PRD-201 leaf). 64
+- `@act-spec/adapter-markdown` (PRD-200 framework + PRD-201 leaf). 64
   tests. Coverage ≥85% line.
-- `@act-spec/astro` (PRD-400 pipeline + PRD-401 Astro integration). 58
+- `@act-spec/plugin-astro` (PRD-400 pipeline + PRD-401 Astro integration). 58
   tests. Coverage ≥85% line.
 - `examples/700-tinybox/` (PRD-700). Real Astro 4.x project with 10 markdown
   nodes, content-collections schema, two Astro page templates, a
@@ -48,7 +48,7 @@ unblock per the team-blueprint topology.
 PRD-700-R4 says "the example MUST NOT enable PRD-201's fine-grained mode;
 coarse mode is sufficient for Standard." PRD-201-R23 says "Core when
 `mode: "coarse"`, ... Standard when `mode: "fine"` ...". The current
-`@act-spec/markdown-adapter` honors PRD-201-R23 verbatim: in coarse mode
+`@act-spec/adapter-markdown` honors PRD-201-R23 verbatim: in coarse mode
 the adapter declares Core. The PRD-400 pipeline's `enforceTargetLevel`
 (PRD-400-R32) then refuses a Standard target against a Core-declared
 adapter.
@@ -112,7 +112,7 @@ fixtures stay green. No retro-time work.
 
 ## Where the seams are loose
 
-### Seam 1 — PRD-200 framework lives in `@act-spec/markdown-adapter`
+### Seam 1 — PRD-200 framework lives in `@act-spec/adapter-markdown`
 
 **Status: DONE (2026-05-02, ADR-005).** The PRD-200 framework now lives
 in the dedicated `@act-spec/adapter-framework` package, extracted as the
@@ -127,7 +127,7 @@ record.
 
 **Original (pre-G2) entry, kept for the retro's historical record:**
 ADR-003 placed PRD-200 framework code in
-`@act-spec/markdown-adapter/src/framework.ts` because PRD-201 was the only
+`@act-spec/adapter-markdown/src/framework.ts` because PRD-201 was the only
 in-flight consumer. Phase 6.2 will add PRD-208 (programmatic), PRD-202
 (Contentful), PRD-203 (Sanity), etc. — six adapters. As soon as the
 second adapter lands, framework code must move to a dedicated
@@ -136,7 +136,7 @@ mechanical rebase of imports; the public API is already shaped for it.
 Phase 6.2 Adapter/Generator engineer should plan the move at the start of
 Track A.
 
-### Seam 2 — PRD-400 pipeline lives in `@act-spec/astro`
+### Seam 2 — PRD-400 pipeline lives in `@act-spec/plugin-astro`
 
 **Status: DONE (2026-05-02, ADR-006).** The PRD-400 framework now lives
 in the dedicated `@act-spec/generator-core` package, extracted as the
@@ -152,7 +152,7 @@ for the full extraction record.
 
 **Original (pre-Track-B) entry, kept for the retro's historical record:**
 Same pattern as Seam 1. PRD-400 framework code lives in
-`@act-spec/astro/src/pipeline.ts`. Phase 6.2 Track B brings PRD-404
+`@act-spec/plugin-astro/src/pipeline.ts`. Phase 6.2 Track B brings PRD-404
 Docusaurus, PRD-405 Next.js, PRD-406 Remix, PRD-407 Nuxt, PRD-408
 Eleventy. The first non-Astro generator triggers extraction to
 `@act-spec/generator-core`.
@@ -160,7 +160,7 @@ Eleventy. The first non-Astro generator triggers extraction to
 ### Seam 3 — ETag derivation cited by both adapter and generator
 
 `@act-spec/validator` exports `deriveEtag`, `stripEtag`, `jcs`. Both
-`@act-spec/markdown-adapter` and `@act-spec/astro` import them. The path
+`@act-spec/adapter-markdown` and `@act-spec/plugin-astro` import them. The path
 is correct (one source of truth) but it creates a soft circular
 dependency: validator imports from core, adapter imports from validator,
 generator imports from validator + adapter. If the validator ever needs

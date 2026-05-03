@@ -1,0 +1,501 @@
+{
+  "act_version": "0.1",
+  "root": "api-reference",
+  "depth": 3,
+  "truncated": false,
+  "tokens": {
+    "body": 190,
+    "summary": 120
+  },
+  "nodes": [
+    {
+      "act_version": "0.1",
+      "id": "api-reference",
+      "type": "section",
+      "title": "API reference",
+      "summary": "API reference — section.",
+      "summary_source": "extracted",
+      "etag": "s256:8bQ1cml8dihN8FT3yBdcCq",
+      "content": [
+        {
+          "type": "markdown",
+          "content": "# API reference\n\nThis section groups related api reference documents.\n"
+        }
+      ],
+      "tokens": {
+        "summary": 8,
+        "body": 16
+      },
+      "children": [
+        "buckets",
+        "objects",
+        "webhooks"
+      ],
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "sidebar-category:api-reference"
+        }
+      }
+    },
+    {
+      "act_version": "0.1",
+      "id": "buckets",
+      "type": "section",
+      "title": "Buckets",
+      "summary": "Buckets — section.",
+      "summary_source": "extracted",
+      "etag": "s256:IQjk2GR5Ur-1rrNM8eP0Bc",
+      "content": [
+        {
+          "type": "markdown",
+          "content": "# Buckets\n\nThis section groups related buckets documents.\n"
+        }
+      ],
+      "tokens": {
+        "summary": 8,
+        "body": 16
+      },
+      "children": [
+        "api/buckets/create",
+        "api/buckets/get",
+        "api/buckets/list",
+        "api/buckets/delete"
+      ],
+      "parent": "api-reference",
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "sidebar-category:buckets"
+        }
+      }
+    },
+    {
+      "act_version": "0.1",
+      "id": "api/buckets/create",
+      "type": "reference",
+      "title": "Create a bucket",
+      "summary": "Provision a new storage bucket in the workspace.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "Request"
+        },
+        {
+          "type": "code",
+          "language": "bash",
+          "text": "curl -X POST -H 'Authorization: Bearer $TOKEN' \\\n  -d '{\"name\":\"my-bucket\",\"region\":\"us-east-1\"}' \\\n  https://api.tinybox.dev/v1/buckets"
+        },
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "Response"
+        },
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "The API returns the created bucket descriptor. See List buckets."
+        }
+      ],
+      "tokens": {
+        "summary": 8,
+        "body": 28
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "api/buckets/create.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/api/buckets/create.md"
+        }
+      },
+      "etag": "s256:xssJLm1NBZja15twfiF8RN",
+      "related": [
+        {
+          "id": "api/buckets/list",
+          "relation": "see-also"
+        },
+        {
+          "id": "api/buckets/delete",
+          "relation": "see-also"
+        }
+      ],
+      "parent": "buckets"
+    },
+    {
+      "act_version": "0.1",
+      "id": "api/buckets/get",
+      "type": "reference",
+      "title": "Get a bucket",
+      "summary": "Fetch a single bucket descriptor by name.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "GET /v1/buckets/{name} — returns the bucket descriptor or 404 when absent."
+        }
+      ],
+      "tokens": {
+        "summary": 7,
+        "body": 11
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "api/buckets/get.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/api/buckets/get.md"
+        }
+      },
+      "etag": "s256:qiWz1_d50br1bx8ix66fs3",
+      "related": [
+        {
+          "id": "api/buckets/list",
+          "relation": "see-also"
+        }
+      ],
+      "parent": "buckets"
+    },
+    {
+      "act_version": "0.1",
+      "id": "api/buckets/list",
+      "type": "reference",
+      "title": "List buckets",
+      "summary": "List all buckets visible to the calling principal.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "GET /v1/buckets — paginates via ?cursor= query parameter; default page size 100."
+        }
+      ],
+      "tokens": {
+        "summary": 8,
+        "body": 12
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "api/buckets/list.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/api/buckets/list.md"
+        }
+      },
+      "etag": "s256:55-BNqC2mUDpyuxrJ0OcM_",
+      "related": [
+        {
+          "id": "api/buckets/get",
+          "relation": "see-also"
+        }
+      ],
+      "parent": "buckets"
+    },
+    {
+      "act_version": "0.1",
+      "id": "api/buckets/delete",
+      "type": "reference",
+      "title": "Delete a bucket",
+      "summary": "Remove an empty bucket from the workspace.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "DELETE /v1/buckets/{name} — fails with 409 when the bucket contains objects."
+        }
+      ],
+      "tokens": {
+        "summary": 7,
+        "body": 11
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "api/buckets/delete.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/api/buckets/delete.md"
+        }
+      },
+      "etag": "s256:3uxulnhmHtY5Rtuckw6bs5",
+      "related": [
+        {
+          "id": "api/buckets/create",
+          "relation": "see-also"
+        }
+      ],
+      "parent": "buckets"
+    },
+    {
+      "act_version": "0.1",
+      "id": "objects",
+      "type": "section",
+      "title": "Objects",
+      "summary": "Objects — section.",
+      "summary_source": "extracted",
+      "etag": "s256:AeawaLa99fVX5uhTQFxwWj",
+      "content": [
+        {
+          "type": "markdown",
+          "content": "# Objects\n\nThis section groups related objects documents.\n"
+        }
+      ],
+      "tokens": {
+        "summary": 8,
+        "body": 16
+      },
+      "children": [
+        "api/objects/upload",
+        "api/objects/download",
+        "api/objects/list",
+        "api/objects/delete"
+      ],
+      "parent": "api-reference",
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "sidebar-category:objects"
+        }
+      }
+    },
+    {
+      "act_version": "0.1",
+      "id": "api/objects/upload",
+      "type": "reference",
+      "title": "Upload an object",
+      "summary": "Stream a payload into a bucket under a chosen key.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "PUT /v1/buckets/{bucket}/objects/{key} — Content-Type and Content-Length are required."
+        }
+      ],
+      "tokens": {
+        "summary": 10,
+        "body": 8
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "api/objects/upload.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/api/objects/upload.md"
+        }
+      },
+      "etag": "s256:YHrNEbRV0zveQ02oSo4wOv",
+      "related": [
+        {
+          "id": "api/objects/download",
+          "relation": "see-also"
+        }
+      ],
+      "parent": "objects"
+    },
+    {
+      "act_version": "0.1",
+      "id": "api/objects/download",
+      "type": "reference",
+      "title": "Download an object",
+      "summary": "Fetch an object payload, optionally honoring a version selector.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "GET /v1/buckets/{bucket}/objects/{key} — supports ?version= and HTTP range requests."
+        }
+      ],
+      "tokens": {
+        "summary": 9,
+        "body": 9
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "api/objects/download.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/api/objects/download.md"
+        }
+      },
+      "etag": "s256:vTB7YLZtJot1B8jYbN7VIP",
+      "related": [
+        {
+          "id": "api/objects/upload",
+          "relation": "see-also"
+        }
+      ],
+      "parent": "objects"
+    },
+    {
+      "act_version": "0.1",
+      "id": "api/objects/list",
+      "type": "reference",
+      "title": "List objects",
+      "summary": "Enumerate objects in a bucket with optional prefix filtering.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "GET /v1/buckets/{bucket}/objects — ?prefix= and ?cursor= query parameters."
+        }
+      ],
+      "tokens": {
+        "summary": 9,
+        "body": 8
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "api/objects/list.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/api/objects/list.md"
+        }
+      },
+      "etag": "s256:RscmuWEh8jznLIVMWlL7Cp",
+      "parent": "objects"
+    },
+    {
+      "act_version": "0.1",
+      "id": "api/objects/delete",
+      "type": "reference",
+      "title": "Delete an object",
+      "summary": "Remove an object key from a bucket.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "DELETE /v1/buckets/{bucket}/objects/{key} — soft-deletes when versioning is on."
+        }
+      ],
+      "tokens": {
+        "summary": 7,
+        "body": 8
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "api/objects/delete.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/api/objects/delete.md"
+        }
+      },
+      "etag": "s256:vz8EBZ76PwkaNbFquUxUhO",
+      "parent": "objects"
+    },
+    {
+      "act_version": "0.1",
+      "id": "webhooks",
+      "type": "section",
+      "title": "Webhooks",
+      "summary": "Webhooks — section.",
+      "summary_source": "extracted",
+      "etag": "s256:qEKbaYOKwUM51Guwaek1tY",
+      "content": [
+        {
+          "type": "markdown",
+          "content": "# Webhooks\n\nThis section groups related webhooks documents.\n"
+        }
+      ],
+      "tokens": {
+        "summary": 8,
+        "body": 16
+      },
+      "children": [
+        "api/webhooks/register",
+        "api/webhooks/list",
+        "api/webhooks/delete"
+      ],
+      "parent": "api-reference",
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "sidebar-category:webhooks"
+        }
+      }
+    },
+    {
+      "act_version": "0.1",
+      "id": "api/webhooks/register",
+      "type": "reference",
+      "title": "Register a webhook",
+      "summary": "Subscribe a callback URL to bucket or object lifecycle events.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "POST /v1/webhooks — body declares target_url, event_types, and bucket filter."
+        }
+      ],
+      "tokens": {
+        "summary": 10,
+        "body": 10
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "api/webhooks/register.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/api/webhooks/register.md"
+        }
+      },
+      "etag": "s256:CBoWPrXrP2uHdZ_ZnHSSzM",
+      "parent": "webhooks"
+    },
+    {
+      "act_version": "0.1",
+      "id": "api/webhooks/list",
+      "type": "reference",
+      "title": "List webhooks",
+      "summary": "Enumerate webhook subscriptions for the current project.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "GET /v1/webhooks — returns subscription records ordered by created_at descending."
+        }
+      ],
+      "tokens": {
+        "summary": 7,
+        "body": 10
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "api/webhooks/list.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/api/webhooks/list.md"
+        }
+      },
+      "etag": "s256:aBXK56b6oMHMdhX5XVo9O3",
+      "parent": "webhooks"
+    },
+    {
+      "act_version": "0.1",
+      "id": "api/webhooks/delete",
+      "type": "reference",
+      "title": "Delete a webhook",
+      "summary": "Remove a webhook subscription by id.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "DELETE /v1/webhooks/{id} — idempotent; 404 when the subscription is already gone."
+        }
+      ],
+      "tokens": {
+        "summary": 6,
+        "body": 11
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "api/webhooks/delete.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/api/webhooks/delete.md"
+        }
+      },
+      "etag": "s256:D2859GHVCRKgfljLKI4x2t",
+      "parent": "webhooks"
+    }
+  ],
+  "etag": "s256:iGtgSSsfK45ahNa5Kb_7va"
+}

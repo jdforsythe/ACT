@@ -1,25 +1,32 @@
 # @act-spec/runtime-next
 
-PRD-501 Next.js runtime SDK for the [ACT (Agent Content Tree) v0.1](https://github.com/act-spec/act) reference implementation.
+Next.js runtime SDK for [ACT (Agent Content Tree)](https://github.com/act-spec/act).
 
-This package is a thin **leaf adapter** over [`@act-spec/runtime-core`](../runtime-core)
-(PRD-500). It binds runtime-core's framework-neutral resolver / dispatch
-contract onto Next.js's App Router (and a Pages Router escape hatch),
-adding only the framework-specific glue: catch-all `[...id]` segment
-joining, request normalization (`Request.cookies`), the App Router file
-layout, and a `middleware.ts`-shaped helper for the discovery hand-off
-`Link` header on non-ACT routes.
+This package is a thin **leaf adapter** over [`@act-spec/runtime-core`](../runtime-core).
+It binds runtime-core's framework-neutral resolver / dispatch contract
+onto Next.js's App Router (and a Pages Router escape hatch), adding only
+the framework-specific glue: catch-all `[...id]` segment joining, request
+normalization (`Request.cookies`), the App Router file layout, and a
+`middleware.ts`-shaped helper for the discovery hand-off `Link` header on
+non-ACT routes.
+
+## Status
+
+ACT v0.1 internal hand-test candidate. Public release lands at v0.2.
 
 ## Install
 
-```sh
-pnpm add @act-spec/runtime-next
+Unpublished in v0.1. Consume via the workspace:
+
+```jsonc
+// package.json
+{ "dependencies": { "@act-spec/runtime-next": "workspace:*" } }
 ```
 
 `next` is a `peerDependencies` entry (`>=14.2 <16`) so consumers control
 the version. The SDK does not import Next at runtime — handlers are
 WHATWG `(req: Request, ctx) => Promise<Response>` functions, compatible
-with both the Node.js Runtime and the Edge Runtime per PRD-501-R19.
+with both the Node.js Runtime and the Edge Runtime.
 
 ## Quick start (Core)
 
@@ -69,9 +76,9 @@ import { actMount } from '@/app/act-mount';
 export const GET = actMount.node;
 ```
 
-Per PRD-501-R4, the catch-all `[...id]` segment is **mandatory** for
-nodes and subtrees — IDs may contain `/` (PRD-100-R10), and the
-single-segment `[id]` form would silently truncate them.
+The catch-all `[...id]` segment is **mandatory** for nodes and subtrees —
+IDs may contain `/`, and the single-segment `[id]` form would silently
+truncate them.
 
 ## File layout (App Router)
 
@@ -90,10 +97,10 @@ app/
 
 ## Discovery hand-off Link header
 
-Per PRD-501-R17 the SDK emits the discovery `Link` header on every
-ACT-endpoint response automatically. To emit the header on **non-ACT**
-routes (the host application's HTML pages), mount the
-`actLinkHeaderMiddleware` in `middleware.ts`:
+The SDK emits the discovery `Link` header on every ACT-endpoint response
+automatically. To emit the header on **non-ACT** routes (the host
+application's HTML pages), mount the `actLinkHeaderMiddleware` in
+`middleware.ts`:
 
 ```ts
 // middleware.ts
@@ -121,7 +128,7 @@ fast (cookie / header presence check), NOT a full identity verification
 ## Hybrid mounts
 
 A Next.js app MAY participate in a parent manifest's `mounts` array
-(PRD-100-R7 / PRD-106-R17–R22) by setting `basePath`:
+by setting `basePath`:
 
 ```ts
 defineActMount({
@@ -151,13 +158,11 @@ against an in-process synthetic resolver. The probe verifies that:
    paths (does not leak tenant identity in error cases).
 
 The probe is in `src/probe.test.ts` and runs as part of `pnpm test`. It
-is a **CI-mandatory test** per the runtime-tooling-engineer's
-anti-pattern watchlist ("Runtime/static auth confusion") and PRD-705
-acceptance criterion (e). Do not skip; do not weaken.
+is a **CI-mandatory test**; do not skip and do not weaken.
 
 ## Pages Router escape hatch
 
-For hosts that have not migrated to the App Router (PRD-501-R20):
+For hosts that have not migrated to the App Router:
 
 ```ts
 // pages/api/act/[...act].ts

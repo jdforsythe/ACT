@@ -1,4 +1,4 @@
-# ADR-005 — Extract `@act-spec/adapter-framework` from `@act-spec/markdown-adapter`
+# ADR-005 — Extract `@act-spec/adapter-framework` from `@act-spec/adapter-markdown`
 
 **Status:** Accepted
 **Date:** 2026-05-02
@@ -10,7 +10,7 @@ ADR-001 §"Neutral" deferred extracting a dedicated PRD-200 framework
 package on the basis of the role-manual anti-pattern "premature abstraction
 in `@act/core`": no extraction until a third concrete consumer exists.
 ADR-003 placed the PRD-200 framework code inside
-`@act-spec/markdown-adapter/src/framework.ts` for the same reason —
+`@act-spec/adapter-markdown/src/framework.ts` for the same reason —
 PRD-201 was the only first-party adapter in flight during Phase 6.1.
 
 ADR-004 closed Phase 6.1 with an explicit retro entry naming this seam
@@ -39,7 +39,7 @@ ADR-004 named are met.
    ESM-only, `exports` map gating the public surface, depending only on
    `@act-spec/core`.
 2. **Move PRD-200 code via `git mv`.** The pre-extraction file
-   `packages/markdown-adapter/src/framework.ts` and its unit-test sibling
+   `packages/adapter-markdown/src/framework.ts` and its unit-test sibling
    `framework.test.ts` move to `packages/adapter-framework/src/`
    unchanged. History is preserved.
 3. **Public surface unchanged.** The new package's `src/index.ts`
@@ -48,12 +48,12 @@ ADR-004 named are met.
    `src/index.ts` continues to re-export the same symbols (now sourced
    from `@act-spec/adapter-framework`), so external consumers that
    imported `Adapter`, `runAdapter`, `mergeRuns`, etc. from
-   `@act-spec/markdown-adapter` keep working byte-for-byte.
-4. **Internal consumers updated.** `packages/markdown-adapter/src/markdown.ts`
-   and `packages/markdown-adapter/src/markdown.test.ts` now import
+   `@act-spec/adapter-markdown` keep working byte-for-byte.
+4. **Internal consumers updated.** `packages/adapter-markdown/src/markdown.ts`
+   and `packages/adapter-markdown/src/markdown.test.ts` now import
    framework symbols from `@act-spec/adapter-framework` directly (the
-   shorter, canonical path). `packages/astro/src/pipeline.ts` continues
-   to import through `@act-spec/markdown-adapter` for this PR — single-
+   shorter, canonical path). `packages/plugin-astro/src/pipeline.ts` continues
+   to import through `@act-spec/adapter-markdown` for this PR — single-
    concern refactor, no behavior change. A follow-up PR may switch the
    astro generator to import from `@act-spec/adapter-framework` directly.
 5. **Workspace + project-references wiring.** Add the package to the
@@ -61,7 +61,7 @@ ADR-004 named are met.
    composite reference graph. `pnpm-workspace.yaml` already covers
    `packages/*`. `package.json` declares
    `@act-spec/adapter-framework: "workspace:*"` as a dependency of
-   `@act-spec/markdown-adapter`.
+   `@act-spec/adapter-markdown`.
 6. **Coverage threshold mirrors the source.** The new package's
    `vitest.config.ts` carries the same 85%-line / 85%-functions /
    85%-statements floor that the markdown-adapter has. The 33 framework
@@ -82,7 +82,7 @@ ADR-004 named are met.
 
 - Phase 6.2 adapters (PRD-208, PRD-202, PRD-203, …) import framework
   types from a single canonical package whose name reflects its purpose.
-  No future adapter needs to depend on `@act-spec/markdown-adapter`
+  No future adapter needs to depend on `@act-spec/adapter-markdown`
   to reach the framework.
 - The role-manual three-consumers rule is respected: PRD-201 + PRD-208
   are the second consumer; the astro generator (which consumes the
@@ -92,7 +92,7 @@ ADR-004 named are met.
 - The seam ADR-004 named is closed with a date stamp; the retro stays
   honest about which seams are open vs closed.
 - Surface stability is preserved: every external import of a framework
-  symbol from `@act-spec/markdown-adapter` continues to resolve. No
+  symbol from `@act-spec/adapter-markdown` continues to resolve. No
   semver-major break.
 
 ### Negative
@@ -110,7 +110,7 @@ ADR-004 named are met.
 ### Neutral
 
 - The astro generator continues to import framework symbols through
-  `@act-spec/markdown-adapter`. This is intentional for this PR (single-
+  `@act-spec/adapter-markdown`. This is intentional for this PR (single-
   concern). A follow-up may switch to the direct dependency once the
   PRD-400 pipeline extraction (ADR-004 Seam 2) lands and the import
   graph is rewritten as a single, larger refactor.
@@ -125,7 +125,7 @@ ADR-004 named are met.
 - **Defer extraction until two non-markdown adapters exist.** Rejected:
   ADR-004 already named the trigger (the first new adapter, PRD-208).
   Deferring further would force two adapters to either depend on
-  `@act-spec/markdown-adapter` for framework symbols (semantically
+  `@act-spec/adapter-markdown` for framework symbols (semantically
   wrong) or duplicate the framework (worse).
 - **Bigger refactor: extract PRD-400 generator pipeline at the same
   time.** Rejected: ADR-004 recommendation 2 explicitly delays that

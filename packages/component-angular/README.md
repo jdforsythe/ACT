@@ -1,8 +1,8 @@
 # @act-spec/component-angular
 
-PRD-303 Angular binding for the ACT v0.1 component contract (PRD-300).
-Bridges Angular component trees to the framework-agnostic `NodeDraft`
-shape exported by `@act-spec/component-contract`.
+Angular binding for the ACT component contract. Bridges Angular component
+trees to the framework-agnostic `NodeDraft` shape exported by
+`@act-spec/component-contract`.
 
 Implements the three Angular declaration patterns:
 
@@ -11,20 +11,19 @@ Implements the three Angular declaration patterns:
 - page-level boundary — `*actSection="contract"` structural directive
   or the `<act-section>` component form.
 
-The `ActCollectorService` is provided component-locally (never `'root'`,
-per PRD-303-R7) for SSR-walk extraction. The canonical SSR walker uses
+The `ActCollectorService` is provided component-locally (never `'root'`)
+for SSR-walk extraction. The canonical SSR walker uses
 `@angular/platform-server.renderApplication` and waits for
 `ApplicationRef.isStable`. Variant replay constructs a fresh
 `ApplicationRef` + `EnvironmentInjector` per variant. Render-time errors
 surface through Angular's `ErrorHandler` provider as truncated +
 secret-redacted placeholders. The `BindingCapabilities` const reflects
-PRD-303-R20 + the A15 truthfulness amendment (only what v0.1 ships).
+only what v0.1 ships.
 
-**Caveat (PRD-303 Goal 9).** No v0.1 leaf 400-series generator depends
-on PRD-303. The documented integration path is via PRD-409
-(`@act-spec/cli`) running over an Angular Universal app. A future
-Angular-native generator (deferred to v0.2) would consume the same
-`extractRoute()` API.
+Note: no v0.1 leaf generator depends on this binding directly. The
+documented integration path is via `@act-spec/cli` running over an Angular
+Universal app. A future Angular-native generator (deferred to v0.2) would
+consume the same `extractRoute()` API.
 
 ## Status
 
@@ -75,7 +74,7 @@ export class FaqSection {
 }
 ```
 
-Generators (PRD-409 CLI in v0.1) call `extractRoute`:
+Generators call `extractRoute`:
 
 ```ts
 import { extractRoute, angularBinding } from '@act-spec/component-angular';
@@ -89,11 +88,11 @@ const drafts = await extractRoute({
 
 ## Conformance / what's tested
 
-Every PRD-303-R{n} requirement has a citing test in the package's
-test suite, including the Angular 17+ floor (`assertAngular17Plus`),
-the collector scope check, contract-version pinning, and the
-placeholder + redaction contract. The conformance gate runs
-`@act-spec/validator` against the extracted nodes.
+Every public API has a citing test in the package's test suite,
+including the Angular 17+ floor (`assertAngular17Plus`), the collector
+scope check, contract-version pinning, and the placeholder + redaction
+contract. The conformance gate runs `@act-spec/validator` against the
+extracted nodes.
 
 ```bash
 pnpm -F @act-spec/component-angular conformance
@@ -111,7 +110,5 @@ them at extraction time.
 
 ## Links
 
-- Leaf PRD: [`prd/303-angular-binding.md`](../../prd/303-angular-binding.md)
-- Framework PRD: [`prd/300-component-contract.md`](../../prd/300-component-contract.md)
-- Framework package: [`@act-spec/component-contract`](../component-contract)
+- Component contract: [`@act-spec/component-contract`](../component-contract)
 - Repository: <https://github.com/act-spec/act>

@@ -1,0 +1,5516 @@
+{
+  "act_version": "0.1",
+  "nodes": [
+    {
+      "id": "catalog",
+      "type": "index",
+      "title": "Acme Catalog",
+      "summary": "Acme Catalog — root index of every product node enumerated by the act-catalog programmatic adapter.",
+      "tokens": {
+        "summary": 15
+      },
+      "etag": "s256:ogZpUWqWr_zGcp3WYDOG1N"
+    },
+    {
+      "id": "sku-000001",
+      "type": "product",
+      "title": "Summit Jacket — Brick",
+      "summary": "Summit jacket in brick; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:TQrmbGVBvdndwC29d_fZ8c",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000002",
+      "type": "product",
+      "title": "Northwind Skillet — Indigo",
+      "summary": "Northwind skillet in indigo; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:6s51mLk0M8YL4ajk-9Oeoc",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000003",
+      "type": "product",
+      "title": "Workshop Wrench — Walnut",
+      "summary": "Workshop wrench in walnut; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:1kCcRFxVLXv4Mmgkbgrn3V",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000004",
+      "type": "product",
+      "title": "Coastal Tent — Indigo",
+      "summary": "Coastal tent in indigo; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:hCCIcUBiEycewqLEvmv-Zb",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000005",
+      "type": "product",
+      "title": "Coastal Notebook — Indigo",
+      "summary": "Coastal notebook in indigo; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:WygabnpCblBUW7GFJBjstS",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000006",
+      "type": "product",
+      "title": "Pioneer Lamp — Sage",
+      "summary": "Pioneer lamp in sage; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:dCPoQxAZXtEtNOldVDDuh9",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000007",
+      "type": "product",
+      "title": "Field Headphone — Ochre",
+      "summary": "Field headphone in ochre; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:PI6gQBPucmuLzMmxH-5U1q",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000008",
+      "type": "product",
+      "title": "Workshop Boot — Russet",
+      "summary": "Workshop boot in russet; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:SF9tBZgMI8YiSJmFWKaGAL",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000009",
+      "type": "product",
+      "title": "Aurora Jacket — Russet",
+      "summary": "Aurora jacket in russet; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:723B5Gpf5nYf5rXVjeee3Z",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000010",
+      "type": "product",
+      "title": "Coastal Skillet — Ochre",
+      "summary": "Coastal skillet in ochre; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:JntYucFK8IJ20vdIcdLAjA",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000011",
+      "type": "product",
+      "title": "Studio Wrench — Brick",
+      "summary": "Studio wrench in brick; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Y2uTx8dx5uX-gZmBcJDtbe",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000012",
+      "type": "product",
+      "title": "Cedar Tent — Ochre",
+      "summary": "Cedar tent in ochre; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:-jjW5E3_MpwTps7bwpnnyj",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000013",
+      "type": "product",
+      "title": "Workshop Notebook — Walnut",
+      "summary": "Workshop notebook in walnut; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:YQStNMGWdrKXTniSwzcCms",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000014",
+      "type": "product",
+      "title": "Granite Lamp — Brick",
+      "summary": "Granite lamp in brick; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:AgqpYO7nJlQuhgKA7V2bal",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000015",
+      "type": "product",
+      "title": "Summit Headphone — Slate",
+      "summary": "Summit headphone in slate; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:KPL9w-whRIbHyhuUWRsoZV",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000016",
+      "type": "product",
+      "title": "Aurora Boot — Storm",
+      "summary": "Aurora boot in storm; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:7Mwqkh9DbuuPQMBxCjwvgN",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000017",
+      "type": "product",
+      "title": "Studio Jacket — Russet",
+      "summary": "Studio jacket in russet; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:djZ13CPFWLKy7b9FThIkSx",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000018",
+      "type": "product",
+      "title": "Embered Skillet — Pine",
+      "summary": "Embered skillet in pine; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:Fib1tl9jW2r5xRKkuGm3ut",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000019",
+      "type": "product",
+      "title": "Embered Wrench — Russet",
+      "summary": "Embered wrench in russet; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:hOfniW6KYx7qKhSAdYCpZ1",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000020",
+      "type": "product",
+      "title": "Northwind Tent — Slate",
+      "summary": "Northwind tent in slate; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:8JKhKc7bxn9C2clcoZC_4x",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000021",
+      "type": "product",
+      "title": "Workshop Notebook — Ochre",
+      "summary": "Workshop notebook in ochre; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:h4Xr_65Z9dlQP4Pk37dy9-",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000022",
+      "type": "product",
+      "title": "Heritage Lamp — Storm",
+      "summary": "Heritage lamp in storm; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:nuOKwtR_1ZdZr2xJnFTUHu",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000023",
+      "type": "product",
+      "title": "Frost Headphone — Storm",
+      "summary": "Frost headphone in storm; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:q3ysD8kiDtUYOraLTrLl47",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000024",
+      "type": "product",
+      "title": "Summit Boot — Storm",
+      "summary": "Summit boot in storm; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:0xKAcVG2G2uuzWfQ9GBZKU",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000025",
+      "type": "product",
+      "title": "Studio Jacket — Pine",
+      "summary": "Studio jacket in pine; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:L_zWcagsfT4vm06SKHnbME",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000026",
+      "type": "product",
+      "title": "Summit Skillet — Pine",
+      "summary": "Summit skillet in pine; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:8KCfes9whrcB1B-Mju3KVg",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000027",
+      "type": "product",
+      "title": "Summit Wrench — Slate",
+      "summary": "Summit wrench in slate; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:DMGdn0nt7FtZj2csuXuiXv",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000028",
+      "type": "product",
+      "title": "Summit Tent — Charcoal",
+      "summary": "Summit tent in charcoal; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:S7kWpO3yGMpwvjdk9z3ybT",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000029",
+      "type": "product",
+      "title": "Embered Notebook — Ochre",
+      "summary": "Embered notebook in ochre; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:IjmRg8d-kfh6qnSABVzIJE",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000030",
+      "type": "product",
+      "title": "Embered Lamp — Bone",
+      "summary": "Embered lamp in bone; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:t53q3K5f1032x7Di3Xx9qz",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000031",
+      "type": "product",
+      "title": "Aurora Headphone — Sand",
+      "summary": "Aurora headphone in sand; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:dz_M8EqlK45JMvpsCi6L8t",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000032",
+      "type": "product",
+      "title": "Pioneer Boot — Slate",
+      "summary": "Pioneer boot in slate; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:5UIGkc-nksncusfMRhPv0w",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000033",
+      "type": "product",
+      "title": "Frost Jacket — Indigo",
+      "summary": "Frost jacket in indigo; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:bEyG-b-NDPRoeaynjTA8wR",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000034",
+      "type": "product",
+      "title": "Field Skillet — Storm",
+      "summary": "Field skillet in storm; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:AENIbtUYVtIJXu0so7Tfe_",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000035",
+      "type": "product",
+      "title": "Frost Wrench — Brick",
+      "summary": "Frost wrench in brick; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:pt7s-c18ui3pX8bt4O_WNJ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000036",
+      "type": "product",
+      "title": "Aurora Tent — Slate",
+      "summary": "Aurora tent in slate; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:EzHE9QhAodnZ1gBX-FxY9n",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000037",
+      "type": "product",
+      "title": "Harvest Notebook — Charcoal",
+      "summary": "Harvest notebook in charcoal; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:13xLJBJaCTEtyNJGfovxK0",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000038",
+      "type": "product",
+      "title": "Cedar Lamp — Storm",
+      "summary": "Cedar lamp in storm; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:O7OkdqTmCpHmJUqs2YLQkH",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000039",
+      "type": "product",
+      "title": "Northwind Headphone — Storm",
+      "summary": "Northwind headphone in storm; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:9KeWQs6WE9DW7kt5dRs4Gc",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000040",
+      "type": "product",
+      "title": "Onyx Boot — Indigo",
+      "summary": "Onyx boot in indigo; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:u5RqoZmjpgAIqLNtp6NMfU",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000041",
+      "type": "product",
+      "title": "Riverbend Jacket — Charcoal",
+      "summary": "Riverbend jacket in charcoal; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:7v3JBryTNY0KZTl_nz_hh1",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000042",
+      "type": "product",
+      "title": "Coastal Skillet — Sage",
+      "summary": "Coastal skillet in sage; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ztHZo6PWKAPY3-xtgcnd4q",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000043",
+      "type": "product",
+      "title": "Workshop Wrench — Brick",
+      "summary": "Workshop wrench in brick; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:2qYpgJtZiUwDvXvBQOOPen",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000044",
+      "type": "product",
+      "title": "Embered Tent — Charcoal",
+      "summary": "Embered tent in charcoal; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:i5K58s0RUEj5L7WF-X6dth",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000045",
+      "type": "product",
+      "title": "Studio Notebook — Brick",
+      "summary": "Studio notebook in brick; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:pXZmO_Wya8QXYGuOyBXN2V",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000046",
+      "type": "product",
+      "title": "Studio Lamp — Charcoal",
+      "summary": "Studio lamp in charcoal; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:PuK9oqQxh2xNxlYh8Qm9KC",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000047",
+      "type": "product",
+      "title": "Studio Headphone — Ochre",
+      "summary": "Studio headphone in ochre; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:O-VcXpChAIYlPQvUKwDXdF",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000048",
+      "type": "product",
+      "title": "Riverbend Boot — Brick",
+      "summary": "Riverbend boot in brick; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:UzWMVsM4bEel2usDLCB4gY",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000049",
+      "type": "product",
+      "title": "Workshop Jacket — Storm",
+      "summary": "Workshop jacket in storm; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:dzIsU7Yeh94WuSfd_3BiLm",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000050",
+      "type": "product",
+      "title": "Heritage Skillet — Russet",
+      "summary": "Heritage skillet in russet; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Ny6AQiUnyfg0Mo80AQNFLL",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000051",
+      "type": "product",
+      "title": "Summit Wrench — Walnut",
+      "summary": "Summit wrench in walnut; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:EfOYQiFUjGKBj4TeDPDVxT",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000052",
+      "type": "product",
+      "title": "Frost Tent — Charcoal",
+      "summary": "Frost tent in charcoal; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Y3HRkurMyFOmOrweJs0Id-",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000053",
+      "type": "product",
+      "title": "Pioneer Notebook — Brick",
+      "summary": "Pioneer notebook in brick; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:maJz6wjPmI7rebSFMHZ-hl",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000054",
+      "type": "product",
+      "title": "Aurora Lamp — Ochre",
+      "summary": "Aurora lamp in ochre; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:dwcFfcOw3ywb7sCJaSagOZ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000055",
+      "type": "product",
+      "title": "Riverbend Headphone — Bone",
+      "summary": "Riverbend headphone in bone; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Q7G6hhxfx8BMC5iq0YdEqw",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000056",
+      "type": "product",
+      "title": "Granite Boot — Sand",
+      "summary": "Granite boot in sand; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:YEspvKFT4DMvo6Mu6x7e0R",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000057",
+      "type": "product",
+      "title": "Cedar Jacket — Sand",
+      "summary": "Cedar jacket in sand; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:DdFjB0dh6dYspH_E4Fb6M7",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000058",
+      "type": "product",
+      "title": "Northwind Skillet — Slate",
+      "summary": "Northwind skillet in slate; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:dS7JGLFsWdL7m5JuUmM33b",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000059",
+      "type": "product",
+      "title": "Northwind Wrench — Slate",
+      "summary": "Northwind wrench in slate; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:AZ57-9zi3e9bfABDDNVOmv",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000060",
+      "type": "product",
+      "title": "Summit Tent — Walnut",
+      "summary": "Summit tent in walnut; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:LZdoXuJc-nEzlbiB3vP19c",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000061",
+      "type": "product",
+      "title": "Riverbend Notebook — Ochre",
+      "summary": "Riverbend notebook in ochre; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:LfdjjknIoPwlkwUeGKyrjc",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000062",
+      "type": "product",
+      "title": "Heritage Lamp — Sand",
+      "summary": "Heritage lamp in sand; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:rKtWblY-HudGhe0OvDzVRo",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000063",
+      "type": "product",
+      "title": "Pioneer Headphone — Sage",
+      "summary": "Pioneer headphone in sage; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:UdrpqOzNH9F8XppUJ_9rRQ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000064",
+      "type": "product",
+      "title": "Onyx Boot — Sand",
+      "summary": "Onyx boot in sand; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:XCQCisAgKk1Lm2Bl0Pd3v8",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000065",
+      "type": "product",
+      "title": "Granite Jacket — Indigo",
+      "summary": "Granite jacket in indigo; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:NLm83PZFeQkBbjfWOLtpDm",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000066",
+      "type": "product",
+      "title": "Aurora Skillet — Storm",
+      "summary": "Aurora skillet in storm; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:CHkF07ZpCTC3mW2lcaPjeH",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000067",
+      "type": "product",
+      "title": "Aurora Wrench — Slate",
+      "summary": "Aurora wrench in slate; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:i6Pw6E2e9j2G3QqNrc1rjJ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000068",
+      "type": "product",
+      "title": "Riverbend Tent — Sand",
+      "summary": "Riverbend tent in sand; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:MGGyeTFuZ3PptGKMGNtUxj",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000069",
+      "type": "product",
+      "title": "Onyx Notebook — Storm",
+      "summary": "Onyx notebook in storm; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:U0IYjtfkmlhtFlgnS8QUzY",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000070",
+      "type": "product",
+      "title": "Pioneer Lamp — Ochre",
+      "summary": "Pioneer lamp in ochre; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:KD35d06xRovxCkxdZ6akQy",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000071",
+      "type": "product",
+      "title": "Aurora Headphone — Bone",
+      "summary": "Aurora headphone in bone; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:L_JImV3AzkZVJRQA6bbJjr",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000072",
+      "type": "product",
+      "title": "Pioneer Boot — Sage",
+      "summary": "Pioneer boot in sage; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:1o0geK9OkvoxNhq3BRSiSM",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000073",
+      "type": "product",
+      "title": "Harvest Jacket — Ochre",
+      "summary": "Harvest jacket in ochre; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:rEvrBXBUotKtnea0afMVnM",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000074",
+      "type": "product",
+      "title": "Coastal Skillet — Ochre",
+      "summary": "Coastal skillet in ochre; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ZpwWqMKUL63TvxzqlYIsT5",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000075",
+      "type": "product",
+      "title": "Aurora Wrench — Sage",
+      "summary": "Aurora wrench in sage; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:SiyPCxRVdWkwA_iuKiVM8d",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000076",
+      "type": "product",
+      "title": "Heritage Tent — Walnut",
+      "summary": "Heritage tent in walnut; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:yL9WCZz12teTlTPWoZJ6_4",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000077",
+      "type": "product",
+      "title": "Frost Notebook — Bone",
+      "summary": "Frost notebook in bone; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:83gFUKjc0_-chXhetCNFXz",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000078",
+      "type": "product",
+      "title": "Onyx Lamp — Indigo",
+      "summary": "Onyx lamp in indigo; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:0TRcoN_tRU42Nc3fZ3fiER",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000079",
+      "type": "product",
+      "title": "Harvest Headphone — Slate",
+      "summary": "Harvest headphone in slate; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:UA9EuayvL5BHhR7r1CNgCk",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000080",
+      "type": "product",
+      "title": "Riverbend Boot — Sand",
+      "summary": "Riverbend boot in sand; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:DWWFEaFkvMhrsObPiGtfPD",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000081",
+      "type": "product",
+      "title": "Cedar Jacket — Slate",
+      "summary": "Cedar jacket in slate; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:xm_auPG9AK2-jRLOAMoNwJ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000082",
+      "type": "product",
+      "title": "Northwind Skillet — Pine",
+      "summary": "Northwind skillet in pine; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:FYSoTproMiN8E0X5ef9-Ku",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000083",
+      "type": "product",
+      "title": "Summit Wrench — Sage",
+      "summary": "Summit wrench in sage; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:LnfKp_GAIxxcJInkaaKNvc",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000084",
+      "type": "product",
+      "title": "Heritage Tent — Slate",
+      "summary": "Heritage tent in slate; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:7Dc-YS8KpS_neBBL0nhp42",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000085",
+      "type": "product",
+      "title": "Aurora Notebook — Sand",
+      "summary": "Aurora notebook in sand; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Xz0Q6QpDsMP0HSTsWF3UME",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000086",
+      "type": "product",
+      "title": "Field Lamp — Slate",
+      "summary": "Field lamp in slate; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:fVN_pOwvAZ2XqJqlf2x-AJ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000087",
+      "type": "product",
+      "title": "Workshop Headphone — Sand",
+      "summary": "Workshop headphone in sand; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:py63FjY5bpaJMXEnCsdrdo",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000088",
+      "type": "product",
+      "title": "Cedar Boot — Slate",
+      "summary": "Cedar boot in slate; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:97OEA9f_FW_svY8xqFyXwd",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000089",
+      "type": "product",
+      "title": "Frost Jacket — Storm",
+      "summary": "Frost jacket in storm; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:bZoVjo1kTHfP6lr3SiqOkt",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000090",
+      "type": "product",
+      "title": "Field Skillet — Russet",
+      "summary": "Field skillet in russet; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:mcmZUInEcSd-0diQtjHOBk",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000091",
+      "type": "product",
+      "title": "Heritage Wrench — Slate",
+      "summary": "Heritage wrench in slate; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:v1TfFlRp_Bf4bwx7XLXuF6",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000092",
+      "type": "product",
+      "title": "Onyx Tent — Bone",
+      "summary": "Onyx tent in bone; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:WNgazXmc5EhbCMNG5C6FIl",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000093",
+      "type": "product",
+      "title": "Northwind Notebook — Storm",
+      "summary": "Northwind notebook in storm; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:DcfdZf-GxJ5Ofs0U2KlEFx",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000094",
+      "type": "product",
+      "title": "Onyx Lamp — Charcoal",
+      "summary": "Onyx lamp in charcoal; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:hbWyP17nAWmnnaUxlHOjuN",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000095",
+      "type": "product",
+      "title": "Summit Headphone — Russet",
+      "summary": "Summit headphone in russet; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:kSWIC2lKjX0HIzLyZFB9Mo",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000096",
+      "type": "product",
+      "title": "Granite Boot — Ochre",
+      "summary": "Granite boot in ochre; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:4NILZRsapPTt3A-SIjZ_Q9",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000097",
+      "type": "product",
+      "title": "Harvest Jacket — Pine",
+      "summary": "Harvest jacket in pine; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:m5b4goIU-lWGjtSf2ns1kf",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000098",
+      "type": "product",
+      "title": "Cedar Skillet — Russet",
+      "summary": "Cedar skillet in russet; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:yFQjuk0GGIemXpVU8X3UlR",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000099",
+      "type": "product",
+      "title": "Pioneer Wrench — Sage",
+      "summary": "Pioneer wrench in sage; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:UYhmUZ83mCstxFZR-rx9eS",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000100",
+      "type": "product",
+      "title": "Northwind Tent — Storm",
+      "summary": "Northwind tent in storm; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:xsw83cjQPJmOk-p8W3njmW",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000101",
+      "type": "product",
+      "title": "Onyx Notebook — Pine",
+      "summary": "Onyx notebook in pine; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:EMGz0fvHFGI21wXSmJPXQg",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000102",
+      "type": "product",
+      "title": "Onyx Lamp — Pine",
+      "summary": "Onyx lamp in pine; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:gBJVX-5cziYMX7WFBgu0Oz",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000103",
+      "type": "product",
+      "title": "Workshop Headphone — Slate",
+      "summary": "Workshop headphone in slate; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:yBQX9V1GientkP2_fBDlg4",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000104",
+      "type": "product",
+      "title": "Field Boot — Charcoal",
+      "summary": "Field boot in charcoal; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:2dahFPJc3G74XorRyzFjjE",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000105",
+      "type": "product",
+      "title": "Summit Jacket — Slate",
+      "summary": "Summit jacket in slate; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:JsMYeeWhBuA_vPIvWwxBvz",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000106",
+      "type": "product",
+      "title": "Harvest Skillet — Russet",
+      "summary": "Harvest skillet in russet; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:5IFBbphCmnnaqu4nMMN7qG",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000107",
+      "type": "product",
+      "title": "Embered Wrench — Russet",
+      "summary": "Embered wrench in russet; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Mn2N_kPvApqfReSo0NlDr9",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000108",
+      "type": "product",
+      "title": "Aurora Tent — Sand",
+      "summary": "Aurora tent in sand; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:9Ew-OBN_K-axSuf-SdjRPI",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000109",
+      "type": "product",
+      "title": "Onyx Notebook — Storm",
+      "summary": "Onyx notebook in storm; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:YJs24KjpFz5KOtovE3xC1F",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000110",
+      "type": "product",
+      "title": "Aurora Lamp — Charcoal",
+      "summary": "Aurora lamp in charcoal; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:bk-UrwW2ZAWcPgM4jsUcWP",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000111",
+      "type": "product",
+      "title": "Coastal Headphone — Russet",
+      "summary": "Coastal headphone in russet; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:1fKNVghJmaY9Jnt8QFnUMl",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000112",
+      "type": "product",
+      "title": "Riverbend Boot — Walnut",
+      "summary": "Riverbend boot in walnut; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:H41svGe49DqdWER1Z5MUxq",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000113",
+      "type": "product",
+      "title": "Heritage Jacket — Bone",
+      "summary": "Heritage jacket in bone; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:QbLCyBi0fXpb0oK1C6ZPX2",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000114",
+      "type": "product",
+      "title": "Granite Skillet — Pine",
+      "summary": "Granite skillet in pine; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:6XGkMwzSa0QOPP9OZT_wp7",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000115",
+      "type": "product",
+      "title": "Aurora Wrench — Russet",
+      "summary": "Aurora wrench in russet; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:fvSALBrDObC3XlwVprjos1",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000116",
+      "type": "product",
+      "title": "Frost Tent — Ochre",
+      "summary": "Frost tent in ochre; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:eQshzh0wOnuH395kZ0K3xt",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000117",
+      "type": "product",
+      "title": "Coastal Notebook — Brick",
+      "summary": "Coastal notebook in brick; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:nThf7VAjypkqvhf1Aoel8e",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000118",
+      "type": "product",
+      "title": "Aurora Lamp — Pine",
+      "summary": "Aurora lamp in pine; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:NKBV1497arfNKJG9BUhQ9V",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000119",
+      "type": "product",
+      "title": "Onyx Headphone — Russet",
+      "summary": "Onyx headphone in russet; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:gk7eaEgAxrMmM_WPRfaQjV",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000120",
+      "type": "product",
+      "title": "Granite Boot — Russet",
+      "summary": "Granite boot in russet; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:BMww0IK-pC_LQyxKGET4yn",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000121",
+      "type": "product",
+      "title": "Field Jacket — Bone",
+      "summary": "Field jacket in bone; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ee-VC9_cyucj5pYmd_zwoD",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000122",
+      "type": "product",
+      "title": "Granite Skillet — Charcoal",
+      "summary": "Granite skillet in charcoal; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:YjHA4DiJP2XBh7yA2iEUai",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000123",
+      "type": "product",
+      "title": "Field Wrench — Slate",
+      "summary": "Field wrench in slate; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:dkZHSYqlHEl687mMKYw393",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000124",
+      "type": "product",
+      "title": "Workshop Tent — Ochre",
+      "summary": "Workshop tent in ochre; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:jCt2s9TZhvoa9pATp7uUM_",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000125",
+      "type": "product",
+      "title": "Onyx Notebook — Brick",
+      "summary": "Onyx notebook in brick; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:RFhHC9nYAi_lQYZLuu0pFT",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000126",
+      "type": "product",
+      "title": "Onyx Lamp — Storm",
+      "summary": "Onyx lamp in storm; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:u9D3vjmXVeDqeQET8YQtZB",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000127",
+      "type": "product",
+      "title": "Studio Headphone — Storm",
+      "summary": "Studio headphone in storm; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:5BiV28ViT-ALZVPBe63cj-",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000128",
+      "type": "product",
+      "title": "Riverbend Boot — Pine",
+      "summary": "Riverbend boot in pine; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ESZFQPq3mNeudux6whoTVN",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000129",
+      "type": "product",
+      "title": "Harvest Jacket — Walnut",
+      "summary": "Harvest jacket in walnut; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:IxDSn3VWn-A1GeVDmEL9i5",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000130",
+      "type": "product",
+      "title": "Field Skillet — Indigo",
+      "summary": "Field skillet in indigo; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:42uKRKXRNPICZieDfrV-GR",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000131",
+      "type": "product",
+      "title": "Heritage Wrench — Ochre",
+      "summary": "Heritage wrench in ochre; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:krISIn5hnZYIf7TtN_pI4l",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000132",
+      "type": "product",
+      "title": "Pioneer Tent — Slate",
+      "summary": "Pioneer tent in slate; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ASXLvaz_M481G8nDDSB6qv",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000133",
+      "type": "product",
+      "title": "Harvest Notebook — Indigo",
+      "summary": "Harvest notebook in indigo; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:_KnusZ_eCsD5_oetrk_mN1",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000134",
+      "type": "product",
+      "title": "Northwind Lamp — Ochre",
+      "summary": "Northwind lamp in ochre; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:7f_TN7p8d5hEgd7GkqrpB_",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000135",
+      "type": "product",
+      "title": "Pioneer Headphone — Storm",
+      "summary": "Pioneer headphone in storm; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:bq9ItgNxPpEISJ38LU0v4I",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000136",
+      "type": "product",
+      "title": "Embered Boot — Sage",
+      "summary": "Embered boot in sage; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:KNKkhsDrooykpmJIGqxyQW",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000137",
+      "type": "product",
+      "title": "Northwind Jacket — Charcoal",
+      "summary": "Northwind jacket in charcoal; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:vSUMywhVtHGesfNnUYUVgT",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000138",
+      "type": "product",
+      "title": "Aurora Skillet — Russet",
+      "summary": "Aurora skillet in russet; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:C1qnetTvcgGB_rOOkIl8zr",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000139",
+      "type": "product",
+      "title": "Harvest Wrench — Sand",
+      "summary": "Harvest wrench in sand; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:DoSKD04GCameJg6qD4bgRk",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000140",
+      "type": "product",
+      "title": "Coastal Tent — Russet",
+      "summary": "Coastal tent in russet; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:x4-PpE5agP_rbZJ1UJarVO",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000141",
+      "type": "product",
+      "title": "Riverbend Notebook — Storm",
+      "summary": "Riverbend notebook in storm; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:V4VfZBTEBpg6UPLiqpI_Ez",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000142",
+      "type": "product",
+      "title": "Workshop Lamp — Pine",
+      "summary": "Workshop lamp in pine; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:kfLO3B0bu0PTRz_ErvAOaW",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000143",
+      "type": "product",
+      "title": "Studio Headphone — Indigo",
+      "summary": "Studio headphone in indigo; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:72RaTOON9pBNL05TkoV3DN",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000144",
+      "type": "product",
+      "title": "Pioneer Boot — Bone",
+      "summary": "Pioneer boot in bone; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:O19ygM8sgUoBGxgfwNEii-",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000145",
+      "type": "product",
+      "title": "Coastal Jacket — Charcoal",
+      "summary": "Coastal jacket in charcoal; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:unnlI9ymonZ9-ybKJbdFi1",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000146",
+      "type": "product",
+      "title": "Aurora Skillet — Bone",
+      "summary": "Aurora skillet in bone; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:RI1fVBCOJQk7Ni4f2avnQ9",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000147",
+      "type": "product",
+      "title": "Cedar Wrench — Walnut",
+      "summary": "Cedar wrench in walnut; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:wkoN_7DVS4c6_pD6Q3tTgO",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000148",
+      "type": "product",
+      "title": "Studio Tent — Walnut",
+      "summary": "Studio tent in walnut; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:F0dZ5Ll5CdFXDAI0K59iOk",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000149",
+      "type": "product",
+      "title": "Northwind Notebook — Charcoal",
+      "summary": "Northwind notebook in charcoal; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:UOOTqhSTZVVeL--dt5iY4L",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000150",
+      "type": "product",
+      "title": "Heritage Lamp — Slate",
+      "summary": "Heritage lamp in slate; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:IU4Pog9SmM69u5Yz4N4JtY",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000151",
+      "type": "product",
+      "title": "Heritage Headphone — Storm",
+      "summary": "Heritage headphone in storm; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:UccPZKoL5Hh_FfN3lRZEUk",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000152",
+      "type": "product",
+      "title": "Frost Boot — Sage",
+      "summary": "Frost boot in sage; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:Bf7_BqIDpiQaU76CZ9acpl",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000153",
+      "type": "product",
+      "title": "Frost Jacket — Slate",
+      "summary": "Frost jacket in slate; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:1UUAk2VNjdfVmH1mWVE1E6",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000154",
+      "type": "product",
+      "title": "Northwind Skillet — Ochre",
+      "summary": "Northwind skillet in ochre; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:nqrZUya1s0xrziEhA9VvwH",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000155",
+      "type": "product",
+      "title": "Workshop Wrench — Walnut",
+      "summary": "Workshop wrench in walnut; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:rXlXWDWE_pitbHOT7eaD3H",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000156",
+      "type": "product",
+      "title": "Studio Tent — Brick",
+      "summary": "Studio tent in brick; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:W74IXNsK55xMELoUNTTqfS",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000157",
+      "type": "product",
+      "title": "Pioneer Notebook — Ochre",
+      "summary": "Pioneer notebook in ochre; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:uVCC5j0FFNKIverrM0d-fD",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000158",
+      "type": "product",
+      "title": "Pioneer Lamp — Ochre",
+      "summary": "Pioneer lamp in ochre; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:fS0VGdbgZORDv-tMNFubbE",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000159",
+      "type": "product",
+      "title": "Granite Headphone — Bone",
+      "summary": "Granite headphone in bone; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:W64Jl-RPbotXW04GlDV7_k",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000160",
+      "type": "product",
+      "title": "Workshop Boot — Slate",
+      "summary": "Workshop boot in slate; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:LLINLd87muwIeQ17ylcOtK",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000161",
+      "type": "product",
+      "title": "Northwind Jacket — Charcoal",
+      "summary": "Northwind jacket in charcoal; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:FO1hb_JQtXzXBgoNXQiRMV",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000162",
+      "type": "product",
+      "title": "Pioneer Skillet — Storm",
+      "summary": "Pioneer skillet in storm; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:CgPqTEd6UYjyvPhUh3wO4A",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000163",
+      "type": "product",
+      "title": "Pioneer Wrench — Storm",
+      "summary": "Pioneer wrench in storm; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:UtnBQ-Ir95yEp4bARqjK3V",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000164",
+      "type": "product",
+      "title": "Harvest Tent — Pine",
+      "summary": "Harvest tent in pine; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:zFErFzTMQlmV55tuAoyAmi",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000165",
+      "type": "product",
+      "title": "Heritage Notebook — Slate",
+      "summary": "Heritage notebook in slate; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:j3HxOZ9uwcsYlWxsOz3Pme",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000166",
+      "type": "product",
+      "title": "Northwind Lamp — Sage",
+      "summary": "Northwind lamp in sage; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:mVJNfL6vdheoGZvAe_BKLm",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000167",
+      "type": "product",
+      "title": "Pioneer Headphone — Slate",
+      "summary": "Pioneer headphone in slate; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:9NX_MAEtSiwZWYxPgq9jPD",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000168",
+      "type": "product",
+      "title": "Coastal Boot — Sand",
+      "summary": "Coastal boot in sand; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:ByhA-1LL1bc63LedWJwz1b",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000169",
+      "type": "product",
+      "title": "Harvest Jacket — Russet",
+      "summary": "Harvest jacket in russet; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:iDV56W3lgrtNrwh8e8kx2k",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000170",
+      "type": "product",
+      "title": "Workshop Skillet — Indigo",
+      "summary": "Workshop skillet in indigo; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:R6iclxeJfPR3dIin-v2A7u",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000171",
+      "type": "product",
+      "title": "Embered Wrench — Ochre",
+      "summary": "Embered wrench in ochre; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:s7BZdzsQKhsOzM9aOuoYVp",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000172",
+      "type": "product",
+      "title": "Granite Tent — Storm",
+      "summary": "Granite tent in storm; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:GuA1Q70yMEuRGNvVmQcAu0",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000173",
+      "type": "product",
+      "title": "Studio Notebook — Sage",
+      "summary": "Studio notebook in sage; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:KOujHL5Ce6K2e-NcaHsXDs",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000174",
+      "type": "product",
+      "title": "Summit Lamp — Brick",
+      "summary": "Summit lamp in brick; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:yAcr_lIZnED_T5PIHFfQc7",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000175",
+      "type": "product",
+      "title": "Onyx Headphone — Storm",
+      "summary": "Onyx headphone in storm; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:8mkKNbnwU_cUs_rIPTyVFr",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000176",
+      "type": "product",
+      "title": "Harvest Boot — Sage",
+      "summary": "Harvest boot in sage; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:FLLIpUi-2qecERYBeuqevW",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000177",
+      "type": "product",
+      "title": "Cedar Jacket — Bone",
+      "summary": "Cedar jacket in bone; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:coLdH6KjTcjVRLpsJkhDhK",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000178",
+      "type": "product",
+      "title": "Workshop Skillet — Ochre",
+      "summary": "Workshop skillet in ochre; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:HW0W4C_5ozlLVwsgWKXC6I",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000179",
+      "type": "product",
+      "title": "Frost Wrench — Bone",
+      "summary": "Frost wrench in bone; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ejgRrxbU3TWWwFRD7cpTek",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000180",
+      "type": "product",
+      "title": "Frost Tent — Pine",
+      "summary": "Frost tent in pine; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:uXmLG2yfhsWACzqO3U6Y3X",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000181",
+      "type": "product",
+      "title": "Granite Notebook — Walnut",
+      "summary": "Granite notebook in walnut; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:scY_yGchx3syJdvYrFw1NV",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000182",
+      "type": "product",
+      "title": "Embered Lamp — Bone",
+      "summary": "Embered lamp in bone; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:tI4wLy82vV74lzoBWntg8T",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000183",
+      "type": "product",
+      "title": "Riverbend Headphone — Sand",
+      "summary": "Riverbend headphone in sand; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Um8P8RzPlZb_xlqKfUhIZ8",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000184",
+      "type": "product",
+      "title": "Northwind Boot — Sage",
+      "summary": "Northwind boot in sage; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:0CgdxtrEdIYBvfft0mmCtF",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000185",
+      "type": "product",
+      "title": "Aurora Jacket — Ochre",
+      "summary": "Aurora jacket in ochre; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:uOlpX0EM4rNyKwrvKWEsUK",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000186",
+      "type": "product",
+      "title": "Pioneer Skillet — Pine",
+      "summary": "Pioneer skillet in pine; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Wacssf2ddFi9N29lTGD1RU",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000187",
+      "type": "product",
+      "title": "Embered Wrench — Storm",
+      "summary": "Embered wrench in storm; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:xralICELEm5iBKZpU0yJkh",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000188",
+      "type": "product",
+      "title": "Granite Tent — Pine",
+      "summary": "Granite tent in pine; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:gfnVXTtskTukwmmS1Uj4gC",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000189",
+      "type": "product",
+      "title": "Pioneer Notebook — Ochre",
+      "summary": "Pioneer notebook in ochre; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:sxlMHMVKEnxen9V1vNSGei",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000190",
+      "type": "product",
+      "title": "Coastal Lamp — Russet",
+      "summary": "Coastal lamp in russet; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:tVuheBQFXvg832M1C1vHFl",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000191",
+      "type": "product",
+      "title": "Coastal Headphone — Russet",
+      "summary": "Coastal headphone in russet; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:RIJPl4V6owT9iIKSGNSwun",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000192",
+      "type": "product",
+      "title": "Granite Boot — Indigo",
+      "summary": "Granite boot in indigo; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:_5dbndrXxnSwZrFvpB7HVf",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000193",
+      "type": "product",
+      "title": "Granite Jacket — Storm",
+      "summary": "Granite jacket in storm; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:A_Fy6X3QBCt01nEm1dqjTV",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000194",
+      "type": "product",
+      "title": "Riverbend Skillet — Walnut",
+      "summary": "Riverbend skillet in walnut; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:sdYRD48KMdl3jmBU1ARvQ3",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000195",
+      "type": "product",
+      "title": "Coastal Wrench — Sage",
+      "summary": "Coastal wrench in sage; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Ziu7Ju88XlKYLaJ_1sDgY5",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000196",
+      "type": "product",
+      "title": "Field Tent — Indigo",
+      "summary": "Field tent in indigo; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:_PG9R-R7VllJ8xtPksf80U",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000197",
+      "type": "product",
+      "title": "Northwind Notebook — Brick",
+      "summary": "Northwind notebook in brick; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:EuxrZRsh5jdOktRAgWdrtb",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000198",
+      "type": "product",
+      "title": "Field Lamp — Storm",
+      "summary": "Field lamp in storm; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:M9GChcTSpq7usB-qURhRpL",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000199",
+      "type": "product",
+      "title": "Pioneer Headphone — Charcoal",
+      "summary": "Pioneer headphone in charcoal; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:jx-5BAOXIusVaCf7y91QDv",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000200",
+      "type": "product",
+      "title": "Embered Boot — Charcoal",
+      "summary": "Embered boot in charcoal; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:4je55_ZFg4rxXEy1F8udkB",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000201",
+      "type": "product",
+      "title": "Northwind Jacket — Bone",
+      "summary": "Northwind jacket in bone; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:k4twcA3GpYemPU47wFJ_BM",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000202",
+      "type": "product",
+      "title": "Onyx Skillet — Sand",
+      "summary": "Onyx skillet in sand; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:-acuA95IsJ2yaMVKiO_pxp",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000203",
+      "type": "product",
+      "title": "Onyx Wrench — Pine",
+      "summary": "Onyx wrench in pine; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:AAEqUqFU6poHaPALEwocGM",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000204",
+      "type": "product",
+      "title": "Riverbend Tent — Slate",
+      "summary": "Riverbend tent in slate; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:HemG3kHZIoJHBGpazvEpT_",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000205",
+      "type": "product",
+      "title": "Embered Notebook — Indigo",
+      "summary": "Embered notebook in indigo; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Yvu0RbZWZK8AfSO6ZEa0Cr",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000206",
+      "type": "product",
+      "title": "Studio Lamp — Charcoal",
+      "summary": "Studio lamp in charcoal; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:b4kg1KkBdps29fjtqqz7Bk",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000207",
+      "type": "product",
+      "title": "Riverbend Headphone — Walnut",
+      "summary": "Riverbend headphone in walnut; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:YSURGh30iut9NS-zDCdO41",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000208",
+      "type": "product",
+      "title": "Workshop Boot — Indigo",
+      "summary": "Workshop boot in indigo; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:rYb99dIAthaCGzhYaoHoQz",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000209",
+      "type": "product",
+      "title": "Onyx Jacket — Storm",
+      "summary": "Onyx jacket in storm; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:kuMjdkKqT4XjtBu94kE3La",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000210",
+      "type": "product",
+      "title": "Coastal Skillet — Slate",
+      "summary": "Coastal skillet in slate; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ltX-uY8w0rNlJB-lZbY9YK",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000211",
+      "type": "product",
+      "title": "Aurora Wrench — Charcoal",
+      "summary": "Aurora wrench in charcoal; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Ysphx4ltODcYuGSKnYHzOH",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000212",
+      "type": "product",
+      "title": "Workshop Tent — Sand",
+      "summary": "Workshop tent in sand; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:tO8_XkBGMzSE_UYnpHPgnf",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000213",
+      "type": "product",
+      "title": "Embered Notebook — Slate",
+      "summary": "Embered notebook in slate; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:tPHM4l94F9ePpezKaexp6s",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000214",
+      "type": "product",
+      "title": "Workshop Lamp — Charcoal",
+      "summary": "Workshop lamp in charcoal; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:dfxR5gfkF8oGPdU5rxmCYf",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000215",
+      "type": "product",
+      "title": "Frost Headphone — Sand",
+      "summary": "Frost headphone in sand; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:bXCrju-RZKZ0ZdaWwEqH6K",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000216",
+      "type": "product",
+      "title": "Onyx Boot — Pine",
+      "summary": "Onyx boot in pine; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:F-IfkfoHhJfVPk7LrI1V5i",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000217",
+      "type": "product",
+      "title": "Embered Jacket — Ochre",
+      "summary": "Embered jacket in ochre; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:zbWthfZUG1mLoHca7FzhT7",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000218",
+      "type": "product",
+      "title": "Onyx Skillet — Sage",
+      "summary": "Onyx skillet in sage; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:j5OEOGa68DxDpt74KlEvPa",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000219",
+      "type": "product",
+      "title": "Onyx Wrench — Slate",
+      "summary": "Onyx wrench in slate; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:vO2aeW6POl7h9rOxzPL-1b",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000220",
+      "type": "product",
+      "title": "Northwind Tent — Ochre",
+      "summary": "Northwind tent in ochre; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:-j0XuA77I_GR_CIBY9w5if",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000221",
+      "type": "product",
+      "title": "Cedar Notebook — Ochre",
+      "summary": "Cedar notebook in ochre; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ZbOOBb6kFVqN-Csp9zuRJJ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000222",
+      "type": "product",
+      "title": "Cedar Lamp — Charcoal",
+      "summary": "Cedar lamp in charcoal; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:scefmrYg8Rys9vwKYm7ALK",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000223",
+      "type": "product",
+      "title": "Workshop Headphone — Charcoal",
+      "summary": "Workshop headphone in charcoal; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ZFcVMbayg7Hs_9xwuVvHbh",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000224",
+      "type": "product",
+      "title": "Riverbend Boot — Pine",
+      "summary": "Riverbend boot in pine; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:aUqb6gAzFbpZZAbPTgWg0w",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000225",
+      "type": "product",
+      "title": "Aurora Jacket — Pine",
+      "summary": "Aurora jacket in pine; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:YrKoTIWI8IdU09MgcNjaHK",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000226",
+      "type": "product",
+      "title": "Riverbend Skillet — Ochre",
+      "summary": "Riverbend skillet in ochre; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:_9K90pYjl1uYL1HxDWW7Z0",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000227",
+      "type": "product",
+      "title": "Workshop Wrench — Sand",
+      "summary": "Workshop wrench in sand; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:iY87ku9AAfclnjrJwRXlvT",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000228",
+      "type": "product",
+      "title": "Field Tent — Russet",
+      "summary": "Field tent in russet; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:WYV4cnkTMXH7kxhbJelvDt",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000229",
+      "type": "product",
+      "title": "Studio Notebook — Russet",
+      "summary": "Studio notebook in russet; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:9NatvlOE0n2anLpyGjV_pZ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000230",
+      "type": "product",
+      "title": "Summit Lamp — Storm",
+      "summary": "Summit lamp in storm; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:sgm6xVUqvhI-lbMGWrW2xY",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000231",
+      "type": "product",
+      "title": "Cedar Headphone — Storm",
+      "summary": "Cedar headphone in storm; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:jp45uAYMZ3xAZBFqcLu7dX",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000232",
+      "type": "product",
+      "title": "Embered Boot — Slate",
+      "summary": "Embered boot in slate; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:oA3kISNYjJ5vEzJW_tc1br",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000233",
+      "type": "product",
+      "title": "Riverbend Jacket — Sand",
+      "summary": "Riverbend jacket in sand; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:V0zOmc7m8KYUqlJ3_OY7Ur",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000234",
+      "type": "product",
+      "title": "Heritage Skillet — Indigo",
+      "summary": "Heritage skillet in indigo; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:XFUzFTTp8PcVk8h6oDGhMI",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000235",
+      "type": "product",
+      "title": "Studio Wrench — Pine",
+      "summary": "Studio wrench in pine; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:a7EwYC04TR0WjAgVpsWZTt",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000236",
+      "type": "product",
+      "title": "Aurora Tent — Sage",
+      "summary": "Aurora tent in sage; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:AVhRTTEgIk0R9V7fon5YvD",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000237",
+      "type": "product",
+      "title": "Cedar Notebook — Sage",
+      "summary": "Cedar notebook in sage; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:D-MTVCyj8p1JR6Y6ELDLxm",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000238",
+      "type": "product",
+      "title": "Aurora Lamp — Charcoal",
+      "summary": "Aurora lamp in charcoal; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:mISkptQ8YjfCQOcQZ9IhQu",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000239",
+      "type": "product",
+      "title": "Cedar Headphone — Indigo",
+      "summary": "Cedar headphone in indigo; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:wKjhePuIfvcVxHHSZcuVXc",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000240",
+      "type": "product",
+      "title": "Heritage Boot — Bone",
+      "summary": "Heritage boot in bone; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:hjOMydRH_vdmcbaTEaM1gv",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000241",
+      "type": "product",
+      "title": "Workshop Jacket — Walnut",
+      "summary": "Workshop jacket in walnut; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:CSsfr57ZrpjdDtAZPWSCRQ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000242",
+      "type": "product",
+      "title": "Field Skillet — Storm",
+      "summary": "Field skillet in storm; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:pw0tQ3kWi_cl9yWlLlA182",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000243",
+      "type": "product",
+      "title": "Aurora Wrench — Storm",
+      "summary": "Aurora wrench in storm; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:sXO6mjXZU_vZKssFjUdAoh",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000244",
+      "type": "product",
+      "title": "Northwind Tent — Storm",
+      "summary": "Northwind tent in storm; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:L8Dz7EK7v_uFQ8uVtzrH1Y",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000245",
+      "type": "product",
+      "title": "Aurora Notebook — Charcoal",
+      "summary": "Aurora notebook in charcoal; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:1x4pjXUhwTEbsEpG_ranh-",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000246",
+      "type": "product",
+      "title": "Coastal Lamp — Russet",
+      "summary": "Coastal lamp in russet; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Od0WkSU3mPIuETqsWZ9YlR",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000247",
+      "type": "product",
+      "title": "Heritage Headphone — Storm",
+      "summary": "Heritage headphone in storm; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:bjxP2fkGgKWvkXEM60BfqG",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000248",
+      "type": "product",
+      "title": "Granite Boot — Charcoal",
+      "summary": "Granite boot in charcoal; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:pR-U2CT7l8rvrmzJ8Z9EJ0",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000249",
+      "type": "product",
+      "title": "Workshop Jacket — Russet",
+      "summary": "Workshop jacket in russet; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:lblOoVYKQbCS2kh8vAd21k",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000250",
+      "type": "product",
+      "title": "Granite Skillet — Brick",
+      "summary": "Granite skillet in brick; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ecLp13zFWlLSdCVFWaD1v_",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000251",
+      "type": "product",
+      "title": "Northwind Wrench — Sand",
+      "summary": "Northwind wrench in sand; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:uWBCiUXbcIeZLo5MOscn3l",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000252",
+      "type": "product",
+      "title": "Pioneer Tent — Sand",
+      "summary": "Pioneer tent in sand; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:l15zQ3wMAU6vpr1CBn5V5l",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000253",
+      "type": "product",
+      "title": "Aurora Notebook — Russet",
+      "summary": "Aurora notebook in russet; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:OJX-wUW1VXMPmGsTeGwCl2",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000254",
+      "type": "product",
+      "title": "Onyx Lamp — Walnut",
+      "summary": "Onyx lamp in walnut; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:G9AtS6UV0q1KYTDCHFg0Ys",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000255",
+      "type": "product",
+      "title": "Frost Headphone — Walnut",
+      "summary": "Frost headphone in walnut; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:NIbBplaRTdKQXCGQlfeVQk",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000256",
+      "type": "product",
+      "title": "Summit Boot — Bone",
+      "summary": "Summit boot in bone; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Es8Toqo-EUroTVfVKEqC6y",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000257",
+      "type": "product",
+      "title": "Coastal Jacket — Indigo",
+      "summary": "Coastal jacket in indigo; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:zg4YBiW5iKVkTirQfRzIC-",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000258",
+      "type": "product",
+      "title": "Summit Skillet — Brick",
+      "summary": "Summit skillet in brick; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:x__uyGgcvd6yl6izzTZZUs",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000259",
+      "type": "product",
+      "title": "Heritage Wrench — Pine",
+      "summary": "Heritage wrench in pine; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:AeU8cVfAKgMyy5OMf3vi4o",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000260",
+      "type": "product",
+      "title": "Aurora Tent — Ochre",
+      "summary": "Aurora tent in ochre; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:Q0t3NEXiDqLACwkojN7SpA",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000261",
+      "type": "product",
+      "title": "Embered Notebook — Charcoal",
+      "summary": "Embered notebook in charcoal; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:kgicYBZEqMOC7JI-A91Yt6",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000262",
+      "type": "product",
+      "title": "Aurora Lamp — Walnut",
+      "summary": "Aurora lamp in walnut; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:YrGDV95-NEK8Dm5gxkAhBF",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000263",
+      "type": "product",
+      "title": "Granite Headphone — Ochre",
+      "summary": "Granite headphone in ochre; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:FTdpJCVExvNhP7HQECS25Y",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000264",
+      "type": "product",
+      "title": "Workshop Boot — Brick",
+      "summary": "Workshop boot in brick; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:oWEGb_4pOswfx7SicJcoGz",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000265",
+      "type": "product",
+      "title": "Harvest Jacket — Sand",
+      "summary": "Harvest jacket in sand; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ioHZUBj_Iyg8ExAc00Pbqg",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000266",
+      "type": "product",
+      "title": "Heritage Skillet — Charcoal",
+      "summary": "Heritage skillet in charcoal; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:QJbbxzJ292y5NfamkRQyAE",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000267",
+      "type": "product",
+      "title": "Workshop Wrench — Sage",
+      "summary": "Workshop wrench in sage; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:IN3mHPWaOU4er8rp0Lz_IK",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000268",
+      "type": "product",
+      "title": "Frost Tent — Storm",
+      "summary": "Frost tent in storm; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:gkHJp5Zk37Sf825hKsQ5eG",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000269",
+      "type": "product",
+      "title": "Workshop Notebook — Walnut",
+      "summary": "Workshop notebook in walnut; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:bvaoOIWhu9lDWEJJ7tx55w",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000270",
+      "type": "product",
+      "title": "Coastal Lamp — Russet",
+      "summary": "Coastal lamp in russet; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:f16nQjbGbKRgziC8OKUOei",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000271",
+      "type": "product",
+      "title": "Embered Headphone — Indigo",
+      "summary": "Embered headphone in indigo; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:3_MI3L5AOFQWYmlD4JMryF",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000272",
+      "type": "product",
+      "title": "Pioneer Boot — Brick",
+      "summary": "Pioneer boot in brick; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:od4X-nTj-lFIjzQqLxzokR",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000273",
+      "type": "product",
+      "title": "Frost Jacket — Charcoal",
+      "summary": "Frost jacket in charcoal; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:BuHcaLaRn3RCVa7BocPVSl",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000274",
+      "type": "product",
+      "title": "Workshop Skillet — Brick",
+      "summary": "Workshop skillet in brick; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:OlrvcWT8VwENCD7buc0cEd",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000275",
+      "type": "product",
+      "title": "Embered Wrench — Sage",
+      "summary": "Embered wrench in sage; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:EnpMdHtcChwe7bvC1qSsSl",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000276",
+      "type": "product",
+      "title": "Embered Tent — Charcoal",
+      "summary": "Embered tent in charcoal; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:AlYUlbbWJdbxZDPEKKKKSj",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000277",
+      "type": "product",
+      "title": "Northwind Notebook — Russet",
+      "summary": "Northwind notebook in russet; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Lmxv3ocWLMKK5UpaCvqRAN",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000278",
+      "type": "product",
+      "title": "Northwind Lamp — Ochre",
+      "summary": "Northwind lamp in ochre; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:g5D8JetHv-fH8DYQRbnozd",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000279",
+      "type": "product",
+      "title": "Coastal Headphone — Slate",
+      "summary": "Coastal headphone in slate; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:4oPmQ1VAUuFsMRDlazxWfC",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000280",
+      "type": "product",
+      "title": "Embered Boot — Sand",
+      "summary": "Embered boot in sand; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:TxFxGvari-BAd4nLT0Fffy",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000281",
+      "type": "product",
+      "title": "Coastal Jacket — Sand",
+      "summary": "Coastal jacket in sand; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:eVkOKCUJGeOU_kPCI8Wwov",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000282",
+      "type": "product",
+      "title": "Frost Skillet — Sage",
+      "summary": "Frost skillet in sage; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:VsKSYagYLTR1bqWNRkdSzq",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000283",
+      "type": "product",
+      "title": "Coastal Wrench — Bone",
+      "summary": "Coastal wrench in bone; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:W6TviHi4PfdmlqzN-rnFDH",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000284",
+      "type": "product",
+      "title": "Pioneer Tent — Indigo",
+      "summary": "Pioneer tent in indigo; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Q9pAJB4Ck5FabRpiBtIJIT",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000285",
+      "type": "product",
+      "title": "Frost Notebook — Russet",
+      "summary": "Frost notebook in russet; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:rq4x8NZlFHBDjJMHRNlJ9e",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000286",
+      "type": "product",
+      "title": "Onyx Lamp — Ochre",
+      "summary": "Onyx lamp in ochre; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:iXoTVTqrSmzSadfAMpCQZi",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000287",
+      "type": "product",
+      "title": "Northwind Headphone — Brick",
+      "summary": "Northwind headphone in brick; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:1vuI97djWueRLfRHuxpeiD",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000288",
+      "type": "product",
+      "title": "Heritage Boot — Sage",
+      "summary": "Heritage boot in sage; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:z9T5bxr43AeJOKNcm9zOxY",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000289",
+      "type": "product",
+      "title": "Coastal Jacket — Indigo",
+      "summary": "Coastal jacket in indigo; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:e1xu_kt-6h37Ob0ADreq4I",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000290",
+      "type": "product",
+      "title": "Heritage Skillet — Charcoal",
+      "summary": "Heritage skillet in charcoal; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:rAttl7TsIBJOUj0UfmPvz2",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000291",
+      "type": "product",
+      "title": "Coastal Wrench — Ochre",
+      "summary": "Coastal wrench in ochre; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:LiuyY4DKH1iSB5LDNkFRcQ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000292",
+      "type": "product",
+      "title": "Studio Tent — Ochre",
+      "summary": "Studio tent in ochre; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:zNR3PDQ3eIXPfK8yVRrnzp",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000293",
+      "type": "product",
+      "title": "Frost Notebook — Bone",
+      "summary": "Frost notebook in bone; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:reDoVuQ3EUWKmoeFF05EWU",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000294",
+      "type": "product",
+      "title": "Cedar Lamp — Pine",
+      "summary": "Cedar lamp in pine; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:wNLDeT9X03WBZ3RaHfhbvP",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000295",
+      "type": "product",
+      "title": "Pioneer Headphone — Charcoal",
+      "summary": "Pioneer headphone in charcoal; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Ca3L9oMTTAKqZc4Aueu8YA",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000296",
+      "type": "product",
+      "title": "Coastal Boot — Indigo",
+      "summary": "Coastal boot in indigo; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Yxg-cRNL6MMzav97sLqnP9",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000297",
+      "type": "product",
+      "title": "Frost Jacket — Russet",
+      "summary": "Frost jacket in russet; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:0tVIF9hbqz5OmMw5pb5UKr",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000298",
+      "type": "product",
+      "title": "Frost Skillet — Pine",
+      "summary": "Frost skillet in pine; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:677TOZJNjwBlGd6Yy4OB8r",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000299",
+      "type": "product",
+      "title": "Cedar Wrench — Ochre",
+      "summary": "Cedar wrench in ochre; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:wzuGVNpUfljWDxvEsvf_WA",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000300",
+      "type": "product",
+      "title": "Embered Tent — Ochre",
+      "summary": "Embered tent in ochre; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:rRKrbcOMmu3m5IAtiWIRae",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000301",
+      "type": "product",
+      "title": "Field Notebook — Charcoal",
+      "summary": "Field notebook in charcoal; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:b61pqyrFcCzIowHzJaR7EL",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000302",
+      "type": "product",
+      "title": "Aurora Lamp — Bone",
+      "summary": "Aurora lamp in bone; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:juCWXq0kaw1uT497fimR92",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000303",
+      "type": "product",
+      "title": "Frost Headphone — Slate",
+      "summary": "Frost headphone in slate; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:L2WO10JCktlpS87OK9s7Vh",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000304",
+      "type": "product",
+      "title": "Field Boot — Bone",
+      "summary": "Field boot in bone; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:CGjzZGIyWSy0iZRF0wmJeE",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000305",
+      "type": "product",
+      "title": "Embered Jacket — Russet",
+      "summary": "Embered jacket in russet; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:qIWc5KkIpg6J9XtBBYR-Pz",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000306",
+      "type": "product",
+      "title": "Northwind Skillet — Indigo",
+      "summary": "Northwind skillet in indigo; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:FmM8xCFbYTTI0_Lyspy6eo",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000307",
+      "type": "product",
+      "title": "Harvest Wrench — Charcoal",
+      "summary": "Harvest wrench in charcoal; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:yFjcCii4BznK9i29xENB0A",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000308",
+      "type": "product",
+      "title": "Heritage Tent — Sage",
+      "summary": "Heritage tent in sage; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:zy9pEQTmSDu1GLIdwsSAbq",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000309",
+      "type": "product",
+      "title": "Workshop Notebook — Pine",
+      "summary": "Workshop notebook in pine; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:JAcL1Ha8LaKJlTpGZnq_pw",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000310",
+      "type": "product",
+      "title": "Embered Lamp — Ochre",
+      "summary": "Embered lamp in ochre; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:vrqNhRlcCVfuMv2XYR2C7o",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000311",
+      "type": "product",
+      "title": "Frost Headphone — Indigo",
+      "summary": "Frost headphone in indigo; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:f7Rq4bA2HedOwXQtx-Ti5p",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000312",
+      "type": "product",
+      "title": "Frost Boot — Brick",
+      "summary": "Frost boot in brick; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Sdo5b9xkLZJHpQiQ4a9SUn",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000313",
+      "type": "product",
+      "title": "Summit Jacket — Sage",
+      "summary": "Summit jacket in sage; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:g3I4P2bd50-cv5ASkUrHgP",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000314",
+      "type": "product",
+      "title": "Riverbend Skillet — Russet",
+      "summary": "Riverbend skillet in russet; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:v6Fi6Nx1v5C5lAMxdi0joN",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000315",
+      "type": "product",
+      "title": "Granite Wrench — Sage",
+      "summary": "Granite wrench in sage; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:8oJMqu1PdsnI0P5BzR6768",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000316",
+      "type": "product",
+      "title": "Harvest Tent — Sand",
+      "summary": "Harvest tent in sand; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Z4eVAIgwm3Qinl0UQJmTOw",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000317",
+      "type": "product",
+      "title": "Onyx Notebook — Charcoal",
+      "summary": "Onyx notebook in charcoal; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:-_yzXCk1T_i9eApuajFhJ5",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000318",
+      "type": "product",
+      "title": "Aurora Lamp — Slate",
+      "summary": "Aurora lamp in slate; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:7u82L2WI1zns3CHf0mvAyZ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000319",
+      "type": "product",
+      "title": "Summit Headphone — Slate",
+      "summary": "Summit headphone in slate; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:llJGpmtfT7C4Hwtgg0N7xg",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000320",
+      "type": "product",
+      "title": "Cedar Boot — Brick",
+      "summary": "Cedar boot in brick; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ECeQynBxS3ECKu-AFWpLIr",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000321",
+      "type": "product",
+      "title": "Embered Jacket — Indigo",
+      "summary": "Embered jacket in indigo; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:7_uYNEnYID-N8xWfxZW3hC",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000322",
+      "type": "product",
+      "title": "Studio Skillet — Slate",
+      "summary": "Studio skillet in slate; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:zJ7u7kRlYyUkbXXHFfcbXk",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000323",
+      "type": "product",
+      "title": "Workshop Wrench — Bone",
+      "summary": "Workshop wrench in bone; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:De788eGM2QQGPlTUdSbu85",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000324",
+      "type": "product",
+      "title": "Aurora Tent — Charcoal",
+      "summary": "Aurora tent in charcoal; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:yB7QcXv4c9g9Sy_gAbJFl1",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000325",
+      "type": "product",
+      "title": "Embered Notebook — Sand",
+      "summary": "Embered notebook in sand; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:aMT-aBuj8wGZdFvqdpSqnZ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000326",
+      "type": "product",
+      "title": "Riverbend Lamp — Pine",
+      "summary": "Riverbend lamp in pine; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:u2Al89mGPy8AkTPfG0vbGi",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000327",
+      "type": "product",
+      "title": "Embered Headphone — Slate",
+      "summary": "Embered headphone in slate; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:h_2822EYk_3pCpEbPw4LLQ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000328",
+      "type": "product",
+      "title": "Northwind Boot — Walnut",
+      "summary": "Northwind boot in walnut; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:i1-K3Dc19ctQzLZ5-Ixcaj",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000329",
+      "type": "product",
+      "title": "Studio Jacket — Slate",
+      "summary": "Studio jacket in slate; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:UBKHx4LX2Q5ydA58vleztg",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000330",
+      "type": "product",
+      "title": "Harvest Skillet — Ochre",
+      "summary": "Harvest skillet in ochre; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Jn_dCbwRVJ0ek8dMJixKYl",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000331",
+      "type": "product",
+      "title": "Embered Wrench — Sage",
+      "summary": "Embered wrench in sage; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:7dmkp3h1kx-YGoznFzboL_",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000332",
+      "type": "product",
+      "title": "Studio Tent — Pine",
+      "summary": "Studio tent in pine; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:OcYKnqj3Fn4hy6xl58lSV0",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000333",
+      "type": "product",
+      "title": "Harvest Notebook — Pine",
+      "summary": "Harvest notebook in pine; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:UAUVljaEOnyd2JUwZE8x7D",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000334",
+      "type": "product",
+      "title": "Northwind Lamp — Bone",
+      "summary": "Northwind lamp in bone; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:MN8RQPvs9rPNFEvy3H2uZz",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000335",
+      "type": "product",
+      "title": "Harvest Headphone — Ochre",
+      "summary": "Harvest headphone in ochre; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:1Q3tMeWyWRso7Bp6LAWx_G",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000336",
+      "type": "product",
+      "title": "Aurora Boot — Indigo",
+      "summary": "Aurora boot in indigo; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:uz_CPsDnwid8gDzrYEdOAl",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000337",
+      "type": "product",
+      "title": "Workshop Jacket — Sand",
+      "summary": "Workshop jacket in sand; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:7B1GEpEz9HD9jo4yff_wFd",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000338",
+      "type": "product",
+      "title": "Heritage Skillet — Sage",
+      "summary": "Heritage skillet in sage; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:RN7QhSX3S-G84iAM8k2cqu",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000339",
+      "type": "product",
+      "title": "Pioneer Wrench — Bone",
+      "summary": "Pioneer wrench in bone; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:pOcLkUIRQNu3x9H6Z1m1Wo",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000340",
+      "type": "product",
+      "title": "Granite Tent — Pine",
+      "summary": "Granite tent in pine; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:E4S0M7CMD3xPRyPBh5fpqF",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000341",
+      "type": "product",
+      "title": "Northwind Notebook — Brick",
+      "summary": "Northwind notebook in brick; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:cOVHdHmnIaFl5OuCoGU-MX",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000342",
+      "type": "product",
+      "title": "Field Lamp — Walnut",
+      "summary": "Field lamp in walnut; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:0ZmzWg2eSbHunycKqsYwKD",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000343",
+      "type": "product",
+      "title": "Coastal Headphone — Storm",
+      "summary": "Coastal headphone in storm; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:BMJEsluMHeSZjB6xY9fmh2",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000344",
+      "type": "product",
+      "title": "Heritage Boot — Indigo",
+      "summary": "Heritage boot in indigo; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:-c7uUJ1PBEYIqwSXj1fs9y",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000345",
+      "type": "product",
+      "title": "Summit Jacket — Pine",
+      "summary": "Summit jacket in pine; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:CPYANPlCVaRJ1UZpM1GXWQ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000346",
+      "type": "product",
+      "title": "Aurora Skillet — Bone",
+      "summary": "Aurora skillet in bone; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Pn3ahSbS7DNuITeB2kkbwg",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000347",
+      "type": "product",
+      "title": "Field Wrench — Ochre",
+      "summary": "Field wrench in ochre; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:nJeB8_aXNbns_kuzcuOech",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000348",
+      "type": "product",
+      "title": "Studio Tent — Ochre",
+      "summary": "Studio tent in ochre; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:DOxV8dc_moz6sVknBCjn1N",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000349",
+      "type": "product",
+      "title": "Embered Notebook — Indigo",
+      "summary": "Embered notebook in indigo; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:FlpAIal7KUbJaSw1cRxubZ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000350",
+      "type": "product",
+      "title": "Heritage Lamp — Bone",
+      "summary": "Heritage lamp in bone; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:hfiaFEJAMy46zNYL-dSI6u",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000351",
+      "type": "product",
+      "title": "Aurora Headphone — Indigo",
+      "summary": "Aurora headphone in indigo; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:osvu9vkZSOzc7kMnah8Edr",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000352",
+      "type": "product",
+      "title": "Workshop Boot — Sage",
+      "summary": "Workshop boot in sage; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:iTAyOlryIwIFAZFqnu_FBX",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000353",
+      "type": "product",
+      "title": "Summit Jacket — Bone",
+      "summary": "Summit jacket in bone; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:EHtMN3LD0JQl7NfJIY21dL",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000354",
+      "type": "product",
+      "title": "Harvest Skillet — Charcoal",
+      "summary": "Harvest skillet in charcoal; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:jf3gfAlNG2ROjlKQnSbXMQ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000355",
+      "type": "product",
+      "title": "Frost Wrench — Slate",
+      "summary": "Frost wrench in slate; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:_MBBU6Nf8jyQ7htE7WxnfM",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000356",
+      "type": "product",
+      "title": "Summit Tent — Russet",
+      "summary": "Summit tent in russet; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:F8Hyd1-uAGuyUJWwWMMf1H",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000357",
+      "type": "product",
+      "title": "Onyx Notebook — Indigo",
+      "summary": "Onyx notebook in indigo; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:nug5g16cFGw5cY2IaRHOgs",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000358",
+      "type": "product",
+      "title": "Coastal Lamp — Indigo",
+      "summary": "Coastal lamp in indigo; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:lZ5QNlc4wjIzUyuE2_EbHX",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000359",
+      "type": "product",
+      "title": "Cedar Headphone — Charcoal",
+      "summary": "Cedar headphone in charcoal; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:zVwZEzV-jaqTfT3b5C-6Nx",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000360",
+      "type": "product",
+      "title": "Aurora Boot — Brick",
+      "summary": "Aurora boot in brick; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:oZ6acLGau5Gh2Dm2eqONwu",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000361",
+      "type": "product",
+      "title": "Coastal Jacket — Russet",
+      "summary": "Coastal jacket in russet; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:XekOMNoVJaTH1im8ubnZEL",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000362",
+      "type": "product",
+      "title": "Harvest Skillet — Storm",
+      "summary": "Harvest skillet in storm; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:zeZRfgY1EcRZH8_dqqsFsv",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000363",
+      "type": "product",
+      "title": "Aurora Wrench — Charcoal",
+      "summary": "Aurora wrench in charcoal; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:52juIgu_yHKDHez61iUQFf",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000364",
+      "type": "product",
+      "title": "Aurora Tent — Brick",
+      "summary": "Aurora tent in brick; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:rRFqJh7bz8uM4w1cWepNab",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000365",
+      "type": "product",
+      "title": "Heritage Notebook — Ochre",
+      "summary": "Heritage notebook in ochre; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:yZgGrRCfDaAfGN8HVpxTkq",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000366",
+      "type": "product",
+      "title": "Onyx Lamp — Storm",
+      "summary": "Onyx lamp in storm; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:HRIa_3IjYCSYNLGyXhavmL",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000367",
+      "type": "product",
+      "title": "Pioneer Headphone — Russet",
+      "summary": "Pioneer headphone in russet; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:46WF6Nbs9lx94qflnSCeA5",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000368",
+      "type": "product",
+      "title": "Heritage Boot — Bone",
+      "summary": "Heritage boot in bone; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:H3An5ijdp3ICyHTBT-DWZt",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000369",
+      "type": "product",
+      "title": "Studio Jacket — Sand",
+      "summary": "Studio jacket in sand; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:EN7RsMq4EwTzTItqH1V4Ut",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000370",
+      "type": "product",
+      "title": "Granite Skillet — Sage",
+      "summary": "Granite skillet in sage; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:FZxQaCBbn5_TCM6gNJfAiD",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000371",
+      "type": "product",
+      "title": "Embered Wrench — Slate",
+      "summary": "Embered wrench in slate; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:8ILPgUkm_2kpSF1ZSpjAHI",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000372",
+      "type": "product",
+      "title": "Onyx Tent — Sand",
+      "summary": "Onyx tent in sand; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:00h-cp5HxrTmDpv7g2l1lm",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000373",
+      "type": "product",
+      "title": "Northwind Notebook — Ochre",
+      "summary": "Northwind notebook in ochre; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Ev21Guqj_33aDCkOPchJy5",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000374",
+      "type": "product",
+      "title": "Field Lamp — Pine",
+      "summary": "Field lamp in pine; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:coWcQhnP37mAi8vTpspcbb",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000375",
+      "type": "product",
+      "title": "Workshop Headphone — Charcoal",
+      "summary": "Workshop headphone in charcoal; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:LaunUz3TORQQwWLv7a-THW",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000376",
+      "type": "product",
+      "title": "Pioneer Boot — Sand",
+      "summary": "Pioneer boot in sand; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:QgXn2Nf5jkeB328y7CFyFJ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000377",
+      "type": "product",
+      "title": "Field Jacket — Bone",
+      "summary": "Field jacket in bone; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:bFBK0jZbEUz9vvCiiTz2TP",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000378",
+      "type": "product",
+      "title": "Cedar Skillet — Charcoal",
+      "summary": "Cedar skillet in charcoal; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:n0l6c3542x60YqFlo9UPtv",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000379",
+      "type": "product",
+      "title": "Riverbend Wrench — Ochre",
+      "summary": "Riverbend wrench in ochre; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:hA7t2ZBTAZIlUrLA7xwf3l",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000380",
+      "type": "product",
+      "title": "Summit Tent — Brick",
+      "summary": "Summit tent in brick; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:MUpS7UNwVy1Rekd55yfOdv",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000381",
+      "type": "product",
+      "title": "Cedar Notebook — Brick",
+      "summary": "Cedar notebook in brick; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:jRHrw78y56ouIuO8xRrDd8",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000382",
+      "type": "product",
+      "title": "Summit Lamp — Russet",
+      "summary": "Summit lamp in russet; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:oA8yGMlMp9LwNg9fHp8FDg",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000383",
+      "type": "product",
+      "title": "Onyx Headphone — Pine",
+      "summary": "Onyx headphone in pine; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:PKPEGbJbOrv_krsTYAgqd4",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000384",
+      "type": "product",
+      "title": "Pioneer Boot — Slate",
+      "summary": "Pioneer boot in slate; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:a3JweNlGKtNQ3kgvSis3R6",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000385",
+      "type": "product",
+      "title": "Frost Jacket — Ochre",
+      "summary": "Frost jacket in ochre; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:BrvMNHn85C3GACnOsk4Vp3",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000386",
+      "type": "product",
+      "title": "Northwind Skillet — Walnut",
+      "summary": "Northwind skillet in walnut; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ZBrMQRYL_8LX0T1U5XJyCl",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000387",
+      "type": "product",
+      "title": "Summit Wrench — Slate",
+      "summary": "Summit wrench in slate; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:TA-gfYL-ATOM6SQS9Joojs",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000388",
+      "type": "product",
+      "title": "Harvest Tent — Sand",
+      "summary": "Harvest tent in sand; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:DcKju4zCvB7t3Xg8VVP74D",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000389",
+      "type": "product",
+      "title": "Workshop Notebook — Walnut",
+      "summary": "Workshop notebook in walnut; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:dv7N2YN6JydwHt3zUD1qXu",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000390",
+      "type": "product",
+      "title": "Field Lamp — Brick",
+      "summary": "Field lamp in brick; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:0IPGlUVxyQDu9LMz3FIByH",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000391",
+      "type": "product",
+      "title": "Summit Headphone — Slate",
+      "summary": "Summit headphone in slate; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:rXXf8sIxhqcVlr_kgRbZ6K",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000392",
+      "type": "product",
+      "title": "Field Boot — Pine",
+      "summary": "Field boot in pine; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:TDPe0REUkyVuVOt6BFkWJy",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000393",
+      "type": "product",
+      "title": "Studio Jacket — Ochre",
+      "summary": "Studio jacket in ochre; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:YWPCj_KjCp0yYDKPPSrjjX",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000394",
+      "type": "product",
+      "title": "Embered Skillet — Storm",
+      "summary": "Embered skillet in storm; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:TtjDX3YuuWeWoo80n73AB8",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000395",
+      "type": "product",
+      "title": "Embered Wrench — Ochre",
+      "summary": "Embered wrench in ochre; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:OSmV0d1OD0sKKj2BflH9MY",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000396",
+      "type": "product",
+      "title": "Onyx Tent — Sand",
+      "summary": "Onyx tent in sand; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:TmXD0LN31WnkIJCVwg3Pg8",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000397",
+      "type": "product",
+      "title": "Onyx Notebook — Sand",
+      "summary": "Onyx notebook in sand; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Bxt1QwaFFM7E42E1lr1EUX",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000398",
+      "type": "product",
+      "title": "Frost Lamp — Bone",
+      "summary": "Frost lamp in bone; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:wfJcVSQrPY9BfQ6IX987wp",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000399",
+      "type": "product",
+      "title": "Harvest Headphone — Charcoal",
+      "summary": "Harvest headphone in charcoal; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Gbeflh7uq-IIlq70NemOqO",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000400",
+      "type": "product",
+      "title": "Coastal Boot — Walnut",
+      "summary": "Coastal boot in walnut; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:DfUuojgz_hmgzYNcYh9wxU",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000401",
+      "type": "product",
+      "title": "Heritage Jacket — Bone",
+      "summary": "Heritage jacket in bone; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:rxWEFiU289HAeYK7hhbjtE",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000402",
+      "type": "product",
+      "title": "Cedar Skillet — Slate",
+      "summary": "Cedar skillet in slate; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:AWswc2WbSrEd1XXaP1G63O",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000403",
+      "type": "product",
+      "title": "Granite Wrench — Bone",
+      "summary": "Granite wrench in bone; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:jhbdIOmaI78aLzyUeKwBVD",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000404",
+      "type": "product",
+      "title": "Embered Tent — Bone",
+      "summary": "Embered tent in bone; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:ADciIk8_GJS0_8KJFb8pfM",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000405",
+      "type": "product",
+      "title": "Aurora Notebook — Storm",
+      "summary": "Aurora notebook in storm; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:u2WVerkGq_fjuFOmYg8eP-",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000406",
+      "type": "product",
+      "title": "Embered Lamp — Charcoal",
+      "summary": "Embered lamp in charcoal; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:E7mn691Y867zlTz5myQWS6",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000407",
+      "type": "product",
+      "title": "Onyx Headphone — Sage",
+      "summary": "Onyx headphone in sage; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:RaZ-3bltN_KEbUJpwW3lFS",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000408",
+      "type": "product",
+      "title": "Studio Boot — Bone",
+      "summary": "Studio boot in bone; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:mpigIV8HTII2Aa3V_X1nVq",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000409",
+      "type": "product",
+      "title": "Granite Jacket — Storm",
+      "summary": "Granite jacket in storm; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:PjVkiREAwu_I3ckWAEflPB",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000410",
+      "type": "product",
+      "title": "Heritage Skillet — Ochre",
+      "summary": "Heritage skillet in ochre; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:8EvPJKfSN6-e5E7Ygym1EU",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000411",
+      "type": "product",
+      "title": "Heritage Wrench — Ochre",
+      "summary": "Heritage wrench in ochre; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:G4XFXaakLZYyK-luqtarSY",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000412",
+      "type": "product",
+      "title": "Heritage Tent — Slate",
+      "summary": "Heritage tent in slate; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:oHAGaaqD_XtKNpmuQ0nMov",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000413",
+      "type": "product",
+      "title": "Heritage Notebook — Indigo",
+      "summary": "Heritage notebook in indigo; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:5Ww8KnSnazW8jUUPfRTwgh",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000414",
+      "type": "product",
+      "title": "Aurora Lamp — Walnut",
+      "summary": "Aurora lamp in walnut; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:t-j34onTECoAmMaRGUduYZ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000415",
+      "type": "product",
+      "title": "Field Headphone — Brick",
+      "summary": "Field headphone in brick; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:_YbRMIaD7i7w_-DWsfSWu1",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000416",
+      "type": "product",
+      "title": "Cedar Boot — Storm",
+      "summary": "Cedar boot in storm; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Fjq9Jk77WTV0_TOaYo0OWq",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000417",
+      "type": "product",
+      "title": "Granite Jacket — Russet",
+      "summary": "Granite jacket in russet; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:iXgpPD3tv6dVn6ytJU0EFY",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000418",
+      "type": "product",
+      "title": "Aurora Skillet — Sand",
+      "summary": "Aurora skillet in sand; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:fyYUWNdxNxKIqU_fQ0hxCX",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000419",
+      "type": "product",
+      "title": "Coastal Wrench — Sand",
+      "summary": "Coastal wrench in sand; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:d_lsXHevdlcSacX1PPLSoZ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000420",
+      "type": "product",
+      "title": "Cedar Tent — Pine",
+      "summary": "Cedar tent in pine; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:0qrDyyD1tQyCxSHoVrHP_g",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000421",
+      "type": "product",
+      "title": "Coastal Notebook — Pine",
+      "summary": "Coastal notebook in pine; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:EUQy2sKOGeV_tIUTG7IVVf",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000422",
+      "type": "product",
+      "title": "Coastal Lamp — Charcoal",
+      "summary": "Coastal lamp in charcoal; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:n6bjKa3ebmZmn4YINHBtxr",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000423",
+      "type": "product",
+      "title": "Harvest Headphone — Bone",
+      "summary": "Harvest headphone in bone; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:WJFxFdw8IXQ2wt7ovgFgc-",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000424",
+      "type": "product",
+      "title": "Northwind Boot — Sand",
+      "summary": "Northwind boot in sand; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:mN1l_pQXpINv2XOyqt0ETt",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000425",
+      "type": "product",
+      "title": "Coastal Jacket — Walnut",
+      "summary": "Coastal jacket in walnut; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:xWBqV7qCcnTdQgN2f-QlKI",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000426",
+      "type": "product",
+      "title": "Harvest Skillet — Pine",
+      "summary": "Harvest skillet in pine; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:BPDt_YQiLY75cK7_rKfk5L",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000427",
+      "type": "product",
+      "title": "Studio Wrench — Walnut",
+      "summary": "Studio wrench in walnut; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:RMQHLdgVwR7FR1D9gOn43f",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000428",
+      "type": "product",
+      "title": "Studio Tent — Ochre",
+      "summary": "Studio tent in ochre; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:HSn20QqYThISnxylsDGQy1",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000429",
+      "type": "product",
+      "title": "Embered Notebook — Sage",
+      "summary": "Embered notebook in sage; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:HdIeIactZxwstWq-PGudCu",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000430",
+      "type": "product",
+      "title": "Granite Lamp — Sand",
+      "summary": "Granite lamp in sand; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ZWEZaxHGX3inPsHfnIbJOo",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000431",
+      "type": "product",
+      "title": "Pioneer Headphone — Walnut",
+      "summary": "Pioneer headphone in walnut; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:q1I3X_xNWfwZTNNYWE-opG",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000432",
+      "type": "product",
+      "title": "Onyx Boot — Pine",
+      "summary": "Onyx boot in pine; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:WabcnpQjPLmUBlvJ87-T94",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000433",
+      "type": "product",
+      "title": "Granite Jacket — Bone",
+      "summary": "Granite jacket in bone; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:h7zElwQX6Xyxhm9njGsJ3e",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000434",
+      "type": "product",
+      "title": "Pioneer Skillet — Russet",
+      "summary": "Pioneer skillet in russet; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:XXiTOQL9pUcAfwib_jrHHa",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000435",
+      "type": "product",
+      "title": "Workshop Wrench — Charcoal",
+      "summary": "Workshop wrench in charcoal; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:KDTpBCmzY16SPW1VBy9nrR",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000436",
+      "type": "product",
+      "title": "Aurora Tent — Indigo",
+      "summary": "Aurora tent in indigo; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:j9cAq0d25ZJUngP_tJHviW",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000437",
+      "type": "product",
+      "title": "Field Notebook — Slate",
+      "summary": "Field notebook in slate; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:fjGioqO1Z_VpfBlA1ajCTc",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000438",
+      "type": "product",
+      "title": "Riverbend Lamp — Sand",
+      "summary": "Riverbend lamp in sand; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:rHBtZwTFzkFH8Ps5qBeR6D",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000439",
+      "type": "product",
+      "title": "Summit Headphone — Sage",
+      "summary": "Summit headphone in sage; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:vtGiy5Cwx9OR0WGdrhAZ50",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000440",
+      "type": "product",
+      "title": "Harvest Boot — Sage",
+      "summary": "Harvest boot in sage; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:Ju6WBEnh0rOIWQCzYP7ql2",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000441",
+      "type": "product",
+      "title": "Pioneer Jacket — Indigo",
+      "summary": "Pioneer jacket in indigo; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:AwqZRavnv_Rl2RNMAiorlb",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000442",
+      "type": "product",
+      "title": "Pioneer Skillet — Bone",
+      "summary": "Pioneer skillet in bone; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:VJZ5yn7b0lrjr4BwAXq8np",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000443",
+      "type": "product",
+      "title": "Coastal Wrench — Walnut",
+      "summary": "Coastal wrench in walnut; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:tDUf15hUawlrG8DWc6SPvo",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000444",
+      "type": "product",
+      "title": "Riverbend Tent — Slate",
+      "summary": "Riverbend tent in slate; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:-3hQlG9pog9UTaUneg4Srt",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000445",
+      "type": "product",
+      "title": "Pioneer Notebook — Ochre",
+      "summary": "Pioneer notebook in ochre; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:N354mo8elv7eMCPhCVHOnF",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000446",
+      "type": "product",
+      "title": "Granite Lamp — Walnut",
+      "summary": "Granite lamp in walnut; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:1SdyyaogDBKmvW9Cefv4bQ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000447",
+      "type": "product",
+      "title": "Harvest Headphone — Ochre",
+      "summary": "Harvest headphone in ochre; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:UMxU8-VWF_E_p6vIXGp8FB",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000448",
+      "type": "product",
+      "title": "Riverbend Boot — Slate",
+      "summary": "Riverbend boot in slate; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Pn5kECydjgYAdKLPp6ueGd",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000449",
+      "type": "product",
+      "title": "Pioneer Jacket — Brick",
+      "summary": "Pioneer jacket in brick; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:1hQ4PurY4II70MBUh2wu9p",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000450",
+      "type": "product",
+      "title": "Aurora Skillet — Sand",
+      "summary": "Aurora skillet in sand; built in Italy for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ghkw64AyveDNIGD8NqDuG-",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000451",
+      "type": "product",
+      "title": "Studio Wrench — Walnut",
+      "summary": "Studio wrench in walnut; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:mFlYxIBDTnArV3Ii4sxblU",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000452",
+      "type": "product",
+      "title": "Northwind Tent — Russet",
+      "summary": "Northwind tent in russet; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Q3hpuLLNtpHPMMXD0uQUne",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000453",
+      "type": "product",
+      "title": "Coastal Notebook — Indigo",
+      "summary": "Coastal notebook in indigo; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:mYE1BKhC9ivwNe3s4dvHX5",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000454",
+      "type": "product",
+      "title": "Northwind Lamp — Walnut",
+      "summary": "Northwind lamp in walnut; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:8f14bbgTBdi7m9vS6dHfSU",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000455",
+      "type": "product",
+      "title": "Aurora Headphone — Pine",
+      "summary": "Aurora headphone in pine; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ufTnG8Zmn6BTKCMo6QCbGD",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000456",
+      "type": "product",
+      "title": "Riverbend Boot — Slate",
+      "summary": "Riverbend boot in slate; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:G5AODHfCOLiyagM7NQMZqU",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000457",
+      "type": "product",
+      "title": "Cedar Jacket — Brick",
+      "summary": "Cedar jacket in brick; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:faXQhXgHiXwr9Nat_OhTo6",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000458",
+      "type": "product",
+      "title": "Summit Skillet — Ochre",
+      "summary": "Summit skillet in ochre; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:OJa79ZS2VYc-XTP0jwDNbw",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000459",
+      "type": "product",
+      "title": "Harvest Wrench — Storm",
+      "summary": "Harvest wrench in storm; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:LmMipQAJ3oxkRjXpvneF-l",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000460",
+      "type": "product",
+      "title": "Granite Tent — Sand",
+      "summary": "Granite tent in sand; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:vUdki2Oh821wze7v0ty25v",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000461",
+      "type": "product",
+      "title": "Pioneer Notebook — Storm",
+      "summary": "Pioneer notebook in storm; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:xADsesFaN0075C5s4D3mZg",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000462",
+      "type": "product",
+      "title": "Riverbend Lamp — Walnut",
+      "summary": "Riverbend lamp in walnut; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:U3fHRIjZqvM1hLbZDSrkU5",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000463",
+      "type": "product",
+      "title": "Embered Headphone — Russet",
+      "summary": "Embered headphone in russet; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:yrcbM01hSlreB-IaNYytCd",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000464",
+      "type": "product",
+      "title": "Coastal Boot — Walnut",
+      "summary": "Coastal boot in walnut; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:q2mi1z_AKhmW2ImjiyiQTc",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000465",
+      "type": "product",
+      "title": "Harvest Jacket — Storm",
+      "summary": "Harvest jacket in storm; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:R6D4Pgkiyd1v89ig6MXRLl",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000466",
+      "type": "product",
+      "title": "Riverbend Skillet — Walnut",
+      "summary": "Riverbend skillet in walnut; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:jjNmjBaO0_wPYfFFZpSq34",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000467",
+      "type": "product",
+      "title": "Field Wrench — Slate",
+      "summary": "Field wrench in slate; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:B56ny3FDAUdJdbq6kHJAUR",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000468",
+      "type": "product",
+      "title": "Harvest Tent — Sand",
+      "summary": "Harvest tent in sand; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:1DgondWnKJrVKZpUAzoNHI",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000469",
+      "type": "product",
+      "title": "Pioneer Notebook — Sage",
+      "summary": "Pioneer notebook in sage; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:kX3oq35G2wbWYR-Q17LWek",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000470",
+      "type": "product",
+      "title": "Aurora Lamp — Sage",
+      "summary": "Aurora lamp in sage; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:6Ted09sDLmQ3625QmF0imE",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000471",
+      "type": "product",
+      "title": "Onyx Headphone — Bone",
+      "summary": "Onyx headphone in bone; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:4qLmHoE89jVhaK9kCiaB-6",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000472",
+      "type": "product",
+      "title": "Aurora Boot — Pine",
+      "summary": "Aurora boot in pine; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:3tzhX9YTdA82yaLyPEf7IQ",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000473",
+      "type": "product",
+      "title": "Studio Jacket — Slate",
+      "summary": "Studio jacket in slate; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:fq_2PXQjkPNc-1gNErpvBi",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000474",
+      "type": "product",
+      "title": "Onyx Skillet — Indigo",
+      "summary": "Onyx skillet in indigo; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Y_UY_xh0l2CWZv9HJnmY3F",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000475",
+      "type": "product",
+      "title": "Frost Wrench — Charcoal",
+      "summary": "Frost wrench in charcoal; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:AZjo5q-EHnxCNkDmu-6k-f",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000476",
+      "type": "product",
+      "title": "Summit Tent — Ochre",
+      "summary": "Summit tent in ochre; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:gw_xCBbgEcIoHHdjhT35OG",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000477",
+      "type": "product",
+      "title": "Workshop Notebook — Ochre",
+      "summary": "Workshop notebook in ochre; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:63Hbb4wi_UV-7C94KTAfyr",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000478",
+      "type": "product",
+      "title": "Field Lamp — Storm",
+      "summary": "Field lamp in storm; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:lTuoNpwdB3c9Am3LiirIiw",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000479",
+      "type": "product",
+      "title": "Riverbend Headphone — Sand",
+      "summary": "Riverbend headphone in sand; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:1c1_7DjyHzdSeG0pZjU0qw",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000480",
+      "type": "product",
+      "title": "Pioneer Boot — Ochre",
+      "summary": "Pioneer boot in ochre; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:S5qlzhUcbex1-ZppCOyzo5",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000481",
+      "type": "product",
+      "title": "Workshop Jacket — Indigo",
+      "summary": "Workshop jacket in indigo; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:3B1UTwlm6PuZpaqGwbKlAW",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000482",
+      "type": "product",
+      "title": "Embered Skillet — Sand",
+      "summary": "Embered skillet in sand; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:VRza3olxuXyDAhhyJYBtTC",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000483",
+      "type": "product",
+      "title": "Northwind Wrench — Pine",
+      "summary": "Northwind wrench in pine; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Tf1zve3-9UYay9I9o45crT",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000484",
+      "type": "product",
+      "title": "Cedar Tent — Slate",
+      "summary": "Cedar tent in slate; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:BMEZq6G3fKM5sXT-3CxWoA",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000485",
+      "type": "product",
+      "title": "Frost Notebook — Sand",
+      "summary": "Frost notebook in sand; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:PSb9CoyzW8BtMIjtuqzOnd",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000486",
+      "type": "product",
+      "title": "Heritage Lamp — Pine",
+      "summary": "Heritage lamp in pine; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:O80DxRKC1S3Ap-CbyE1ORS",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000487",
+      "type": "product",
+      "title": "Workshop Headphone — Indigo",
+      "summary": "Workshop headphone in indigo; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:vGX-B2XuS9L1sY-5sY-Kyb",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000488",
+      "type": "product",
+      "title": "Granite Boot — Slate",
+      "summary": "Granite boot in slate; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:8FRcdCfWTL4N6t-aXylcDP",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000489",
+      "type": "product",
+      "title": "Cedar Jacket — Sage",
+      "summary": "Cedar jacket in sage; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:NnNI604m2c9zxVMcj5Pv0F",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000490",
+      "type": "product",
+      "title": "Embered Skillet — Sage",
+      "summary": "Embered skillet in sage; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:WEczyXxd_8I9do1n8ybr0d",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000491",
+      "type": "product",
+      "title": "Frost Wrench — Russet",
+      "summary": "Frost wrench in russet; built in United States for daily use.",
+      "tokens": {
+        "summary": 11
+      },
+      "etag": "s256:B3mXSUGIJcOr_RmK7X8-ts",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000492",
+      "type": "product",
+      "title": "Northwind Tent — Pine",
+      "summary": "Northwind tent in pine; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Wdo0Tsk6w3xHLpoh1m8ldd",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000493",
+      "type": "product",
+      "title": "Summit Notebook — Russet",
+      "summary": "Summit notebook in russet; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:4XBh8vq6AOKUFbiHQQaIK1",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000494",
+      "type": "product",
+      "title": "Northwind Lamp — Slate",
+      "summary": "Northwind lamp in slate; built in Vietnam for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:B79uUXlkZ3rxG9BeheJ6zw",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000495",
+      "type": "product",
+      "title": "Summit Headphone — Brick",
+      "summary": "Summit headphone in brick; built in Canada for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:tNDqJmmvRU47vRKEJa1Usc",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000496",
+      "type": "product",
+      "title": "Coastal Boot — Charcoal",
+      "summary": "Coastal boot in charcoal; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:pMcfI_oayn1r0BKPBraZz9",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000497",
+      "type": "product",
+      "title": "Heritage Jacket — Sage",
+      "summary": "Heritage jacket in sage; built in Portugal for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:Qh-txnK4rUb9R3kdwFbbCm",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000498",
+      "type": "product",
+      "title": "Frost Skillet — Charcoal",
+      "summary": "Frost skillet in charcoal; built in Mexico for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:ndqHlv4vAHvsOIpePCsaNv",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000499",
+      "type": "product",
+      "title": "Cedar Wrench — Indigo",
+      "summary": "Cedar wrench in indigo; built in Japan for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:q089HaKZLAjcQglDJadFX3",
+      "parent": "catalog"
+    },
+    {
+      "id": "sku-000500",
+      "type": "product",
+      "title": "Cedar Tent — Russet",
+      "summary": "Cedar tent in russet; built in Spain for daily use.",
+      "tokens": {
+        "summary": 10
+      },
+      "etag": "s256:4EVRaf3zBvCZ5jKoaBEhOW",
+      "parent": "catalog"
+    }
+  ],
+  "etag": "s256:fpzf2cP76TjiOYDB6EHs6F"
+}

@@ -1,11 +1,46 @@
 # @act-spec/validator
 
-PRD-600 conformance validator for ACT v0.1. **Scaffold only** at this point — PRD-600 implementation lands in Phase 6.1 step 3 (`docs/team-blueprint.md`).
+Conformance validator for ACT (Agent Content Tree).
 
-When implemented, this package will ship:
+When implemented, this package ships:
 
 - `validateManifest`, `validateNode`, `validateIndex`, `validateNdjsonIndex`, `validateSubtree`, `validateError`, `validateSite` (TypeScript library).
-- `act-validate` CLI (PRD-600-R26 / R27).
-- A static SPA at `/validator/` on the spec's GitHub Pages site (PRD-600-R28).
+- `act-validate` CLI.
+- A static SPA at `/validator/` on the ACT spec's GitHub Pages site.
 
-Source of truth: `prd/600-validator.md`. Reporter shape: `@act-spec/core`'s `ConformanceReport`.
+The reporter shape (`Gap`, `Warning`, `AchievedLevel`, `ConformanceReport`) lives in `@act-spec/core`.
+
+## Status
+
+ACT v0.1 internal hand-test candidate. Public release lands at v0.2.
+
+## Install
+
+Unpublished in v0.1. Consume via the workspace:
+
+```jsonc
+// package.json
+{ "dependencies": { "@act-spec/validator": "workspace:*" } }
+```
+
+## Usage
+
+```ts
+import { validateSite, validateManifest, validateNode } from '@act-spec/validator';
+
+const report = await validateSite('https://example.com/');
+if (report.gaps.length === 0) {
+  console.log(`Achieved level: ${report.achievedLevel}`);
+}
+```
+
+CLI:
+
+```bash
+act-validate https://example.com/
+```
+
+## Links
+
+- Reporter types: [`@act-spec/core`](../core)
+- Repository: <https://github.com/act-spec/act>

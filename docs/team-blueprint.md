@@ -60,7 +60,7 @@ Spec Steward                       Lead TS Engineer            Adapter/Generator
          │
          ▼
 schemas/{100,101,102,103,109}/  ─►  monorepo scaffold     ─►  packages/markdown    ─►  packages/validator   ─►  PRD-600 conformance
-   *.schema.json (locked)            (packages/, CI,         packages/astro-gen     packages/runtime-next       on PRD-700 example
+   *.schema.json (locked)            (packages/, CI,         packages/plugin-astro-gen     packages/runtime-next       on PRD-700 example
    fixtures/{prd-id}/positive/       tsconfig, lint,         packages/...           packages/inspector          ────► VERTICAL SLICE GREEN
    fixtures/{prd-id}/negative/       changesets)             packages/...           packages/mcp-bridge         ────► fans out to Phase 6.2
                                                                                                                 ────► nightly conformance
@@ -240,7 +240,7 @@ Phase 6.1 G2 verdict, dated 2026-05-01 by the QA / Conformance Verifier persona.
 | Reported `achieved.level` equals declared `standard`. | **APPROVED** | Reporter prints `declared: standard / static; achieved: standard / static`. Triggered by the new `probeCapabilityBand` helper in `@act-spec/validator/src/walk.ts` (see ADR-004 § "What was harder #2"). |
 | PRD-100/101/102/103/109 fixtures all pass. | **APPROVED** | `pnpm -F @act-spec/validator conformance` sweeps 68 fixtures across 100/101/102/103/109; 23 pass, 0 fail, 45 skipped (integration-only, accounted for in `INTEGRATION_ONLY` set). |
 | Mutation score on wire-format core ≥ 75% (stryker). | **APPROVED** | `pnpm -F @act-spec/validator test:mutation` reports 80.53% mutation score on `cycles.ts + etag.ts + mounts.ts + reporter.ts + schemas.ts` (570 mutants total, 457 killed, 2 timeout, 111 survived). Above the 75% G2 floor. |
-| Coverage: 100% line on PRD-600 validator + wire-format core; ≥85% line on PRD-201 + PRD-401. | **APPROVED** | `@act-spec/validator` coverage: 100% line / 100% branch / 100% function / 100% statement (LQ-1 closed 2026-05-02 by adding a test that exercises both truthy/falsy states of the walk.ts:604 dedupe predicate). `@act-spec/markdown-adapter` coverage: 90.05% line. `@act-spec/astro` coverage: 95.76% line. Both ≥85%. |
+| Coverage: 100% line on PRD-600 validator + wire-format core; ≥85% line on PRD-201 + PRD-401. | **APPROVED** | `@act-spec/validator` coverage: 100% line / 100% branch / 100% function / 100% statement (LQ-1 closed 2026-05-02 by adding a test that exercises both truthy/falsy states of the walk.ts:604 dedupe predicate). `@act-spec/adapter-markdown` coverage: 90.05% line. `@act-spec/plugin-astro` coverage: 95.76% line. Both ≥85%. |
 | One ADR landed at `docs/adr/001-monorepo-layout.md` documenting the package layout decision. | **APPROVED** | ADR-001 present at `docs/adr/001-monorepo-layout.md` (Status: Proposed). Three additional ADRs surfaced: ADR-002 (ajv vs zod), ADR-003 (adapter / generator placement), ADR-004 (this slice retro). |
 
 **QA verdict: G2 CLOSED.** All seven criteria APPROVED. Phase 6.2 fan-out unblocks.

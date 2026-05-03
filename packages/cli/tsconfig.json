@@ -12,8 +12,8 @@
     { "path": "../core" },
     { "path": "../adapter-framework" },
     { "path": "../generator-core" },
-    { "path": "../markdown-adapter" },
-    { "path": "../programmatic-adapter" },
+    { "path": "../adapter-markdown" },
+    { "path": "../adapter-programmatic" },
     { "path": "../validator" }
   ]
 }

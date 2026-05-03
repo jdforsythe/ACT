@@ -1,0 +1,36 @@
+---
+import Site from '../layouts/Site.astro';
+import { loadProducts } from '../lib/products.ts';
+
+const products = await loadProducts();
+const FIRST_PAGE = 60;
+const visible = products.slice(0, FIRST_PAGE);
+const total = products.length;
+---
+<Site title="Catalog">
+  <h1 style="margin:0 0 8px;">Catalog</h1>
+  <p style="color:var(--muted);margin:0 0 24px;">
+    {total} products. Showing the first {visible.length}. Each product is also available as
+    an ACT node at <code>/act/nodes/&lt;sku&gt;.json</code>.
+  </p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;">
+    {visible.map((p) => (
+      <a
+        href={`/p/${p.sku}/`}
+        style="background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px;text-decoration:none;color:inherit;display:block;"
+      >
+        <div style="font-family:ui-monospace,monospace;color:var(--muted);font-size:12px;">{p.sku}</div>
+        <div style="font-weight:600;margin:6px 0 4px;">{p.name}</div>
+        <div style="color:var(--muted);font-size:13px;">{p.summary}</div>
+        <div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:4px;">
+          {p.tags.slice(0, 3).map((t) => (
+            <span style="background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:2px 8px;font-size:11px;color:var(--muted);">
+              {t}
+            </span>
+          ))}
+        </div>
+      </a>
+    ))}
+  </div>
+</Site>

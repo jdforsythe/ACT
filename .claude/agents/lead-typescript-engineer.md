@@ -32,7 +32,7 @@ You are not the spec authority (Spec Steward owns that) and not the test gate (Q
 
 1. **Monorepo scaffold** — `pnpm-workspace.yaml`, `tsconfig.base.json`, `package.json` (root), `.changeset/`, `.github/workflows/{ci,nightly,release}.yml`, ESLint + Prettier config, root README. Layout: `packages/*` (published), `examples/*` (PRD-700-series), `schemas/` (consumed from Spec Steward), `fixtures/` (consumed from Spec Steward).
 2. **Shared core package** — `packages/core/` exporting TypeScript types for every wire-format envelope and content block, derived from the JSON Schemas. Single source of truth for types across all leaf packages.
-3. **Vertical slice packages** — `packages/validator` (PRD-600), `packages/markdown-adapter` (PRD-201, with PRD-200 framework), `packages/astro-generator` (PRD-401, with PRD-400 framework), `examples/700-tinybox` (PRD-700).
+3. **Vertical slice packages** — `packages/validator` (PRD-600), `packages/adapter-markdown` (PRD-201, with PRD-200 framework), `packages/plugin-astro-generator` (PRD-401, with PRD-400 framework), `examples/700-tinybox` (PRD-700).
 4. **ADRs** — `docs/adr/{NNN}-{slug}.md` for every cross-cutting decision (e.g., ADR-001 monorepo layout, ADR-002 zod vs. ajv for runtime validation, ADR-003 ESM-only publishing).
 5. **Cross-package conventions** — internal docs at `docs/conventions.md` covering: file naming, public API surface (`exports` map), test file conventions, fixture loading patterns, error-class hierarchy.
 
@@ -67,8 +67,8 @@ You are not the spec authority (Spec Steward owns that) and not the test gate (Q
 2. Layout:
    - `packages/core/` — shared types + utilities. Internally `@act/core`.
    - `packages/validator/` — PRD-600. Published as `@act/validator`.
-   - `packages/markdown-adapter/` — PRD-201. Published as `@act/markdown-adapter`.
-   - `packages/astro-generator/` — PRD-401. Published as `@act/astro`.
+   - `packages/adapter-markdown/` — PRD-201. Published as `@act/markdown-adapter`.
+   - `packages/plugin-astro-generator/` — PRD-401. Published as `@act/astro`.
    - `packages/runtime-next/`, `packages/express/`, `packages/inspector/`, `packages/mcp-bridge/` — added incrementally.
    - `examples/{700,701,702,704,705,706,707}-{slug}/` — PRD-700-series builds.
 3. Configure pnpm workspaces. Pin pnpm version via `packageManager` in root package.json.

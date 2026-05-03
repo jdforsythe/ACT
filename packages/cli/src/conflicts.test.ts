@@ -23,22 +23,22 @@ async function writePkgJson(deps: Record<string, string>): Promise<void> {
 }
 
 describe('PRD-409-R11 detectOutputConflicts', () => {
-  it('PRD-409-R11: emits a conflict when @act-spec/nextjs-static is installed and outputDir is "out"', async () => {
-    await writePkgJson({ '@act-spec/nextjs-static': 'workspace:*' });
+  it('PRD-409-R11: emits a conflict when @act-spec/plugin-nextjs is installed and outputDir is "out"', async () => {
+    await writePkgJson({ '@act-spec/plugin-nextjs': 'workspace:*' });
     const conflicts = detectOutputConflicts({ cwd: tmp, outputDir: 'out' });
     expect(conflicts).toHaveLength(1);
-    expect(conflicts[0]!.pkgName).toBe('@act-spec/nextjs-static');
+    expect(conflicts[0]!.pkgName).toBe('@act-spec/plugin-nextjs');
     expect(conflicts[0]!.prd).toBe('PRD-405');
   });
 
-  it('PRD-409-R11: emits a conflict when @act-spec/astro is installed and outputDir is "dist"', async () => {
-    await writePkgJson({ '@act-spec/astro': 'workspace:*' });
+  it('PRD-409-R11: emits a conflict when @act-spec/plugin-astro is installed and outputDir is "dist"', async () => {
+    await writePkgJson({ '@act-spec/plugin-astro': 'workspace:*' });
     const conflicts = detectOutputConflicts({ cwd: tmp, outputDir: 'dist' });
-    expect(conflicts.map((c) => c.pkgName)).toContain('@act-spec/astro');
+    expect(conflicts.map((c) => c.pkgName)).toContain('@act-spec/plugin-astro');
   });
 
   it('PRD-409-R11: detects nested overlap (outputDir "dist/act" inside astro\'s "dist")', async () => {
-    await writePkgJson({ '@act-spec/astro': 'workspace:*' });
+    await writePkgJson({ '@act-spec/plugin-astro': 'workspace:*' });
     const conflicts = detectOutputConflicts({ cwd: tmp, outputDir: 'dist/act' });
     expect(conflicts).toHaveLength(1);
   });
@@ -49,7 +49,7 @@ describe('PRD-409-R11 detectOutputConflicts', () => {
   });
 
   it('PRD-409-R11: no conflict when outputDir does not overlap any plugin default', async () => {
-    await writePkgJson({ '@act-spec/astro': 'workspace:*' });
+    await writePkgJson({ '@act-spec/plugin-astro': 'workspace:*' });
     expect(detectOutputConflicts({ cwd: tmp, outputDir: 'public' })).toEqual([]);
   });
 
@@ -65,15 +65,15 @@ describe('PRD-409-R11 detectOutputConflicts', () => {
   it('PRD-409-R11: detects devDependencies as well as dependencies', async () => {
     await fs.writeFile(
       path.join(tmp, 'package.json'),
-      JSON.stringify({ devDependencies: { '@act-spec/eleventy': 'workspace:*' } }),
+      JSON.stringify({ devDependencies: { '@act-spec/plugin-eleventy': 'workspace:*' } }),
       'utf8',
     );
     const conflicts = detectOutputConflicts({ cwd: tmp, outputDir: '_site' });
-    expect(conflicts.map((c) => c.pkgName)).toContain('@act-spec/eleventy');
+    expect(conflicts.map((c) => c.pkgName)).toContain('@act-spec/plugin-eleventy');
   });
 
   it('PRD-409-R11: formatConflict cites the requirement and remediation flag', async () => {
-    await writePkgJson({ '@act-spec/astro': 'workspace:*' });
+    await writePkgJson({ '@act-spec/plugin-astro': 'workspace:*' });
     const c = detectOutputConflicts({ cwd: tmp, outputDir: 'dist' })[0]!;
     const msg = formatConflict(c);
     expect(msg).toContain('PRD-409-R11');

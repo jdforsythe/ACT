@@ -1,0 +1,19 @@
+{
+  "pages": {
+    "/[locale]/pricing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/pricing/page.js"
+    ],
+    "/[locale]/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/layout.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/layout.js"
+    ]
+  }
+}

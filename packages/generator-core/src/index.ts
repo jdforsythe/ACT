@@ -1,7 +1,7 @@
 /**
  * @act-spec/generator-core — PRD-400 generator framework.
  *
- * Extracted from `@act-spec/astro` per ADR-006 (trigger: ADR-004 §"Seam 2"
+ * Extracted from `@act-spec/plugin-astro` per ADR-006 (trigger: ADR-004 §"Seam 2"
  * + Phase 6.2 Track B beginning with PRD-404 Docusaurus). Every first-party
  * generator (PRD-401 Astro, PRD-404 Docusaurus, PRD-405 Next.js, PRD-406
  * Remix, PRD-407 Nuxt, PRD-408 Eleventy, PRD-409 CLI) imports the pipeline,
@@ -10,7 +10,7 @@
  * Public surface: pipeline orchestration, manifest/index/subtree builders,
  * etag derivation, target-level + adapter-pinning enforcement, file
  * emission + atomic write, capability backing verification, build report
- * shape. The PRD-401 leaf (`@act-spec/astro`) re-exports this module for
+ * shape. The PRD-401 leaf (`@act-spec/plugin-astro`) re-exports this module for
  * backward compatibility with consumers that imported framework symbols
  * from the astro generator pre-extraction.
  */

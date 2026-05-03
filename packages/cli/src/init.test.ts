@@ -23,14 +23,14 @@ describe('PRD-409-R8 initProject', () => {
       path.join('content', 'index.md'),
     ]);
     const cfgBody = await fs.readFile(path.join(tmp, 'act.config.ts'), 'utf8');
-    expect(cfgBody).toContain('@act-spec/markdown-adapter');
+    expect(cfgBody).toContain('@act-spec/adapter-markdown');
   });
 
   it('PRD-409-R8: scaffolds the programmatic template', async () => {
     const result = await initProject('programmatic', tmp);
     expect(result.written.length).toBeGreaterThan(0);
     expect(await fs.readFile(path.join(tmp, 'act.config.ts'), 'utf8')).toContain(
-      '@act-spec/programmatic-adapter',
+      '@act-spec/adapter-programmatic',
     );
   });
 

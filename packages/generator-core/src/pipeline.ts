@@ -1,7 +1,7 @@
 /**
  * PRD-400 generator pipeline — framework code shared by every leaf generator.
  *
- * Extracted from `@act-spec/astro` per ADR-006 (trigger: ADR-004 §"Seam 2"
+ * Extracted from `@act-spec/plugin-astro` per ADR-006 (trigger: ADR-004 §"Seam 2"
  * + Phase 6.2 Track B beginning with PRD-404 Docusaurus). Every first-party
  * generator (PRD-401 Astro, PRD-404 Docusaurus, PRD-405 Next.js, PRD-406
  * Remix, PRD-407 Nuxt, PRD-408 Eleventy, PRD-409 CLI) imports the pipeline,
@@ -70,7 +70,7 @@ export interface GeneratorConfig {
   generator?: string;
 }
 
-/** PRD-400-R3 — generator plugin shape. Astro's `@act-spec/astro` returns one. */
+/** PRD-400-R3 — generator plugin shape. Astro's `@act-spec/plugin-astro` returns one. */
 export interface GeneratorPlugin {
   name: string;
   version: string;

@@ -93,33 +93,33 @@ tested, and conformance-gated in CI.
   (`act-validate`). Static and runtime walks; gap-aware reporter;
   achieved-vs-declared level inference per PRD-107.
 - `@act-spec/adapter-framework` — PRD-200 framework (extracted from
-  `@act-spec/markdown-adapter` per ADR-005). Lifecycle, contribution
+  `@act-spec/adapter-markdown` per ADR-005). Lifecycle, contribution
   ordering, multi-source merge, capability negotiation.
-- `@act-spec/markdown-adapter` — PRD-201 markdown / MDX adapter
+- `@act-spec/adapter-markdown` — PRD-201 markdown / MDX adapter
   (coarse + fine modes via `parseMode`).
-- `@act-spec/contentful-adapter` — PRD-202 Contentful adapter.
-- `@act-spec/sanity-adapter` — PRD-203 Sanity adapter.
-- `@act-spec/storyblok-adapter` — PRD-204 Storyblok adapter.
-- `@act-spec/strapi-adapter` — PRD-205 Strapi adapter.
-- `@act-spec/builder-adapter` — PRD-206 Builder.io adapter.
-- `@act-spec/i18n-adapter` — PRD-207 i18n adapter (next-intl, react-intl,
+- `@act-spec/adapter-contentful` — PRD-202 Contentful adapter.
+- `@act-spec/adapter-sanity` — PRD-203 Sanity adapter.
+- `@act-spec/adapter-storyblok` — PRD-204 Storyblok adapter.
+- `@act-spec/adapter-strapi` — PRD-205 Strapi adapter.
+- `@act-spec/adapter-builder` — PRD-206 Builder.io adapter.
+- `@act-spec/adapter-i18n` — PRD-207 i18n adapter (next-intl, react-intl,
   i18next).
-- `@act-spec/programmatic-adapter` — PRD-208 escape-hatch adapter.
+- `@act-spec/adapter-programmatic` — PRD-208 escape-hatch adapter.
 - `@act-spec/component-contract` — PRD-300 framework. Page-level
   contract, declaration patterns, variant handling, capability matrix.
 - `@act-spec/component-react` — PRD-301 React binding.
 - `@act-spec/component-vue` — PRD-302 Vue binding.
 - `@act-spec/component-angular` — PRD-303 Angular binding.
 - `@act-spec/generator-core` — PRD-400 pipeline (extracted from
-  `@act-spec/astro` per ADR-006). `runPipeline`, `emitFiles`,
+  `@act-spec/plugin-astro` per ADR-006). `runPipeline`, `emitFiles`,
   manifest assembly, NDJSON support, search-payload assembly.
-- `@act-spec/astro` — PRD-401 Astro plugin.
-- `@act-spec/docusaurus` — PRD-404 Docusaurus plugin (with
+- `@act-spec/plugin-astro` — PRD-401 Astro plugin.
+- `@act-spec/plugin-docusaurus` — PRD-404 Docusaurus plugin (with
   `parseMode` per A2).
-- `@act-spec/nextjs-static` — PRD-405 Next.js static plugin.
-- `@act-spec/remix-static` — PRD-406 Remix static plugin.
-- `@act-spec/nuxt` — PRD-407 Nuxt module.
-- `@act-spec/eleventy` — PRD-408 Eleventy plugin (with `parseMode`
+- `@act-spec/plugin-nextjs` — PRD-405 Next.js static plugin.
+- `@act-spec/plugin-remix` — PRD-406 Remix static plugin.
+- `@act-spec/plugin-nuxt` — PRD-407 Nuxt module.
+- `@act-spec/plugin-eleventy` — PRD-408 Eleventy plugin (with `parseMode`
   per A10).
 - `@act-spec/cli` — PRD-409 standalone CLI.
 - `@act-spec/runtime-core` — PRD-500 runtime SDK contract + dispatch
@@ -172,9 +172,9 @@ All ADRs are at status **Accepted**:
   library choices.
 - **ADR-004** — Vertical slice retro (Phase 6.1 G2 close).
 - **ADR-005** — Extract `@act-spec/adapter-framework` from
-  `@act-spec/markdown-adapter` (PRD-200).
+  `@act-spec/adapter-markdown` (PRD-200).
 - **ADR-006** — Extract `@act-spec/generator-core` from
-  `@act-spec/astro` (PRD-400).
+  `@act-spec/plugin-astro` (PRD-400).
 
 #### Tooling, governance, and process
 

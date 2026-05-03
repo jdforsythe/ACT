@@ -24,17 +24,17 @@ interface PluginDescriptor {
 }
 
 const PLUGIN_REGISTRY: readonly PluginDescriptor[] = [
-  { pkgName: '@act-spec/nextjs-static', typicalOutput: 'out', prd: 'PRD-405' },
+  { pkgName: '@act-spec/plugin-nextjs', typicalOutput: 'out', prd: 'PRD-405' },
   { pkgName: '@act/nextjs', typicalOutput: 'out', prd: 'PRD-405' },
-  { pkgName: '@act-spec/astro', typicalOutput: 'dist', prd: 'PRD-401' },
+  { pkgName: '@act-spec/plugin-astro', typicalOutput: 'dist', prd: 'PRD-401' },
   { pkgName: '@act/astro', typicalOutput: 'dist', prd: 'PRD-401' },
-  { pkgName: '@act-spec/nuxt', typicalOutput: '.output', prd: 'PRD-407' },
+  { pkgName: '@act-spec/plugin-nuxt', typicalOutput: '.output', prd: 'PRD-407' },
   { pkgName: '@act/nuxt', typicalOutput: '.output', prd: 'PRD-407' },
-  { pkgName: '@act-spec/remix-static', typicalOutput: 'build', prd: 'PRD-406' },
+  { pkgName: '@act-spec/plugin-remix', typicalOutput: 'build', prd: 'PRD-406' },
   { pkgName: '@act/remix', typicalOutput: 'build', prd: 'PRD-406' },
-  { pkgName: '@act-spec/docusaurus', typicalOutput: 'build', prd: 'PRD-404' },
+  { pkgName: '@act-spec/plugin-docusaurus', typicalOutput: 'build', prd: 'PRD-404' },
   { pkgName: '@act/docusaurus', typicalOutput: 'build', prd: 'PRD-404' },
-  { pkgName: '@act-spec/eleventy', typicalOutput: '_site', prd: 'PRD-408' },
+  { pkgName: '@act-spec/plugin-eleventy', typicalOutput: '_site', prd: 'PRD-408' },
   { pkgName: '@act/eleventy', typicalOutput: '_site', prd: 'PRD-408' },
 ];
 

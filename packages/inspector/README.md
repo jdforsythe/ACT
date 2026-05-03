@@ -1,17 +1,18 @@
 # @act-spec/inspector
 
-PRD-601 inspector CLI + library for the ACT v0.1 wire format. Subcommands:
-`fetch`, `walk`, `diff`, `token-budget`. The binary is `act-inspect`; the
-library exposes one programmatic function per subcommand.
+Inspector CLI + library for the ACT (Agent Content Tree) wire format.
+Subcommands: `fetch`, `walk`, `diff`, `token-budget`. The binary is
+`act-inspect`; the library exposes one programmatic function per
+subcommand.
 
 Two architectural invariants drive the design:
 
-- **PRD-601-R1.** Every envelope this package sees passes through
-  `@act-spec/validator`'s per-envelope validators. The inspector never
-  ships its own JSON Schema parser.
-- **PRD-601-R21.** The inspector emits `findings` — operator-facing
-  observations — never `gaps`. Operators wanting a conformance verdict
-  run `act-validate` (`@act-spec/validator`).
+- Every envelope this package sees passes through `@act-spec/validator`'s
+  per-envelope validators. The inspector never ships its own JSON Schema
+  parser.
+- The inspector emits `findings` — user-facing observations — never
+  `gaps`. For a conformance verdict, run `act-validate`
+  (`@act-spec/validator`).
 
 ## Status
 
@@ -54,10 +55,10 @@ for (const finding of result.findings) {
 
 ## Conformance / what's tested
 
-Each subcommand cites PRD-601-R{n} in the test suite covering the
-validator-reuse invariant, the `findings` reporting contract, etag-keyed
-diff semantics, and the token-budget walk policy. The conformance gate
-exercises every subcommand against the bundled fixtures.
+Each subcommand has a citing test in the suite covering the validator-reuse
+invariant, the `findings` reporting contract, etag-keyed diff semantics,
+and the token-budget walk policy. The conformance gate exercises every
+subcommand against the bundled fixtures.
 
 ```bash
 pnpm -F @act-spec/inspector conformance
@@ -71,6 +72,5 @@ upgrading the validator picks up new schema versions automatically.
 
 ## Links
 
-- Leaf PRD: [`prd/601-inspector-cli.md`](../../prd/601-inspector-cli.md)
 - Validator: [`@act-spec/validator`](../validator)
 - Repository: <https://github.com/act-spec/act>

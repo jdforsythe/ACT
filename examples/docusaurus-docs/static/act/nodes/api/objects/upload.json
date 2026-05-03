@@ -1,0 +1,34 @@
+{
+  "act_version": "0.1",
+  "id": "api/objects/upload",
+  "type": "reference",
+  "title": "Upload an object",
+  "summary": "Stream a payload into a bucket under a chosen key.",
+  "summary_source": "author",
+  "content": [
+    {
+      "type": "prose",
+      "format": "markdown",
+      "text": "PUT /v1/buckets/{bucket}/objects/{key} — Content-Type and Content-Length are required."
+    }
+  ],
+  "tokens": {
+    "summary": 10,
+    "body": 8
+  },
+  "metadata": {
+    "source": {
+      "adapter": "act-docusaurus-sidebar-synthesizer",
+      "source_id": "api/objects/upload.md",
+      "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/api/objects/upload.md"
+    }
+  },
+  "etag": "s256:YHrNEbRV0zveQ02oSo4wOv",
+  "related": [
+    {
+      "id": "api/objects/download",
+      "relation": "see-also"
+    }
+  ],
+  "parent": "objects"
+}

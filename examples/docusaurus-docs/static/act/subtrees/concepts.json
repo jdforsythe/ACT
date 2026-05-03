@@ -1,0 +1,214 @@
+{
+  "act_version": "0.1",
+  "root": "concepts",
+  "depth": 3,
+  "truncated": false,
+  "tokens": {
+    "body": 140,
+    "summary": 54
+  },
+  "nodes": [
+    {
+      "act_version": "0.1",
+      "id": "concepts",
+      "type": "section",
+      "title": "Concepts",
+      "summary": "Concepts — section.",
+      "summary_source": "extracted",
+      "etag": "s256:wOEnfRMqtMV5zSI0CW7S-c",
+      "content": [
+        {
+          "type": "markdown",
+          "content": "# Concepts\n\nThis section groups related concepts documents.\n"
+        }
+      ],
+      "tokens": {
+        "summary": 8,
+        "body": 16
+      },
+      "children": [
+        "concepts/data-model",
+        "concepts/auth",
+        "storage"
+      ],
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "sidebar-category:concepts"
+        }
+      }
+    },
+    {
+      "act_version": "0.1",
+      "id": "concepts/data-model",
+      "type": "doc",
+      "title": "Data model",
+      "summary": "Buckets, Objects, and Webhooks: the three top-level resources.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "Tinybox exposes three nouns: Buckets (containers), Objects\n(blobs), and Webhooks (lifecycle event delivery). Buckets nest objects;\nwebhooks subscribe to events on either."
+        }
+      ],
+      "tokens": {
+        "summary": 8,
+        "body": 22
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "concepts/data-model.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/concepts/data-model.md"
+        }
+      },
+      "etag": "s256:PU-_56MV89JjpC92XD4618",
+      "parent": "concepts"
+    },
+    {
+      "act_version": "0.1",
+      "id": "concepts/auth",
+      "type": "doc",
+      "title": "Authentication",
+      "summary": "Bearer-token authentication and per-project scoping.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "Authenticate via a bearer token in the Authorization header.\nTokens are issued from the dashboard and scoped per project."
+        }
+      ],
+      "tokens": {
+        "summary": 5,
+        "body": 19
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "concepts/auth.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/concepts/auth.md"
+        }
+      },
+      "etag": "s256:-zHx5d2Sdcl3WB6X4QMmUN",
+      "parent": "concepts"
+    },
+    {
+      "act_version": "0.1",
+      "id": "storage",
+      "type": "section",
+      "title": "Storage",
+      "summary": "Storage — section.",
+      "summary_source": "extracted",
+      "etag": "s256:RksBEE1ojHKNjsvWd5dbxq",
+      "content": [
+        {
+          "type": "markdown",
+          "content": "# Storage\n\nThis section groups related storage documents.\n"
+        }
+      ],
+      "tokens": {
+        "summary": 8,
+        "body": 16
+      },
+      "children": [
+        "concepts/storage/buckets",
+        "concepts/storage/objects",
+        "concepts/storage/lifecycle"
+      ],
+      "parent": "concepts",
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "sidebar-category:storage"
+        }
+      }
+    },
+    {
+      "act_version": "0.1",
+      "id": "concepts/storage/buckets",
+      "type": "doc",
+      "title": "Buckets concept",
+      "summary": "Buckets are regional containers that hold objects.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "Buckets are the unit of regional placement and access policy. Each\nbucket lives in exactly one region; cross-region replication is opt-in."
+        }
+      ],
+      "tokens": {
+        "summary": 7,
+        "body": 21
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "concepts/storage/buckets.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/concepts/storage/buckets.md"
+        }
+      },
+      "etag": "s256:lnCe1td1zgc7AfpCLUX8D-",
+      "parent": "storage"
+    },
+    {
+      "act_version": "0.1",
+      "id": "concepts/storage/objects",
+      "type": "doc",
+      "title": "Objects concept",
+      "summary": "Objects are immutable byte sequences keyed within a bucket.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "Object keys are UTF-8 strings up to 1024 bytes. Object payloads are\nimmutable; an upload to an existing key creates a new version when the\nbucket has versioning enabled."
+        }
+      ],
+      "tokens": {
+        "summary": 9,
+        "body": 29
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "concepts/storage/objects.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/concepts/storage/objects.md"
+        }
+      },
+      "etag": "s256:N7anFQpGwfo_TvWcOpGcdn",
+      "parent": "storage"
+    },
+    {
+      "act_version": "0.1",
+      "id": "concepts/storage/lifecycle",
+      "type": "doc",
+      "title": "Lifecycle policies",
+      "summary": "Automatic transitions between storage classes by age or tag.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "Lifecycle policies move objects between storage classes (STANDARD,\nINFREQUENT, ARCHIVE, DEEP) based on age or tag predicates."
+        }
+      ],
+      "tokens": {
+        "summary": 9,
+        "body": 17
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "concepts/storage/lifecycle.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/concepts/storage/lifecycle.md"
+        }
+      },
+      "etag": "s256:hbKBvs0fymImYbkKme9sUQ",
+      "parent": "storage"
+    }
+  ],
+  "etag": "s256:19kgYz4g1YtI4mpN5bW4IE"
+}

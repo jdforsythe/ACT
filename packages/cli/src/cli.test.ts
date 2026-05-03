@@ -35,7 +35,7 @@ async function writeProgrammaticConfig(extra: Record<string, unknown> = {}): Pro
   // Self-contained .mjs config — programmatic adapter inlined so this test
   // does not depend on a TS loader to run the dispatcher.
   const body = `
-import { defineProgrammaticAdapter } from '@act-spec/programmatic-adapter';
+import { defineProgrammaticAdapter } from '@act-spec/adapter-programmatic';
 const adapter = defineProgrammaticAdapter({
   name: 'demo',
   enumerate: () => [{ id: 'home', title: 'Home' }],
@@ -162,11 +162,11 @@ describe('PRD-409-R2 / R4 / R7 / R12 act build', () => {
     expect(stderr.join('')).toContain('PRD-409-R10');
   });
 
-  it('PRD-409-R11: refuses build when @act-spec/astro present + outputDir overlaps "dist"', async () => {
+  it('PRD-409-R11: refuses build when @act-spec/plugin-astro present + outputDir overlaps "dist"', async () => {
     await writeProgrammaticConfig();
     await fs.writeFile(
       path.join(tmp, 'package.json'),
-      JSON.stringify({ name: 'op', dependencies: { '@act-spec/astro': 'workspace:*' } }),
+      JSON.stringify({ name: 'op', dependencies: { '@act-spec/plugin-astro': 'workspace:*' } }),
       'utf8',
     );
     const { sink, stderr } = makeSink();
@@ -179,7 +179,7 @@ describe('PRD-409-R2 / R4 / R7 / R12 act build', () => {
     await writeProgrammaticConfig();
     await fs.writeFile(
       path.join(tmp, 'package.json'),
-      JSON.stringify({ name: 'op', dependencies: { '@act-spec/astro': 'workspace:*' } }),
+      JSON.stringify({ name: 'op', dependencies: { '@act-spec/plugin-astro': 'workspace:*' } }),
       'utf8',
     );
     const { sink } = makeSink();
@@ -224,7 +224,7 @@ describe('PRD-409-R8 act init', () => {
     const code = await runCli(['init', '--target', tmp], sink, { cwd: tmp });
     expect(code).toBe(0);
     const cfg = await fs.readFile(path.join(tmp, 'act.config.ts'), 'utf8');
-    expect(cfg).toContain('@act-spec/markdown-adapter');
+    expect(cfg).toContain('@act-spec/adapter-markdown');
   });
 
   it('PRD-409-R8: scaffolds programmatic when requested', async () => {
@@ -232,7 +232,7 @@ describe('PRD-409-R8 act init', () => {
     const code = await runCli(['init', 'programmatic', '--target', tmp], sink, { cwd: tmp });
     expect(code).toBe(0);
     expect(await fs.readFile(path.join(tmp, 'act.config.ts'), 'utf8')).toContain(
-      '@act-spec/programmatic-adapter',
+      '@act-spec/adapter-programmatic',
     );
   });
 
@@ -318,7 +318,7 @@ describe('PRD-409-R2 / R9 build edge cases', () => {
     // Config with an adapter declaring a mismatched act_version → adapter
     // pinning fails inside runPipeline → CLI exits 1 (not via timeout path).
     const body = `
-import { defineProgrammaticAdapter } from '@act-spec/programmatic-adapter';
+import { defineProgrammaticAdapter } from '@act-spec/adapter-programmatic';
 const adapter = defineProgrammaticAdapter({
   name: 'demo',
   enumerate: () => [{ id: 'home', title: 'Home' }],

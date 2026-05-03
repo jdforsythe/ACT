@@ -12,7 +12,7 @@ describe('PRD-409-R8 init templates', () => {
   it('PRD-409-R8 markdown template: act.config.ts wires PRD-201 markdown adapter against `content`', () => {
     const cfg = getTemplateFiles('markdown').find((f) => f.relPath === 'act.config.ts');
     expect(cfg).toBeDefined();
-    expect(cfg!.contents).toContain('@act-spec/markdown-adapter');
+    expect(cfg!.contents).toContain('@act-spec/adapter-markdown');
     expect(cfg!.contents).toContain("sourceDir: 'content'");
   });
 
@@ -25,7 +25,7 @@ describe('PRD-409-R8 init templates', () => {
 
   it('PRD-409-R8 programmatic template: act.config.ts wires PRD-208 programmatic-adapter', () => {
     const cfg = getTemplateFiles('programmatic').find((f) => f.relPath === 'act.config.ts');
-    expect(cfg!.contents).toContain('@act-spec/programmatic-adapter');
+    expect(cfg!.contents).toContain('@act-spec/adapter-programmatic');
   });
 
   it('PRD-409-R8 cms-contentful template: writes act.config.ts, .env.example, .gitignore', () => {

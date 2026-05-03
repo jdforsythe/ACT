@@ -1,0 +1,2365 @@
+{
+  "startedAt": "2026-05-03T06:46:56.172Z",
+  "durationMs": 457,
+  "conformanceTarget": "standard",
+  "conformanceAchieved": "standard",
+  "capabilities": {
+    "etag": true,
+    "subtree": true
+  },
+  "files": [
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/.well-known/act.json",
+      "bytes": 521,
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/index.json",
+      "bytes": 162442,
+      "band": "core",
+      "etag": "s256:v7zjhRg_qYfIofAPjfaTyc"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/api/buckets/create.json",
+      "bytes": 1301,
+      "etag": "s256:xssJLm1NBZja15twfiF8RN",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/api/buckets/delete.json",
+      "bytes": 832,
+      "etag": "s256:3uxulnhmHtY5Rtuckw6bs5",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/api/buckets/get.json",
+      "bytes": 815,
+      "etag": "s256:qiWz1_d50br1bx8ix66fs3",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/api/buckets/list.json",
+      "bytes": 832,
+      "etag": "s256:55-BNqC2mUDpyuxrJ0OcM_",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/api/objects/delete.json",
+      "bytes": 733,
+      "etag": "s256:vz8EBZ76PwkaNbFquUxUhO",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/api/objects/download.json",
+      "bytes": 870,
+      "etag": "s256:vTB7YLZtJot1B8jYbN7VIP",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/api/objects/list.json",
+      "bytes": 744,
+      "etag": "s256:RscmuWEh8jznLIVMWlL7Cp",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/api/objects/upload.json",
+      "bytes": 853,
+      "etag": "s256:YHrNEbRV0zveQ02oSo4wOv",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/api/webhooks/delete.json",
+      "bytes": 741,
+      "etag": "s256:D2859GHVCRKgfljLKI4x2t",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/api/webhooks/list.json",
+      "bytes": 752,
+      "etag": "s256:aBXK56b6oMHMdhX5XVo9O3",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/api/webhooks/register.json",
+      "bytes": 772,
+      "etag": "s256:CBoWPrXrP2uHdZ_ZnHSSzM",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/changelog.json",
+      "bytes": 800,
+      "etag": "s256:h3zm4UOEvN8-DZgjM9RuPe",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/concepts/auth.json",
+      "bytes": 770,
+      "etag": "s256:-zHx5d2Sdcl3WB6X4QMmUN",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/concepts/data-model.json",
+      "bytes": 844,
+      "etag": "s256:PU-_56MV89JjpC92XD4618",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/concepts/storage/buckets.json",
+      "bytes": 818,
+      "etag": "s256:lnCe1td1zgc7AfpCLUX8D-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/concepts/storage/lifecycle.json",
+      "bytes": 824,
+      "etag": "s256:hbKBvs0fymImYbkKme9sUQ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/concepts/storage/objects.json",
+      "bytes": 859,
+      "etag": "s256:N7anFQpGwfo_TvWcOpGcdn",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/getting-started/first-project.json",
+      "bytes": 862,
+      "etag": "s256:RtO0oKqWBJK2tvq2VpK2tM",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/getting-started/install.json",
+      "bytes": 943,
+      "etag": "s256:QaDuoMueYI0I8dWyPtUt06",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/getting-started/quickstart.json",
+      "bytes": 965,
+      "etag": "s256:08VK4zoF4NEIj4XXTSOrOp",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/intro.json",
+      "bytes": 1211,
+      "etag": "s256:XLgqM24yprq9Bk4XLd_QG-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/archive-audit-trail-cli.json",
+      "bytes": 1361,
+      "etag": "s256:wCvoIi9QwDNvUrswwXKQYY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/archive-audit-trail-overview.json",
+      "bytes": 1391,
+      "etag": "s256:uQr_wVZYg4_q3kmH9VMk1R",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/archive-audit-trail-sdk-node.json",
+      "bytes": 1391,
+      "etag": "s256:OTp8h9cdhEM8bgmbh7RBE7",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/archive-audit-trail-sdk-python.json",
+      "bytes": 1403,
+      "etag": "s256:6vSCaJdTY6kdz_0i3e-GDy",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/archive-old-objects-cli.json",
+      "bytes": 1361,
+      "etag": "s256:Agsooma8EfX_DuL3_lzgkB",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/archive-old-objects-overview.json",
+      "bytes": 1391,
+      "etag": "s256:yN-MArXeojsafSjPLeZlR7",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/archive-old-objects-sdk-node.json",
+      "bytes": 1391,
+      "etag": "s256:Cyb7gVe8RTwvsRRlXEBq7a",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/archive-old-objects-sdk-python.json",
+      "bytes": 1403,
+      "etag": "s256:0koZFMHOVV7JE_59__pCPT",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/compliance-retention-cli.json",
+      "bytes": 1367,
+      "etag": "s256:an4yuc2jDSsfT-5LGmlVQC",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/compliance-retention-overview.json",
+      "bytes": 1397,
+      "etag": "s256:mr6zCY38lW9Ftt33NVGozJ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/compliance-retention-sdk-node.json",
+      "bytes": 1397,
+      "etag": "s256:GZq68VWjKeHOtZHd5io4E_",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/compliance-retention-sdk-python.json",
+      "bytes": 1409,
+      "etag": "s256:Z8hpYyVHcZbXAqRlQr3p-S",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/cross-region-archive-cli.json",
+      "bytes": 1367,
+      "etag": "s256:ZxuGGIVuGQZIdTtxqNYp7o",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/cross-region-archive-overview.json",
+      "bytes": 1397,
+      "etag": "s256:N19jjvohnheoriToap_6uq",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/cross-region-archive-sdk-node.json",
+      "bytes": 1397,
+      "etag": "s256:bZTaEO1LftEGySM_FEdcAY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/cross-region-archive-sdk-python.json",
+      "bytes": 1409,
+      "etag": "s256:POjSmWZPKV_psIq7pijZMS",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/expire-temporary-uploads-cli.json",
+      "bytes": 1391,
+      "etag": "s256:eXmFj5C1JSuKxHmadcH6iR",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/expire-temporary-uploads-overview.json",
+      "bytes": 1421,
+      "etag": "s256:-O4bYyb1wjjSrPyeucaAYv",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/expire-temporary-uploads-sdk-node.json",
+      "bytes": 1421,
+      "etag": "s256:QTuDw_dl48462O1THNK7xL",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/expire-temporary-uploads-sdk-python.json",
+      "bytes": 1433,
+      "etag": "s256:XZc9nM-6Jp69NLLLUlQHD9",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/legal-hold-cli.json",
+      "bytes": 1307,
+      "etag": "s256:hYjeFxUFhL8VZmQNK-6kDo",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/legal-hold-overview.json",
+      "bytes": 1337,
+      "etag": "s256:jN-bQGIXhH1zlbFUBl7yYa",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/legal-hold-sdk-node.json",
+      "bytes": 1337,
+      "etag": "s256:D0QAf1ox7pnAIueUUXfCQS",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/legal-hold-sdk-python.json",
+      "bytes": 1349,
+      "etag": "s256:ivCofV3TwOwEVcjFgDwf9C",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/restore-from-archive-cli.json",
+      "bytes": 1367,
+      "etag": "s256:vV9wHdKCdF0uvGhooX_UJV",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/restore-from-archive-overview.json",
+      "bytes": 1397,
+      "etag": "s256:qKZZbt9nZn_rRsF_kTaoeT",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/restore-from-archive-sdk-node.json",
+      "bytes": 1397,
+      "etag": "s256:sl2hmkOJGU3QEdYlljdz7Z",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/restore-from-archive-sdk-python.json",
+      "bytes": 1409,
+      "etag": "s256:Ydq8oe7ZseE64_NebIX_MS",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/tag-driven-lifecycle-cli.json",
+      "bytes": 1367,
+      "etag": "s256:8fhYQUQfJsDOW1CngHlhht",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/tag-driven-lifecycle-overview.json",
+      "bytes": 1397,
+      "etag": "s256:QPLtlLu8JcYIN8oqsHsD-d",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/tag-driven-lifecycle-sdk-node.json",
+      "bytes": 1397,
+      "etag": "s256:M-hQpHAejJo8sLaISDVPbC",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/tag-driven-lifecycle-sdk-python.json",
+      "bytes": 1409,
+      "etag": "s256:GbXJplkh0X_Uzb2iO26Zuu",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/tiered-cold-storage-cli.json",
+      "bytes": 1361,
+      "etag": "s256:ppJuYHHnyksjjwQPWhBkWO",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/tiered-cold-storage-overview.json",
+      "bytes": 1391,
+      "etag": "s256:N40FyFdvQEz48KZzmj3Kcu",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/tiered-cold-storage-sdk-node.json",
+      "bytes": 1391,
+      "etag": "s256:f37Cj3AKmGaxCTGgNBLUdg",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/archival/tiered-cold-storage-sdk-python.json",
+      "bytes": 1403,
+      "etag": "s256:rq9TORH6Q2HSKMtfs5U9lY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/browser-direct-upload-cli.json",
+      "bytes": 1381,
+      "etag": "s256:-tDGyDsj-2lI-SeZDxou0K",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/browser-direct-upload-overview.json",
+      "bytes": 1411,
+      "etag": "s256:AQoFBPd2YC8kGg_I9ugoty",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/browser-direct-upload-sdk-node.json",
+      "bytes": 1411,
+      "etag": "s256:V-hI8ueqY4J4bXbmsUso8k",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/browser-direct-upload-sdk-python.json",
+      "bytes": 1423,
+      "etag": "s256:TGbZBFTTaIHf3EUkpC1Riu",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/content-md5-verification-cli.json",
+      "bytes": 1399,
+      "etag": "s256:AUZnj47LUGIQL2FTb9DqX5",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/content-md5-verification-overview.json",
+      "bytes": 1429,
+      "etag": "s256:b242lKrmQ4PzCS4ZHMR5ER",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/content-md5-verification-sdk-node.json",
+      "bytes": 1429,
+      "etag": "s256:00Em_yeeT5xEzgRwRcSPFz",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/content-md5-verification-sdk-python.json",
+      "bytes": 1441,
+      "etag": "s256:u4P-isMuDNIgibF2ddml2g",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/idempotent-uploads-cli.json",
+      "bytes": 1363,
+      "etag": "s256:4lCYWFcOwGR4O65b664x2r",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/idempotent-uploads-overview.json",
+      "bytes": 1393,
+      "etag": "s256:CFnEYiwLmJWhoCzn4esCOH",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/idempotent-uploads-sdk-node.json",
+      "bytes": 1393,
+      "etag": "s256:n1RMSS2Qzpwb9se2f6BBl7",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/idempotent-uploads-sdk-python.json",
+      "bytes": 1405,
+      "etag": "s256:aP1KkO4D_x5cwQMqOU-ml1",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/mobile-direct-upload-cli.json",
+      "bytes": 1375,
+      "etag": "s256:Y6Q457TUyQqbaapF2vgmAY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/mobile-direct-upload-overview.json",
+      "bytes": 1405,
+      "etag": "s256:v6FKfvABf40qOcaqmpjfaq",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/mobile-direct-upload-sdk-node.json",
+      "bytes": 1405,
+      "etag": "s256:2IVQdJ7tA1jeha5PaWi67l",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/mobile-direct-upload-sdk-python.json",
+      "bytes": 1417,
+      "etag": "s256:35VXeZ9HhA-z8tBIyiKYA9",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/multipart-upload-cli.json",
+      "bytes": 1351,
+      "etag": "s256:jXwpTTrly0T4DNuzreanE_",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/multipart-upload-overview.json",
+      "bytes": 1381,
+      "etag": "s256:PIZEMgCSedUJIdGJTB7UU0",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/multipart-upload-sdk-node.json",
+      "bytes": 1381,
+      "etag": "s256:2w095KAQZEFdEQgqFLAogi",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/multipart-upload-sdk-python.json",
+      "bytes": 1393,
+      "etag": "s256:yRcXwNnwhFxP4-Cq-g-pCB",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/parallel-shards-cli.json",
+      "bytes": 1345,
+      "etag": "s256:zL5WHwr1S8Bk_kNYeYCCxG",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/parallel-shards-overview.json",
+      "bytes": 1375,
+      "etag": "s256:VVIoMWidWG9-YrRKtUvQjG",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/parallel-shards-sdk-node.json",
+      "bytes": 1375,
+      "etag": "s256:hoRUIn6WXiua76VPrwvl2y",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/parallel-shards-sdk-python.json",
+      "bytes": 1387,
+      "etag": "s256:C6ZkDdJwkKfRvUZtQSHtbT",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/rate-limited-ingestion-cli.json",
+      "bytes": 1387,
+      "etag": "s256:aCkyPOnoVHSOfvUpcyPg5B",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/rate-limited-ingestion-overview.json",
+      "bytes": 1417,
+      "etag": "s256:hkUa45lBa1q9GHe2Gyo-_V",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/rate-limited-ingestion-sdk-node.json",
+      "bytes": 1417,
+      "etag": "s256:_fMqsHRzesPWwCa_QH901X",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/rate-limited-ingestion-sdk-python.json",
+      "bytes": 1429,
+      "etag": "s256:uckbw-cVHHTbx5xWUM_Sc9",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/resume-interrupted-upload-cli.json",
+      "bytes": 1405,
+      "etag": "s256:kzC9mYJ7C99aZj_zLt3AWQ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/resume-interrupted-upload-overview.json",
+      "bytes": 1435,
+      "etag": "s256:gLzQ8D4MgPdmjgMgBE0Nl4",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/resume-interrupted-upload-sdk-node.json",
+      "bytes": 1435,
+      "etag": "s256:BbVEODS31Z5KiR-ESQ51tW",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/resume-interrupted-upload-sdk-python.json",
+      "bytes": 1447,
+      "etag": "s256:JPa4W40pawGbE8cFXBAahh",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/streaming-upload-cli.json",
+      "bytes": 1351,
+      "etag": "s256:rk8Wp7vSFDGC3csvqZ9_b0",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/streaming-upload-overview.json",
+      "bytes": 1381,
+      "etag": "s256:ijf5rqrgi7Z2i7HK6tGxom",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/streaming-upload-sdk-node.json",
+      "bytes": 1381,
+      "etag": "s256:Yt_G4UXSdo5xGfiZKrHESE",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/streaming-upload-sdk-python.json",
+      "bytes": 1393,
+      "etag": "s256:cLsQMI3irM2QmyFhJe73id",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/upload-from-presigned-url-cli.json",
+      "bytes": 1405,
+      "etag": "s256:j3ifB_80L3khcG4qrAQX2e",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/upload-from-presigned-url-overview.json",
+      "bytes": 1435,
+      "etag": "s256:Vj2GrElTubuCkch4p8mXu9",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/upload-from-presigned-url-sdk-node.json",
+      "bytes": 1436,
+      "etag": "s256:jXYWHPs7xhKCUtJjsbbpju",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/ingestion/upload-from-presigned-url-sdk-python.json",
+      "bytes": 1448,
+      "etag": "s256:5mzYTX6XQGcKVVR-Nju0cK",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/astro-image-pipeline-cli.json",
+      "bytes": 1399,
+      "etag": "s256:TSCIkaQUiV2fNHgt4fdC7n",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/astro-image-pipeline-overview.json",
+      "bytes": 1429,
+      "etag": "s256:KhcGz-J-vqIK3MQDjIBNeY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/astro-image-pipeline-sdk-node.json",
+      "bytes": 1429,
+      "etag": "s256:G6QVYKMiCij06RlBaiy6o5",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/astro-image-pipeline-sdk-python.json",
+      "bytes": 1441,
+      "etag": "s256:Zy6zzdkOteacrpQZ97KotO",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/aws-lambda-cli.json",
+      "bytes": 1339,
+      "etag": "s256:7j8YmJjXez0vB46VNJCQDY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/aws-lambda-overview.json",
+      "bytes": 1369,
+      "etag": "s256:gip6zfh3DeVZRmyYps5GL-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/aws-lambda-sdk-node.json",
+      "bytes": 1369,
+      "etag": "s256:MCMCbogGnxMp55Js2Pbe7s",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/aws-lambda-sdk-python.json",
+      "bytes": 1381,
+      "etag": "s256:VM-dUTiY0epm3Omk49UPeP",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/cloudflare-workers-cli.json",
+      "bytes": 1387,
+      "etag": "s256:xw8gEIEGGTz5alX5wmC04x",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/cloudflare-workers-overview.json",
+      "bytes": 1417,
+      "etag": "s256:ouzz7cWLxN4mfzZc2QLgRS",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/cloudflare-workers-sdk-node.json",
+      "bytes": 1417,
+      "etag": "s256:uk7HdTJFCkBX4Py06NvqrY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/cloudflare-workers-sdk-python.json",
+      "bytes": 1429,
+      "etag": "s256:u9RPmY7NPNPgMJPX7PAfVH",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/django-storages-cli.json",
+      "bytes": 1369,
+      "etag": "s256:oj7NJkw5lTScBeqMtm7qwM",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/django-storages-overview.json",
+      "bytes": 1399,
+      "etag": "s256:Z-XqIqSjarMErWAMZDtx1a",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/django-storages-sdk-node.json",
+      "bytes": 1399,
+      "etag": "s256:y7eJvhrJTK-sGSww_CDKZG",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/django-storages-sdk-python.json",
+      "bytes": 1411,
+      "etag": "s256:I9rnDXF1h4RtowRLwJSdFv",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/flutter-mobile-cli.json",
+      "bytes": 1363,
+      "etag": "s256:CxXo-xBakCPyynhXH_lRCP",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/flutter-mobile-overview.json",
+      "bytes": 1393,
+      "etag": "s256:kSJEnGa2IEsGF1vG_rPYzr",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/flutter-mobile-sdk-node.json",
+      "bytes": 1393,
+      "etag": "s256:9WibISFOIFAi-fLeK0d_xi",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/flutter-mobile-sdk-python.json",
+      "bytes": 1405,
+      "etag": "s256:TcJPcoN78au54S-SDc9ub8",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/github-actions-cli.json",
+      "bytes": 1363,
+      "etag": "s256:RinQD3i5xgiDRmo2JpWXW5",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/github-actions-overview.json",
+      "bytes": 1393,
+      "etag": "s256:Kh20LTv4zrM6nFHER-2QU-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/github-actions-sdk-node.json",
+      "bytes": 1393,
+      "etag": "s256:dJZBfsO0y86lUl1CyGcKPQ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/github-actions-sdk-python.json",
+      "bytes": 1405,
+      "etag": "s256:VcV9JN1Pl3FXs0vGtEm7BS",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/next-js-app-router-cli.json",
+      "bytes": 1387,
+      "etag": "s256:ncXHa8xfoehgsg4T-oNLJ8",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/next-js-app-router-overview.json",
+      "bytes": 1417,
+      "etag": "s256:12TjyciV6DPDQ4NKyjm7wA",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/next-js-app-router-sdk-node.json",
+      "bytes": 1418,
+      "etag": "s256:taTBCRrzjlyl_gbsNrHl-G",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/next-js-app-router-sdk-python.json",
+      "bytes": 1430,
+      "etag": "s256:1e_zcpn_1lk8rgAQxCCfF3",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/rails-active-storage-cli.json",
+      "bytes": 1399,
+      "etag": "s256:gq_mwBI7-DbPjBvUTfkYP7",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/rails-active-storage-overview.json",
+      "bytes": 1429,
+      "etag": "s256:xBjc7WM4CXinE-VAzHwRBs",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/rails-active-storage-sdk-node.json",
+      "bytes": 1429,
+      "etag": "s256:DTYkvwmTb0rvsgq3Fter0-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/rails-active-storage-sdk-python.json",
+      "bytes": 1441,
+      "etag": "s256:MecTjcKoOzVeqz5XM5nPQ_",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/remix-loaders-cli.json",
+      "bytes": 1357,
+      "etag": "s256:p1lQfyOS3-rwYvBedNEq_Z",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/remix-loaders-overview.json",
+      "bytes": 1387,
+      "etag": "s256:FCA0Hp56eGPdZM_5wUFRGk",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/remix-loaders-sdk-node.json",
+      "bytes": 1387,
+      "etag": "s256:CkZ3gQZGIcXK5YMWgra5cd",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/remix-loaders-sdk-python.json",
+      "bytes": 1399,
+      "etag": "s256:cdLunT5hIiYMv2D_DJvmuF",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/spring-boot-cli.json",
+      "bytes": 1345,
+      "etag": "s256:-eozKfWig0sPKdjMw30KAq",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/spring-boot-overview.json",
+      "bytes": 1375,
+      "etag": "s256:sl7L74eE2OHUjsb7fbzlJR",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/spring-boot-sdk-node.json",
+      "bytes": 1375,
+      "etag": "s256:ED0iq0cSRsSexdYgaPP-qg",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/spring-boot-sdk-python.json",
+      "bytes": 1387,
+      "etag": "s256:uGF78nMTYWWaNQt8TJKrxl",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/svelte-kit-endpoints-cli.json",
+      "bytes": 1399,
+      "etag": "s256:pTgz9fyqxt-u6kpMQtU74y",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/svelte-kit-endpoints-overview.json",
+      "bytes": 1429,
+      "etag": "s256:0MFXPew2UBS1F7_fIInJTj",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/svelte-kit-endpoints-sdk-node.json",
+      "bytes": 1429,
+      "etag": "s256:12WD1Ewfd0ELvCCaDPehrp",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/svelte-kit-endpoints-sdk-python.json",
+      "bytes": 1441,
+      "etag": "s256:ZSDYkxanXOQ0imyYDLcgXM",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/vercel-edge-functions-cli.json",
+      "bytes": 1405,
+      "etag": "s256:dS38cmgb1YdAk-mTCEb74E",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/vercel-edge-functions-overview.json",
+      "bytes": 1435,
+      "etag": "s256:iDN0CvU9Z1lb9JJWEZ4hME",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/vercel-edge-functions-sdk-node.json",
+      "bytes": 1435,
+      "etag": "s256:WRhUDigZIbPyVZ7Cb5YEmI",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/integrations/vercel-edge-functions-sdk-python.json",
+      "bytes": 1447,
+      "etag": "s256:Si2qFUlEWso2Oa1udj0W7b",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/lifecycle-policy.json",
+      "bytes": 1217,
+      "etag": "s256:RqeLcVXlNLXin5uJcj9m4Q",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/avoid-listings-in-hot-paths-cli.json",
+      "bytes": 1434,
+      "etag": "s256:UknjHDhxK6bvqz8-IWU0lG",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/avoid-listings-in-hot-paths-overview.json",
+      "bytes": 1464,
+      "etag": "s256:hIbZS0UV3WTRJh207qfoji",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/avoid-listings-in-hot-paths-sdk-node.json",
+      "bytes": 1464,
+      "etag": "s256:Jcgxno5AvdBg3uh1ndby3r",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/avoid-listings-in-hot-paths-sdk-python.json",
+      "bytes": 1476,
+      "etag": "s256:qEN4kbwYzPUT-ZnVVtAwsi",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/cdn-frontends-cli.json",
+      "bytes": 1349,
+      "etag": "s256:pv6hZUi6PL0Swol68bIqHG",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/cdn-frontends-overview.json",
+      "bytes": 1379,
+      "etag": "s256:B_BU8qxsPQQzVGLLUrcLau",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/cdn-frontends-sdk-node.json",
+      "bytes": 1379,
+      "etag": "s256:TfoYQ1tSdrcwTOij_Gu1sQ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/cdn-frontends-sdk-python.json",
+      "bytes": 1391,
+      "etag": "s256:Gj0IKfkLREHg3CILIW5ard",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/choose-region-cli.json",
+      "bytes": 1349,
+      "etag": "s256:gad8GBt9QmhPZXOujvooc7",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/choose-region-overview.json",
+      "bytes": 1379,
+      "etag": "s256:HSCZZm2S2mOV9lw4rTv3Kd",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/choose-region-sdk-node.json",
+      "bytes": 1379,
+      "etag": "s256:679QWkBFVcQheEWHl8m-cZ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/choose-region-sdk-python.json",
+      "bytes": 1391,
+      "etag": "s256:_t4kcQOUAq2wQ1Rals-uTa",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/edge-cache-invalidation-cli.json",
+      "bytes": 1409,
+      "etag": "s256:huw8frcHgDbvm6SVRP6CS8",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/edge-cache-invalidation-overview.json",
+      "bytes": 1439,
+      "etag": "s256:sSzBqXqg9jCzipf1OG2zMd",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/edge-cache-invalidation-sdk-node.json",
+      "bytes": 1439,
+      "etag": "s256:zU66wE4KlMuK6DOgpybpo2",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/edge-cache-invalidation-sdk-python.json",
+      "bytes": 1451,
+      "etag": "s256:cTErohpI5nO-aO0QCmqFg2",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/multi-region-reads-cli.json",
+      "bytes": 1379,
+      "etag": "s256:ZKFRfnyq0V9QF56x7Hm6Pl",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/multi-region-reads-overview.json",
+      "bytes": 1409,
+      "etag": "s256:R1Iz2SLnVg1q4CgSIvwiZP",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/multi-region-reads-sdk-node.json",
+      "bytes": 1409,
+      "etag": "s256:dJRTD0czhVf7Jn3X27vXnh",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/multi-region-reads-sdk-python.json",
+      "bytes": 1421,
+      "etag": "s256:dv5-9gMUHCOjQ9Gph5xFCI",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/parallel-downloads-cli.json",
+      "bytes": 1379,
+      "etag": "s256:QGsOXq0ov0hfQcl3uzejKt",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/parallel-downloads-overview.json",
+      "bytes": 1409,
+      "etag": "s256:MmhCuI3ZwszaGiVQFE8EWr",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/parallel-downloads-sdk-node.json",
+      "bytes": 1409,
+      "etag": "s256:lVR2iId5D9iNOYpFTqk2Pm",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/parallel-downloads-sdk-python.json",
+      "bytes": 1421,
+      "etag": "s256:PYtht1dlP-6a0Gs6MAOExP",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/reduce-listing-cost-cli.json",
+      "bytes": 1385,
+      "etag": "s256:0Yx0WVBfnXEf5qY1arGFYI",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/reduce-listing-cost-overview.json",
+      "bytes": 1415,
+      "etag": "s256:ctra0aeWYNc9_SjDf511gR",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/reduce-listing-cost-sdk-node.json",
+      "bytes": 1415,
+      "etag": "s256:pTITCoduU1H3kvsW6F-c2t",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/reduce-listing-cost-sdk-python.json",
+      "bytes": 1427,
+      "etag": "s256:31XHjqoiFV9ArD3FW8FIbN",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/request-coalescing-cli.json",
+      "bytes": 1379,
+      "etag": "s256:QDsEf6kk25Fofn4FNQG9p5",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/request-coalescing-overview.json",
+      "bytes": 1409,
+      "etag": "s256:fBPh_NleGxr6IlOheMZMzO",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/request-coalescing-sdk-node.json",
+      "bytes": 1409,
+      "etag": "s256:WUJxXhCTtvnc2TDuMw2l_d",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/request-coalescing-sdk-python.json",
+      "bytes": 1421,
+      "etag": "s256:_HDZjaDDjTZF8I9LrcT0xO",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/use-byte-ranges-cli.json",
+      "bytes": 1361,
+      "etag": "s256:8i_AByOxrpcToGZRW5K8ex",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/use-byte-ranges-overview.json",
+      "bytes": 1391,
+      "etag": "s256:ZVXf-SMl1T2vr8mVQ7ftqT",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/use-byte-ranges-sdk-node.json",
+      "bytes": 1391,
+      "etag": "s256:OUHcYVf0wc6AxBojM5b6kW",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/performance/use-byte-ranges-sdk-python.json",
+      "bytes": 1403,
+      "etag": "s256:zPw0yzcE6b1FW2kR7HcKno",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/audit-access-logs-cli.json",
+      "bytes": 1349,
+      "etag": "s256:GByYRwAJw3MLAakH2AriDm",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/audit-access-logs-overview.json",
+      "bytes": 1379,
+      "etag": "s256:K3ovXS0SqzyfvrYsxRliuW",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/audit-access-logs-sdk-node.json",
+      "bytes": 1379,
+      "etag": "s256:z-SmnUho06DByXJ8OSzj43",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/audit-access-logs-sdk-python.json",
+      "bytes": 1391,
+      "etag": "s256:zCKinisOvP8xlfpsXf3g-c",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/block-public-access-cli.json",
+      "bytes": 1361,
+      "etag": "s256:4L2-hkiaSnfOtrdu75nh_q",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/block-public-access-overview.json",
+      "bytes": 1391,
+      "etag": "s256:1W67TkpzaSj5tosjjDldT-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/block-public-access-sdk-node.json",
+      "bytes": 1391,
+      "etag": "s256:EJe95eeEsG_RT0o-WpC5qE",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/block-public-access-sdk-python.json",
+      "bytes": 1403,
+      "etag": "s256:ilXWdwxicevNDiZAXM2QLj",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/customer-managed-keys-cli.json",
+      "bytes": 1373,
+      "etag": "s256:cQdlYPp2pX22YPBEsvo3Ee",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/customer-managed-keys-overview.json",
+      "bytes": 1403,
+      "etag": "s256:1FPaqFTdzz3EbkpY29VK2b",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/customer-managed-keys-sdk-node.json",
+      "bytes": 1403,
+      "etag": "s256:pYMs6w_FVy7vRoSY4mmDvR",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/customer-managed-keys-sdk-python.json",
+      "bytes": 1415,
+      "etag": "s256:pGW8uzUT5icCcSZQoiQiBx",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/encrypt-at-rest-cli.json",
+      "bytes": 1337,
+      "etag": "s256:21GyPhFJDfKAnb9OFvZrfo",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/encrypt-at-rest-overview.json",
+      "bytes": 1367,
+      "etag": "s256:EbHYs6dKl-wrvBEvQrdMkv",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/encrypt-at-rest-sdk-node.json",
+      "bytes": 1367,
+      "etag": "s256:BioybuwtmuriDIVHX8qnuT",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/encrypt-at-rest-sdk-python.json",
+      "bytes": 1379,
+      "etag": "s256:bAWdhjmTXXUZ-KbMJRKtJn",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/ip-allowlists-cli.json",
+      "bytes": 1325,
+      "etag": "s256:yb_dWHTij7vipTc8pNLqBH",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/ip-allowlists-overview.json",
+      "bytes": 1355,
+      "etag": "s256:_w72R66Etj0ByFcnf12uqb",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/ip-allowlists-sdk-node.json",
+      "bytes": 1355,
+      "etag": "s256:0t8j145GTl-1kh3st4OWFO",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/ip-allowlists-sdk-python.json",
+      "bytes": 1367,
+      "etag": "s256:PpQB4TkGIpJfGDn-5d1v_b",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/mfa-protected-deletes-cli.json",
+      "bytes": 1373,
+      "etag": "s256:46I_FYbHH92XkL0DmqKA45",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/mfa-protected-deletes-overview.json",
+      "bytes": 1403,
+      "etag": "s256:ry9b1OV9ONPmMkUBtPjCqg",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/mfa-protected-deletes-sdk-node.json",
+      "bytes": 1403,
+      "etag": "s256:mi5e-u44GQ9W8J2rr2oNQH",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/mfa-protected-deletes-sdk-python.json",
+      "bytes": 1415,
+      "etag": "s256:1m1pIdg9wt_syk7aRcnaIx",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/rotate-tokens-cli.json",
+      "bytes": 1325,
+      "etag": "s256:2i8Uog8bNWKcPwgFWG_Wof",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/rotate-tokens-overview.json",
+      "bytes": 1355,
+      "etag": "s256:u_kCV8v8UswOgq695CStgc",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/rotate-tokens-sdk-node.json",
+      "bytes": 1355,
+      "etag": "s256:HUxjqcF8eD9xO82zXafPDq",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/rotate-tokens-sdk-python.json",
+      "bytes": 1367,
+      "etag": "s256:T4hleK9gxUUR6V0KBLyzw9",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/scope-tokens-per-project-cli.json",
+      "bytes": 1391,
+      "etag": "s256:Sa4dODwqYqisbr36ERf89L",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/scope-tokens-per-project-overview.json",
+      "bytes": 1421,
+      "etag": "s256:q_ruZvsREzSEDHrJgCuMDI",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/scope-tokens-per-project-sdk-node.json",
+      "bytes": 1422,
+      "etag": "s256:5S3tL1yhc2yxE95Wttjn8G",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/scope-tokens-per-project-sdk-python.json",
+      "bytes": 1434,
+      "etag": "s256:RzGHSGOCFgUdvQPJT8kmaL",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/signed-download-urls-cli.json",
+      "bytes": 1367,
+      "etag": "s256:qr-rc0FVn7NNhZmKNFN7io",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/signed-download-urls-overview.json",
+      "bytes": 1397,
+      "etag": "s256:q5yCx745Ahq-3XkzqRZW1t",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/signed-download-urls-sdk-node.json",
+      "bytes": 1397,
+      "etag": "s256:PKh_KrkL8yUR9hZxeldf-e",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/signed-download-urls-sdk-python.json",
+      "bytes": 1409,
+      "etag": "s256:zOZZ_0UpWXqFbsKG9gFu-L",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/vpc-peering-cli.json",
+      "bytes": 1313,
+      "etag": "s256:90d8s0AIx-EW7fHc-AzQ_o",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/vpc-peering-overview.json",
+      "bytes": 1343,
+      "etag": "s256:jn7zSVf-jdbXZNtdvOFYxz",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/vpc-peering-sdk-node.json",
+      "bytes": 1343,
+      "etag": "s256:-_4JAakdfFGuTL13dTYt5M",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes/security/vpc-peering-sdk-python.json",
+      "bytes": 1355,
+      "etag": "s256:llbJurdXTJm8rbl1b_Zd8H",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/audit-log-missing-reproduction.json",
+      "bytes": 1401,
+      "etag": "s256:BJcyR4YBJLzTD_xLNwyl91",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/audit-log-missing-resolution.json",
+      "bytes": 1389,
+      "etag": "s256:0JHbH6QeH9kUybZWhhTZj5",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/audit-log-missing-symptom.json",
+      "bytes": 1371,
+      "etag": "s256:iuTy1bYgjhieCNZ9xH9GQR",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/cross-project-token-reproduction.json",
+      "bytes": 1413,
+      "etag": "s256:V_FeSc3Nt11Onssx4eOUQ8",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/cross-project-token-resolution.json",
+      "bytes": 1401,
+      "etag": "s256:dF20LhT27X1moylLK5uHaD",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/cross-project-token-symptom.json",
+      "bytes": 1383,
+      "etag": "s256:Y8JMRHCUKBADhVXqG8_rqs",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/mfa-required-reproduction.json",
+      "bytes": 1370,
+      "etag": "s256:YDe7KmEs2kYOxUzk1NwhBY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/mfa-required-resolution.json",
+      "bytes": 1358,
+      "etag": "s256:npTwVpBXqrkRGtn4uIr-nJ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/mfa-required-symptom.json",
+      "bytes": 1340,
+      "etag": "s256:_HvzPvUFnAwC_oXKG10kQo",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/permission-denied-reproduction.json",
+      "bytes": 1400,
+      "etag": "s256:hV46fbPsYGPgPDr4NgVdgI",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/permission-denied-resolution.json",
+      "bytes": 1388,
+      "etag": "s256:kTFg81zkn5Z9Na-PigFE_6",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/permission-denied-symptom.json",
+      "bytes": 1370,
+      "etag": "s256:GUl8vNg8XN4E1KKbyuYQ1E",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/principal-disabled-reproduction.json",
+      "bytes": 1406,
+      "etag": "s256:Y02Vi5VLDpb7o-bfyuJ5mh",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/principal-disabled-resolution.json",
+      "bytes": 1394,
+      "etag": "s256:6kDaPRRIrOWevzl3aQUfb3",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/principal-disabled-symptom.json",
+      "bytes": 1376,
+      "etag": "s256:kYtcF9fhjuogh_CyhIFGg0",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/rotation-overlap-window-reproduction.json",
+      "bytes": 1437,
+      "etag": "s256:dA6kvlN1OysgntTq3xlORi",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/rotation-overlap-window-resolution.json",
+      "bytes": 1425,
+      "etag": "s256:UyH6HNTQ-RxUe3xDk3iCZY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/rotation-overlap-window-symptom.json",
+      "bytes": 1407,
+      "etag": "s256:ivG55B3h8MkJQfdW7XUDQU",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/token-expired-reproduction.json",
+      "bytes": 1376,
+      "etag": "s256:rfdndar9-em8_uKmc_y7mB",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/token-expired-resolution.json",
+      "bytes": 1364,
+      "etag": "s256:j7uKbCsj2rdlkzBTpMFMiZ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/token-expired-symptom.json",
+      "bytes": 1346,
+      "etag": "s256:JXuddmYCR6j4B30KozB4ja",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/token-not-found-reproduction.json",
+      "bytes": 1389,
+      "etag": "s256:Cr_-dVOQo-owMiRKwI7RPX",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/token-not-found-resolution.json",
+      "bytes": 1377,
+      "etag": "s256:-SZ6m1LoNi2GFJNtmcF-An",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/auth/token-not-found-symptom.json",
+      "bytes": 1359,
+      "etag": "s256:9Lq4ZUPtsADG7mIerZz2eW",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/invoice-mismatch-reproduction.json",
+      "bytes": 1418,
+      "etag": "s256:OEyGXu7TpMYyn7Ur7AcTgu",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/invoice-mismatch-resolution.json",
+      "bytes": 1406,
+      "etag": "s256:wWhIRCZ0xdZugvIAyDHILf",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/invoice-mismatch-symptom.json",
+      "bytes": 1388,
+      "etag": "s256:eOGQWhWgaKvt16lsA0AM25",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/over-quota-reproduction.json",
+      "bytes": 1382,
+      "etag": "s256:dcTWDxlP9XXE0GlvtKqEfE",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/over-quota-resolution.json",
+      "bytes": 1370,
+      "etag": "s256:AqXYhTXo7NNUPFs_m1yJA3",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/over-quota-symptom.json",
+      "bytes": 1352,
+      "etag": "s256:xpl2sNsGwP2MeuWs3YD_fc",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/plan-downgrade-blocked-reproduction.json",
+      "bytes": 1455,
+      "etag": "s256:3u_ZZNMD5dwdj00XDn6SI8",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/plan-downgrade-blocked-resolution.json",
+      "bytes": 1443,
+      "etag": "s256:EJiwkVMR-d4zeE366gE52B",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/plan-downgrade-blocked-symptom.json",
+      "bytes": 1425,
+      "etag": "s256:fyCcsVb540haxyVEtSYFlc",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/spend-alert-not-firing-reproduction.json",
+      "bytes": 1455,
+      "etag": "s256:xgWy3U5U4HJxRMH2quvJH4",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/spend-alert-not-firing-resolution.json",
+      "bytes": 1443,
+      "etag": "s256:NzRqh-2nItROjHnvXVBXr5",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/spend-alert-not-firing-symptom.json",
+      "bytes": 1425,
+      "etag": "s256:3MYYjkOHEf2TMQ-_XV9EUo",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/tax-jurisdiction-changed-reproduction.json",
+      "bytes": 1467,
+      "etag": "s256:RGspwf_jzDq0OqqOGFth-b",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/tax-jurisdiction-changed-resolution.json",
+      "bytes": 1455,
+      "etag": "s256:fA70opxrt9tHiDjA8MytQ8",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/tax-jurisdiction-changed-symptom.json",
+      "bytes": 1437,
+      "etag": "s256:hOrbDMn9L7o-nwFIsf3a_Q",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/unexpected-egress-charges-reproduction.json",
+      "bytes": 1473,
+      "etag": "s256:nOB_CMASXjvPPIyg_-cPoG",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/unexpected-egress-charges-resolution.json",
+      "bytes": 1461,
+      "etag": "s256:Xn0pO-T2awar2c1H1oe1je",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/billing/unexpected-egress-charges-symptom.json",
+      "bytes": 1443,
+      "etag": "s256:ZXX0zHi_7SwmKCzDfekBQE",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/bucket-name-conflict-reproduction.json",
+      "bytes": 1443,
+      "etag": "s256:n6VpdJqGFNZSXo0cVQFILx",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/bucket-name-conflict-resolution.json",
+      "bytes": 1431,
+      "etag": "s256:LV83jBV87a6_RhYUOkRnMf",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/bucket-name-conflict-symptom.json",
+      "bytes": 1413,
+      "etag": "s256:IlRo6LFaRdB1Il4wJjwBq1",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/bucket-not-empty-reproduction.json",
+      "bytes": 1419,
+      "etag": "s256:iUMNsMcYJLcjmNAMl9C8p9",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/bucket-not-empty-resolution.json",
+      "bytes": 1407,
+      "etag": "s256:gV_5kHM2g0ib4FNW5rajVO",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/bucket-not-empty-symptom.json",
+      "bytes": 1389,
+      "etag": "s256:jm_gOhWb84qvqAIm-ek088",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/create-rate-limited-reproduction.json",
+      "bytes": 1437,
+      "etag": "s256:Hh1znnSm7TTBgJ-rOCrN--",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/create-rate-limited-resolution.json",
+      "bytes": 1425,
+      "etag": "s256:Csl-bVreJfrpi1qqhIyTRR",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/create-rate-limited-symptom.json",
+      "bytes": 1407,
+      "etag": "s256:8Ado_e1IWrO9ADY_ijMNkf",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/cross-account-access-denied-reproduction.json",
+      "bytes": 1485,
+      "etag": "s256:vi-pZSnzbJvTZJfxRbiXAw",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/cross-account-access-denied-resolution.json",
+      "bytes": 1473,
+      "etag": "s256:NCGMkreph5EoyoGkZm1n2V",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/cross-account-access-denied-symptom.json",
+      "bytes": 1455,
+      "etag": "s256:PE9Gg5fUOsLyBwCbfVpHwT",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/lifecycle-not-applied-reproduction.json",
+      "bytes": 1449,
+      "etag": "s256:lIdgQNDtcchlG7SRRzFUTM",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/lifecycle-not-applied-resolution.json",
+      "bytes": 1437,
+      "etag": "s256:ud4TV2MVDtKPAlHhtCG2Fz",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/lifecycle-not-applied-symptom.json",
+      "bytes": 1419,
+      "etag": "s256:XTkol3g6P4ssA9lGRJbpAU",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/region-not-supported-reproduction.json",
+      "bytes": 1443,
+      "etag": "s256:3VBczjcqEHGK9ltBuG10ZQ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/region-not-supported-resolution.json",
+      "bytes": 1431,
+      "etag": "s256:ajoB7aKbysLUFeR6R2qELE",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/region-not-supported-symptom.json",
+      "bytes": 1413,
+      "etag": "s256:lS88OV0sQIq9cmbwAgFa0M",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/replication-lag-reproduction.json",
+      "bytes": 1412,
+      "etag": "s256:lLTOEQLyZFsE-YIzWYqgRz",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/replication-lag-resolution.json",
+      "bytes": 1400,
+      "etag": "s256:e6NctPVxCZSq40QBo8Azuc",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/replication-lag-symptom.json",
+      "bytes": 1382,
+      "etag": "s256:0m-cBm838VLYew2EfHyxYR",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/unexpected-versioning-state-reproduction.json",
+      "bytes": 1485,
+      "etag": "s256:VmgHAjmOduwYqifitrlU-e",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/unexpected-versioning-state-resolution.json",
+      "bytes": 1473,
+      "etag": "s256:dDDiwokSDrDRxh3m9Lc6lA",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/buckets/unexpected-versioning-state-symptom.json",
+      "bytes": 1455,
+      "etag": "s256:fWWQ-yass2rFArhsIPF5b8",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/connection-reset-reproduction.json",
+      "bytes": 1442,
+      "etag": "s256:M4HI_ltaEnyHEOeZyDROoX",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/connection-reset-resolution.json",
+      "bytes": 1430,
+      "etag": "s256:JTy7z9lrErorPXgFbYi-wi",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/connection-reset-symptom.json",
+      "bytes": 1412,
+      "etag": "s256:Zd1mihwvI_yyRS8VTTTQuK",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/cross-region-latency-reproduction.json",
+      "bytes": 1467,
+      "etag": "s256:jhtBT9cZnuAPv6AC0NXr7j",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/cross-region-latency-resolution.json",
+      "bytes": 1455,
+      "etag": "s256:wxYUXEUzaHTwu8WrIq7f31",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/cross-region-latency-symptom.json",
+      "bytes": 1437,
+      "etag": "s256:ogEi_ECLyv0vxjrVIUxb7M",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/dns-resolution-failed-reproduction.json",
+      "bytes": 1473,
+      "etag": "s256:kvnbnHrevp_J8OfQL5T9zA",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/dns-resolution-failed-resolution.json",
+      "bytes": 1461,
+      "etag": "s256:9ZbZYTyXGoz_qKXkq0oU84",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/dns-resolution-failed-symptom.json",
+      "bytes": 1443,
+      "etag": "s256:mduQxfpMNnTz6fIXqN9SYj",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/http2-required-reproduction.json",
+      "bytes": 1430,
+      "etag": "s256:woZQEcVwLhtYPq1zWfxxpZ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/http2-required-resolution.json",
+      "bytes": 1418,
+      "etag": "s256:KBJMGgWbP_pEuhmGJyRmk9",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/http2-required-symptom.json",
+      "bytes": 1400,
+      "etag": "s256:AHXC8zjRVvHG5AIlAJb0hJ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/ipv6-disabled-reproduction.json",
+      "bytes": 1424,
+      "etag": "s256:BAkW_mAcFva9lXJ6CKoiW3",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/ipv6-disabled-resolution.json",
+      "bytes": 1412,
+      "etag": "s256:LQwyt5bCFWpjYnuk8hx34k",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/ipv6-disabled-symptom.json",
+      "bytes": 1394,
+      "etag": "s256:k4VBN4BC3KtOYwQfKtXjAK",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/mtu-issues-reproduction.json",
+      "bytes": 1406,
+      "etag": "s256:hN5LIxqMDGigqHUHsp_wc_",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/mtu-issues-resolution.json",
+      "bytes": 1394,
+      "etag": "s256:Ju3IVB_mJen0nf6VQeQXSg",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/mtu-issues-symptom.json",
+      "bytes": 1376,
+      "etag": "s256:mCuZlaqGBlkLDiEY52R4O3",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/proxy-misconfigured-reproduction.json",
+      "bytes": 1460,
+      "etag": "s256:8TGXYTdBh-n0MnQczF_vCx",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/proxy-misconfigured-resolution.json",
+      "bytes": 1448,
+      "etag": "s256:4liVFW6YEJd7CZl4HbNAna",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/proxy-misconfigured-symptom.json",
+      "bytes": 1430,
+      "etag": "s256:CGF4EfaZzAGC3bTFe6jrab",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/tls-version-too-old-reproduction.json",
+      "bytes": 1461,
+      "etag": "s256:c79bPE05O7moN3WzG0hlCU",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/tls-version-too-old-resolution.json",
+      "bytes": 1449,
+      "etag": "s256:Sy_sW1h2sOsBwgvA6lBMa9",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/networking/tls-version-too-old-symptom.json",
+      "bytes": 1431,
+      "etag": "s256:zjcbqmvPfdL_y6tB8q-gHx",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/download-truncated-reproduction.json",
+      "bytes": 1430,
+      "etag": "s256:wxauyJVHAAS9dGEuncLT5a",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/download-truncated-resolution.json",
+      "bytes": 1418,
+      "etag": "s256:QwH2IDMiDXjfWW19HvKzJa",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/download-truncated-symptom.json",
+      "bytes": 1400,
+      "etag": "s256:lqTHa_phqAB84tNVqhNQn6",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/metadata-not-persisted-reproduction.json",
+      "bytes": 1455,
+      "etag": "s256:fXe8XatWQG-5ngWFPNIZKE",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/metadata-not-persisted-resolution.json",
+      "bytes": 1443,
+      "etag": "s256:9iM4E3YxhvSni0jqDpkBq-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/metadata-not-persisted-symptom.json",
+      "bytes": 1425,
+      "etag": "s256:u-r5K3K5E0lT4zDqq0bdk7",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/multipart-upload-failed-reproduction.json",
+      "bytes": 1461,
+      "etag": "s256:A45e4z3Kav2YW1FJ8aYBix",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/multipart-upload-failed-resolution.json",
+      "bytes": 1449,
+      "etag": "s256:XpLKBaF9c7lezdAafd9xde",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/multipart-upload-failed-symptom.json",
+      "bytes": 1431,
+      "etag": "s256:1YViUKCZ1iXJPVcyO2EdKP",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/object-not-found-after-write-reproduction.json",
+      "bytes": 1491,
+      "etag": "s256:_TLWLtoHE2rXrU6CHW4Wtb",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/object-not-found-after-write-resolution.json",
+      "bytes": 1479,
+      "etag": "s256:fpNs3vs3IIlNSIAMV7OKp4",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/object-not-found-after-write-symptom.json",
+      "bytes": 1461,
+      "etag": "s256:wFd5spnRYTZInx51APCkDl",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/precondition-failed-reproduction.json",
+      "bytes": 1436,
+      "etag": "s256:x-yezN5L_HdMh_a_V5z4uA",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/precondition-failed-resolution.json",
+      "bytes": 1424,
+      "etag": "s256:gwDQBNj3ydreBH3EwJx5s-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/precondition-failed-symptom.json",
+      "bytes": 1406,
+      "etag": "s256:mWDomMr6W1XbhcZ3DAJNf_",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/range-request-rejected-reproduction.json",
+      "bytes": 1455,
+      "etag": "s256:URwPMcRNm5jsL_Cjy943H6",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/range-request-rejected-resolution.json",
+      "bytes": 1443,
+      "etag": "s256:rEZNLR5CVL-KyQRPdgiZC4",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/range-request-rejected-symptom.json",
+      "bytes": 1425,
+      "etag": "s256:VWXhBbErlXjt72GqaLXxY7",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/storage-class-mismatch-reproduction.json",
+      "bytes": 1455,
+      "etag": "s256:MrTnuLbcjQHtzCY95PQkGH",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/storage-class-mismatch-resolution.json",
+      "bytes": 1443,
+      "etag": "s256:GI8xmgFkN3DGY2C2uxvEEy",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/storage-class-mismatch-symptom.json",
+      "bytes": 1425,
+      "etag": "s256:2_qaLxuQY7LP5QR1cZbyhm",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/unexpected-size-difference-reproduction.json",
+      "bytes": 1479,
+      "etag": "s256:LkSbIQJ-KFqkRMwlNPtWfB",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/unexpected-size-difference-resolution.json",
+      "bytes": 1467,
+      "etag": "s256:pX5Sti7Pa3deFugbXooDlJ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/unexpected-size-difference-symptom.json",
+      "bytes": 1449,
+      "etag": "s256:4o-pJjCtIrYJh4cQyKjrnM",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/upload-checksum-mismatch-reproduction.json",
+      "bytes": 1467,
+      "etag": "s256:gZeA5qTw29iCPmGhIbn0A6",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/upload-checksum-mismatch-resolution.json",
+      "bytes": 1455,
+      "etag": "s256:W5Td0aL_F6NhOG6v877aEi",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/objects/upload-checksum-mismatch-symptom.json",
+      "bytes": 1437,
+      "etag": "s256:ln_VhEejHRh4TT1FjlDCpR",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/callback-host-unreachable-reproduction.json",
+      "bytes": 1481,
+      "etag": "s256:0Ph9n09mnz0CKtJq-k-8Zb",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/callback-host-unreachable-resolution.json",
+      "bytes": 1469,
+      "etag": "s256:8vWvlKWFvYVnTKN44t4zEv",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/callback-host-unreachable-symptom.json",
+      "bytes": 1451,
+      "etag": "s256:ABZvPFyurHU25evyB1G0DU",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/callback-not-received-reproduction.json",
+      "bytes": 1457,
+      "etag": "s256:TBtC_tDgto7fZSWxZHYgKN",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/callback-not-received-resolution.json",
+      "bytes": 1445,
+      "etag": "s256:RmlRdUbhCDsIawGNo7J3B-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/callback-not-received-symptom.json",
+      "bytes": 1427,
+      "etag": "s256:Hg0--qy1YNsHUQ-q0HcDlu",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/callback-times-out-reproduction.json",
+      "bytes": 1439,
+      "etag": "s256:Rs3CK_tfsD-A4O9mp8DtAA",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/callback-times-out-resolution.json",
+      "bytes": 1427,
+      "etag": "s256:yCGzqFm1Oeh9K7Jm4oHSm9",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/callback-times-out-symptom.json",
+      "bytes": 1409,
+      "etag": "s256:AYN0oTtcG8RBKAz2dPr6VQ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/duplicate-deliveries-reproduction.json",
+      "bytes": 1450,
+      "etag": "s256:KaDDxFPTilNwnHoufUP_Oh",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/duplicate-deliveries-resolution.json",
+      "bytes": 1438,
+      "etag": "s256:4focW_hPJLhS9wPFpSItNl",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/duplicate-deliveries-symptom.json",
+      "bytes": 1420,
+      "etag": "s256:Bg7oGPtP1wuLThpF-34Njp",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/event-filter-not-applied-reproduction.json",
+      "bytes": 1475,
+      "etag": "s256:6g-NBiqIYbyqstA0JmWpzv",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/event-filter-not-applied-resolution.json",
+      "bytes": 1463,
+      "etag": "s256:U5FGW6Vm8i0nXYa7ca12k0",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/event-filter-not-applied-symptom.json",
+      "bytes": 1445,
+      "etag": "s256:j35d1PxkqvngSSixW89quk",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/signature-verification-failed-reproduction.json",
+      "bytes": 1505,
+      "etag": "s256:BYfrVIYRLlE434rarnvb48",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/signature-verification-failed-resolution.json",
+      "bytes": 1493,
+      "etag": "s256:5kqxgLSkL2f8BEBtZGd7RR",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/signature-verification-failed-symptom.json",
+      "bytes": 1475,
+      "etag": "s256:ZhwvbAKJCtNB_9dgWovSY3",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/subscription-quota-exceeded-reproduction.json",
+      "bytes": 1493,
+      "etag": "s256:NduBYW_9OM4ibNrfYFRktN",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/subscription-quota-exceeded-resolution.json",
+      "bytes": 1481,
+      "etag": "s256:pC7P3Z-Nmn7eKwLtu4Bt9h",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/subscription-quota-exceeded-symptom.json",
+      "bytes": 1463,
+      "etag": "s256:cY1mq81jIo7fyZ5jQS2U7d",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/tls-handshake-failed-reproduction.json",
+      "bytes": 1451,
+      "etag": "s256:YPlRcN8TORnQL9Ef2pJ5xP",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/tls-handshake-failed-resolution.json",
+      "bytes": 1439,
+      "etag": "s256:JmNbM2ElJZ4Cya0QKfz21T",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting/webhooks/tls-handshake-failed-symptom.json",
+      "bytes": 1421,
+      "etag": "s256:N4bkFE3NV2qie_1rnXswaQ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/getting-started.json",
+      "bytes": 704,
+      "etag": "s256:qsTSbK5o2FUp1zUlI11VqW",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/concepts.json",
+      "bytes": 623,
+      "etag": "s256:wOEnfRMqtMV5zSI0CW7S-c",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/storage.json",
+      "bytes": 676,
+      "etag": "s256:RksBEE1ojHKNjsvWd5dbxq",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/api-reference.json",
+      "bytes": 636,
+      "etag": "s256:8bQ1cml8dihN8FT3yBdcCq",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/buckets.json",
+      "bytes": 682,
+      "etag": "s256:IQjk2GR5Ur-1rrNM8eP0Bc",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/objects.json",
+      "bytes": 687,
+      "etag": "s256:AeawaLa99fVX5uhTQFxwWj",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/webhooks.json",
+      "bytes": 670,
+      "etag": "s256:qEKbaYOKwUM51Guwaek1tY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/recipes.json",
+      "bytes": 674,
+      "etag": "s256:o8CqW7mN0Ykaq0sQip9Cc8",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/ingestion.json",
+      "bytes": 2767,
+      "etag": "s256:Qv0qQ6KMla88a7jjLYSDJv",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/archival.json",
+      "bytes": 2464,
+      "etag": "s256:c2GU7Vp4CKDimcVdSgmIPx",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/security.json",
+      "bytes": 2609,
+      "etag": "s256:FF-5JIBtlXAvEOT3bxu12i",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/performance.json",
+      "bytes": 2562,
+      "etag": "s256:qkrfAvXlXMqYJ4TUPyooWV",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/integrations.json",
+      "bytes": 3171,
+      "etag": "s256:LVbHcYkcqNMgiggZHTM-zf",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/troubleshooting.json",
+      "bytes": 735,
+      "etag": "s256:iYytR8uzgaTViOcqmI9pcT",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/buckets-issues.json",
+      "bytes": 2146,
+      "etag": "s256:cMJSbWq2gkMiFLkyg4uAuN",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/objects-issues.json",
+      "bytes": 2391,
+      "etag": "s256:-_7R5hAaNYQyikQPDSs8vJ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/webhooks-issues.json",
+      "bytes": 2233,
+      "etag": "s256:Glg8IMmRCp1LQlx6t4L_2X",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/auth-issues.json",
+      "bytes": 1963,
+      "etag": "s256:Uyyxge__Vt-uFPqfbfRvsp",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/networking-issues.json",
+      "bytes": 2137,
+      "etag": "s256:ypfkvtGJYb1ZqJtVdhdA0h",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/nodes/billing-issues.json",
+      "bytes": 1752,
+      "etag": "s256:CZnr6f5-57y3PHmN7NT_YM",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/subtrees/changelog.json",
+      "bytes": 1125,
+      "etag": "s256:WBxNTM7H8pWswkpsO_Tcos",
+      "band": "standard"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/subtrees/intro.json",
+      "bytes": 1553,
+      "etag": "s256:DPmn17HKGak41pJSh9Asng",
+      "band": "standard"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/subtrees/getting-started.json",
+      "bytes": 4200,
+      "etag": "s256:qrB2prZBsnDTBiKrrFaQZu",
+      "band": "standard"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/subtrees/concepts.json",
+      "bytes": 6428,
+      "etag": "s256:19kgYz4g1YtI4mpN5bW4IE",
+      "band": "standard"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/subtrees/api-reference.json",
+      "bytes": 14104,
+      "etag": "s256:iGtgSSsfK45ahNa5Kb_7va",
+      "band": "standard"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/subtrees/recipes.json",
+      "bytes": 335070,
+      "etag": "s256:8U8f7LxZpB1XuoVRtNAqBy",
+      "band": "standard"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/static/act/subtrees/troubleshooting.json",
+      "bytes": 243899,
+      "etag": "s256:6v5IbPSZ1FELAkqHp3a5xS",
+      "band": "standard"
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

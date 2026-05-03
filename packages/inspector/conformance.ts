@@ -1,8 +1,8 @@
 /**
  * Conformance gate for @act-spec/inspector.
  *
- * Runs `walk(<file://manifest>)` against the PRD-700 example tree
- * (examples/700-tinybox/dist) via a synthetic fetcher that maps the
+ * Runs `walk(<file://manifest>)` against the astro-docs example tree
+ * (examples/astro-docs/dist) via a synthetic fetcher that maps the
  * manifest's URL templates to local disk paths. The synthetic fetcher
  * mirrors the real-world layout: the manifest declares
  *   index_url:           /act/index.json
@@ -32,7 +32,7 @@ import { walk } from './src/index.js';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(here, '..', '..');
-const distDir = path.join(repoRoot, 'examples', '700-tinybox', 'dist');
+const distDir = path.join(repoRoot, 'examples', 'astro-docs', 'dist');
 
 const ORIGIN = 'http://example.invalid';
 
@@ -46,10 +46,15 @@ function urlToDiskPath(url: string): string | null {
   const p = u.pathname;
   if (p === '/.well-known/act.json') return path.join(distDir, '.well-known', 'act.json');
   if (p === '/act/index.json') return path.join(distDir, 'act', 'index.json');
-  // /act/n/{id}.json → /act/nodes/{id}.json
+  // /act/n/{id}.json → /act/nodes/{id}.json (legacy templated form)
   let m = /^\/act\/n\/(.+)\.json$/.exec(p);
   if (m) return path.join(distDir, 'act', 'nodes', m[1]! + '.json');
   m = /^\/act\/sub\/(.+)\.json$/.exec(p);
+  if (m) return path.join(distDir, 'act', 'subtrees', m[1]! + '.json');
+  // /act/nodes/{id}.json — direct on-disk path (passthrough)
+  m = /^\/act\/nodes\/(.+)\.json$/.exec(p);
+  if (m) return path.join(distDir, 'act', 'nodes', m[1]! + '.json');
+  m = /^\/act\/subtrees\/(.+)\.json$/.exec(p);
   if (m) return path.join(distDir, 'act', 'subtrees', m[1]! + '.json');
   return null;
 }
@@ -87,7 +92,7 @@ function stableEtag(body: string): string {
 }
 
 async function main(): Promise<void> {
-  console.log('Conformance — running @act-spec/inspector walk against examples/700-tinybox/dist via synthetic file:// fetcher.');
+  console.log('Conformance — running @act-spec/inspector walk against examples/astro-docs/dist via synthetic file:// fetcher.');
 
   // Validator's static walk gives us the truth-value: node count.
   const manifestPath = path.join(distDir, '.well-known', 'act.json');

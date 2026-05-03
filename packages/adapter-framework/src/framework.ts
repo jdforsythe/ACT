@@ -1,11 +1,11 @@
 /**
  * PRD-200 adapter framework — types, lifecycle helpers, multi-source merge.
  *
- * This module lives in `@act-spec/markdown-adapter` (per ADR-003) rather
+ * This module lives in `@act-spec/adapter-markdown` (per ADR-003) rather
  * than `@act-spec/core` because PRD-201 is the only first-party leaf in
  * v0.1; promoting framework code to core requires three concrete consumers
  * (lead-typescript-engineer anti-pattern: premature abstraction in core).
- * The Astro generator (@act-spec/astro) imports from here.
+ * The Astro generator (@act-spec/plugin-astro) imports from here.
  *
  * Every export cites a PRD-200 requirement and is exercised by at least one
  * test in `framework.test.ts` and/or `markdown.test.ts`.

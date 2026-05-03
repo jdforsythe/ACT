@@ -1,0 +1,41 @@
+{
+  "act_version": "0.1",
+  "root": "catalog",
+  "depth": 3,
+  "truncated": false,
+  "tokens": {
+    "body": 62,
+    "summary": 15
+  },
+  "nodes": [
+    {
+      "act_version": "0.1",
+      "id": "catalog",
+      "type": "index",
+      "title": "Acme Catalog",
+      "summary": "Acme Catalog — root index of every product node enumerated by the act-catalog programmatic adapter.",
+      "etag": "s256:ogZpUWqWr_zGcp3WYDOG1N",
+      "tokens": {
+        "summary": 15,
+        "body": 62
+      },
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "# Acme Catalog\n\nThis synthetic root node is the parent of every product in the catalog (500 SKUs at v0.1).\n\nIt exists so the build emits exactly one root subtree per PRD-704-R2 (Standard requires subtree availability per PRD-107-R8) without forcing 500 separate subtree files (one per top-level product). Categories are not first-class nodes in this example — see PRD-704 §\"Open questions\" #3.",
+          "metadata": {
+            "extracted_via": "adapter"
+          }
+        }
+      ],
+      "metadata": {
+        "source": {
+          "adapter": "act-catalog",
+          "source_id": "catalog"
+        }
+      }
+    }
+  ],
+  "etag": "s256:kpSR5bMQgB2Qabc8bGWQnb"
+}

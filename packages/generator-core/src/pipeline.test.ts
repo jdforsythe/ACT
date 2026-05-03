@@ -8,8 +8,8 @@ import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { createMarkdownAdapter } from '@act-spec/markdown-adapter';
-import type { Adapter } from '@act-spec/markdown-adapter';
+import { createMarkdownAdapter } from '@act-spec/adapter-markdown';
+import type { Adapter } from '@act-spec/adapter-markdown';
 
 import {
   atomicWrite,
@@ -247,13 +247,13 @@ describe('PRD-400 generator pipeline', () => {
 
   it('PRD-400-R20: manifest SHOULD-populates generator (package@version) and generated_at', () => {
     const m = buildManifest({
-      config: { ...baseConfig(), generator: '@act-spec/astro@0.0.0' },
+      config: { ...baseConfig(), generator: '@act-spec/plugin-astro@0.0.0' },
       adapterCapabilities: [{ level: 'core' }],
       achieved: 'core',
       generatedAt: '2026-05-01T00:00:00Z',
       nodeCount: 0,
     });
-    expect(m.generator).toBe('@act-spec/astro@0.0.0');
+    expect(m.generator).toBe('@act-spec/plugin-astro@0.0.0');
     expect(m.generated_at).toBe('2026-05-01T00:00:00Z');
   });
 

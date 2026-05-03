@@ -1,0 +1,142 @@
+{
+  "act_version": "0.1",
+  "root": "getting-started",
+  "depth": 3,
+  "truncated": false,
+  "tokens": {
+    "body": 83,
+    "summary": 40
+  },
+  "nodes": [
+    {
+      "act_version": "0.1",
+      "id": "getting-started",
+      "type": "section",
+      "title": "Getting started",
+      "summary": "Getting started — section.",
+      "summary_source": "extracted",
+      "etag": "s256:qsTSbK5o2FUp1zUlI11VqW",
+      "content": [
+        {
+          "type": "markdown",
+          "content": "# Getting started\n\nThis section groups related getting started documents.\n"
+        }
+      ],
+      "tokens": {
+        "summary": 8,
+        "body": 16
+      },
+      "children": [
+        "getting-started/install",
+        "getting-started/quickstart",
+        "getting-started/first-project"
+      ],
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "sidebar-category:getting-started"
+        }
+      }
+    },
+    {
+      "act_version": "0.1",
+      "id": "getting-started/install",
+      "type": "doc",
+      "title": "Install the SDK",
+      "summary": "Install the Tinybox SDK via the package manager of your choice.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "Install"
+        },
+        {
+          "type": "code",
+          "language": "bash",
+          "text": "npm install @tinybox/sdk"
+        },
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "The SDK targets Node 20+ and modern browsers. ESM only."
+        }
+      ],
+      "tokens": {
+        "summary": 11,
+        "body": 17
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "getting-started/install.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/getting-started/install.md"
+        }
+      },
+      "etag": "s256:QaDuoMueYI0I8dWyPtUt06",
+      "parent": "getting-started"
+    },
+    {
+      "act_version": "0.1",
+      "id": "getting-started/quickstart",
+      "type": "doc",
+      "title": "Quickstart",
+      "summary": "Provision a bucket and upload your first object in under a minute.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "Five minutes"
+        },
+        {
+          "type": "code",
+          "language": "ts",
+          "text": "import { Tinybox } from '@tinybox/sdk';\nconst tb = new Tinybox({ token: process.env.TINYBOX_TOKEN });\nawait tb.buckets.create({ name: 'my-bucket', region: 'us-east-1' });"
+        }
+      ],
+      "tokens": {
+        "summary": 12,
+        "body": 26
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "getting-started/quickstart.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/getting-started/quickstart.md"
+        }
+      },
+      "etag": "s256:08VK4zoF4NEIj4XXTSOrOp",
+      "parent": "getting-started"
+    },
+    {
+      "act_version": "0.1",
+      "id": "getting-started/first-project",
+      "type": "doc",
+      "title": "Your first project",
+      "summary": "Walk through wiring a real application against Tinybox storage.",
+      "summary_source": "author",
+      "content": [
+        {
+          "type": "prose",
+          "format": "markdown",
+          "text": "A guided walkthrough that wires the SDK into an Express app and uploads\nuser-supplied media to a fresh bucket. End-to-end in roughly 100 lines."
+        }
+      ],
+      "tokens": {
+        "summary": 9,
+        "body": 24
+      },
+      "metadata": {
+        "source": {
+          "adapter": "act-docusaurus-sidebar-synthesizer",
+          "source_id": "getting-started/first-project.md",
+          "source_path": "/Users/jforsythe/dev/ai/act/examples/docusaurus-docs/docs/getting-started/first-project.md"
+        }
+      },
+      "etag": "s256:RtO0oKqWBJK2tvq2VpK2tM",
+      "parent": "getting-started"
+    }
+  ],
+  "etag": "s256:qrB2prZBsnDTBiKrrFaQZu"
+}

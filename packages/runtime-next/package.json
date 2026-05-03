@@ -9,7 +9,13 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./mount": {
+      "types": "./dist/mount.d.ts",
+      "import": "./dist/mount.js",
+      "default": "./dist/mount.js"
     }
   },
   "files": ["dist", "src"],

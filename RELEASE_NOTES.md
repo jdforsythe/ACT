@@ -52,19 +52,19 @@ ports are invited.
 - **Validators / tooling.** `@act-spec/validator` (PRD-600 library +
   CLI), `@act-spec/inspector` (PRD-601 CLI), `@act-spec/mcp-bridge`
   (PRD-602).
-- **Adapters.** `@act-spec/markdown-adapter` (PRD-201),
-  `@act-spec/contentful-adapter` (PRD-202), `@act-spec/sanity-adapter`
-  (PRD-203), `@act-spec/storyblok-adapter` (PRD-204),
-  `@act-spec/strapi-adapter` (PRD-205), `@act-spec/builder-adapter`
-  (PRD-206), `@act-spec/i18n-adapter` (PRD-207),
-  `@act-spec/programmatic-adapter` (PRD-208).
+- **Adapters.** `@act-spec/adapter-markdown` (PRD-201),
+  `@act-spec/adapter-contentful` (PRD-202), `@act-spec/adapter-sanity`
+  (PRD-203), `@act-spec/adapter-storyblok` (PRD-204),
+  `@act-spec/adapter-strapi` (PRD-205), `@act-spec/adapter-builder`
+  (PRD-206), `@act-spec/adapter-i18n` (PRD-207),
+  `@act-spec/adapter-programmatic` (PRD-208).
 - **Component bindings.** `@act-spec/component-react` (PRD-301),
   `@act-spec/component-vue` (PRD-302), `@act-spec/component-angular`
   (PRD-303).
-- **Generators.** `@act-spec/astro` (PRD-401), `@act-spec/docusaurus`
-  (PRD-404), `@act-spec/nextjs-static` (PRD-405),
-  `@act-spec/remix-static` (PRD-406), `@act-spec/nuxt` (PRD-407),
-  `@act-spec/eleventy` (PRD-408), `@act-spec/cli` (PRD-409).
+- **Generators.** `@act-spec/plugin-astro` (PRD-401), `@act-spec/plugin-docusaurus`
+  (PRD-404), `@act-spec/plugin-nextjs` (PRD-405),
+  `@act-spec/plugin-remix` (PRD-406), `@act-spec/plugin-nuxt` (PRD-407),
+  `@act-spec/plugin-eleventy` (PRD-408), `@act-spec/cli` (PRD-409).
 - **Runtime SDKs.** `@act-spec/runtime-next` (PRD-501),
   `@act-spec/runtime-express` (PRD-502), `@act-spec/runtime-fetch`
   (PRD-505). Each ships with the two-principal probe wired in CI.
@@ -116,9 +116,9 @@ when `achieved >= declared` and `gaps: []`.
 
 The v0.1 reference implementations span the full band:
 
-- **Core only.** `@act-spec/cli`, `@act-spec/astro` (default),
-  `@act-spec/nextjs-static` (default), `@act-spec/nuxt`,
-  `@act-spec/remix-static` — minimal manifest + index + nodes.
+- **Core only.** `@act-spec/cli`, `@act-spec/plugin-astro` (default),
+  `@act-spec/plugin-nextjs` (default), `@act-spec/plugin-nuxt`,
+  `@act-spec/plugin-remix` — minimal manifest + index + nodes.
 - **Standard.** PRD-700, PRD-701, PRD-704, PRD-705, PRD-707 — adds
   subtrees, search payload, llms.txt linkage, locale block.
 - **Plus.** PRD-702, PRD-706 — adds NDJSON streaming index, search

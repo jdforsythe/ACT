@@ -17,7 +17,7 @@ adapter) and PRD-401 (Astro plugin) — land in the same Phase 6.1 step pair
    adapter (the one current consumer).
 2. **Where does the PRD-400 framework code live?** Options: in
    `@act-spec/core`; in a dedicated `@act-spec/generator-core` package;
-   or co-located in `@act-spec/astro` (the one current consumer).
+   or co-located in `@act-spec/plugin-astro` (the one current consumer).
 
 The lead-typescript-engineer anti-pattern watchlist names
 "premature abstraction in `@act/core`" — three concrete usages before
@@ -32,12 +32,12 @@ A third decision is forced by PRD-201: the markdown / MDX library stack.
 **Framework placement.** Co-locate framework code with its sole v0.1
 consumer:
 
-- PRD-200 framework lives in `@act-spec/markdown-adapter/src/framework.ts`.
-  The Astro generator imports it via `@act-spec/markdown-adapter`'s public
+- PRD-200 framework lives in `@act-spec/adapter-markdown/src/framework.ts`.
+  The Astro generator imports it via `@act-spec/adapter-markdown`'s public
   exports. When the second TS-first-party adapter lands, extract to a
   dedicated `@act-spec/adapter-framework` package — Lead's call at that
   point.
-- PRD-400 framework lives in `@act-spec/astro/src/pipeline.ts`. When a
+- PRD-400 framework lives in `@act-spec/plugin-astro/src/pipeline.ts`. When a
   second TS leaf generator lands (e.g., a Next.js plugin in v0.2),
   extract to `@act-spec/generator-core`.
 
@@ -112,8 +112,8 @@ widening on the wire-format core.
 ### Neutral
 
 - Astro is a heavy peer dep; users who want only the markdown adapter
-  pull only `@act-spec/markdown-adapter`. Users who want the generator
-  pull `@act-spec/astro` and accept the Astro install.
+  pull only `@act-spec/adapter-markdown`. Users who want the generator
+  pull `@act-spec/plugin-astro` and accept the Astro install.
 
 ## Alternatives considered
 

@@ -8,7 +8,7 @@
 
 Phase 6.1 step 2 of `docs/team-blueprint.md` asks the Lead TS Engineer to scaffold the monorepo that will host the ACT v0.1 reference implementation. Decision Q3 (2026-04-30) fixed first-party reference impls as TypeScript-only; non-TS PRDs (Hugo / MkDocs / FastAPI / Rails) ship as spec text only and do not appear in the monorepo. The Spec Steward closed Gate G1 with locked JSON Schemas under `schemas/{100,101,102,103,109}/` and 92 fixtures under `fixtures/{100..109}/`. Those directories are inputs to the monorepo; they are the source of truth and must not be duplicated.
 
-The vertical slice (Phase 6.1 step 2 → step 6) requires four packages — `@act-spec/core`, `@act-spec/validator`, `@act-spec/markdown-adapter`, `@act-spec/astro` — and one example (`examples/700-tinybox/`). Phase 6.2 fans out into ~30 more leaf packages across four tracks. The layout we pick now will absorb that growth.
+The vertical slice (Phase 6.1 step 2 → step 6) requires four packages — `@act-spec/core`, `@act-spec/validator`, `@act-spec/adapter-markdown`, `@act-spec/plugin-astro` — and one example (`examples/700-tinybox/`). Phase 6.2 fans out into ~30 more leaf packages across four tracks. The layout we pick now will absorb that growth.
 
 ## Decision
 

@@ -1,0 +1,32 @@
+{
+  "name": "@act-spec/example-ecommerce-catalog",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Tiny Astro storefront fed by a 500-SKU catalog dataset, with ACT generated alongside via the programmatic adapter.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build:site": "astro build",
+    "preview": "astro preview",
+    "build": "tsx scripts/build.ts",
+    "validate": "tsx scripts/validate.ts",
+    "conformance": "pnpm run build && pnpm run validate",
+    "test": "node -e \"console.log('@act-spec/example-ecommerce-catalog: example exercises end-to-end via conformance')\"",
+    "lint": "node -e \"console.log('@act-spec/example-ecommerce-catalog: lint covered by typecheck + conformance')\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "regen-corpus": "tsx scripts/generate-corpus.ts"
+  },
+  "dependencies": {
+    "@act-spec/adapter-framework": "workspace:*",
+    "@act-spec/adapter-programmatic": "workspace:*",
+    "@act-spec/generator-core": "workspace:*",
+    "@act-spec/plugin-astro": "workspace:*",
+    "astro": "^4.16.19"
+  },
+  "devDependencies": {
+    "@act-spec/validator": "workspace:*",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,3037 @@
+{
+  "startedAt": "2026-05-03T06:46:55.956Z",
+  "durationMs": 399,
+  "conformanceTarget": "standard",
+  "conformanceAchieved": "standard",
+  "capabilities": {
+    "etag": true,
+    "subtree": true
+  },
+  "files": [
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/.well-known/act.json",
+      "bytes": 485,
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/index.json",
+      "bytes": 152205,
+      "band": "core",
+      "etag": "s256:fpzf2cP76TjiOYDB6EHs6F"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/catalog.json",
+      "bytes": 973,
+      "etag": "s256:ogZpUWqWr_zGcp3WYDOG1N",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000001.json",
+      "bytes": 2301,
+      "etag": "s256:TQrmbGVBvdndwC29d_fZ8c",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000002.json",
+      "bytes": 2116,
+      "etag": "s256:6s51mLk0M8YL4ajk-9Oeoc",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000003.json",
+      "bytes": 2105,
+      "etag": "s256:1kCcRFxVLXv4Mmgkbgrn3V",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000004.json",
+      "bytes": 2109,
+      "etag": "s256:hCCIcUBiEycewqLEvmv-Zb",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000005.json",
+      "bytes": 2150,
+      "etag": "s256:WygabnpCblBUW7GFJBjstS",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000006.json",
+      "bytes": 2095,
+      "etag": "s256:dCPoQxAZXtEtNOldVDDuh9",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000007.json",
+      "bytes": 2106,
+      "etag": "s256:PI6gQBPucmuLzMmxH-5U1q",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000008.json",
+      "bytes": 2304,
+      "etag": "s256:SF9tBZgMI8YiSJmFWKaGAL",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000009.json",
+      "bytes": 2346,
+      "etag": "s256:723B5Gpf5nYf5rXVjeee3Z",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000010.json",
+      "bytes": 2213,
+      "etag": "s256:JntYucFK8IJ20vdIcdLAjA",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000011.json",
+      "bytes": 2161,
+      "etag": "s256:Y2uTx8dx5uX-gZmBcJDtbe",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000012.json",
+      "bytes": 2170,
+      "etag": "s256:-jjW5E3_MpwTps7bwpnnyj",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000013.json",
+      "bytes": 2196,
+      "etag": "s256:YQStNMGWdrKXTniSwzcCms",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000014.json",
+      "bytes": 2168,
+      "etag": "s256:AgqpYO7nJlQuhgKA7V2bal",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000015.json",
+      "bytes": 2218,
+      "etag": "s256:KPL9w-whRIbHyhuUWRsoZV",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000016.json",
+      "bytes": 2326,
+      "etag": "s256:7Mwqkh9DbuuPQMBxCjwvgN",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000017.json",
+      "bytes": 2442,
+      "etag": "s256:djZ13CPFWLKy7b9FThIkSx",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000018.json",
+      "bytes": 2268,
+      "etag": "s256:Fib1tl9jW2r5xRKkuGm3ut",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000019.json",
+      "bytes": 2278,
+      "etag": "s256:hOfniW6KYx7qKhSAdYCpZ1",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000020.json",
+      "bytes": 2298,
+      "etag": "s256:8JKhKc7bxn9C2clcoZC_4x",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000021.json",
+      "bytes": 2256,
+      "etag": "s256:h4Xr_65Z9dlQP4Pk37dy9-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000022.json",
+      "bytes": 2244,
+      "etag": "s256:nuOKwtR_1ZdZr2xJnFTUHu",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000023.json",
+      "bytes": 2250,
+      "etag": "s256:q3ysD8kiDtUYOraLTrLl47",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000024.json",
+      "bytes": 2421,
+      "etag": "s256:0xKAcVG2G2uuzWfQ9GBZKU",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000025.json",
+      "bytes": 2469,
+      "etag": "s256:L_zWcagsfT4vm06SKHnbME",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000026.json",
+      "bytes": 2354,
+      "etag": "s256:8KCfes9whrcB1B-Mju3KVg",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000027.json",
+      "bytes": 2287,
+      "etag": "s256:DMGdn0nt7FtZj2csuXuiXv",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000028.json",
+      "bytes": 2338,
+      "etag": "s256:S7kWpO3yGMpwvjdk9z3ybT",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000029.json",
+      "bytes": 2317,
+      "etag": "s256:IjmRg8d-kfh6qnSABVzIJE",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000030.json",
+      "bytes": 2291,
+      "etag": "s256:t53q3K5f1032x7Di3Xx9qz",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000031.json",
+      "bytes": 2314,
+      "etag": "s256:dz_M8EqlK45JMvpsCi6L8t",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000032.json",
+      "bytes": 2462,
+      "etag": "s256:5UIGkc-nksncusfMRhPv0w",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000033.json",
+      "bytes": 2526,
+      "etag": "s256:bEyG-b-NDPRoeaynjTA8wR",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000034.json",
+      "bytes": 2373,
+      "etag": "s256:AENIbtUYVtIJXu0so7Tfe_",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000035.json",
+      "bytes": 2358,
+      "etag": "s256:pt7s-c18ui3pX8bt4O_WNJ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000036.json",
+      "bytes": 2371,
+      "etag": "s256:EzHE9QhAodnZ1gBX-FxY9n",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000037.json",
+      "bytes": 2405,
+      "etag": "s256:13xLJBJaCTEtyNJGfovxK0",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000038.json",
+      "bytes": 2357,
+      "etag": "s256:O7OkdqTmCpHmJUqs2YLQkH",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000039.json",
+      "bytes": 2377,
+      "etag": "s256:9KeWQs6WE9DW7kt5dRs4Gc",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000040.json",
+      "bytes": 2530,
+      "etag": "s256:u5RqoZmjpgAIqLNtp6NMfU",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000041.json",
+      "bytes": 2563,
+      "etag": "s256:7v3JBryTNY0KZTl_nz_hh1",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000042.json",
+      "bytes": 2373,
+      "etag": "s256:ztHZo6PWKAPY3-xtgcnd4q",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000043.json",
+      "bytes": 2418,
+      "etag": "s256:2qYpgJtZiUwDvXvBQOOPen",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000044.json",
+      "bytes": 2409,
+      "etag": "s256:i5K58s0RUEj5L7WF-X6dth",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000045.json",
+      "bytes": 2417,
+      "etag": "s256:pXZmO_Wya8QXYGuOyBXN2V",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000046.json",
+      "bytes": 2418,
+      "etag": "s256:PuK9oqQxh2xNxlYh8Qm9KC",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000047.json",
+      "bytes": 2419,
+      "etag": "s256:O-VcXpChAIYlPQvUKwDXdF",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000048.json",
+      "bytes": 2542,
+      "etag": "s256:UzWMVsM4bEel2usDLCB4gY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000049.json",
+      "bytes": 2545,
+      "etag": "s256:dzIsU7Yeh94WuSfd_3BiLm",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000050.json",
+      "bytes": 2388,
+      "etag": "s256:Ny6AQiUnyfg0Mo80AQNFLL",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000051.json",
+      "bytes": 2364,
+      "etag": "s256:EfOYQiFUjGKBj4TeDPDVxT",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000052.json",
+      "bytes": 2393,
+      "etag": "s256:Y3HRkurMyFOmOrweJs0Id-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000053.json",
+      "bytes": 2383,
+      "etag": "s256:maJz6wjPmI7rebSFMHZ-hl",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000054.json",
+      "bytes": 2367,
+      "etag": "s256:dwcFfcOw3ywb7sCJaSagOZ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000055.json",
+      "bytes": 2388,
+      "etag": "s256:Q7G6hhxfx8BMC5iq0YdEqw",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000056.json",
+      "bytes": 2539,
+      "etag": "s256:YEspvKFT4DMvo6Mu6x7e0R",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000057.json",
+      "bytes": 2531,
+      "etag": "s256:DdFjB0dh6dYspH_E4Fb6M7",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000058.json",
+      "bytes": 2434,
+      "etag": "s256:dS7JGLFsWdL7m5JuUmM33b",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000059.json",
+      "bytes": 2378,
+      "etag": "s256:AZ57-9zi3e9bfABDDNVOmv",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000060.json",
+      "bytes": 2392,
+      "etag": "s256:LZdoXuJc-nEzlbiB3vP19c",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000061.json",
+      "bytes": 2396,
+      "etag": "s256:LfdjjknIoPwlkwUeGKyrjc",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000062.json",
+      "bytes": 2361,
+      "etag": "s256:rKtWblY-HudGhe0OvDzVRo",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000063.json",
+      "bytes": 2429,
+      "etag": "s256:UdrpqOzNH9F8XppUJ_9rRQ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000064.json",
+      "bytes": 2525,
+      "etag": "s256:XCQCisAgKk1Lm2Bl0Pd3v8",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000065.json",
+      "bytes": 2546,
+      "etag": "s256:NLm83PZFeQkBbjfWOLtpDm",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000066.json",
+      "bytes": 2379,
+      "etag": "s256:CHkF07ZpCTC3mW2lcaPjeH",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000067.json",
+      "bytes": 2360,
+      "etag": "s256:i6Pw6E2e9j2G3QqNrc1rjJ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000068.json",
+      "bytes": 2385,
+      "etag": "s256:MGGyeTFuZ3PptGKMGNtUxj",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000069.json",
+      "bytes": 2365,
+      "etag": "s256:U0IYjtfkmlhtFlgnS8QUzY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000070.json",
+      "bytes": 2371,
+      "etag": "s256:KD35d06xRovxCkxdZ6akQy",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000071.json",
+      "bytes": 2372,
+      "etag": "s256:L_JImV3AzkZVJRQA6bbJjr",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000072.json",
+      "bytes": 2530,
+      "etag": "s256:1o0geK9OkvoxNhq3BRSiSM",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000073.json",
+      "bytes": 2552,
+      "etag": "s256:rEvrBXBUotKtnea0afMVnM",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000074.json",
+      "bytes": 2390,
+      "etag": "s256:ZpwWqMKUL63TvxzqlYIsT5",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000075.json",
+      "bytes": 2379,
+      "etag": "s256:SiyPCxRVdWkwA_iuKiVM8d",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000076.json",
+      "bytes": 2435,
+      "etag": "s256:yL9WCZz12teTlTPWoZJ6_4",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000077.json",
+      "bytes": 2367,
+      "etag": "s256:83gFUKjc0_-chXhetCNFXz",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000078.json",
+      "bytes": 2405,
+      "etag": "s256:0TRcoN_tRU42Nc3fZ3fiER",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000079.json",
+      "bytes": 2390,
+      "etag": "s256:UA9EuayvL5BHhR7r1CNgCk",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000080.json",
+      "bytes": 2550,
+      "etag": "s256:DWWFEaFkvMhrsObPiGtfPD",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000081.json",
+      "bytes": 2536,
+      "etag": "s256:xm_auPG9AK2-jRLOAMoNwJ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000082.json",
+      "bytes": 2389,
+      "etag": "s256:FYSoTproMiN8E0X5ef9-Ku",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000083.json",
+      "bytes": 2408,
+      "etag": "s256:LnfKp_GAIxxcJInkaaKNvc",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000084.json",
+      "bytes": 2381,
+      "etag": "s256:7Dc-YS8KpS_neBBL0nhp42",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000085.json",
+      "bytes": 2367,
+      "etag": "s256:Xz0Q6QpDsMP0HSTsWF3UME",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000086.json",
+      "bytes": 2368,
+      "etag": "s256:fVN_pOwvAZ2XqJqlf2x-AJ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000087.json",
+      "bytes": 2389,
+      "etag": "s256:py63FjY5bpaJMXEnCsdrdo",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000088.json",
+      "bytes": 2565,
+      "etag": "s256:97OEA9f_FW_svY8xqFyXwd",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000089.json",
+      "bytes": 2541,
+      "etag": "s256:bZoVjo1kTHfP6lr3SiqOkt",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000090.json",
+      "bytes": 2392,
+      "etag": "s256:mcmZUInEcSd-0diQtjHOBk",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000091.json",
+      "bytes": 2407,
+      "etag": "s256:v1TfFlRp_Bf4bwx7XLXuF6",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000092.json",
+      "bytes": 2359,
+      "etag": "s256:WNgazXmc5EhbCMNG5C6FIl",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000093.json",
+      "bytes": 2391,
+      "etag": "s256:DcfdZf-GxJ5Ofs0U2KlEFx",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000094.json",
+      "bytes": 2406,
+      "etag": "s256:hbWyP17nAWmnnaUxlHOjuN",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000095.json",
+      "bytes": 2391,
+      "etag": "s256:kSWIC2lKjX0HIzLyZFB9Mo",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000096.json",
+      "bytes": 2523,
+      "etag": "s256:4NILZRsapPTt3A-SIjZ_Q9",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000097.json",
+      "bytes": 2541,
+      "etag": "s256:m5b4goIU-lWGjtSf2ns1kf",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000098.json",
+      "bytes": 2386,
+      "etag": "s256:yFQjuk0GGIemXpVU8X3UlR",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000099.json",
+      "bytes": 2369,
+      "etag": "s256:UYhmUZ83mCstxFZR-rx9eS",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000100.json",
+      "bytes": 2403,
+      "etag": "s256:xsw83cjQPJmOk-p8W3njmW",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000101.json",
+      "bytes": 2371,
+      "etag": "s256:EMGz0fvHFGI21wXSmJPXQg",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000102.json",
+      "bytes": 2340,
+      "etag": "s256:gBJVX-5cziYMX7WFBgu0Oz",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000103.json",
+      "bytes": 2392,
+      "etag": "s256:yBQX9V1GientkP2_fBDlg4",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000104.json",
+      "bytes": 2546,
+      "etag": "s256:2dahFPJc3G74XorRyzFjjE",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000105.json",
+      "bytes": 2539,
+      "etag": "s256:JsMYeeWhBuA_vPIvWwxBvz",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000106.json",
+      "bytes": 2418,
+      "etag": "s256:5IFBbphCmnnaqu4nMMN7qG",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000107.json",
+      "bytes": 2393,
+      "etag": "s256:Mn2N_kPvApqfReSo0NlDr9",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000108.json",
+      "bytes": 2368,
+      "etag": "s256:9Ew-OBN_K-axSuf-SdjRPI",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000109.json",
+      "bytes": 2374,
+      "etag": "s256:YJs24KjpFz5KOtovE3xC1F",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000110.json",
+      "bytes": 2387,
+      "etag": "s256:bk-UrwW2ZAWcPgM4jsUcWP",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000111.json",
+      "bytes": 2391,
+      "etag": "s256:1fKNVghJmaY9Jnt8QFnUMl",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000112.json",
+      "bytes": 2586,
+      "etag": "s256:H41svGe49DqdWER1Z5MUxq",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000113.json",
+      "bytes": 2541,
+      "etag": "s256:QbLCyBi0fXpb0oK1C6ZPX2",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000114.json",
+      "bytes": 2371,
+      "etag": "s256:6XGkMwzSa0QOPP9OZT_wp7",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000115.json",
+      "bytes": 2379,
+      "etag": "s256:fvSALBrDObC3XlwVprjos1",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000116.json",
+      "bytes": 2373,
+      "etag": "s256:eQshzh0wOnuH395kZ0K3xt",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000117.json",
+      "bytes": 2388,
+      "etag": "s256:nThf7VAjypkqvhf1Aoel8e",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000118.json",
+      "bytes": 2360,
+      "etag": "s256:NKBV1497arfNKJG9BUhQ9V",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000119.json",
+      "bytes": 2414,
+      "etag": "s256:gk7eaEgAxrMmM_WPRfaQjV",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000120.json",
+      "bytes": 2557,
+      "etag": "s256:BMww0IK-pC_LQyxKGET4yn",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000121.json",
+      "bytes": 2571,
+      "etag": "s256:ee-VC9_cyucj5pYmd_zwoD",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000122.json",
+      "bytes": 2476,
+      "etag": "s256:YjHA4DiJP2XBh7yA2iEUai",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000123.json",
+      "bytes": 2367,
+      "etag": "s256:dkZHSYqlHEl687mMKYw393",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000124.json",
+      "bytes": 2385,
+      "etag": "s256:jCt2s9TZhvoa9pATp7uUM_",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000125.json",
+      "bytes": 2363,
+      "etag": "s256:RFhHC9nYAi_lQYZLuu0pFT",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000126.json",
+      "bytes": 2356,
+      "etag": "s256:u9D3vjmXVeDqeQET8YQtZB",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000127.json",
+      "bytes": 2421,
+      "etag": "s256:5BiV28ViT-ALZVPBe63cj-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000128.json",
+      "bytes": 2545,
+      "etag": "s256:ESZFQPq3mNeudux6whoTVN",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000129.json",
+      "bytes": 2544,
+      "etag": "s256:IxDSn3VWn-A1GeVDmEL9i5",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000130.json",
+      "bytes": 2387,
+      "etag": "s256:42uKRKXRNPICZieDfrV-GR",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000131.json",
+      "bytes": 2368,
+      "etag": "s256:krISIn5hnZYIf7TtN_pI4l",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000132.json",
+      "bytes": 2383,
+      "etag": "s256:ASXLvaz_M481G8nDDSB6qv",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000133.json",
+      "bytes": 2438,
+      "etag": "s256:_KnusZ_eCsD5_oetrk_mN1",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000134.json",
+      "bytes": 2363,
+      "etag": "s256:7f_TN7p8d5hEgd7GkqrpB_",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000135.json",
+      "bytes": 2382,
+      "etag": "s256:bq9ItgNxPpEISJ38LU0v4I",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000136.json",
+      "bytes": 2532,
+      "etag": "s256:KNKkhsDrooykpmJIGqxyQW",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000137.json",
+      "bytes": 2565,
+      "etag": "s256:vSUMywhVtHGesfNnUYUVgT",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000138.json",
+      "bytes": 2376,
+      "etag": "s256:C1qnetTvcgGB_rOOkIl8zr",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000139.json",
+      "bytes": 2366,
+      "etag": "s256:DoSKD04GCameJg6qD4bgRk",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000140.json",
+      "bytes": 2385,
+      "etag": "s256:x4-PpE5agP_rbZJ1UJarVO",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000141.json",
+      "bytes": 2387,
+      "etag": "s256:V4VfZBTEBpg6UPLiqpI_Ez",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000142.json",
+      "bytes": 2369,
+      "etag": "s256:kfLO3B0bu0PTRz_ErvAOaW",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000143.json",
+      "bytes": 2426,
+      "etag": "s256:72RaTOON9pBNL05TkoV3DN",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000144.json",
+      "bytes": 2538,
+      "etag": "s256:O19ygM8sgUoBGxgfwNEii-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000145.json",
+      "bytes": 2558,
+      "etag": "s256:unnlI9ymonZ9-ybKJbdFi1",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000146.json",
+      "bytes": 2376,
+      "etag": "s256:RI1fVBCOJQk7Ni4f2avnQ9",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000147.json",
+      "bytes": 2362,
+      "etag": "s256:wkoN_7DVS4c6_pD6Q3tTgO",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000148.json",
+      "bytes": 2380,
+      "etag": "s256:F0dZ5Ll5CdFXDAI0K59iOk",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000149.json",
+      "bytes": 2484,
+      "etag": "s256:UOOTqhSTZVVeL--dt5iY4L",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000150.json",
+      "bytes": 2367,
+      "etag": "s256:IU4Pog9SmM69u5Yz4N4JtY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000151.json",
+      "bytes": 2375,
+      "etag": "s256:UccPZKoL5Hh_FfN3lRZEUk",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000152.json",
+      "bytes": 2556,
+      "etag": "s256:Bf7_BqIDpiQaU76CZ9acpl",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000153.json",
+      "bytes": 2532,
+      "etag": "s256:1UUAk2VNjdfVmH1mWVE1E6",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000154.json",
+      "bytes": 2381,
+      "etag": "s256:nqrZUya1s0xrziEhA9VvwH",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000155.json",
+      "bytes": 2383,
+      "etag": "s256:rXlXWDWE_pitbHOT7eaD3H",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000156.json",
+      "bytes": 2386,
+      "etag": "s256:W74IXNsK55xMELoUNTTqfS",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000157.json",
+      "bytes": 2396,
+      "etag": "s256:uVCC5j0FFNKIverrM0d-fD",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000158.json",
+      "bytes": 2379,
+      "etag": "s256:fS0VGdbgZORDv-tMNFubbE",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000159.json",
+      "bytes": 2416,
+      "etag": "s256:W64Jl-RPbotXW04GlDV7_k",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000160.json",
+      "bytes": 2539,
+      "etag": "s256:LLINLd87muwIeQ17ylcOtK",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000161.json",
+      "bytes": 2577,
+      "etag": "s256:FO1hb_JQtXzXBgoNXQiRMV",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000162.json",
+      "bytes": 2391,
+      "etag": "s256:CgPqTEd6UYjyvPhUh3wO4A",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000163.json",
+      "bytes": 2371,
+      "etag": "s256:UtnBQ-Ir95yEp4bARqjK3V",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000164.json",
+      "bytes": 2375,
+      "etag": "s256:zFErFzTMQlmV55tuAoyAmi",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000165.json",
+      "bytes": 2396,
+      "etag": "s256:j3HxOZ9uwcsYlWxsOz3Pme",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000166.json",
+      "bytes": 2370,
+      "etag": "s256:mVJNfL6vdheoGZvAe_BKLm",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000167.json",
+      "bytes": 2421,
+      "etag": "s256:9NX_MAEtSiwZWYxPgq9jPD",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000168.json",
+      "bytes": 2572,
+      "etag": "s256:ByhA-1LL1bc63LedWJwz1b",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000169.json",
+      "bytes": 2544,
+      "etag": "s256:iDV56W3lgrtNrwh8e8kx2k",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000170.json",
+      "bytes": 2405,
+      "etag": "s256:R6iclxeJfPR3dIin-v2A7u",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000171.json",
+      "bytes": 2409,
+      "etag": "s256:s7BZdzsQKhsOzM9aOuoYVp",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000172.json",
+      "bytes": 2384,
+      "etag": "s256:GuA1Q70yMEuRGNvVmQcAu0",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000173.json",
+      "bytes": 2374,
+      "etag": "s256:KOujHL5Ce6K2e-NcaHsXDs",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000174.json",
+      "bytes": 2403,
+      "etag": "s256:yAcr_lIZnED_T5PIHFfQc7",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000175.json",
+      "bytes": 2364,
+      "etag": "s256:8mkKNbnwU_cUs_rIPTyVFr",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000176.json",
+      "bytes": 2538,
+      "etag": "s256:FLLIpUi-2qecERYBeuqevW",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000177.json",
+      "bytes": 2526,
+      "etag": "s256:coLdH6KjTcjVRLpsJkhDhK",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000178.json",
+      "bytes": 2373,
+      "etag": "s256:HW0W4C_5ozlLVwsgWKXC6I",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000179.json",
+      "bytes": 2352,
+      "etag": "s256:ejgRrxbU3TWWwFRD7cpTek",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000180.json",
+      "bytes": 2378,
+      "etag": "s256:uXmLG2yfhsWACzqO3U6Y3X",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000181.json",
+      "bytes": 2388,
+      "etag": "s256:scY_yGchx3syJdvYrFw1NV",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000182.json",
+      "bytes": 2369,
+      "etag": "s256:tI4wLy82vV74lzoBWntg8T",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000183.json",
+      "bytes": 2396,
+      "etag": "s256:Um8P8RzPlZb_xlqKfUhIZ8",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000184.json",
+      "bytes": 2533,
+      "etag": "s256:0CgdxtrEdIYBvfft0mmCtF",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000185.json",
+      "bytes": 2533,
+      "etag": "s256:uOlpX0EM4rNyKwrvKWEsUK",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000186.json",
+      "bytes": 2419,
+      "etag": "s256:Wacssf2ddFi9N29lTGD1RU",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000187.json",
+      "bytes": 2407,
+      "etag": "s256:xralICELEm5iBKZpU0yJkh",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000188.json",
+      "bytes": 2386,
+      "etag": "s256:gfnVXTtskTukwmmS1Uj4gC",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000189.json",
+      "bytes": 2385,
+      "etag": "s256:sxlMHMVKEnxen9V1vNSGei",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000190.json",
+      "bytes": 2370,
+      "etag": "s256:tVuheBQFXvg832M1C1vHFl",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000191.json",
+      "bytes": 2374,
+      "etag": "s256:RIJPl4V6owT9iIKSGNSwun",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000192.json",
+      "bytes": 2526,
+      "etag": "s256:_5dbndrXxnSwZrFvpB7HVf",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000193.json",
+      "bytes": 2546,
+      "etag": "s256:A_Fy6X3QBCt01nEm1dqjTV",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000194.json",
+      "bytes": 2399,
+      "etag": "s256:sdYRD48KMdl3jmBU1ARvQ3",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000195.json",
+      "bytes": 2369,
+      "etag": "s256:Ziu7Ju88XlKYLaJ_1sDgY5",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000196.json",
+      "bytes": 2368,
+      "etag": "s256:_PG9R-R7VllJ8xtPksf80U",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000197.json",
+      "bytes": 2395,
+      "etag": "s256:EuxrZRsh5jdOktRAgWdrtb",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000198.json",
+      "bytes": 2359,
+      "etag": "s256:M9GChcTSpq7usB-qURhRpL",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000199.json",
+      "bytes": 2399,
+      "etag": "s256:jx-5BAOXIusVaCf7y91QDv",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000200.json",
+      "bytes": 2557,
+      "etag": "s256:4je55_ZFg4rxXEy1F8udkB",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000201.json",
+      "bytes": 2552,
+      "etag": "s256:k4twcA3GpYemPU47wFJ_BM",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000202.json",
+      "bytes": 2359,
+      "etag": "s256:-acuA95IsJ2yaMVKiO_pxp",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000203.json",
+      "bytes": 2342,
+      "etag": "s256:AAEqUqFU6poHaPALEwocGM",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000204.json",
+      "bytes": 2384,
+      "etag": "s256:HemG3kHZIoJHBGpazvEpT_",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000205.json",
+      "bytes": 2428,
+      "etag": "s256:Yvu0RbZWZK8AfSO6ZEa0Cr",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000206.json",
+      "bytes": 2382,
+      "etag": "s256:b4kg1KkBdps29fjtqqz7Bk",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000207.json",
+      "bytes": 2434,
+      "etag": "s256:YSURGh30iut9NS-zDCdO41",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000208.json",
+      "bytes": 2553,
+      "etag": "s256:rYb99dIAthaCGzhYaoHoQz",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000209.json",
+      "bytes": 2575,
+      "etag": "s256:kuMjdkKqT4XjtBu94kE3La",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000210.json",
+      "bytes": 2374,
+      "etag": "s256:ltX-uY8w0rNlJB-lZbY9YK",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000211.json",
+      "bytes": 2381,
+      "etag": "s256:Ysphx4ltODcYuGSKnYHzOH",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000212.json",
+      "bytes": 2422,
+      "etag": "s256:tO8_XkBGMzSE_UYnpHPgnf",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000213.json",
+      "bytes": 2436,
+      "etag": "s256:tPHM4l94F9ePpezKaexp6s",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000214.json",
+      "bytes": 2403,
+      "etag": "s256:dfxR5gfkF8oGPdU5rxmCYf",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000215.json",
+      "bytes": 2421,
+      "etag": "s256:bXCrju-RZKZ0ZdaWwEqH6K",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000216.json",
+      "bytes": 2513,
+      "etag": "s256:F-IfkfoHhJfVPk7LrI1V5i",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000217.json",
+      "bytes": 2542,
+      "etag": "s256:zbWthfZUG1mLoHca7FzhT7",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000218.json",
+      "bytes": 2364,
+      "etag": "s256:j5OEOGa68DxDpt74KlEvPa",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000219.json",
+      "bytes": 2349,
+      "etag": "s256:vO2aeW6POl7h9rOxzPL-1b",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000220.json",
+      "bytes": 2389,
+      "etag": "s256:-j0XuA77I_GR_CIBY9w5if",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000221.json",
+      "bytes": 2367,
+      "etag": "s256:ZbOOBb6kFVqN-Csp9zuRJJ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000222.json",
+      "bytes": 2379,
+      "etag": "s256:scefmrYg8Rys9vwKYm7ALK",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000223.json",
+      "bytes": 2407,
+      "etag": "s256:ZFcVMbayg7Hs_9xwuVvHbh",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000224.json",
+      "bytes": 2526,
+      "etag": "s256:aUqb6gAzFbpZZAbPTgWg0w",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000225.json",
+      "bytes": 2578,
+      "etag": "s256:YrKoTIWI8IdU09MgcNjaHK",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000226.json",
+      "bytes": 2385,
+      "etag": "s256:_9K90pYjl1uYL1HxDWW7Z0",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000227.json",
+      "bytes": 2362,
+      "etag": "s256:iY87ku9AAfclnjrJwRXlvT",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000228.json",
+      "bytes": 2379,
+      "etag": "s256:WYV4cnkTMXH7kxhbJelvDt",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000229.json",
+      "bytes": 2395,
+      "etag": "s256:9NatvlOE0n2anLpyGjV_pZ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000230.json",
+      "bytes": 2370,
+      "etag": "s256:sgm6xVUqvhI-lbMGWrW2xY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000231.json",
+      "bytes": 2368,
+      "etag": "s256:jp45uAYMZ3xAZBFqcLu7dX",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000232.json",
+      "bytes": 2525,
+      "etag": "s256:oA3kISNYjJ5vEzJW_tc1br",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000233.json",
+      "bytes": 2538,
+      "etag": "s256:V0zOmc7m8KYUqlJ3_OY7Ur",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000234.json",
+      "bytes": 2430,
+      "etag": "s256:XFUzFTTp8PcVk8h6oDGhMI",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000235.json",
+      "bytes": 2370,
+      "etag": "s256:a7EwYC04TR0WjAgVpsWZTt",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000236.json",
+      "bytes": 2387,
+      "etag": "s256:AVhRTTEgIk0R9V7fon5YvD",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000237.json",
+      "bytes": 2364,
+      "etag": "s256:D-MTVCyj8p1JR6Y6ELDLxm",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000238.json",
+      "bytes": 2383,
+      "etag": "s256:mISkptQ8YjfCQOcQZ9IhQu",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000239.json",
+      "bytes": 2372,
+      "etag": "s256:wKjhePuIfvcVxHHSZcuVXc",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000240.json",
+      "bytes": 2585,
+      "etag": "s256:hjOMydRH_vdmcbaTEaM1gv",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000241.json",
+      "bytes": 2561,
+      "etag": "s256:CSsfr57ZrpjdDtAZPWSCRQ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000242.json",
+      "bytes": 2373,
+      "etag": "s256:pw0tQ3kWi_cl9yWlLlA182",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000243.json",
+      "bytes": 2355,
+      "etag": "s256:sXO6mjXZU_vZKssFjUdAoh",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000244.json",
+      "bytes": 2379,
+      "etag": "s256:L8Dz7EK7v_uFQ8uVtzrH1Y",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000245.json",
+      "bytes": 2406,
+      "etag": "s256:1x4pjXUhwTEbsEpG_ranh-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000246.json",
+      "bytes": 2375,
+      "etag": "s256:Od0WkSU3mPIuETqsWZ9YlR",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000247.json",
+      "bytes": 2375,
+      "etag": "s256:bjxP2fkGgKWvkXEM60BfqG",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000248.json",
+      "bytes": 2545,
+      "etag": "s256:pR-U2CT7l8rvrmzJ8Z9EJ0",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000249.json",
+      "bytes": 2551,
+      "etag": "s256:lblOoVYKQbCS2kh8vAd21k",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000250.json",
+      "bytes": 2377,
+      "etag": "s256:ecLp13zFWlLSdCVFWaD1v_",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000251.json",
+      "bytes": 2376,
+      "etag": "s256:uWBCiUXbcIeZLo5MOscn3l",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000252.json",
+      "bytes": 2410,
+      "etag": "s256:l15zQ3wMAU6vpr1CBn5V5l",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000253.json",
+      "bytes": 2395,
+      "etag": "s256:OJX-wUW1VXMPmGsTeGwCl2",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000254.json",
+      "bytes": 2402,
+      "etag": "s256:G9AtS6UV0q1KYTDCHFg0Ys",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000255.json",
+      "bytes": 2378,
+      "etag": "s256:NIbBplaRTdKQXCGQlfeVQk",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000256.json",
+      "bytes": 2534,
+      "etag": "s256:Es8Toqo-EUroTVfVKEqC6y",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000257.json",
+      "bytes": 2534,
+      "etag": "s256:zg4YBiW5iKVkTirQfRzIC-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000258.json",
+      "bytes": 2375,
+      "etag": "s256:x__uyGgcvd6yl6izzTZZUs",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000259.json",
+      "bytes": 2408,
+      "etag": "s256:AeU8cVfAKgMyy5OMf3vi4o",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000260.json",
+      "bytes": 2413,
+      "etag": "s256:Q0t3NEXiDqLACwkojN7SpA",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000261.json",
+      "bytes": 2410,
+      "etag": "s256:kgicYBZEqMOC7JI-A91Yt6",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000262.json",
+      "bytes": 2371,
+      "etag": "s256:YrGDV95-NEK8Dm5gxkAhBF",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000263.json",
+      "bytes": 2381,
+      "etag": "s256:FTdpJCVExvNhP7HQECS25Y",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000264.json",
+      "bytes": 2540,
+      "etag": "s256:oWEGb_4pOswfx7SicJcoGz",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000265.json",
+      "bytes": 2526,
+      "etag": "s256:ioHZUBj_Iyg8ExAc00Pbqg",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000266.json",
+      "bytes": 2430,
+      "etag": "s256:QJbbxzJ292y5NfamkRQyAE",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000267.json",
+      "bytes": 2358,
+      "etag": "s256:IN3mHPWaOU4er8rp0Lz_IK",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000268.json",
+      "bytes": 2407,
+      "etag": "s256:gkHJp5Zk37Sf825hKsQ5eG",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000269.json",
+      "bytes": 2411,
+      "etag": "s256:bvaoOIWhu9lDWEJJ7tx55w",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000270.json",
+      "bytes": 2374,
+      "etag": "s256:f16nQjbGbKRgziC8OKUOei",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000271.json",
+      "bytes": 2387,
+      "etag": "s256:3_MI3L5AOFQWYmlD4JMryF",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000272.json",
+      "bytes": 2528,
+      "etag": "s256:od4X-nTj-lFIjzQqLxzokR",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000273.json",
+      "bytes": 2561,
+      "etag": "s256:BuHcaLaRn3RCVa7BocPVSl",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000274.json",
+      "bytes": 2386,
+      "etag": "s256:OlrvcWT8VwENCD7buc0cEd",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000275.json",
+      "bytes": 2352,
+      "etag": "s256:EnpMdHtcChwe7bvC1qSsSl",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000276.json",
+      "bytes": 2391,
+      "etag": "s256:AlYUlbbWJdbxZDPEKKKKSj",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000277.json",
+      "bytes": 2388,
+      "etag": "s256:Lmxv3ocWLMKK5UpaCvqRAN",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000278.json",
+      "bytes": 2380,
+      "etag": "s256:g5D8JetHv-fH8DYQRbnozd",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000279.json",
+      "bytes": 2375,
+      "etag": "s256:4oPmQ1VAUuFsMRDlazxWfC",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000280.json",
+      "bytes": 2522,
+      "etag": "s256:TxFxGvari-BAd4nLT0Fffy",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000281.json",
+      "bytes": 2531,
+      "etag": "s256:eVkOKCUJGeOU_kPCI8Wwov",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000282.json",
+      "bytes": 2356,
+      "etag": "s256:VsKSYagYLTR1bqWNRkdSzq",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000283.json",
+      "bytes": 2404,
+      "etag": "s256:W6TviHi4PfdmlqzN-rnFDH",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000284.json",
+      "bytes": 2395,
+      "etag": "s256:Q9pAJB4Ck5FabRpiBtIJIT",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000285.json",
+      "bytes": 2414,
+      "etag": "s256:rq4x8NZlFHBDjJMHRNlJ9e",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000286.json",
+      "bytes": 2354,
+      "etag": "s256:iXoTVTqrSmzSadfAMpCQZi",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000287.json",
+      "bytes": 2442,
+      "etag": "s256:1vuI97djWueRLfRHuxpeiD",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000288.json",
+      "bytes": 2587,
+      "etag": "s256:z9T5bxr43AeJOKNcm9zOxY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000289.json",
+      "bytes": 2557,
+      "etag": "s256:e1xu_kt-6h37Ob0ADreq4I",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000290.json",
+      "bytes": 2401,
+      "etag": "s256:rAttl7TsIBJOUj0UfmPvz2",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000291.json",
+      "bytes": 2366,
+      "etag": "s256:LiuyY4DKH1iSB5LDNkFRcQ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000292.json",
+      "bytes": 2413,
+      "etag": "s256:zNR3PDQ3eIXPfK8yVRrnzp",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000293.json",
+      "bytes": 2375,
+      "etag": "s256:reDoVuQ3EUWKmoeFF05EWU",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000294.json",
+      "bytes": 2358,
+      "etag": "s256:wNLDeT9X03WBZ3RaHfhbvP",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000295.json",
+      "bytes": 2388,
+      "etag": "s256:Ca3L9oMTTAKqZc4Aueu8YA",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000296.json",
+      "bytes": 2544,
+      "etag": "s256:Yxg-cRNL6MMzav97sLqnP9",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000297.json",
+      "bytes": 2534,
+      "etag": "s256:0tVIF9hbqz5OmMw5pb5UKr",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000298.json",
+      "bytes": 2377,
+      "etag": "s256:677TOZJNjwBlGd6Yy4OB8r",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000299.json",
+      "bytes": 2409,
+      "etag": "s256:wzuGVNpUfljWDxvEsvf_WA",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000300.json",
+      "bytes": 2459,
+      "etag": "s256:rRKrbcOMmu3m5IAtiWIRae",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000301.json",
+      "bytes": 2405,
+      "etag": "s256:b61pqyrFcCzIowHzJaR7EL",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000302.json",
+      "bytes": 2358,
+      "etag": "s256:juCWXq0kaw1uT497fimR92",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000303.json",
+      "bytes": 2416,
+      "etag": "s256:L2WO10JCktlpS87OK9s7Vh",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000304.json",
+      "bytes": 2517,
+      "etag": "s256:CGjzZGIyWSy0iZRF0wmJeE",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000305.json",
+      "bytes": 2558,
+      "etag": "s256:qIWc5KkIpg6J9XtBBYR-Pz",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000306.json",
+      "bytes": 2390,
+      "etag": "s256:FmM8xCFbYTTI0_Lyspy6eo",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000307.json",
+      "bytes": 2380,
+      "etag": "s256:yFjcCii4BznK9i29xENB0A",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000308.json",
+      "bytes": 2375,
+      "etag": "s256:zy9pEQTmSDu1GLIdwsSAbq",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000309.json",
+      "bytes": 2382,
+      "etag": "s256:JAcL1Ha8LaKJlTpGZnq_pw",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000310.json",
+      "bytes": 2368,
+      "etag": "s256:vrqNhRlcCVfuMv2XYR2C7o",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000311.json",
+      "bytes": 2376,
+      "etag": "s256:f7Rq4bA2HedOwXQtx-Ti5p",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000312.json",
+      "bytes": 2529,
+      "etag": "s256:Sdo5b9xkLZJHpQiQ4a9SUn",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000313.json",
+      "bytes": 2534,
+      "etag": "s256:g3I4P2bd50-cv5ASkUrHgP",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000314.json",
+      "bytes": 2434,
+      "etag": "s256:v6Fi6Nx1v5C5lAMxdi0joN",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000315.json",
+      "bytes": 2366,
+      "etag": "s256:8oJMqu1PdsnI0P5BzR6768",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000316.json",
+      "bytes": 2379,
+      "etag": "s256:Z4eVAIgwm3Qinl0UQJmTOw",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000317.json",
+      "bytes": 2386,
+      "etag": "s256:-_yzXCk1T_i9eApuajFhJ5",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000318.json",
+      "bytes": 2356,
+      "etag": "s256:7u82L2WI1zns3CHf0mvAyZ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000319.json",
+      "bytes": 2370,
+      "etag": "s256:llJGpmtfT7C4Hwtgg0N7xg",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000320.json",
+      "bytes": 2527,
+      "etag": "s256:ECeQynBxS3ECKu-AFWpLIr",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000321.json",
+      "bytes": 2539,
+      "etag": "s256:7_uYNEnYID-N8xWfxZW3hC",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000322.json",
+      "bytes": 2378,
+      "etag": "s256:zJ7u7kRlYyUkbXXHFfcbXk",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000323.json",
+      "bytes": 2383,
+      "etag": "s256:De788eGM2QQGPlTUdSbu85",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000324.json",
+      "bytes": 2432,
+      "etag": "s256:yB7QcXv4c9g9Sy_gAbJFl1",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000325.json",
+      "bytes": 2424,
+      "etag": "s256:aMT-aBuj8wGZdFvqdpSqnZ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000326.json",
+      "bytes": 2368,
+      "etag": "s256:u2Al89mGPy8AkTPfG0vbGi",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000327.json",
+      "bytes": 2387,
+      "etag": "s256:h_2822EYk_3pCpEbPw4LLQ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000328.json",
+      "bytes": 2536,
+      "etag": "s256:i1-K3Dc19ctQzLZ5-Ixcaj",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000329.json",
+      "bytes": 2579,
+      "etag": "s256:UBKHx4LX2Q5ydA58vleztg",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000330.json",
+      "bytes": 2436,
+      "etag": "s256:Jn_dCbwRVJ0ek8dMJixKYl",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000331.json",
+      "bytes": 2402,
+      "etag": "s256:7dmkp3h1kx-YGoznFzboL_",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000332.json",
+      "bytes": 2377,
+      "etag": "s256:OcYKnqj3Fn4hy6xl58lSV0",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000333.json",
+      "bytes": 2379,
+      "etag": "s256:UAUVljaEOnyd2JUwZE8x7D",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000334.json",
+      "bytes": 2372,
+      "etag": "s256:MN8RQPvs9rPNFEvy3H2uZz",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000335.json",
+      "bytes": 2419,
+      "etag": "s256:1Q3tMeWyWRso7Bp6LAWx_G",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000336.json",
+      "bytes": 2530,
+      "etag": "s256:uz_CPsDnwid8gDzrYEdOAl",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000337.json",
+      "bytes": 2538,
+      "etag": "s256:7B1GEpEz9HD9jo4yff_wFd",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000338.json",
+      "bytes": 2383,
+      "etag": "s256:RN7QhSX3S-G84iAM8k2cqu",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000339.json",
+      "bytes": 2375,
+      "etag": "s256:pOcLkUIRQNu3x9H6Z1m1Wo",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000340.json",
+      "bytes": 2376,
+      "etag": "s256:E4S0M7CMD3xPRyPBh5fpqF",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000341.json",
+      "bytes": 2429,
+      "etag": "s256:cOVHdHmnIaFl5OuCoGU-MX",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000342.json",
+      "bytes": 2362,
+      "etag": "s256:0ZmzWg2eSbHunycKqsYwKD",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000343.json",
+      "bytes": 2381,
+      "etag": "s256:BMJEsluMHeSZjB6xY9fmh2",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000344.json",
+      "bytes": 2540,
+      "etag": "s256:-c7uUJ1PBEYIqwSXj1fs9y",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000345.json",
+      "bytes": 2518,
+      "etag": "s256:CPYANPlCVaRJ1UZpM1GXWQ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000346.json",
+      "bytes": 2368,
+      "etag": "s256:Pn3ahSbS7DNuITeB2kkbwg",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000347.json",
+      "bytes": 2389,
+      "etag": "s256:nJeB8_aXNbns_kuzcuOech",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000348.json",
+      "bytes": 2380,
+      "etag": "s256:DOxV8dc_moz6sVknBCjn1N",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000349.json",
+      "bytes": 2418,
+      "etag": "s256:FlpAIal7KUbJaSw1cRxubZ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000350.json",
+      "bytes": 2376,
+      "etag": "s256:hfiaFEJAMy46zNYL-dSI6u",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000351.json",
+      "bytes": 2385,
+      "etag": "s256:osvu9vkZSOzc7kMnah8Edr",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000352.json",
+      "bytes": 2526,
+      "etag": "s256:iTAyOlryIwIFAZFqnu_FBX",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000353.json",
+      "bytes": 2530,
+      "etag": "s256:EHtMN3LD0JQl7NfJIY21dL",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000354.json",
+      "bytes": 2449,
+      "etag": "s256:jf3gfAlNG2ROjlKQnSbXMQ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000355.json",
+      "bytes": 2357,
+      "etag": "s256:_MBBU6Nf8jyQ7htE7WxnfM",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000356.json",
+      "bytes": 2397,
+      "etag": "s256:F8Hyd1-uAGuyUJWwWMMf1H",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000357.json",
+      "bytes": 2382,
+      "etag": "s256:nug5g16cFGw5cY2IaRHOgs",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000358.json",
+      "bytes": 2368,
+      "etag": "s256:lZ5QNlc4wjIzUyuE2_EbHX",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000359.json",
+      "bytes": 2426,
+      "etag": "s256:zVwZEzV-jaqTfT3b5C-6Nx",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000360.json",
+      "bytes": 2523,
+      "etag": "s256:oZ6acLGau5Gh2Dm2eqONwu",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000361.json",
+      "bytes": 2555,
+      "etag": "s256:XekOMNoVJaTH1im8ubnZEL",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000362.json",
+      "bytes": 2371,
+      "etag": "s256:zeZRfgY1EcRZH8_dqqsFsv",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000363.json",
+      "bytes": 2423,
+      "etag": "s256:52juIgu_yHKDHez61iUQFf",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000364.json",
+      "bytes": 2411,
+      "etag": "s256:rRFqJh7bz8uM4w1cWepNab",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000365.json",
+      "bytes": 2387,
+      "etag": "s256:yZgGrRCfDaAfGN8HVpxTkq",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000366.json",
+      "bytes": 2362,
+      "etag": "s256:HRIa_3IjYCSYNLGyXhavmL",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000367.json",
+      "bytes": 2386,
+      "etag": "s256:46WF6Nbs9lx94qflnSCeA5",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000368.json",
+      "bytes": 2536,
+      "etag": "s256:H3An5ijdp3ICyHTBT-DWZt",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000369.json",
+      "bytes": 2520,
+      "etag": "s256:EN7RsMq4EwTzTItqH1V4Ut",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000370.json",
+      "bytes": 2368,
+      "etag": "s256:FZxQaCBbn5_TCM6gNJfAiD",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000371.json",
+      "bytes": 2369,
+      "etag": "s256:8ILPgUkm_2kpSF1ZSpjAHI",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000372.json",
+      "bytes": 2371,
+      "etag": "s256:00h-cp5HxrTmDpv7g2l1lm",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000373.json",
+      "bytes": 2431,
+      "etag": "s256:Ev21Guqj_33aDCkOPchJy5",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000374.json",
+      "bytes": 2394,
+      "etag": "s256:coWcQhnP37mAi8vTpspcbb",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000375.json",
+      "bytes": 2392,
+      "etag": "s256:LaunUz3TORQQwWLv7a-THW",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000376.json",
+      "bytes": 2534,
+      "etag": "s256:QgXn2Nf5jkeB328y7CFyFJ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000377.json",
+      "bytes": 2566,
+      "etag": "s256:bFBK0jZbEUz9vvCiiTz2TP",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000378.json",
+      "bytes": 2392,
+      "etag": "s256:n0l6c3542x60YqFlo9UPtv",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000379.json",
+      "bytes": 2378,
+      "etag": "s256:hA7t2ZBTAZIlUrLA7xwf3l",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000380.json",
+      "bytes": 2417,
+      "etag": "s256:MUpS7UNwVy1Rekd55yfOdv",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000381.json",
+      "bytes": 2453,
+      "etag": "s256:jRHrw78y56ouIuO8xRrDd8",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000382.json",
+      "bytes": 2368,
+      "etag": "s256:oA8yGMlMp9LwNg9fHp8FDg",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000383.json",
+      "bytes": 2372,
+      "etag": "s256:PKPEGbJbOrv_krsTYAgqd4",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000384.json",
+      "bytes": 2525,
+      "etag": "s256:a3JweNlGKtNQ3kgvSis3R6",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000385.json",
+      "bytes": 2544,
+      "etag": "s256:BrvMNHn85C3GACnOsk4Vp3",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000386.json",
+      "bytes": 2391,
+      "etag": "s256:ZBrMQRYL_8LX0T1U5XJyCl",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000387.json",
+      "bytes": 2374,
+      "etag": "s256:TA-gfYL-ATOM6SQS9Joojs",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000388.json",
+      "bytes": 2373,
+      "etag": "s256:DcKju4zCvB7t3Xg8VVP74D",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000389.json",
+      "bytes": 2430,
+      "etag": "s256:dv7N2YN6JydwHt3zUD1qXu",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000390.json",
+      "bytes": 2355,
+      "etag": "s256:0IPGlUVxyQDu9LMz3FIByH",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000391.json",
+      "bytes": 2374,
+      "etag": "s256:rXXf8sIxhqcVlr_kgRbZ6K",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000392.json",
+      "bytes": 2563,
+      "etag": "s256:TDPe0REUkyVuVOt6BFkWJy",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000393.json",
+      "bytes": 2531,
+      "etag": "s256:YWPCj_KjCp0yYDKPPSrjjX",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000394.json",
+      "bytes": 2381,
+      "etag": "s256:TtjDX3YuuWeWoo80n73AB8",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000395.json",
+      "bytes": 2409,
+      "etag": "s256:OSmV0d1OD0sKKj2BflH9MY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000396.json",
+      "bytes": 2369,
+      "etag": "s256:TmXD0LN31WnkIJCVwg3Pg8",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000397.json",
+      "bytes": 2360,
+      "etag": "s256:Bxt1QwaFFM7E42E1lr1EUX",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000398.json",
+      "bytes": 2355,
+      "etag": "s256:wfJcVSQrPY9BfQ6IX987wp",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000399.json",
+      "bytes": 2386,
+      "etag": "s256:Gbeflh7uq-IIlq70NemOqO",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000400.json",
+      "bytes": 2535,
+      "etag": "s256:DfUuojgz_hmgzYNcYh9wxU",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000401.json",
+      "bytes": 2551,
+      "etag": "s256:rxWEFiU289HAeYK7hhbjtE",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000402.json",
+      "bytes": 2384,
+      "etag": "s256:AWswc2WbSrEd1XXaP1G63O",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000403.json",
+      "bytes": 2372,
+      "etag": "s256:jhbdIOmaI78aLzyUeKwBVD",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000404.json",
+      "bytes": 2416,
+      "etag": "s256:ADciIk8_GJS0_8KJFb8pfM",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000405.json",
+      "bytes": 2386,
+      "etag": "s256:u2WVerkGq_fjuFOmYg8eP-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000406.json",
+      "bytes": 2426,
+      "etag": "s256:E7mn691Y867zlTz5myQWS6",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000407.json",
+      "bytes": 2373,
+      "etag": "s256:RaZ-3bltN_KEbUJpwW3lFS",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000408.json",
+      "bytes": 2541,
+      "etag": "s256:mpigIV8HTII2Aa3V_X1nVq",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000409.json",
+      "bytes": 2534,
+      "etag": "s256:PjVkiREAwu_I3ckWAEflPB",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000410.json",
+      "bytes": 2380,
+      "etag": "s256:8EvPJKfSN6-e5E7Ygym1EU",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000411.json",
+      "bytes": 2423,
+      "etag": "s256:G4XFXaakLZYyK-luqtarSY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000412.json",
+      "bytes": 2383,
+      "etag": "s256:oHAGaaqD_XtKNpmuQ0nMov",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000413.json",
+      "bytes": 2382,
+      "etag": "s256:5Ww8KnSnazW8jUUPfRTwgh",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000414.json",
+      "bytes": 2361,
+      "etag": "s256:t-j34onTECoAmMaRGUduYZ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000415.json",
+      "bytes": 2375,
+      "etag": "s256:_YbRMIaD7i7w_-DWsfSWu1",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000416.json",
+      "bytes": 2528,
+      "etag": "s256:Fjq9Jk77WTV0_TOaYo0OWq",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000417.json",
+      "bytes": 2534,
+      "etag": "s256:iXgpPD3tv6dVn6ytJU0EFY",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000418.json",
+      "bytes": 2410,
+      "etag": "s256:fyYUWNdxNxKIqU_fQ0hxCX",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000419.json",
+      "bytes": 2379,
+      "etag": "s256:d_lsXHevdlcSacX1PPLSoZ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000420.json",
+      "bytes": 2364,
+      "etag": "s256:0qrDyyD1tQyCxSHoVrHP_g",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000421.json",
+      "bytes": 2371,
+      "etag": "s256:EUQy2sKOGeV_tIUTG7IVVf",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000422.json",
+      "bytes": 2418,
+      "etag": "s256:n6bjKa3ebmZmn4YINHBtxr",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000423.json",
+      "bytes": 2368,
+      "etag": "s256:WJFxFdw8IXQ2wt7ovgFgc-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000424.json",
+      "bytes": 2536,
+      "etag": "s256:mN1l_pQXpINv2XOyqt0ETt",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000425.json",
+      "bytes": 2537,
+      "etag": "s256:xWBqV7qCcnTdQgN2f-QlKI",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000426.json",
+      "bytes": 2390,
+      "etag": "s256:BPDt_YQiLY75cK7_rKfk5L",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000427.json",
+      "bytes": 2414,
+      "etag": "s256:RMQHLdgVwR7FR1D9gOn43f",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000428.json",
+      "bytes": 2396,
+      "etag": "s256:HSn20QqYThISnxylsDGQy1",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000429.json",
+      "bytes": 2374,
+      "etag": "s256:HdIeIactZxwstWq-PGudCu",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000430.json",
+      "bytes": 2366,
+      "etag": "s256:ZWEZaxHGX3inPsHfnIbJOo",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000431.json",
+      "bytes": 2422,
+      "etag": "s256:q1I3X_xNWfwZTNNYWE-opG",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000432.json",
+      "bytes": 2544,
+      "etag": "s256:WabcnpQjPLmUBlvJ87-T94",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000433.json",
+      "bytes": 2562,
+      "etag": "s256:h7zElwQX6Xyxhm9njGsJ3e",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000434.json",
+      "bytes": 2391,
+      "etag": "s256:XXiTOQL9pUcAfwib_jrHHa",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000435.json",
+      "bytes": 2389,
+      "etag": "s256:KDTpBCmzY16SPW1VBy9nrR",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000436.json",
+      "bytes": 2422,
+      "etag": "s256:j9cAq0d25ZJUngP_tJHviW",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000437.json",
+      "bytes": 2430,
+      "etag": "s256:fjGioqO1Z_VpfBlA1ajCTc",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000438.json",
+      "bytes": 2389,
+      "etag": "s256:rHBtZwTFzkFH8Ps5qBeR6D",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000439.json",
+      "bytes": 2383,
+      "etag": "s256:vtGiy5Cwx9OR0WGdrhAZ50",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000440.json",
+      "bytes": 2558,
+      "etag": "s256:Ju6WBEnh0rOIWQCzYP7ql2",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000441.json",
+      "bytes": 2536,
+      "etag": "s256:AwqZRavnv_Rl2RNMAiorlb",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000442.json",
+      "bytes": 2371,
+      "etag": "s256:VJZ5yn7b0lrjr4BwAXq8np",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000443.json",
+      "bytes": 2410,
+      "etag": "s256:tDUf15hUawlrG8DWc6SPvo",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000444.json",
+      "bytes": 2385,
+      "etag": "s256:-3hQlG9pog9UTaUneg4Srt",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000445.json",
+      "bytes": 2379,
+      "etag": "s256:N354mo8elv7eMCPhCVHOnF",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000446.json",
+      "bytes": 2362,
+      "etag": "s256:1SdyyaogDBKmvW9Cefv4bQ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000447.json",
+      "bytes": 2386,
+      "etag": "s256:UMxU8-VWF_E_p6vIXGp8FB",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000448.json",
+      "bytes": 2538,
+      "etag": "s256:Pn5kECydjgYAdKLPp6ueGd",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000449.json",
+      "bytes": 2619,
+      "etag": "s256:1hQ4PurY4II70MBUh2wu9p",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000450.json",
+      "bytes": 2412,
+      "etag": "s256:ghkw64AyveDNIGD8NqDuG-",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000451.json",
+      "bytes": 2414,
+      "etag": "s256:mFlYxIBDTnArV3Ii4sxblU",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000452.json",
+      "bytes": 2392,
+      "etag": "s256:Q3hpuLLNtpHPMMXD0uQUne",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000453.json",
+      "bytes": 2392,
+      "etag": "s256:mYE1BKhC9ivwNe3s4dvHX5",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000454.json",
+      "bytes": 2390,
+      "etag": "s256:8f14bbgTBdi7m9vS6dHfSU",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000455.json",
+      "bytes": 2385,
+      "etag": "s256:ufTnG8Zmn6BTKCMo6QCbGD",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000456.json",
+      "bytes": 2531,
+      "etag": "s256:G5AODHfCOLiyagM7NQMZqU",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000457.json",
+      "bytes": 2538,
+      "etag": "s256:faXQhXgHiXwr9Nat_OhTo6",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000458.json",
+      "bytes": 2369,
+      "etag": "s256:OJa79ZS2VYc-XTP0jwDNbw",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000459.json",
+      "bytes": 2365,
+      "etag": "s256:LmMipQAJ3oxkRjXpvneF-l",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000460.json",
+      "bytes": 2383,
+      "etag": "s256:vUdki2Oh821wze7v0ty25v",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000461.json",
+      "bytes": 2389,
+      "etag": "s256:xADsesFaN0075C5s4D3mZg",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000462.json",
+      "bytes": 2375,
+      "etag": "s256:U3fHRIjZqvM1hLbZDSrkU5",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000463.json",
+      "bytes": 2385,
+      "etag": "s256:yrcbM01hSlreB-IaNYytCd",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000464.json",
+      "bytes": 2538,
+      "etag": "s256:q2mi1z_AKhmW2ImjiyiQTc",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000465.json",
+      "bytes": 2544,
+      "etag": "s256:R6D4Pgkiyd1v89ig6MXRLl",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000466.json",
+      "bytes": 2398,
+      "etag": "s256:jjNmjBaO0_wPYfFFZpSq34",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000467.json",
+      "bytes": 2355,
+      "etag": "s256:B56ny3FDAUdJdbq6kHJAUR",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000468.json",
+      "bytes": 2410,
+      "etag": "s256:1DgondWnKJrVKZpUAzoNHI",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000469.json",
+      "bytes": 2310,
+      "etag": "s256:kX3oq35G2wbWYR-Q17LWek",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000470.json",
+      "bytes": 2294,
+      "etag": "s256:6Ted09sDLmQ3625QmF0imE",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000471.json",
+      "bytes": 2292,
+      "etag": "s256:4qLmHoE89jVhaK9kCiaB-6",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000472.json",
+      "bytes": 2458,
+      "etag": "s256:3tzhX9YTdA82yaLyPEf7IQ",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000473.json",
+      "bytes": 2505,
+      "etag": "s256:fq_2PXQjkPNc-1gNErpvBi",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000474.json",
+      "bytes": 2301,
+      "etag": "s256:Y_UY_xh0l2CWZv9HJnmY3F",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000475.json",
+      "bytes": 2351,
+      "etag": "s256:AZjo5q-EHnxCNkDmu-6k-f",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000476.json",
+      "bytes": 2306,
+      "etag": "s256:gw_xCBbgEcIoHHdjhT35OG",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000477.json",
+      "bytes": 2250,
+      "etag": "s256:63Hbb4wi_UV-7C94KTAfyr",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000478.json",
+      "bytes": 2217,
+      "etag": "s256:lTuoNpwdB3c9Am3LiirIiw",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000479.json",
+      "bytes": 2259,
+      "etag": "s256:1c1_7DjyHzdSeG0pZjU0qw",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000480.json",
+      "bytes": 2400,
+      "etag": "s256:S5qlzhUcbex1-ZppCOyzo5",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000481.json",
+      "bytes": 2450,
+      "etag": "s256:3B1UTwlm6PuZpaqGwbKlAW",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000482.json",
+      "bytes": 2280,
+      "etag": "s256:VRza3olxuXyDAhhyJYBtTC",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000483.json",
+      "bytes": 2232,
+      "etag": "s256:Tf1zve3-9UYay9I9o45crT",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000484.json",
+      "bytes": 2245,
+      "etag": "s256:BMEZq6G3fKM5sXT-3CxWoA",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000485.json",
+      "bytes": 2185,
+      "etag": "s256:PSb9CoyzW8BtMIjtuqzOnd",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000486.json",
+      "bytes": 2167,
+      "etag": "s256:O80DxRKC1S3Ap-CbyE1ORS",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000487.json",
+      "bytes": 2236,
+      "etag": "s256:vGX-B2XuS9L1sY-5sY-Kyb",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000488.json",
+      "bytes": 2369,
+      "etag": "s256:8FRcdCfWTL4N6t-aXylcDP",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000489.json",
+      "bytes": 2317,
+      "etag": "s256:NnNI604m2c9zxVMcj5Pv0F",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000490.json",
+      "bytes": 2176,
+      "etag": "s256:WEczyXxd_8I9do1n8ybr0d",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000491.json",
+      "bytes": 2192,
+      "etag": "s256:B3mXSUGIJcOr_RmK7X8-ts",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000492.json",
+      "bytes": 2184,
+      "etag": "s256:Wdo0Tsk6w3xHLpoh1m8ldd",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000493.json",
+      "bytes": 2117,
+      "etag": "s256:4XBh8vq6AOKUFbiHQQaIK1",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000494.json",
+      "bytes": 2117,
+      "etag": "s256:B79uUXlkZ3rxG9BeheJ6zw",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000495.json",
+      "bytes": 2102,
+      "etag": "s256:tNDqJmmvRU47vRKEJa1Usc",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000496.json",
+      "bytes": 2272,
+      "etag": "s256:pMcfI_oayn1r0BKPBraZz9",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000497.json",
+      "bytes": 2275,
+      "etag": "s256:Qh-txnK4rUb9R3kdwFbbCm",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000498.json",
+      "bytes": 2115,
+      "etag": "s256:ndqHlv4vAHvsOIpePCsaNv",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000499.json",
+      "bytes": 2088,
+      "etag": "s256:q089HaKZLAjcQglDJadFX3",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/nodes/sku-000500.json",
+      "bytes": 2108,
+      "etag": "s256:4EVRaf3zBvCZ5jKoaBEhOW",
+      "band": "core"
+    },
+    {
+      "path": "/Users/jforsythe/dev/ai/act/examples/ecommerce-catalog/public/act/subtrees/catalog.json",
+      "bytes": 1281,
+      "etag": "s256:kpSR5bMQgB2Qabc8bGWQnb",
+      "band": "standard"
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}
